@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 9: Development of Ocular Structures — Anatomy & Physiology</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="logo">👁 OphthoLearn</a>
+  <a href="index.html" class="back-btn">← Back to Topics</a>
+</nav>
+
+<div class="hero">
+  <div class="topic-badge">Topic 9 · Embryology</div>
+  <h1>Development of Ocular Structures</h1>
+  <p>Where each part of the eye comes from: neuroectoderm, surface ectoderm, and neural crest cells</p>
+</div>
+
+<div class="video-section">
+<div class="container">
+  <div class="video-player">
+    <div class="video-canvas-wrap" style="aspect-ratio:16/9"><canvas id="vidCanvas"></canvas></div>
+    <div class="chapter-pills">
+      <span class="chapter-pill active" onclick="player.seekToSlide(0)">Overview</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(1)">3 Origins</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(2)">Optic Vesicle</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(3)">Optic Cup</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(4)">Embryonic Fissure</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(5)">Coloboma</span>
+    </div>
+    <div class="video-controls">
+      <button class="vid-btn" id="restartBtn" onclick="player.restart()">⏮</button>
+      <button class="vid-btn" id="playPauseBtn" onclick="player.toggle()">▶</button>
+      <div class="progress-wrap" id="progressWrap">
+        <div class="progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+      <span class="vid-time" id="vidTime">0:00 / 0:00</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="article-section">
+<div class="container">
+
+  <div class="section-heading">
+    <div class="icon">🧬</div>
+    <h2>Development of Ocular Structures</h2>
+  </div>
+
+  <div class="diagram-wrap">
+    <h3>Three Sources of Ocular Development</h3>
+    <svg viewBox="0 0 700 400" width="700" height="400">
+      <rect width="700" height="400" fill="#0a0e1a" rx="10"/>
+
+      <!-- Central eye icon -->
+      <ellipse cx="350" cy="185" rx="55" ry="48" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <circle cx="350" cy="185" r="18" fill="rgba(74,144,226,0.3)" stroke="#4a90e2" stroke-width="2"/>
+      <circle cx="350" cy="185" r="7" fill="#000"/>
+
+      <!-- Source 1: Neuroectoderm -->
+      <circle cx="130" cy="110" r="58" fill="rgba(155,89,182,0.15)" stroke="#9b59b6" stroke-width="2.5"/>
+      <text x="130" y="95" fill="#9b59b6" font-size="12" font-weight="bold" text-anchor="middle">NEURO</text>
+      <text x="130" y="110" fill="#9b59b6" font-size="12" font-weight="bold" text-anchor="middle">ECTODERM</text>
+      <text x="130" y="128" fill="#aaa" font-size="9" text-anchor="middle">(Brain outgrowth)</text>
+      <!-- Arrow to eye -->
+      <line x1="183" y1="135" x2="297" y2="170" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr9)"/>
+
+      <!-- Source 2: Surface Ectoderm -->
+      <circle cx="570" cy="110" r="58" fill="rgba(39,174,96,0.15)" stroke="#27ae60" stroke-width="2.5"/>
+      <text x="570" y="95" fill="#27ae60" font-size="12" font-weight="bold" text-anchor="middle">SURFACE</text>
+      <text x="570" y="110" fill="#27ae60" font-size="12" font-weight="bold" text-anchor="middle">ECTODERM</text>
+      <text x="570" y="128" fill="#aaa" font-size="9" text-anchor="middle">(Overlying skin layer)</text>
+      <!-- Arrow to eye -->
+      <line x1="517" y1="135" x2="403" y2="170" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+      <!-- Source 3: Neural Crest / Mesoderm -->
+      <circle cx="350" cy="320" r="58" fill="rgba(230,126,34,0.15)" stroke="#e67e22" stroke-width="2.5"/>
+      <text x="350" y="305" fill="#e67e22" font-size="12" font-weight="bold" text-anchor="middle">NEURAL CREST</text>
+      <text x="350" y="320" fill="#e67e22" font-size="12" font-weight="bold" text-anchor="middle">+ MESODERM</text>
+      <text x="350" y="336" fill="#aaa" font-size="9" text-anchor="middle">(Migratory cells)</text>
+      <!-- Arrow to eye -->
+      <line x1="350" y1="265" x2="350" y2="232" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+      <!-- What each source gives -->
+      <!-- Neuroectoderm products -->
+      <rect x="10" y="190" width="200" height="130" fill="rgba(155,89,182,0.08)" rx="6" stroke="#9b59b655" stroke-width="1"/>
+      <text x="110" y="207" fill="#9b59b6" font-size="10" font-weight="bold" text-anchor="middle">Neuroectoderm gives:</text>
+      <text x="18" y="223" fill="#ccc" font-size="10">• Retina (both layers)</text>
+      <text x="18" y="238" fill="#ccc" font-size="10">• Optic nerve</text>
+      <text x="18" y="253" fill="#ccc" font-size="10">• Iris epithelium</text>
+      <text x="18" y="268" fill="#ccc" font-size="10">• Iris muscles (dilator &amp;</text>
+      <text x="28" y="281" fill="#ccc" font-size="10">  sphincter)</text>
+      <text x="18" y="296" fill="#ccc" font-size="10">• Ciliary body epithelium</text>
+      <text x="18" y="311" fill="#ccc" font-size="10">• Vitreous (part)</text>
+
+      <!-- Surface ectoderm products -->
+      <rect x="490" y="190" width="200" height="130" fill="rgba(39,174,96,0.08)" rx="6" stroke="#27ae6055" stroke-width="1"/>
+      <text x="590" y="207" fill="#27ae60" font-size="10" font-weight="bold" text-anchor="middle">Surface Ectoderm gives:</text>
+      <text x="498" y="223" fill="#ccc" font-size="10">• Lens</text>
+      <text x="498" y="238" fill="#ccc" font-size="10">• Corneal epithelium</text>
+      <text x="498" y="253" fill="#ccc" font-size="10">• Conjunctival epithelium</text>
+      <text x="498" y="268" fill="#ccc" font-size="10">• Lacrimal gland</text>
+      <text x="498" y="283" fill="#ccc" font-size="10">• Lacrimal drainage</text>
+      <text x="498" y="298" fill="#ccc" font-size="10">• Eyelid skin &amp; lashes</text>
+
+      <!-- Neural crest products -->
+      <rect x="250" y="188" width="200" height="92" fill="rgba(230,126,34,0.08)" rx="6" stroke="#e67e2255" stroke-width="1"/>
+      <text x="350" y="205" fill="#e67e22" font-size="10" font-weight="bold" text-anchor="middle">Neural Crest gives:</text>
+      <text x="258" y="221" fill="#ccc" font-size="10">• Sclera</text>
+      <text x="258" y="236" fill="#ccc" font-size="10">• Corneal stroma &amp; endothelium</text>
+      <text x="258" y="251" fill="#ccc" font-size="10">• Uveal stroma (iris, choroid)</text>
+      <text x="258" y="266" fill="#ccc" font-size="10">• Trabecular meshwork</text>
+      <text x="258" y="281" fill="#ccc" font-size="10">• Orbital bones &amp; connective tissue</text>
+    </svg>
+  </div>
+
+  <!-- Timeline diagram -->
+  <div class="diagram-wrap">
+    <h3>Optic Vesicle to Optic Cup — The Key Development Sequence</h3>
+    <svg viewBox="0 0 700 220" width="700" height="220">
+      <rect width="700" height="220" fill="#0a0e1a" rx="10"/>
+
+      <!-- Timeline arrow -->
+      <line x1="40" y1="110" x2="660" y2="110" stroke="#333" stroke-width="2"/>
+      <polygon points="655,104 668,110 655,116" fill="#555"/>
+
+      <!-- Step 1: Forebrain -->
+      <circle cx="80" cy="110" r="28" fill="rgba(155,89,182,0.2)" stroke="#9b59b6" stroke-width="2"/>
+      <text x="80" y="107" fill="#9b59b6" font-size="9" text-anchor="middle">Fore</text>
+      <text x="80" y="118" fill="#9b59b6" font-size="9" text-anchor="middle">brain</text>
+      <text x="80" y="155" fill="#ccc" font-size="9" text-anchor="middle">Week 3</text>
+
+      <!-- Arrow -->
+      <line x1="110" y1="110" x2="150" y2="110" stroke="#555" stroke-width="1.5"/>
+      <polygon points="146,105 158,110 146,115" fill="#555"/>
+
+      <!-- Step 2: Optic vesicle -->
+      <ellipse cx="200" cy="110" rx="35" ry="28" fill="rgba(74,144,226,0.2)" stroke="#4a90e2" stroke-width="2"/>
+      <text x="200" y="107" fill="#4a90e2" font-size="9" text-anchor="middle">Optic</text>
+      <text x="200" y="118" fill="#4a90e2" font-size="9" text-anchor="middle">Vesicle</text>
+      <text x="200" y="155" fill="#ccc" font-size="9" text-anchor="middle">Week 4</text>
+      <text x="200" y="167" fill="#aaa" font-size="8" text-anchor="middle">(outgrowth)</text>
+
+      <!-- Arrow -->
+      <line x1="238" y1="110" x2="278" y2="110" stroke="#555" stroke-width="1.5"/>
+      <polygon points="274,105 286,110 274,115" fill="#555"/>
+
+      <!-- Step 3: Invagination -->
+      <path d="M310,82 Q295,110 310,138" fill="none" stroke="#2ec4b6" stroke-width="3"/>
+      <path d="M360,82 Q345,110 360,138" fill="none" stroke="#2ec4b6" stroke-width="3"/>
+      <line x1="310" y1="82" x2="360" y2="82" stroke="#2ec4b6" stroke-width="2"/>
+      <line x1="310" y1="138" x2="360" y2="138" stroke="#2ec4b6" stroke-width="2"/>
+      <!-- Cup shape -->
+      <path d="M325,95 Q315,110 325,125" fill="none" stroke="#4a90e2" stroke-width="5" stroke-linecap="round"/>
+      <text x="335" y="155" fill="#2ec4b6" font-size="9" text-anchor="middle">Invagination</text>
+      <text x="335" y="167" fill="#ccc" font-size="8" text-anchor="middle">Week 5</text>
+
+      <!-- Arrow -->
+      <line x1="368" y1="110" x2="408" y2="110" stroke="#555" stroke-width="1.5"/>
+      <polygon points="404,105 416,110 404,115" fill="#555"/>
+
+      <!-- Step 4: Optic cup -->
+      <g transform="translate(450,110)">
+        <!-- Outer layer (pigmented) -->
+        <path d="M0,-35 Q-40,0 0,35" fill="none" stroke="#9b59b6" stroke-width="8" stroke-linecap="round"/>
+        <!-- Inner layer (sensory) -->
+        <path d="M0,-25 Q-28,0 0,25" fill="none" stroke="#4a90e2" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <text x="450" y="155" fill="#e67e22" font-size="9" text-anchor="middle">Optic Cup</text>
+      <text x="450" y="167" fill="#ccc" font-size="8" text-anchor="middle">Week 6</text>
+
+      <!-- Arrow -->
+      <line x1="478" y1="110" x2="518" y2="110" stroke="#555" stroke-width="1.5"/>
+      <polygon points="514,105 526,110 514,115" fill="#555"/>
+
+      <!-- Step 5: Lens vesicle -->
+      <circle cx="575" cy="110" r="26" fill="rgba(255,255,150,0.15)" stroke="rgba(255,255,150,0.5)" stroke-width="2"/>
+      <!-- Cup around lens -->
+      <path d="M575,84 Q540,110 575,136" fill="none" stroke="#4a90e2" stroke-width="4" stroke-linecap="round"/>
+      <text x="575" y="155" fill="#27ae60" font-size="9" text-anchor="middle">Lens vesicle</text>
+      <text x="575" y="167" fill="#ccc" font-size="8" text-anchor="middle">(from surface ecto.)</text>
+
+      <!-- Legend -->
+      <rect x="5" y="5" width="340" height="30" fill="rgba(255,255,255,0.04)" rx="4"/>
+      <circle cx="18" cy="20" r="5" fill="#9b59b6"/>
+      <text x="28" y="24" fill="#9b59b6" font-size="9">Neuroectoderm</text>
+      <circle cx="115" cy="20" r="5" fill="#27ae60"/>
+      <text x="125" y="24" fill="#27ae60" font-size="9">Surface ectoderm</text>
+      <circle cx="218" cy="20" r="5" fill="#2ec4b6"/>
+      <text x="228" y="24" fill="#2ec4b6" font-size="9">Invagination</text>
+    </svg>
+  </div>
+
+  <!-- Coloboma diagram -->
+  <div class="diagram-wrap">
+    <h3>Embryonic Fissure and Coloboma</h3>
+    <svg viewBox="0 0 640 260" width="640" height="260">
+      <rect width="640" height="260" fill="#0a0e1a" rx="10"/>
+
+      <!-- Normal optic cup (left) -->
+      <text x="150" y="30" fill="#27ae60" font-size="12" font-weight="bold" text-anchor="middle">Normal</text>
+      <circle cx="150" cy="120" r="75" fill="rgba(74,144,226,0.1)" stroke="#4a90e2" stroke-width="3"/>
+      <!-- Fissure closed -->
+      <circle cx="150" cy="120" r="15" fill="#000" stroke="#4a90e2" stroke-width="2"/>
+      <text x="150" y="125" fill="#27ae60" font-size="10" text-anchor="middle">✓ closed</text>
+      <!-- Pupil normal -->
+      <text x="150" y="215" fill="#aaa" font-size="10" text-anchor="middle">Round pupil</text>
+      <circle cx="150" cy="230" r="18" fill="rgba(74,144,226,0.2)" stroke="#4a90e2" stroke-width="2"/>
+      <circle cx="150" cy="230" r="8" fill="#000"/>
+
+      <!-- Arrow -->
+      <text x="320" y="75" fill="#e74c3c" font-size="22" text-anchor="middle">✗</text>
+      <text x="320" y="110" fill="#e74c3c" font-size="11" text-anchor="middle">Fissure fails</text>
+      <text x="320" y="126" fill="#e74c3c" font-size="11" text-anchor="middle">to close</text>
+
+      <!-- Coloboma (right) -->
+      <text x="480" y="30" fill="#e74c3c" font-size="12" font-weight="bold" text-anchor="middle">Coloboma</text>
+      <circle cx="480" cy="120" r="75" fill="rgba(231,76,60,0.1)" stroke="#e74c3c" stroke-width="3"/>
+      <!-- Gap at inferior -->
+      <path d="M475,183 L465,195 L480,197 L495,195 L485,183Z" fill="#e74c3c" opacity="0.5"/>
+      <text x="480" y="200" fill="#e74c3c" font-size="10" text-anchor="middle">Gap here</text>
+      <!-- Keyhole pupil -->
+      <text x="480" y="215" fill="#aaa" font-size="10" text-anchor="middle">"Keyhole" pupil</text>
+      <ellipse cx="480" cy="235" rx="18" ry="10" fill="rgba(231,76,60,0.2)" stroke="#e74c3c" stroke-width="2"/>
+      <ellipse cx="480" cy="230" rx="8" ry="8" fill="#000" stroke="#e74c3c" stroke-width="1"/>
+      <rect x="476" y="238" width="8" height="8" fill="#000"/>
+
+      <!-- Label: embryonic fissure -->
+      <rect x="10" y="220" width="620" height="32" fill="rgba(255,255,255,0.04)" rx="4"/>
+      <text x="320" y="240" fill="#f39c12" font-size="10" text-anchor="middle">The embryonic (choroidal) fissure runs along the underside of the optic cup — it must close by week 7 to form a complete eye.</text>
+    </svg>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-basic">🟢 Basic</div>
+    <h3>Where Does the Eye Come From?</h3>
+    <p>The eye does not develop from a single source. Three completely different cell populations come together to build it. Each one contributes specific structures, and a problem with any one of them causes a specific type of developmental eye disease.</p>
+    <p style="margin-top:10px">Think of it like building a house: one crew builds the wiring (neuroectoderm), another installs the windows and plumbing (surface ectoderm), and a third crew handles the walls and structural frame (neural crest and mesoderm).</p>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-intermediate">🟡 Intermediate</div>
+    <h3>The Three Sources</h3>
+    <table>
+      <thead>
+        <tr><th>Source</th><th>What It Builds</th><th>Memory Hook</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:#9b59b6">Neuroectoderm</strong><br><small>(brain outgrowth)</small></td>
+          <td>Retina (both layers), Optic nerve, Iris muscles (dilator + sphincter), Ciliary body epithelium</td>
+          <td>Everything that processes or responds to light</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#27ae60">Surface Ectoderm</strong><br><small>(skin layer over the eye)</small></td>
+          <td>Lens, Corneal epithelium, Conjunctiva, Lacrimal gland, Eyelids and lashes</td>
+          <td>Everything that touches or covers the eye from outside</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#e67e22">Neural Crest + Mesoderm</strong><br><small>(migratory cells)</small></td>
+          <td>Sclera, Corneal stroma and endothelium, Uveal stroma (iris, choroid), Orbital bones, Trabecular meshwork</td>
+          <td>The structural frame and connective tissue of the eye</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-intermediate">🟡 Intermediate</div>
+    <h3>Optic Vesicle to Optic Cup</h3>
+    <p>Around week 3 of embryonic life, the developing forebrain pushes out a hollow bud on each side called the <strong>optic vesicle</strong>. This is where everything starts.</p>
+    <p style="margin-top:10px">The optic vesicle then <strong>invaginates</strong> (pushes inward on itself, like pushing your finger into a balloon) to form the <strong>optic cup</strong>. This double-walled cup is the origin of the retina:</p>
+    <ul style="margin-top:10px">
+      <li>The <strong>outer wall</strong> of the cup becomes the Retinal Pigment Epithelium (RPE)</li>
+      <li>The <strong>inner wall</strong> becomes the sensory retina (10 layers including photoreceptors)</li>
+    </ul>
+    <p style="margin-top:10px">As the vesicle pushes toward the surface ectoderm, it signals that layer to thicken and form the <strong>lens placode</strong>, which then invaginates to create the lens vesicle. This inductive signaling is two-way: no optic vesicle means no lens, and no lens means the eye stays underdeveloped.</p>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-advanced">🔴 Advanced</div>
+    <h3>The Embryonic Fissure and Coloboma</h3>
+    <p>When the optic vesicle invaginates to form the optic cup, a gap forms along the <strong>inferior surface</strong> of the cup. This gap is called the <strong>embryonic fissure</strong> (also called the choroidal or fetal fissure).</p>
+    <p style="margin-top:10px">This fissure is actually useful early on: it allows the hyaloid artery to enter and supply the developing lens. But by <strong>week 7 of gestation</strong>, the fissure must close completely.</p>
+    <div class="highlight-box" style="margin-top:12px">
+      If the embryonic fissure does not close, the result is a <strong>coloboma</strong>. Because the fissure is located inferiorly, colobomas affect the <em>inferior</em> parts of the eye. Depending on how much of the fissure failed to close, the coloboma can involve the iris, ciliary body, choroid, retina, or optic nerve.
+    </div>
+    <div class="two-col" style="margin-top:16px">
+      <div class="clinical-pearl">
+        <span class="pearl-icon">👁</span>
+        <p><strong>Iris coloboma</strong> gives a classic "keyhole" or "cat-eye" appearance to the pupil. The defect is always in the inferior nasal quadrant, pointing directly to the location of the original embryonic fissure.</p>
+      </div>
+      <div class="clinical-pearl">
+        <span class="pearl-icon">💎</span>
+        <p><strong>CHARGE syndrome</strong> is one of the systemic associations with coloboma. The C in CHARGE stands for Coloboma. Bilateral posterior colobomas involving the optic nerve carry the worst visual prognosis.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-advanced">🔴 Advanced</div>
+    <h3>Key Developmental Timelines to Know</h3>
+    <table>
+      <thead><tr><th>Week of Gestation</th><th>Event</th></tr></thead>
+      <tbody>
+        <tr><td>Week 3</td><td>Optic groove forms in developing forebrain (neuroectoderm)</td></tr>
+        <tr><td>Week 4</td><td>Optic vesicle pushes out; reaches surface ectoderm; lens placode begins</td></tr>
+        <tr><td>Week 5</td><td>Optic vesicle invaginates; lens vesicle forms</td></tr>
+        <tr><td>Week 6</td><td>Optic cup fully formed; hyaloid artery enters through embryonic fissure</td></tr>
+        <tr><td>Week 7</td><td>Embryonic fissure closes (failure = coloboma)</td></tr>
+        <tr><td>Week 8</td><td>Eyelids begin to form; cornea becomes transparent</td></tr>
+        <tr><td>Months 3–5</td><td>Eyelids fused; photoreceptors differentiate; iris sphincter forms</td></tr>
+        <tr><td>Week 26–28</td><td>Eyelids reopen; retinal vessels reach periphery</td></tr>
+        <tr><td>Full term</td><td>Retinal development mostly complete; foveal maturation continues after birth</td></tr>
+      </tbody>
+    </table>
+    <div class="clinical-pearl" style="margin-top:14px">
+      <span class="pearl-icon">💎</span>
+      <p><strong>Retinopathy of Prematurity (ROP):</strong> Premature babies (born before retinal vessels reach the periphery) develop abnormal retinal vascularization. Peripheral retina is avascular. High oxygen therapy in incubators worsens this. Regular screening with indirect ophthalmoscopy is mandatory for premature neonates.</p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-intermediate">🟡 Quick Recall</div>
+    <h3>High-Yield Exam Points</h3>
+    <ul>
+      <li>Iris muscles (sphincter and dilator) come from <strong>neuroectoderm</strong>, not neural crest. This is frequently asked.</li>
+      <li>The <strong>lens</strong> comes entirely from surface ectoderm (induced by the optic vesicle).</li>
+      <li>Cornea is a mixed structure: epithelium from surface ectoderm; stroma and endothelium from neural crest.</li>
+      <li>Coloboma is always <strong>inferonasal</strong> because the embryonic fissure is on the inferior surface of the optic cup.</li>
+      <li>The optic nerve is an outgrowth of the brain, which is why it has a myelin sheath and is covered by meninges (unlike other cranial nerves).</li>
+      <li>The hyaloid artery (fetal intraocular artery) normally regresses by birth. If it persists, it is called <strong>persistent hyaloid artery</strong> or <strong>PHPV (Persistent Hyperplastic Primary Vitreous)</strong>.</li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+<footer style="text-align:center;padding:28px;color:#aaa;font-size:0.85rem;border-top:1px solid #e0e0e0;margin-top:20px;">
+  <a href="topic-8.html" style="color:#636e72;text-decoration:none">← Topic 8</a>
+  &nbsp;·&nbsp;
+  <a href="index.html" style="color:#1a6b8a;text-decoration:none;font-weight:600">Back to All Topics</a>
+</footer>
+
+<script src="video-player.js"></script>
+<script>
+const slides = [
+  {
+    duration: 20,
+    subtitle: "Topic 9: How the eye develops. Three completely different cell populations build the eye together, neuroectoderm, surface ectoderm, and neural crest cells. Each builds specific structures.",
+    draw(ctx, W, H, t, e) {
+      const cx=W/2,cy=H*0.5;
+      // Three converging circles
+      const sources=[
+        {label:'Neuroectoderm',color:'#9b59b6',ox:-130,oy:-100},
+        {label:'Surface Ectoderm',color:'#27ae60',ox:130,oy:-100},
+        {label:'Neural Crest',color:'#e67e22',ox:0,oy:130},
+      ];
+      sources.forEach((s,i)=>{
+        const a=Math.max(0,Math.min(1,(e-i*0.2)*3));
+        if(a<=0) return;
+        ctx.save();ctx.globalAlpha=a;
+        const fx=cx+s.ox*(1-e*0.5);
+        const fy=cy+s.oy*(1-e*0.5);
+        ctx.beginPath();ctx.arc(fx,fy,50,0,Math.PI*2);
+        ctx.fillStyle=s.color+'22';ctx.fill();
+        ctx.strokeStyle=s.color;ctx.lineWidth=2;ctx.stroke();
+        ctx.fillStyle=s.color;ctx.font=`bold ${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText(s.label,fx,fy+5);
+        ctx.restore();
+      });
+      // Eye forming at center
+      if(e>0.6){
+        const a=Math.min(1,(e-0.6)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.beginPath();ctx.arc(cx,cy,30,0,Math.PI*2);
+        ctx.fillStyle='rgba(74,144,226,0.3)';ctx.fill();
+        ctx.strokeStyle='#4a90e2';ctx.lineWidth=3;ctx.stroke();
+        ctx.beginPath();ctx.arc(cx,cy,10,0,Math.PI*2);
+        ctx.fillStyle='#000';ctx.fill();
+        ctx.restore();
+      }
+      drawTitle(ctx,W,H,'Development of Ocular Structures',t,H*0.1);
+    }
+  },
+  {
+    duration: 50,
+    subtitle: "Neuroectoderm builds: retina, optic nerve, iris muscles. Surface ectoderm builds: lens, corneal epithelium, lacrimal gland. Neural crest builds: sclera, corneal stroma, uveal stroma, trabecular meshwork.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Three Sources — What They Build',t,H*0.08);
+      const cols=[
+        {
+          title:'Neuroectoderm',color:'#9b59b6',x:W*0.18,
+          items:['Retina (both layers)','Optic nerve','Iris sphincter','Iris dilator','Ciliary epithelium'],
+        },
+        {
+          title:'Surface Ectoderm',color:'#27ae60',x:W*0.5,
+          items:['Lens','Corneal epithelium','Conjunctiva','Lacrimal gland','Eyelids & lashes'],
+        },
+        {
+          title:'Neural Crest',color:'#e67e22',x:W*0.82,
+          items:['Sclera','Corneal stroma','Corneal endothelium','Uveal stroma','Trabecular meshwork'],
+        },
+      ];
+      cols.forEach((col,ci)=>{
+        const ca=Math.max(0,Math.min(1,(e-ci*0.25)*3));
+        if(ca<=0) return;
+        ctx.save();ctx.globalAlpha=ca;
+        ctx.fillStyle=col.color+'22';
+        ctx.beginPath();ctx.roundRect(col.x-W*0.14,H*0.15,W*0.28,H*0.75,8);ctx.fill();
+        ctx.strokeStyle=col.color+'66';ctx.lineWidth=1.5;ctx.stroke();
+        ctx.fillStyle=col.color;ctx.font=`bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText(col.title,col.x,H*0.23);
+        col.items.forEach((item,ii)=>{
+          const ia=Math.max(0,Math.min(1,(e-ci*0.25-ii*0.07)*5));
+          ctx.globalAlpha=ca*ia;
+          ctx.fillStyle='#ddd';ctx.font=`${Math.max(10,W*0.016)}px Segoe UI`;
+          ctx.fillText('• '+item,col.x,H*0.32+ii*H*0.1);
+        });
+        ctx.restore();
+      });
+    }
+  },
+  {
+    duration: 50,
+    subtitle: "Week 3: The forebrain grows an outpouching called the optic vesicle. By week 4 it reaches the surface ectoderm and signals it to thicken, this is the lens placode. No optic vesicle means no lens.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Optic Vesicle Formation — Week 3 to 5',t,H*0.1);
+      // Forebrain
+      ctx.save();ctx.globalAlpha=Math.min(1,e*4);
+      ctx.beginPath();ctx.ellipse(W*0.12,H*0.5,W*0.08,H*0.25,0,0,Math.PI*2);
+      ctx.fillStyle='rgba(155,89,182,0.2)';ctx.fill();
+      ctx.strokeStyle='#9b59b6';ctx.lineWidth=2;ctx.stroke();
+      ctx.fillStyle='#9b59b6';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+      ctx.textAlign='center';ctx.fillText('Forebrain',W*0.12,H*0.83);
+      ctx.restore();
+      // Optic vesicle growing out
+      if(e>0.2){
+        const a=Math.min(1,(e-0.2)*4);
+        const vesR=Math.min(1,(e-0.2)*2);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.beginPath();ctx.ellipse(W*0.12+W*0.18*vesR,H*0.5,W*0.1*vesR,H*0.15*vesR,0,0,Math.PI*2);
+        ctx.fillStyle='rgba(74,144,226,0.2)';ctx.fill();
+        ctx.strokeStyle='#4a90e2';ctx.lineWidth=2;ctx.stroke();
+        // Stalk
+        ctx.beginPath();ctx.moveTo(W*0.2,H*0.45);ctx.lineTo(W*0.2,H*0.55);
+        ctx.strokeStyle='#9b59b6';ctx.lineWidth=5;ctx.stroke();
+        if(vesR>0.5){
+          ctx.fillStyle='#4a90e2';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+          ctx.textAlign='center';ctx.fillText('Optic Vesicle',W*0.12+W*0.18*vesR,H*0.32);
+          ctx.fillStyle='#aaa';ctx.font=`${Math.max(9,W*0.015)}px Segoe UI`;
+          ctx.fillText('(week 4)',W*0.12+W*0.18*vesR,H*0.38);
+        }
+        ctx.restore();
+      }
+      // Surface ectoderm and lens placode
+      if(e>0.5){
+        const a=Math.min(1,(e-0.5)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.beginPath();ctx.moveTo(W*0.55,H*0.2);ctx.lineTo(W*0.55,H*0.8);
+        ctx.strokeStyle='#27ae60';ctx.lineWidth=6;ctx.stroke();
+        ctx.fillStyle='#27ae60';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText('Surface Ectoderm',W*0.58,H*0.3);
+        // Lens placode thickening
+        const th=Math.min(1,(e-0.5)*3)*18;
+        ctx.fillStyle='rgba(39,174,96,0.4)';
+        ctx.beginPath();ctx.ellipse(W*0.55,H*0.5,th,H*0.1,0,0,Math.PI*2);ctx.fill();
+        ctx.strokeStyle='#27ae60';ctx.lineWidth=2;ctx.stroke();
+        if(th>10){
+          ctx.fillStyle='#27ae60';ctx.font=`${Math.max(9,W*0.015)}px Segoe UI`;
+          ctx.textAlign='center';ctx.fillText('Lens placode',W*0.55,H*0.65);
+          ctx.fillText('(induced by vesicle)',W*0.55,H*0.7);
+        }
+        ctx.restore();
+      }
+      // Induction arrow
+      if(e>0.7){
+        const a=Math.min(1,(e-0.7)*5);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.strokeStyle='#f39c12';ctx.lineWidth=2;ctx.setLineDash([5,4]);
+        ctx.beginPath();ctx.moveTo(W*0.35,H*0.5);ctx.lineTo(W*0.52,H*0.5);ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle='#f39c12';
+        ctx.beginPath();ctx.moveTo(W*0.52,H*0.48);ctx.lineTo(W*0.55,H*0.5);ctx.lineTo(W*0.52,H*0.52);ctx.fill();
+        ctx.font=`${Math.max(9,W*0.014)}px Segoe UI`;ctx.textAlign='center';
+        ctx.fillText('Induction signal',W*0.44,H*0.44);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 50,
+    subtitle: "The optic vesicle invaginates to form a two-walled optic cup. The outer wall becomes the RPE. The inner wall becomes the sensory retina. Simultaneously the lens vesicle forms and pinches off from the surface ectoderm.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Optic Cup Formation',t,H*0.1);
+      const cx=W*0.42,cy=H*0.52;
+      // Stage 1: Vesicle
+      if(e<0.5){
+        const a=Math.min(1,e*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.beginPath();ctx.ellipse(cx,cy,110,90,0,0,Math.PI*2);
+        ctx.fillStyle='rgba(74,144,226,0.15)';ctx.fill();
+        ctx.strokeStyle='#4a90e2';ctx.lineWidth=3;ctx.stroke();
+        ctx.fillStyle='#4a90e2';ctx.font=`bold ${Math.max(12,W*0.02)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('Optic Vesicle',cx,cy);
+        ctx.restore();
+      }
+      // Stage 2: Invagination / Cup
+      if(e>0.35){
+        const a=Math.min(1,(e-0.35)*5);
+        const inward=Math.min(1,(e-0.35)*3)*60;
+        ctx.save();ctx.globalAlpha=a;
+        // Outer wall (RPE)
+        ctx.beginPath();
+        ctx.moveTo(cx-110,cy-80);
+        ctx.quadraticCurveTo(cx+120,cy,cx-110,cy+80);
+        ctx.strokeStyle='#a93226';ctx.lineWidth=10;ctx.stroke();
+        // Inner wall (sensory)
+        ctx.beginPath();
+        ctx.moveTo(cx-90,cy-60);
+        ctx.quadraticCurveTo(cx+inward,cy,cx-90,cy+60);
+        ctx.strokeStyle='#9b59b6';ctx.lineWidth=8;ctx.stroke();
+        // Labels
+        ctx.fillStyle='#a93226';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('Outer wall = RPE',cx+W*0.2,cy-60);
+        ctx.fillStyle='#9b59b6';ctx.fillText('Inner wall = Sensory Retina',cx+W*0.2,cy+60);
+        // Lens vesicle
+        if(inward>20){
+          ctx.beginPath();ctx.arc(cx-75,cy,25*(inward/60),0,Math.PI*2);
+          ctx.fillStyle='rgba(255,255,150,0.25)';ctx.fill();
+          ctx.strokeStyle='rgba(255,255,150,0.7)';ctx.lineWidth=2;ctx.stroke();
+          ctx.fillStyle='#27ae60';ctx.font=`${Math.max(9,W*0.015)}px Segoe UI`;
+          ctx.textAlign='center';ctx.fillText('Lens vesicle',cx-75,cy+40);
+        }
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 48,
+    subtitle: "The embryonic fissure is a gap on the inferior surface of the optic cup. The hyaloid artery runs through it to supply the growing lens. By week 7 this gap must close completely.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'The Embryonic Fissure',t,H*0.1);
+      const cx=W/2,cy=H*0.5;
+      // Optic cup (open at bottom showing fissure)
+      ctx.save();ctx.globalAlpha=Math.min(1,e*3);
+      // Cup shape
+      ctx.strokeStyle='#4a90e2';ctx.lineWidth=8;ctx.lineJoin='round';
+      ctx.beginPath();
+      ctx.arc(cx,cy,110,Math.PI*0.15,Math.PI*0.85);
+      ctx.stroke();
+      // Fissure (open bottom)
+      ctx.strokeStyle='#e74c3c';ctx.lineWidth=6;
+      ctx.beginPath();
+      ctx.moveTo(cx-30,cy+108);ctx.lineTo(cx+30,cy+108);
+      ctx.stroke();
+      ctx.fillStyle='#e74c3c';ctx.font=`bold ${Math.max(12,W*0.021)}px Segoe UI`;
+      ctx.textAlign='center';ctx.fillText('Embryonic Fissure',cx,cy+140);
+      ctx.fillStyle='#aaa';ctx.font=`${Math.max(9,W*0.015)}px Segoe UI`;
+      ctx.fillText('(inferior surface)',cx,cy+155);
+      ctx.restore();
+      // Hyaloid artery
+      if(e>0.3){
+        const a=Math.min(1,(e-0.3)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.strokeStyle='#e74c3c';ctx.lineWidth=3;
+        ctx.beginPath();
+        ctx.moveTo(cx,cy+180);ctx.lineTo(cx,cy+108);
+        ctx.moveTo(cx,cy+108);ctx.lineTo(cx,cy);
+        ctx.stroke();
+        ctx.fillStyle='#e74c3c';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText('Hyaloid artery enters',cx+12,cy+155);
+        ctx.fillText('through fissure',cx+12,cy+170);
+        ctx.restore();
+      }
+      // Closure arrow
+      if(e>0.65){
+        const a=Math.min(1,(e-0.65)*5);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.strokeStyle='#27ae60';ctx.lineWidth=3;
+        ctx.beginPath();
+        ctx.moveTo(cx-30,cy+108);ctx.lineTo(cx-5,cy+108);
+        ctx.moveTo(cx+30,cy+108);ctx.lineTo(cx+5,cy+108);
+        ctx.stroke();
+        ctx.fillStyle='#27ae60';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('Must close by week 7 →',cx,cy+180);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 50,
+    subtitle: "If the embryonic fissure does not close, a coloboma results. It always affects the inferior structures because that is where the fissure sits. The pupil takes on a characteristic keyhole shape in iris coloboma.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Coloboma — Failure of Fissure Closure',t,H*0.1);
+      const cx=W/2;
+      // Normal side (left)
+      if(e>0.05){
+        const a=Math.min(1,(e-0.05)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#27ae60';ctx.font=`bold ${Math.max(12,W*0.022)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('NORMAL',W*0.22,H*0.22);
+        // Iris
+        ctx.beginPath();ctx.arc(W*0.22,H*0.5,80,0,Math.PI*2);
+        ctx.fillStyle='rgba(74,144,226,0.2)';ctx.fill();
+        ctx.strokeStyle='#4a90e2';ctx.lineWidth=4;ctx.stroke();
+        // Round pupil
+        ctx.beginPath();ctx.arc(W*0.22,H*0.5,20,0,Math.PI*2);
+        ctx.fillStyle='#000';ctx.fill();
+        ctx.strokeStyle='#4a90e2';ctx.lineWidth=2;ctx.stroke();
+        ctx.fillStyle='#27ae60';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.fillText('Round pupil',W*0.22,H*0.75);
+        ctx.restore();
+      }
+      // Coloboma side (right)
+      if(e>0.4){
+        const a=Math.min(1,(e-0.4)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#e74c3c';ctx.font=`bold ${Math.max(12,W*0.022)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('COLOBOMA',W*0.72,H*0.22);
+        // Iris
+        ctx.beginPath();ctx.arc(W*0.72,H*0.5,80,0,Math.PI*2);
+        ctx.fillStyle='rgba(231,76,60,0.15)';ctx.fill();
+        ctx.strokeStyle='#e74c3c';ctx.lineWidth=4;ctx.stroke();
+        // Keyhole pupil
+        ctx.beginPath();ctx.arc(W*0.72,H*0.48,20,Math.PI,0);ctx.closePath();
+        ctx.fillStyle='#000';ctx.fill();
+        ctx.beginPath();ctx.rect(W*0.72-12,H*0.48,24,40);
+        ctx.fillStyle='#000';ctx.fill();
+        ctx.fillStyle='#e74c3c';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.fillText('"Keyhole" pupil',W*0.72,H*0.75);
+        ctx.fillText('Defect: inferior nasal',W*0.72,H*0.8);
+        ctx.restore();
+      }
+      // Dividing line
+      if(e>0.35){
+        const a=Math.min(1,(e-0.35)*5);
+        ctx.save();ctx.globalAlpha=a*0.3;
+        ctx.strokeStyle='#555';ctx.lineWidth=1;ctx.setLineDash([5,5]);
+        ctx.beginPath();ctx.moveTo(cx,H*0.18);ctx.lineTo(cx,H*0.85);ctx.stroke();
+        ctx.setLineDash([]);ctx.restore();
+      }
+      // Key note
+      if(e>0.75){
+        const a=Math.min(1,(e-0.75)*5);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#f39c12';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText('Always inferonasal — the fissure was on the inferior surface',cx,H*0.9);
+        ctx.restore();
+      }
+    }
+  },
+];
+const player = new VideoPlayer('vidCanvas', slides);
+document.getElementById('progressWrap').addEventListener('click', function(e) {
+  const rect = this.getBoundingClientRect();
+  const pct = (e.clientX - rect.left) / rect.width;
+  const targetTime = pct * player.totalDuration;
+  let acc = 0;
+  for (let i = 0; i < player.slides.length; i++) {
+    acc += player.slides[i].duration;
+    if (acc >= targetTime) { player.seekToSlide(i); break; }
+  }
+});
+</script>
+</body>
+</html>

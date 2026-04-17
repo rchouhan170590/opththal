@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 1: Orbit and its Contents — Anatomy & Physiology</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">👁 OphthoLearn</a>
+  <a href="index.html" class="back-btn">← Back to Topics</a>
+</nav>
+
+<div class="hero">
+  <div class="topic-badge">Topic 1 · Anatomy</div>
+  <h1>Orbit and its Contents</h1>
+  <p>The bony framework protecting and housing the eye — from 7 bones to cranial nerve passages</p>
+</div>
+
+<!-- VIDEO SECTION -->
+<div class="video-section">
+  <div class="container">
+    <div class="video-player">
+      <div class="video-canvas-wrap" style="aspect-ratio:16/9">
+        <canvas id="vidCanvas"></canvas>
+      </div>
+      <div class="chapter-pills">
+        <span class="chapter-pill active" onclick="player.seekToSlide(0)">Intro</span>
+        <span class="chapter-pill" onclick="player.seekToSlide(1)">7 Bones</span>
+        <span class="chapter-pill" onclick="player.seekToSlide(2)">Walls</span>
+        <span class="chapter-pill" onclick="player.seekToSlide(3)">Apex &amp; SOF</span>
+        <span class="chapter-pill" onclick="player.seekToSlide(4)">Annulus of Zinn</span>
+        <span class="chapter-pill" onclick="player.seekToSlide(5)">Clinical Pearls</span>
+      </div>
+      <div class="video-controls">
+        <button class="vid-btn" id="restartBtn" onclick="player.restart()" title="Restart">⏮</button>
+        <button class="vid-btn" id="playPauseBtn" onclick="player.toggle()">▶</button>
+        <div class="progress-wrap" id="progressWrap">
+          <div class="progress-bar" id="progressBar" style="width:0%"></div>
+        </div>
+        <span class="vid-time" id="vidTime">0:00 / 0:00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE SECTION -->
+<div class="article-section">
+<div class="container">
+
+  <div class="section-heading">
+    <div class="icon">🦴</div>
+    <h2>Orbit and its Contents</h2>
+  </div>
+
+  <!-- Diagram -->
+  <div class="diagram-wrap">
+    <h3>Orbital Bones — Anterior View</h3>
+    <svg viewBox="0 0 600 400" width="600" height="400">
+      <!-- Background -->
+      <rect width="600" height="400" fill="#f8f9fa" rx="10"/>
+
+      <!-- Orbit outline (pear shape) -->
+      <ellipse cx="300" cy="200" rx="140" ry="120" fill="none" stroke="#ddd" stroke-width="2" stroke-dasharray="6,3"/>
+
+      <!-- FRONTAL - top -->
+      <path d="M180,110 Q300,70 420,110 Q380,140 300,145 Q220,140 180,110Z" fill="#4a90e2" opacity="0.75"/>
+      <text x="300" y="115" text-anchor="middle" fill="white" font-size="13" font-weight="bold">FRONTAL</text>
+
+      <!-- ZYGOMATIC - lateral -->
+      <path d="M420,110 Q460,140 450,200 Q440,250 400,270 Q380,220 390,160 Q400,130 420,110Z" fill="#e74c3c" opacity="0.75"/>
+      <text x="442" y="195" text-anchor="middle" fill="white" font-size="11" font-weight="bold">ZYGOM.</text>
+
+      <!-- MAXILLARY - bottom -->
+      <path d="M200,270 Q300,310 400,270 Q380,240 300,235 Q220,240 200,270Z" fill="#27ae60" opacity="0.75"/>
+      <text x="300" y="278" text-anchor="middle" fill="white" font-size="13" font-weight="bold">MAXILLARY</text>
+
+      <!-- ETHMOID - medial upper -->
+      <path d="M180,110 Q155,135 150,170 Q155,195 170,200 Q185,160 195,140 Q190,125 180,110Z" fill="#9b59b6" opacity="0.75"/>
+      <text x="130" y="160" fill="#9b59b6" font-size="10" font-weight="bold">ETHMOID</text>
+
+      <!-- LACRIMAL - medial middle -->
+      <path d="M150,170 Q148,210 155,235 Q165,240 175,230 Q172,200 170,200 Q155,195 150,170Z" fill="#f39c12" opacity="0.8"/>
+      <text x="120" y="205" fill="#f39c12" font-size="10" font-weight="bold">LACRIMAL</text>
+
+      <!-- PALATINE - medial lower -->
+      <path d="M155,235 Q158,255 165,265 Q185,268 200,270 Q195,250 185,242 Q175,240 165,240 Q155,238 155,235Z" fill="#1abc9c" opacity="0.75"/>
+      <text x="100" y="260" fill="#1abc9c" font-size="10" font-weight="bold">PALATINE</text>
+
+      <!-- SPHENOID - lateral lower + back -->
+      <path d="M390,160 Q430,155 450,200 Q440,250 400,270 Q390,245 398,210 Q400,185 390,160Z" fill="#e67e22" opacity="0.4"/>
+      <path d="M400,270 Q370,290 340,295 Q330,280 360,272 Q380,268 400,270Z" fill="#e67e22" opacity="0.6"/>
+      <text x="470" y="260" fill="#e67e22" font-size="10" font-weight="bold">SPHEN.</text>
+
+      <!-- Optic canal point -->
+      <circle cx="300" cy="200" r="18" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-dasharray="4,2"/>
+      <text x="300" y="200" text-anchor="middle" dominant-baseline="middle" fill="#ff6b6b" font-size="9" font-weight="bold">Apex</text>
+
+      <!-- Legend -->
+      <rect x="10" y="340" width="580" height="52" fill="white" rx="6" stroke="#ddd"/>
+      <text x="20" y="358" fill="#333" font-size="11" font-weight="bold">Orbital Walls:</text>
+      <circle cx="120" cy="355" r="5" fill="#4a90e2"/>
+      <text x="130" y="358" fill="#555" font-size="10">Roof: Frontal</text>
+      <circle cx="210" cy="355" r="5" fill="#e74c3c"/>
+      <text x="220" y="358" fill="#555" font-size="10">Lateral: Zygomatic+Sphenoid</text>
+      <circle cx="380" cy="355" r="5" fill="#27ae60"/>
+      <text x="390" y="358" fill="#555" font-size="10">Floor: Maxillary</text>
+      <circle cx="475" cy="355" r="5" fill="#9b59b6"/>
+      <text x="485" y="358" fill="#555" font-size="10">Medial: 4 bones</text>
+      <text x="20" y="382" fill="#e74c3c" font-size="10">* Thinnest wall = Medial wall (Lamina Papyracea of Ethmoid)</text>
+    </svg>
+  </div>
+
+  <!-- Diagram: Apex & Fissures -->
+  <div class="diagram-wrap">
+    <h3>Orbital Apex — Foramina &amp; Fissures</h3>
+    <svg viewBox="0 0 600 280" width="600" height="280">
+      <rect width="600" height="280" fill="#f8f9fa" rx="10"/>
+      <!-- Orbit outline side view -->
+      <path d="M80,60 L480,140 L480,200 L80,220 Z" fill="none" stroke="#ddd" stroke-width="2"/>
+      <path d="M80,60 L80,220" stroke="#ccc" stroke-width="2"/>
+
+      <!-- Optic Canal -->
+      <circle cx="470" cy="148" r="22" fill="#ff6b6b" opacity="0.2" stroke="#ff6b6b" stroke-width="2"/>
+      <text x="470" y="145" text-anchor="middle" fill="#c0392b" font-size="9" font-weight="bold">Optic</text>
+      <text x="470" y="157" text-anchor="middle" fill="#c0392b" font-size="9" font-weight="bold">Canal</text>
+
+      <!-- Superior orbital fissure -->
+      <path d="M442,115 Q455,132 445,145" fill="none" stroke="#e67e22" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+      <text x="530" y="128" text-anchor="middle" fill="#e67e22" font-size="10" font-weight="bold">SOF</text>
+      <line x1="455" y1="128" x2="510" y2="128" stroke="#e67e22" stroke-width="1" stroke-dasharray="3,2"/>
+
+      <!-- Inferior orbital fissure -->
+      <path d="M445,170 Q458,180 448,195" fill="none" stroke="#9b59b6" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+      <text x="530" y="185" text-anchor="middle" fill="#9b59b6" font-size="10" font-weight="bold">IOF</text>
+      <line x1="453" y1="182" x2="510" y2="182" stroke="#9b59b6" stroke-width="1" stroke-dasharray="3,2"/>
+
+      <!-- Annulus of Zinn -->
+      <ellipse cx="455" cy="155" rx="38" ry="30" fill="none" stroke="#2ec4b6" stroke-width="2.5" stroke-dasharray="5,3"/>
+      <text x="380" y="230" fill="#2ec4b6" font-size="11" font-weight="bold">Annulus of Zinn</text>
+      <line x1="455" y1="185" x2="420" y2="228" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="3,2"/>
+
+      <!-- Structures through SOF -->
+      <rect x="540" y="90" width="50" height="14" rx="3" fill="#e67e22" opacity="0.2"/>
+      <text x="565" y="100" text-anchor="middle" fill="#e67e22" font-size="9">CN III, IV, VI</text>
+      <rect x="540" y="106" width="50" height="14" rx="3" fill="#e67e22" opacity="0.15"/>
+      <text x="565" y="116" text-anchor="middle" fill="#e67e22" font-size="9">V1 (Ophthalmic)</text>
+      <rect x="540" y="122" width="50" height="14" rx="3" fill="#e67e22" opacity="0.1"/>
+      <text x="565" y="132" text-anchor="middle" fill="#e67e22" font-size="9">Ophthalmic vein</text>
+
+      <!-- Labels -->
+      <text x="60" y="50" fill="#333" font-size="12" font-weight="bold">Anterior</text>
+      <text x="440" y="50" fill="#333" font-size="12" font-weight="bold">Posterior (Apex)</text>
+
+      <!-- Optic nerve through canal -->
+      <line x1="100" y1="140" x2="450" y2="148" stroke="#ff6b6b" stroke-width="3" stroke-dasharray="6,3"/>
+      <text x="200" y="135" fill="#c0392b" font-size="10">Optic nerve (CN II)</text>
+
+      <!-- Note -->
+      <rect x="10" y="248" width="580" height="24" fill="#fff3e0" rx="4"/>
+      <text x="300" y="262" text-anchor="middle" fill="#e65100" font-size="10">SOF = Superior Orbital Fissure | IOF = Inferior Orbital Fissure | Annulus of Zinn = Common Tendinous Ring</text>
+    </svg>
+  </div>
+
+  <!-- Basic card -->
+  <div class="card fade-in">
+    <div class="level-badge level-basic">🟢 Basic</div>
+    <h3>What is the Orbit?</h3>
+    <p>The <strong>orbit</strong> is a pear-shaped bony cavity in the skull that protects and houses the eyeball, along with its muscles, nerves, blood vessels, and part of the lacrimal (tear) system. Think of it as a bony cone with the apex pointing backward and the base open at the front.</p>
+    <div class="highlight-box">
+      <strong>Worth noting:</strong> The orbit is not just a hole in the skull. Each wall has a different thickness and serves a different purpose. That variation is exactly what makes it clinically relevant.
+    </div>
+  </div>
+
+  <!-- Intermediate card -->
+  <div class="card fade-in">
+    <div class="level-badge level-intermediate">🟡 Intermediate</div>
+    <h3>The 7 Bones of the Orbit</h3>
+    <p style="margin-bottom:14px">The orbit is formed by contributions from <strong>7 bones</strong>, which form its four walls:</p>
+    <table>
+      <thead><tr><th>Wall</th><th>Bones</th><th>Key Feature</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Roof</strong></td><td>Frontal bone + Lesser wing of Sphenoid</td><td>Contains lacrimal gland fossa</td></tr>
+        <tr><td><strong>Medial</strong></td><td>Ethmoid (Lamina Papyracea), Lacrimal, Maxillary, Sphenoid</td><td><strong>Thinnest wall</strong></td></tr>
+        <tr><td><strong>Floor</strong></td><td>Maxillary, Zygomatic, Palatine</td><td>Prone to "blow-out" fractures</td></tr>
+        <tr><td><strong>Lateral</strong></td><td>Zygomatic + Greater wing of Sphenoid</td><td>Strongest wall</td></tr>
+      </tbody>
+    </table>
+    <div class="facts-grid" style="margin-top:16px">
+      <div class="fact-item"><div class="fact-num">7</div><div class="fact-label">Bones in Orbit</div></div>
+      <div class="fact-item"><div class="fact-num">4</div><div class="fact-label">Walls</div></div>
+      <div class="fact-item"><div class="fact-num">40 mL</div><div class="fact-label">Orbital Volume</div></div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <!-- Advanced card -->
+    <div class="card fade-in">
+      <div class="level-badge level-advanced">🔴 Advanced</div>
+      <h3>The Orbital Apex</h3>
+      <p>The apex is the most clinically important region of the orbit. It contains:</p>
+      <ul style="margin-top:10px">
+        <li><strong>Optic Canal:</strong> transmits CN II (optic nerve) and ophthalmic artery</li>
+        <li><strong>Superior Orbital Fissure (SOF):</strong> CN III, IV, VI, V1 (ophthalmic branch of CN V), and superior ophthalmic vein</li>
+        <li><strong>Inferior Orbital Fissure (IOF):</strong> V2 (maxillary nerve), infraorbital vessels</li>
+      </ul>
+      <div class="clinical-pearl">
+        <span class="pearl-icon">💎</span>
+        <p><strong>Orbital Apex Syndrome:</strong> Complete ophthalmoplegia along with optic nerve involvement points to a lesion at the very apex, hitting both the SOF and the optic canal at the same time.</p>
+      </div>
+    </div>
+
+    <div class="card fade-in">
+      <div class="level-badge level-advanced">🔴 Advanced</div>
+      <h3>Annulus of Zinn</h3>
+      <p>The <strong>common tendinous ring</strong> (Annulus of Zinn) is a fibrous ring surrounding the optic canal and part of the SOF. All 4 rectus muscles originate from it, which is why it divides the orbit into two important spaces.</p>
+      <div class="highlight-box">
+        Inside the ring is the <strong>retrobulbar space</strong>. Outside is the <strong>peribulbar space</strong>. This boundary determines which anaesthesia technique you use before eye surgery.
+      </div>
+      <ul style="margin-top:10px">
+        <li><strong>Retrobulbar block:</strong> Needle goes inside the muscle cone. Faster onset, smaller volume, stronger akinesia.</li>
+        <li><strong>Peribulbar block:</strong> Needle stays outside the cone. Safer profile, but you need more volume.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Clinical pearl: Ethmoid sinusitis -->
+  <div class="card fade-in">
+    <div class="level-badge level-intermediate">🟡 Clinical Pearl</div>
+    <h3>Medial Wall: The Lamina Papyracea</h3>
+    <p>The medial wall is formed largely by the <strong>Lamina Papyracea</strong> of the ethmoid bone. The name means "paper plate" and it is quite literal. This is the thinnest wall of the orbit.</p>
+    <div class="two-col" style="margin-top:14px">
+      <div class="clinical-pearl">
+        <span class="pearl-icon">⚠️</span>
+        <p><strong>Ethmoid sinusitis</strong> can quietly erode through this thin plate, spreading infection into the orbit and causing orbital cellulitis. In children, this is the most common reason for proptosis.</p>
+      </div>
+      <div class="clinical-pearl">
+        <span class="pearl-icon">⚠️</span>
+        <p><strong>Blow-out fractures</strong> hit the orbital floor (maxillary bone) most often. The inferior rectus muscle gets trapped in the fracture, and the patient cannot look upward without seeing double.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<footer style="text-align:center;padding:28px;color:#aaa;font-size:0.85rem;border-top:1px solid #e0e0e0;margin-top:20px;">
+  <a href="topic-2.html" style="color:#1a6b8a;text-decoration:none;font-weight:600">Next: Topic 2 — Anatomy of the Eyeball →</a>
+</footer>
+
+<script src="video-player.js"></script>
+<script>
+const slides = [
+  {
+    duration: 20,
+    subtitle: "Welcome to Topic 1: Orbit and its Contents. The orbit is a pear-shaped bony cavity that protects the eyeball and its associated structures.",
+    draw(ctx, W, H, t, e) {
+      // Title slide
+      const cx = W/2, cy = H/2;
+      // Pulsing eye orbit shape
+      const scale = 0.85 + 0.05 * Math.sin(t * Math.PI * 2);
+      ctx.save();
+      ctx.translate(cx, cy - 30);
+      ctx.scale(scale, scale);
+      // Draw pear shape orbit
+      ctx.beginPath();
+      ctx.ellipse(0, 0, 120*e, 100*e, 0, 0, Math.PI*2);
+      ctx.strokeStyle = 'rgba(46,196,182,0.6)';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+      // Inner eye
+      ctx.beginPath();
+      ctx.arc(0, 0, 40*e, 0, Math.PI*2);
+      ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.restore();
+      // Title text
+      ctx.fillStyle = '#2ec4b6';
+      ctx.font = `bold ${Math.max(20, W*0.042)}px Segoe UI`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.globalAlpha = Math.min(1, t*2);
+      ctx.fillText('Orbit and its Contents', cx, H*0.18);
+      ctx.font = `${Math.max(13, W*0.022)}px Segoe UI`;
+      ctx.fillStyle = '#b2c4d4';
+      ctx.fillText('Topic 1 · Anatomy & Physiology', cx, H*0.28);
+      ctx.globalAlpha = 1;
+    }
+  },
+  {
+    duration: 45,
+    subtitle: "The orbit is formed by 7 bones. Remember: Frontal, Zygomatic, Maxillary, Ethmoid, Sphenoid, Lacrimal, and Palatine, forming 4 walls.",
+    draw(ctx, W, H, t, e) {
+      const cx = W/2, cy = H/2;
+      drawTitle(ctx, W, H, 'The 7 Bones of the Orbit', t, H*0.1);
+      // Draw orbit from front
+      const bones = [
+        {name:'FRONTAL', color:'#4a90e2', path: [[0.3,0.2],[0.5,0.12],[0.7,0.2],[0.63,0.33],[0.5,0.35],[0.37,0.33]], label: [0.5, 0.22]},
+        {name:'ZYGOMATIC', color:'#e74c3c', path: [[0.7,0.2],[0.76,0.32],[0.74,0.5],[0.68,0.62],[0.63,0.58],[0.65,0.42],[0.63,0.33]], label: [0.77, 0.42]},
+        {name:'MAXILLARY', color:'#27ae60', path: [[0.37,0.62],[0.5,0.68],[0.63,0.62],[0.63,0.58],[0.5,0.55],[0.37,0.58]], label: [0.5, 0.635]},
+        {name:'ETHMOID', color:'#9b59b6', path: [[0.3,0.2],[0.37,0.33],[0.35,0.45],[0.3,0.5],[0.26,0.4],[0.25,0.28]], label: [0.18, 0.35]},
+        {name:'LACRIMAL', color:'#f39c12', path: [[0.3,0.5],[0.35,0.45],[0.34,0.56],[0.3,0.6],[0.27,0.55]], label: [0.16, 0.52]},
+        {name:'PALATINE', color:'#1abc9c', path: [[0.3,0.6],[0.34,0.56],[0.35,0.62],[0.37,0.66],[0.37,0.62],[0.3,0.6]], label: [0.14, 0.64]},
+      ];
+      bones.forEach((b, i) => {
+        const progress = Math.max(0, Math.min(1, (e - i/bones.length) / (1/bones.length)));
+        if (progress <= 0) return;
+        ctx.save();
+        ctx.globalAlpha = progress;
+        ctx.beginPath();
+        b.path.forEach(([px, py], j) => {
+          const x = px * W, y = py * H;
+          j === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        ctx.closePath();
+        ctx.fillStyle = b.color;
+        ctx.globalAlpha = progress * 0.75;
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        ctx.globalAlpha = progress;
+        ctx.fillStyle = 'white';
+        ctx.font = `bold ${Math.max(9,W*0.016)}px Segoe UI`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(b.name, b.label[0]*W, b.label[1]*H);
+        ctx.restore();
+      });
+      // SPHENOID label
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, e*2);
+      ctx.fillStyle = '#e67e22';
+      ctx.font = `bold ${Math.max(9,W*0.016)}px Segoe UI`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('SPHENOID', W*0.78, H*0.57);
+      ctx.restore();
+    }
+  },
+  {
+    duration: 40,
+    subtitle: "The MEDIAL wall is the thinnest, formed mainly by the Lamina Papyracea of the ethmoid bone. This is clinically important in ethmoid sinusitis spreading to the orbit.",
+    draw(ctx, W, H, t, e) {
+      const cx = W/2;
+      drawTitle(ctx, W, H, 'Orbital Walls & Thickness', t, H*0.1);
+      const walls = [
+        {name:'Roof', bone:'Frontal bone', thick:'3–5 mm', color:'#4a90e2', x:0.5, y:0.22},
+        {name:'Lateral', bone:'Zygomatic + Sphenoid', thick:'~4 mm (Strongest)', color:'#e74c3c', x:0.72, y:0.5},
+        {name:'Floor', bone:'Maxillary + Palatine', thick:'~0.5–1 mm (Thin)', color:'#27ae60', x:0.5, y:0.78},
+        {name:'Medial', bone:'Lamina Papyracea', thick:'0.2–0.4 mm (THINNEST)', color:'#9b59b6', x:0.28, y:0.5},
+      ];
+      // Draw orbit cross-section from top
+      ctx.save();
+      ctx.translate(cx, H*0.5);
+      // Orbit box
+      const ow = W*0.25, oh = H*0.32;
+      walls.forEach((w, i) => {
+        const a = Math.max(0, Math.min(1, (e - i*0.2)*5));
+        if (a<=0) return;
+        ctx.save();
+        ctx.globalAlpha = a;
+        ctx.strokeStyle = w.color;
+        ctx.lineWidth = i===3 ? 3 : 5; // medial thinner visual
+        if (i===0) { ctx.beginPath(); ctx.moveTo(-ow,-oh); ctx.lineTo(ow,-oh); ctx.stroke(); }
+        if (i===1) { ctx.beginPath(); ctx.moveTo(ow,-oh); ctx.lineTo(ow,oh); ctx.stroke(); }
+        if (i===2) { ctx.beginPath(); ctx.moveTo(-ow,oh); ctx.lineTo(ow,oh); ctx.stroke(); }
+        if (i===3) { ctx.beginPath(); ctx.moveTo(-ow,-oh); ctx.lineTo(-ow,oh); ctx.stroke(); ctx.setLineDash([5,5]); ctx.globalAlpha=a*0.5; ctx.stroke(); ctx.setLineDash([]); }
+        ctx.restore();
+      });
+      ctx.restore();
+      // Labels
+      walls.forEach((w, i) => {
+        const a = Math.max(0, Math.min(1, (e - i*0.2)*5));
+        if (a<=0) return;
+        ctx.save();
+        ctx.globalAlpha = a;
+        // Wall label
+        ctx.fillStyle = w.color;
+        ctx.font = `bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(w.name, w.x*W, w.y*H - 12);
+        ctx.fillStyle = '#ccc';
+        ctx.font = `${Math.max(9,W*0.016)}px Segoe UI`;
+        ctx.fillText(w.bone, w.x*W, w.y*H + 6);
+        ctx.fillText(w.thick, w.x*W, w.y*H + 22);
+        ctx.restore();
+      });
+      // Highlight medial wall
+      if (e > 0.7) {
+        ctx.save();
+        ctx.globalAlpha = (e-0.7)/0.3 * 0.3;
+        ctx.fillStyle = '#9b59b6';
+        ctx.fillRect(cx - W*0.25 - 8, H*0.5 - H*0.32, 16, H*0.64);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 45,
+    subtitle: "The Orbital Apex contains the Superior Orbital Fissure, a critical gateway for cranial nerves III, IV, VI, and ophthalmic division of V, plus the optic canal for CN II.",
+    draw(ctx, W, H, t, e) {
+      const cx = W/2, cy = H/2;
+      drawTitle(ctx, W, H, 'Orbital Apex & Superior Orbital Fissure', t, H*0.1);
+      // Draw orbit side view as cone
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, e*3);
+      ctx.beginPath();
+      ctx.moveTo(W*0.1, H*0.25);
+      ctx.lineTo(W*0.82, H*0.42);
+      ctx.lineTo(W*0.82, H*0.72);
+      ctx.lineTo(W*0.1, H*0.85);
+      ctx.closePath();
+      ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.restore();
+      // Optic nerve
+      const nerveProg = Math.min(1, Math.max(0, (e-0.1)*1.2));
+      ctx.save();
+      ctx.globalAlpha = nerveProg;
+      ctx.strokeStyle = '#ff6b6b';
+      ctx.lineWidth = 3;
+      ctx.setLineDash([10, 5]);
+      ctx.beginPath();
+      ctx.moveTo(W*0.15, H*0.55);
+      ctx.lineTo(W*0.15 + (W*0.65)*nerveProg, H*0.55);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.restore();
+      // SOF and optic canal at apex
+      if (e > 0.25) {
+        const a = Math.min(1,(e-0.25)*4);
+        ctx.save();
+        ctx.globalAlpha = a;
+        // SOF
+        ctx.beginPath();
+        ctx.ellipse(W*0.82, H*0.44, 18, 28, Math.PI/6, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(230,126,34,0.3)';
+        ctx.fill();
+        ctx.strokeStyle = '#e67e22';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.fillStyle = '#e67e22';
+        ctx.font = `bold ${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('SOF', W*0.86, H*0.44);
+        // Optic canal
+        ctx.beginPath();
+        ctx.arc(W*0.82, H*0.57, 12, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(255,107,107,0.3)';
+        ctx.fill();
+        ctx.strokeStyle = '#ff6b6b';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.fillStyle = '#ff6b6b';
+        ctx.fillText('Optic Canal', W*0.86, H*0.57);
+        ctx.restore();
+      }
+      // CN labels at SOF
+      if (e > 0.5) {
+        const a = Math.min(1,(e-0.5)*4);
+        const cnList = ['CN III (Oculomotor)', 'CN IV (Trochlear)', 'CN VI (Abducens)', 'V1 (Ophthalmic)', 'Ophthalmic Vein'];
+        cnList.forEach((cn, i) => {
+          ctx.save();
+          ctx.globalAlpha = a * Math.min(1,(e-0.5+i*0.05)*4);
+          ctx.fillStyle = '#e67e22';
+          ctx.font = `${Math.max(9,W*0.016)}px Segoe UI`;
+          ctx.textAlign = 'left';
+          ctx.fillText(cn, W*0.86 + 14, H*0.3 + i * H*0.07);
+          // small arrow
+          ctx.strokeStyle = '#e67e2280';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(W*0.82, H*0.44);
+          ctx.lineTo(W*0.86+12, H*0.3 + i * H*0.07);
+          ctx.stroke();
+          ctx.restore();
+        });
+      }
+      // Label annotations
+      ctx.save();
+      ctx.globalAlpha = Math.min(1, e*4);
+      ctx.fillStyle = '#b2c4d4';
+      ctx.font = `${Math.max(10,W*0.017)}px Segoe UI`;
+      ctx.textAlign = 'left';
+      ctx.fillText('← Anterior', W*0.1, H*0.22);
+      ctx.textAlign = 'right';
+      ctx.fillText('Posterior (Apex) →', W*0.9, H*0.22);
+      ctx.fillStyle = '#ff6b6b';
+      ctx.textAlign = 'center';
+      ctx.fillText('CN II (Optic Nerve)', W*0.42, H*0.5);
+      ctx.restore();
+    }
+  },
+  {
+    duration: 40,
+    subtitle: "The Annulus of Zinn is the common tendinous ring at the apex. All 4 rectus muscles originate here, dividing the orbit into retrobulbar and peribulbar spaces for anesthesia.",
+    draw(ctx, W, H, t, e) {
+      const cx = W/2, cy = H/2;
+      drawTitle(ctx, W, H, 'Annulus of Zinn & Muscle Cone', t, H*0.1);
+      // Draw muscle cone
+      const coneAlpha = Math.min(1, e*3);
+      ctx.save();
+      ctx.globalAlpha = coneAlpha;
+      // Cone outline
+      const muscles = [
+        {name:'Superior Rectus', angle: -Math.PI/2, color:'#4a90e2'},
+        {name:'Inferior Rectus', angle: Math.PI/2, color:'#27ae60'},
+        {name:'Medial Rectus', angle: Math.PI, color:'#9b59b6'},
+        {name:'Lateral Rectus', angle: 0, color:'#e74c3c'},
+      ];
+      const apexX = W*0.75, apexY = cy;
+      const frontX = W*0.2, frontY = cy;
+      muscles.forEach(m => {
+        const dx = Math.cos(m.angle) * H*0.2;
+        const dy = Math.sin(m.angle) * H*0.2;
+        ctx.strokeStyle = m.color;
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(apexX, apexY);
+        ctx.lineTo(frontX + dx, frontY + dy);
+        ctx.stroke();
+        // label at front
+        ctx.fillStyle = m.color;
+        ctx.font = `${Math.max(9,W*0.015)}px Segoe UI`;
+        ctx.textAlign = m.angle === 0 ? 'left' : m.angle === Math.PI ? 'right' : 'center';
+        ctx.fillText(m.name, frontX + dx*1.3, frontY + dy*1.3);
+      });
+      ctx.restore();
+      // Annulus
+      if (e > 0.3) {
+        const a = Math.min(1,(e-0.3)*4);
+        ctx.save();
+        ctx.globalAlpha = a;
+        ctx.beginPath();
+        ctx.arc(apexX, apexY, H*0.14, 0, Math.PI*2);
+        ctx.strokeStyle = '#2ec4b6';
+        ctx.lineWidth = 4;
+        ctx.stroke();
+        ctx.fillStyle = '#2ec4b6';
+        ctx.font = `bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign = 'center';
+        ctx.fillText('Annulus of Zinn', apexX, apexY + H*0.22);
+        ctx.restore();
+      }
+      // Peribulbar vs retrobulbar zones
+      if (e > 0.55) {
+        const a = Math.min(1,(e-0.55)*5);
+        ctx.save();
+        ctx.globalAlpha = a * 0.2;
+        // Retrobulbar (inside cone)
+        ctx.beginPath();
+        ctx.moveTo(apexX, apexY);
+        ctx.lineTo(frontX + H*0.2, frontY);
+        ctx.lineTo(frontX + H*0.05, frontY + H*0.2);
+        ctx.lineTo(frontX + H*0.05, frontY - H*0.2);
+        ctx.closePath();
+        ctx.fillStyle = '#2ec4b6';
+        ctx.fill();
+        ctx.globalAlpha = a;
+        ctx.fillStyle = '#2ec4b6';
+        ctx.font = `bold ${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.textAlign = 'center';
+        ctx.fillText('RETROBULBAR', cx + W*0.07, cy);
+        ctx.restore();
+        // Peribulbar label outside
+        ctx.save();
+        ctx.globalAlpha = a;
+        ctx.fillStyle = '#f39c12';
+        ctx.font = `bold ${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.textAlign = 'center';
+        ctx.fillText('PERIBULBAR', frontX + W*0.04, frontY - H*0.32);
+        ctx.fillStyle = '#aaa';
+        ctx.font = `${Math.max(9,W*0.015)}px Segoe UI`;
+        ctx.fillText('(outside muscle cone)', frontX + W*0.04, frontY - H*0.27);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 40,
+    subtitle: "Clinical pearls: Ethmoid sinusitis, leading to orbital cellulitis. Blow-out fractures involve the floor. Orbital apex syndrome means total ophthalmoplegia + optic nerve dysfunction.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx, W, H, 'Clinical Pearls', t, H*0.1);
+      const pearls = [
+        {
+          icon: '⚠️',
+          title: 'Ethmoid Sinusitis',
+          text: 'Erodes lamina papyracea → Orbital cellulitis (most common proptosis cause in children)',
+          color: '#e74c3c',
+          y: 0.28,
+        },
+        {
+          icon: '💥',
+          title: 'Blow-out Fracture',
+          text: 'Floor fracture traps inferior rectus → Diplopia on upward gaze',
+          color: '#e67e22',
+          y: 0.50,
+        },
+        {
+          icon: '🔴',
+          title: 'Orbital Apex Syndrome',
+          text: 'CN III+IV+VI palsy + optic nerve involvement = apex lesion (Optic canal + SOF)',
+          color: '#9b59b6',
+          y: 0.72,
+        },
+      ];
+      pearls.forEach((p, i) => {
+        const a = Math.max(0, Math.min(1, (e - i*0.28)*4));
+        if (a <= 0) return;
+        const y = p.y * H;
+        ctx.save();
+        ctx.globalAlpha = a;
+        // Card background
+        const grd = ctx.createLinearGradient(W*0.08, 0, W*0.92, 0);
+        grd.addColorStop(0, 'rgba(255,255,255,0.05)');
+        grd.addColorStop(1, 'rgba(255,255,255,0.02)');
+        ctx.fillStyle = grd;
+        ctx.beginPath();
+        ctx.roundRect(W*0.08, y - H*0.08, W*0.84, H*0.16, 10);
+        ctx.fill();
+        ctx.strokeStyle = p.color + '66';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        // Left accent bar
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.roundRect(W*0.08, y - H*0.08, 4, H*0.16, [0, 10, 10, 0]);
+        ctx.fill();
+        // Icon
+        ctx.font = `${Math.max(20, H*0.05)}px serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(p.icon, W*0.16, y);
+        // Title
+        ctx.fillStyle = p.color;
+        ctx.font = `bold ${Math.max(12, W*0.022)}px Segoe UI`;
+        ctx.textAlign = 'left';
+        ctx.fillText(p.title, W*0.23, y - H*0.025);
+        // Text
+        ctx.fillStyle = '#ccc';
+        ctx.font = `${Math.max(10, W*0.018)}px Segoe UI`;
+        ctx.fillText(p.text, W*0.23, y + H*0.025);
+        ctx.restore();
+      });
+    }
+  },
+];
+
+const player = new VideoPlayer('vidCanvas', slides);
+
+// Click on progress bar to seek
+document.getElementById('progressWrap').addEventListener('click', function(e) {
+  const rect = this.getBoundingClientRect();
+  const pct = (e.clientX - rect.left) / rect.width;
+  const targetTime = pct * player.totalDuration;
+  let acc = 0;
+  for (let i = 0; i < player.slides.length; i++) {
+    acc += player.slides[i].duration;
+    if (acc >= targetTime) {
+      player.seekToSlide(i);
+      break;
+    }
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 5: Anatomy of Uvea — Anatomy & Physiology</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="logo">👁 OphthoLearn</a>
+  <a href="index.html" class="back-btn">← Back to Topics</a>
+</nav>
+
+<div class="hero">
+  <div class="topic-badge">Topic 5 · Anatomy</div>
+  <h1>Detailed Anatomy of the Uvea</h1>
+  <p>Iris, ciliary body (pars plicata &amp; pars plana), choroid, and the blood-aqueous barrier</p>
+</div>
+
+<div class="video-section">
+<div class="container">
+  <div class="video-player">
+    <div class="video-canvas-wrap" style="aspect-ratio:16/9"><canvas id="vidCanvas"></canvas></div>
+    <div class="chapter-pills">
+      <span class="chapter-pill active" onclick="player.seekToSlide(0)">Uvea Overview</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(1)">Iris</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(2)">Ciliary Body</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(3)">Pars Plicata/Plana</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(4)">Choroid</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(5)">Blood-Aqueous Barrier</span>
+    </div>
+    <div class="video-controls">
+      <button class="vid-btn" id="restartBtn" onclick="player.restart()">⏮</button>
+      <button class="vid-btn" id="playPauseBtn" onclick="player.toggle()">▶</button>
+      <div class="progress-wrap" id="progressWrap">
+        <div class="progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+      <span class="vid-time" id="vidTime">0:00 / 0:00</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="article-section">
+<div class="container">
+
+  <div class="section-heading">
+    <div class="icon">🌿</div>
+    <h2>Detailed Anatomy of the Uvea</h2>
+  </div>
+
+  <div class="diagram-wrap">
+    <h3>The Uveal Tract — Three Components</h3>
+    <svg viewBox="0 0 680 380" width="680" height="380">
+      <rect width="680" height="380" fill="#0a0e1a" rx="10"/>
+
+      <!-- Eyeball cross-section background -->
+      <ellipse cx="280" cy="195" rx="155" ry="148" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+      <!-- CHOROID - posterior bowl -->
+      <path d="M145,120 A155,148 0 0,1 145,270" fill="none" stroke="#c0392b" stroke-width="14" opacity="0.7"/>
+      <path d="M200,75 A155,148 0 0,1 200,315" fill="none" stroke="#c0392b" stroke-width="10" opacity="0.5"/>
+
+      <!-- CILIARY BODY - anterior equator zone -->
+      <path d="M135,155 Q130,195 135,235" fill="none" stroke="#e67e22" stroke-width="18" stroke-linecap="round" opacity="0.8"/>
+      <!-- Ciliary processes (pars plicata) -->
+      <g fill="none" stroke="#e67e22" stroke-width="2" opacity="0.7">
+        <line x1="135" y1="162" x2="120" y2="155"/>
+        <line x1="135" y1="170" x2="118" y2="167"/>
+        <line x1="135" y1="178" x2="117" y2="178"/>
+        <line x1="135" y1="186" x2="118" y2="189"/>
+        <line x1="135" y1="195" x2="117" y2="200"/>
+        <line x1="135" y1="204" x2="118" y2="211"/>
+        <line x1="135" y1="212" x2="120" y2="221"/>
+        <line x1="135" y1="220" x2="122" y2="231"/>
+        <line x1="135" y1="228" x2="126" y2="240"/>
+      </g>
+
+      <!-- Pars plana zone -->
+      <path d="M136,148 Q133,160 133,168" fill="none" stroke="#f39c12" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+      <path d="M136,222 Q133,232 133,240" fill="none" stroke="#f39c12" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- IRIS -->
+      <line x1="158" y1="158" x2="158" y2="232" stroke="#4a90e2" stroke-width="8" opacity="0.7"/>
+      <!-- Pupil -->
+      <rect x="155" y="175" width="6" height="40" fill="#000" rx="2"/>
+
+      <!-- Lens -->
+      <ellipse cx="200" cy="195" rx="22" ry="36" fill="rgba(255,255,200,0.25)" stroke="rgba(255,255,150,0.5)" stroke-width="1.5"/>
+
+      <!-- Vitreous -->
+      <ellipse cx="295" cy="195" rx="100" ry="98" fill="rgba(150,200,255,0.06)"/>
+
+      <!-- Zonules -->
+      <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+        <line x1="158" y1="162" x2="185" y2="172"/>
+        <line x1="158" y1="170" x2="183" y2="180"/>
+        <line x1="158" y1="228" x2="183" y2="215"/>
+        <line x1="158" y1="220" x2="185" y2="210"/>
+      </g>
+
+      <!-- Labels -->
+      <line x1="155" y1="195" x2="55" y2="140" stroke="#4a90e2" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="48" y="132" fill="#4a90e2" font-size="12" font-weight="bold" text-anchor="middle">IRIS</text>
+      <text x="48" y="145" fill="#aaa" font-size="10" text-anchor="middle">Regulates light</text>
+
+      <line x1="131" y1="195" x2="55" y2="195" stroke="#e67e22" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="48" y="188" fill="#e67e22" font-size="10" font-weight="bold" text-anchor="middle">Ciliary</text>
+      <text x="48" y="200" fill="#e67e22" font-size="10" font-weight="bold" text-anchor="middle">Body</text>
+
+      <line x1="200" y1="86" x2="280" y2="60" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="340" y="52" fill="#c0392b" font-size="12" font-weight="bold" text-anchor="middle">CHOROID</text>
+      <text x="340" y="65" fill="#aaa" font-size="10" text-anchor="middle">Nourishes outer retina</text>
+
+      <!-- Pars plicata label -->
+      <text x="70" y="228" fill="#e67e22" font-size="9" text-anchor="middle">Pars Plicata</text>
+      <text x="70" y="238" fill="#aaa" font-size="8" text-anchor="middle">(anterior)</text>
+
+      <!-- Pars plana label -->
+      <text x="55" y="258" fill="#f39c12" font-size="9" text-anchor="middle">Pars Plana</text>
+      <text x="55" y="268" fill="#aaa" font-size="8" text-anchor="middle">(surgical entry)</text>
+
+      <!-- UVEA label -->
+      <rect x="450" y="100" width="200" height="180" fill="rgba(255,255,255,0.04)" rx="8"/>
+      <text x="550" y="122" fill="white" font-size="13" font-weight="bold" text-anchor="middle">UVEA = 3 Parts</text>
+      <circle cx="465" cy="150" r="5" fill="#4a90e2"/>
+      <text x="475" y="154" fill="#4a90e2" font-size="11" font-weight="bold">Iris</text>
+      <text x="475" y="166" fill="#aaa" font-size="10">Controls pupil (light)</text>
+      <circle cx="465" cy="186" r="5" fill="#e67e22"/>
+      <text x="475" y="190" fill="#e67e22" font-size="11" font-weight="bold">Ciliary Body</text>
+      <text x="475" y="202" fill="#aaa" font-size="10">Aqueous + Accommodation</text>
+      <circle cx="465" cy="222" r="5" fill="#c0392b"/>
+      <text x="475" y="226" fill="#c0392b" font-size="11" font-weight="bold">Choroid</text>
+      <text x="475" y="238" fill="#aaa" font-size="10">Blood supply to retina</text>
+
+      <!-- Note -->
+      <rect x="20" y="338" width="640" height="30" fill="rgba(255,255,255,0.04)" rx="4"/>
+      <text x="340" y="356" fill="#2ec4b6" font-size="10" text-anchor="middle">Blood-Aqueous Barrier = Non-pigmented epithelium of ciliary processes | Blood-Retinal Barrier (outer) = RPE</text>
+    </svg>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-basic">🟢 Basic</div>
+    <h3>The Uvea — Middle Vascular Tunic</h3>
+    <p>The uvea gets its name from the Latin word for grape ("uva"), a nod to its dark, grape-like look when removed from the eye. It is the middle, richly pigmented and vascular layer, made up of three continuous structures running from front to back: <strong>Iris, Ciliary Body, and Choroid</strong>.</p>
+  </div>
+
+  <div class="two-col">
+    <div class="card fade-in">
+      <div class="level-badge level-intermediate">🟡 Intermediate</div>
+      <h3>Iris</h3>
+      <p>The iris is a pigmented disc with a central opening called the <strong>pupil</strong>. By changing the pupil size, the iris controls how much light enters the eye.</p>
+      <ul style="margin-top:10px">
+        <li><strong>Sphincter pupillae:</strong> constricts pupil (parasympathetic, CN III)</li>
+        <li><strong>Dilator pupillae:</strong> dilates pupil (sympathetic, superior cervical ganglion)</li>
+        <li><strong>Stroma:</strong> loose collagenous tissue with melanocytes (determines eye color)</li>
+        <li><strong>Iris pigment epithelium (IPE):</strong> two layers on the back</li>
+      </ul>
+      <div class="clinical-pearl">
+        <span class="pearl-icon">💎</span>
+        <p><strong>Horner's Syndrome:</strong> Cut the sympathetic supply and the dilator pupillae loses its input. You get a small pupil (miosis), drooping of the upper lid (ptosis), and absent sweating on the same side (anhidrosis).</p>
+      </div>
+    </div>
+    <div class="card fade-in">
+      <div class="level-badge level-intermediate">🟡 Intermediate</div>
+      <h3>Choroid</h3>
+      <p>The choroid is the highly vascular layer between the retina and sclera. It is the <strong>richest blood supply</strong> in the body per unit weight.</p>
+      <ul style="margin-top:10px">
+        <li>Provides nutrition to the <strong>outer 2/3 of the retina</strong> (RPE + photoreceptors)</li>
+        <li>Contains choriocapillaris (dense capillary layer)</li>
+        <li>Contains melanocytes (absorbs stray light)</li>
+        <li>Bruch's membrane separates choroid from RPE</li>
+      </ul>
+      <div class="clinical-pearl">
+        <span class="pearl-icon">💎</span>
+        <p><strong>ARMD:</strong> Drusen build up in Bruch's membrane, the RPE starts to fail, and photoreceptors lose their support. In wet ARMD, new abnormal vessels grow through Bruch's membrane into the subretinal space, leaking fluid and causing rapid central vision loss.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-advanced">🔴 Advanced</div>
+    <h3>Ciliary Body: Pars Plicata vs Pars Plana</h3>
+    <p>The ciliary body is divided into two zones:</p>
+    <table style="margin-top:12px">
+      <thead><tr><th>Zone</th><th>Location</th><th>Function</th><th>Surgical Relevance</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Pars Plicata</strong></td>
+          <td>Anterior (first ~2mm)</td>
+          <td>Contains 70–80 ciliary processes that produce <strong>aqueous humor</strong>. Contains ciliary muscle for <strong>accommodation</strong>.</td>
+          <td>⚠️ Avoid — vascular, important structures</td>
+        </tr>
+        <tr>
+          <td><strong>Pars Plana</strong></td>
+          <td>Posterior (~4mm wide)</td>
+          <td>Relatively flat, no processes, minimal function</td>
+          <td>✅ <strong>Safe surgical entry</strong> for vitrectomy, intravitreal injections, needle drainage</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="highlight-box" style="margin-top:14px">
+      <strong>Pars plana vitrectomy (PPV):</strong> The standard approach for vitreoretinal surgery. The trocar goes in 3.5 to 4mm behind the limbus through the pars plana, staying well clear of the lens and ciliary processes.
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-advanced">🔴 Advanced</div>
+    <h3>Blood-Aqueous Barrier</h3>
+    <p>The aqueous humor in the anterior chamber must remain clear. This is maintained by the <strong>Blood-Aqueous Barrier</strong>:</p>
+    <div class="two-col" style="margin-top:12px">
+      <div>
+        <strong>Posterior Blood-Aqueous Barrier:</strong>
+        <ul>
+          <li>Formed by <strong>non-pigmented epithelium</strong> of ciliary processes</li>
+          <li>Tight junctions between cells</li>
+          <li>Selectively allows aqueous production</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Anterior Blood-Aqueous Barrier:</strong>
+        <ul>
+          <li>Formed by tight junctions of <strong>iris capillary endothelium</strong></li>
+          <li>Prevents plasma proteins from entering anterior chamber</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clinical-pearl" style="margin-top:12px">
+      <span class="pearl-icon">💎</span>
+      <p>When <strong>uveitis</strong> strikes, those tight junctions break down and proteins and white cells pour into the anterior chamber. On slit-lamp you see the characteristic AC flare and cells, which are the defining signs of anterior uveitis.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<footer style="text-align:center;padding:28px;color:#aaa;font-size:0.85rem;border-top:1px solid #e0e0e0;margin-top:20px;">
+  <a href="topic-4.html" style="color:#636e72;text-decoration:none">← Topic 4</a>
+  &nbsp;·&nbsp;
+  <a href="topic-6.html" style="color:#1a6b8a;text-decoration:none;font-weight:600">Next: Topic 6 — Retina →</a>
+</footer>
+
+<script src="video-player.js"></script>
+<script>
+const slides = [
+  {
+    duration: 18,
+    subtitle: "Topic 5: The Uvea is the middle vascular tunic, Iris, Ciliary Body, and Choroid. It is richly pigmented and vascular, providing nutrition and regulating eye function.",
+    draw(ctx, W, H, t, e) {
+      const cx=W/2,cy=H*0.5;
+      // Three rotating rings
+      [[80,'#4a90e2','IRIS'],[120,'#e67e22','CILIARY BODY'],[160,'#c0392b','CHOROID']].forEach(([r,col,name],i)=>{
+        const a=Math.max(0,Math.min(1,(e-i*0.25)*4));
+        if(a<=0) return;
+        ctx.save();ctx.globalAlpha=a*0.7;
+        ctx.beginPath();ctx.arc(cx,cy,r*e,0,Math.PI*2);
+        ctx.strokeStyle=col;ctx.lineWidth=i===0?8:i===1?14:20;
+        ctx.stroke();
+        ctx.globalAlpha=a;
+        ctx.fillStyle=col;ctx.font=`bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText(name,cx,cy-r*e-16);
+        ctx.restore();
+      });
+      drawTitle(ctx,W,H,'The UVEA — Middle Vascular Tunic',t,H*0.12);
+    }
+  },
+  {
+    duration: 42,
+    subtitle: "The Iris controls pupil size through two muscles: sphincter pupillae (constricts, parasympathetic) and dilator pupillae (dilates, sympathetic).",
+    draw(ctx, W, H, t, e) {
+      const cx=W/2,cy=H*0.52;
+      drawTitle(ctx,W,H,'Iris — Pupillary Control',t,H*0.1);
+      const pupilR = 20 + 30*(1-e);
+      // Iris
+      ctx.save();
+      ctx.globalAlpha=Math.min(1,e*3);
+      // Iris disc
+      ctx.beginPath();ctx.arc(cx,cy,90,0,Math.PI*2);
+      ctx.fillStyle='#4a3728';ctx.fill();
+      // Pupil (animated size)
+      ctx.beginPath();ctx.arc(cx,cy,pupilR,0,Math.PI*2);
+      ctx.fillStyle='#000';ctx.fill();
+      // Iris pattern lines
+      ctx.strokeStyle='rgba(100,80,60,0.6)';ctx.lineWidth=1;
+      for(let ang=0;ang<Math.PI*2;ang+=0.2){
+        ctx.beginPath();
+        ctx.moveTo(cx+pupilR*Math.cos(ang),cy+pupilR*Math.sin(ang));
+        ctx.lineTo(cx+88*Math.cos(ang),cy+88*Math.sin(ang));
+        ctx.stroke();
+      }
+      ctx.restore();
+      // Labels
+      if(e>0.3){
+        const a=Math.min(1,(e-0.3)*4);
+        ctx.save();ctx.globalAlpha=a;
+        // Sphincter
+        ctx.beginPath();ctx.arc(cx,cy,pupilR+12,0,Math.PI*2);
+        ctx.strokeStyle='#2ec4b6';ctx.lineWidth=3;ctx.setLineDash([5,5]);ctx.stroke();ctx.setLineDash([]);
+        ctx.fillStyle='#2ec4b6';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText('Sphincter pupillae',cx+95,cy-10);
+        ctx.fillStyle='#aaa';ctx.font=`${Math.max(9,W*0.016)}px Segoe UI`;
+        ctx.fillText('Parasympathetic (CN III)',cx+95,cy+8);
+        ctx.fillText('→ Constriction (miosis)',cx+95,cy+24);
+        // Dilator
+        ctx.strokeStyle='#e67e22';ctx.lineWidth=2;ctx.setLineDash([3,8]);
+        ctx.beginPath();ctx.arc(cx,cy,70,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);
+        ctx.fillStyle='#e67e22';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='right';ctx.fillText('Dilator pupillae',cx-95,cy-10);
+        ctx.fillStyle='#aaa';ctx.font=`${Math.max(9,W*0.016)}px Segoe UI`;
+        ctx.fillText('Sympathetic (T1)',cx-95,cy+8);
+        ctx.fillText('→ Dilation (mydriasis)',cx-95,cy+24);
+        // Pupil size label
+        ctx.fillStyle='white';ctx.font=`${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText(`Pupil = ${Math.round(pupilR*0.4)}mm`,cx,cy+pupilR+20);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 45,
+    subtitle: "The Ciliary body produces aqueous humor and controls accommodation. Its muscle contracts to relax the zonules, allowing the lens to become more convex for near vision.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Ciliary Body — Two Functions',t,H*0.1);
+      const cx=W/2,cy=H*0.5;
+      // Function 1: Aqueous production
+      if(e<0.55){
+        const a=Math.min(1,e*4);
+        ctx.save();ctx.globalAlpha=a;
+        // Ciliary process
+        ctx.beginPath();
+        ctx.moveTo(W*0.2,H*0.4);
+        ctx.lineTo(W*0.15,H*0.35);ctx.lineTo(W*0.22,H*0.38);
+        ctx.lineTo(W*0.17,H*0.45);ctx.lineTo(W*0.23,H*0.43);
+        ctx.lineTo(W*0.18,H*0.52);ctx.lineTo(W*0.24,H*0.5);
+        ctx.strokeStyle='#e67e22';ctx.lineWidth=8;ctx.lineCap='round';ctx.stroke();
+        ctx.fillStyle='#e67e22';ctx.font=`bold ${Math.max(13,W*0.023)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('Ciliary Process',W*0.2,H*0.28);
+        ctx.fillText('(Pars Plicata)',W*0.2,H*0.32);
+        // Aqueous droplets
+        for(let i=0;i<8;i++){
+          const drop_t=(e*3+i*0.4)%1;
+          const dx=W*0.22 + drop_t*W*0.3;
+          const dy=H*0.45;
+          ctx.beginPath();ctx.arc(dx,dy,5,0,Math.PI*2);
+          ctx.fillStyle=`rgba(100,200,255,${0.8-drop_t*0.6})`;
+          ctx.fill();
+        }
+        ctx.fillStyle='#4a90e2';ctx.font=`bold ${Math.max(12,W*0.022)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('AQUEOUS HUMOR →',W*0.55,H*0.45);
+        ctx.fillText('(2μL/min)',W*0.55,H*0.52);
+        ctx.restore();
+      }
+      // Function 2: Accommodation
+      if(e>0.45){
+        const a=Math.min(1,(e-0.45)*4);
+        const lensConv=(e-0.45)*0.5;
+        ctx.save();ctx.globalAlpha=a;
+        const lx=cx,ly=cy;
+        // Lens
+        ctx.beginPath();
+        ctx.ellipse(lx,ly,20+lensConv*20,35+lensConv*15,0,0,Math.PI*2);
+        ctx.fillStyle='rgba(255,255,200,0.3)';ctx.fill();
+        ctx.strokeStyle='rgba(255,255,150,0.7)';ctx.lineWidth=2;ctx.stroke();
+        // Zonules (relaxed)
+        ctx.strokeStyle='rgba(255,255,255,0.4)';ctx.lineWidth=1.5;
+        for(let ang=-0.4;ang<=0.4;ang+=0.1){
+          ctx.beginPath();
+          ctx.moveTo(lx+45*Math.cos(ang),ly+45*Math.sin(ang));
+          ctx.lineTo(lx+(23+lensConv*22)*Math.cos(ang),ly+(36+lensConv*16)*Math.sin(ang));
+          ctx.stroke();
+        }
+        ctx.fillStyle='#2ec4b6';ctx.font=`bold ${Math.max(12,W*0.022)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText(lensConv>0.15?'Accommodation (Near)':'Relaxed (Far)',cx,H*0.82);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 45,
+    subtitle: "Pars Plicata is the anterior folded part with ciliary processes. Pars Plana is the posterior flat part, used as the safe surgical entry site for vitrectomy and intravitreal injections.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Pars Plicata vs Pars Plana',t,H*0.1);
+      const cx=W/2;
+      // Two zones side by side
+      const zones = [
+        {
+          name:'PARS PLICATA',
+          sub:'Anterior (~2mm)',
+          color:'#e67e22',
+          items:['Contains ciliary processes','Produces aqueous humor','Controls accommodation','⚠️ Surgical: AVOID'],
+          x:W*0.22,
+        },
+        {
+          name:'PARS PLANA',
+          sub:'Posterior (~4mm)',
+          color:'#2ec4b6',
+          items:['Flat, avascular','No ciliary processes','✅ SAFE surgical entry','Used for vitrectomy & injections'],
+          x:W*0.72,
+        }
+      ];
+      zones.forEach((z,i)=>{
+        const a=Math.max(0,Math.min(1,(e-i*0.35)*4));
+        if(a<=0) return;
+        ctx.save();ctx.globalAlpha=a;
+        // Card
+        ctx.fillStyle='rgba(255,255,255,0.04)';
+        ctx.beginPath();ctx.roundRect(z.x-W*0.2,H*0.18,W*0.4,H*0.68,10);ctx.fill();
+        ctx.strokeStyle=z.color+'66';ctx.lineWidth=2;ctx.stroke();
+        ctx.fillStyle=z.color;
+        ctx.font=`bold ${Math.max(14,W*0.025)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText(z.name,z.x,H*0.28);
+        ctx.fillStyle='#aaa';ctx.font=`${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.fillText(z.sub,z.x,H*0.34);
+        z.items.forEach((item,j)=>{
+          ctx.fillStyle='#ddd';
+          ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+          ctx.fillText(item,z.x,H*0.44+j*H*0.1);
+        });
+        ctx.restore();
+      });
+      // Dividing line
+      if(e>0.3){
+        const a=Math.min(1,(e-0.3)*5);
+        ctx.save();ctx.globalAlpha=a*0.3;
+        ctx.strokeStyle='#888';ctx.lineWidth=1;ctx.setLineDash([5,5]);
+        ctx.beginPath();ctx.moveTo(cx,H*0.18);ctx.lineTo(cx,H*0.86);ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.restore();
+      }
+      // Surgical note
+      if(e>0.7){
+        const a=Math.min(1,(e-0.7)*5);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#2ec4b6';ctx.font=`bold ${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText('Trocar insertion: 3.5–4mm posterior to limbus = Pars Plana',cx,H*0.91);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 40,
+    subtitle: "The Choroid is the most vascular layer in the body per unit weight. It nourishes the outer retina through the choriocapillaris and is separated from the RPE by Bruch's membrane.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Choroid — Vascular Supply',t,H*0.1);
+      const cx=W/2,cy=H*0.52;
+      // Layers
+      const layers=[
+        {name:'RPE',color:'#f39c12',thick:0.035,y:0.2},
+        {name:"Bruch's Membrane",color:'#aaa',thick:0.02,y:0.235},
+        {name:'Choriocapillaris',color:'#e74c3c',thick:0.06,y:0.255},
+        {name:'Stroma (choroid)',color:'#c0392b',thick:0.14,y:0.315},
+        {name:'Suprachoroidal Space',color:'#555',thick:0.025,y:0.455},
+        {name:'Sclera',color:'#e8e0d0',thick:0.06,y:0.48},
+      ];
+      let yy=H*0.2;
+      layers.forEach((l,i)=>{
+        const a=Math.max(0,Math.min(1,(e-i*0.15)*5));
+        if(a<=0){yy+=l.thick*H;return;}
+        const lh=l.thick*H;
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle=l.color+'33';
+        ctx.strokeStyle=l.color;ctx.lineWidth=1.5;
+        ctx.beginPath();ctx.roundRect(W*0.1,yy,W*0.5,lh-2,3);
+        ctx.fill();ctx.stroke();
+        ctx.fillStyle=l.color;ctx.font=`bold ${Math.max(9,Math.min(12,lh*0.7))}px Segoe UI`;
+        ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText(l.name,W*0.35,yy+lh/2);
+        ctx.restore();
+        yy+=lh;
+      });
+      // Blood vessel network animation
+      if(e>0.4){
+        const a=Math.min(1,(e-0.4)*4);
+        ctx.save();ctx.globalAlpha=a*0.7;
+        const bvY=H*0.315+H*0.07;
+        for(let i=0;i<6;i++){
+          const bvX=W*0.65+i*W*0.04;
+          ctx.beginPath();
+          ctx.arc(bvX,bvY,H*0.025,0,Math.PI*2);
+          ctx.fillStyle='#c0392b33';ctx.fill();
+          ctx.strokeStyle='#c0392b';ctx.lineWidth=2;ctx.stroke();
+        }
+        ctx.fillStyle='#c0392b';ctx.font=`bold ${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText('Blood vessels',W*0.64,bvY-H*0.06);
+        ctx.fillText('(Haller & Sattler layers)',W*0.64,bvY-H*0.04);
+        ctx.restore();
+      }
+      // ARMD note
+      if(e>0.75){
+        const a=Math.min(1,(e-0.75)*5);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#e74c3c';ctx.font=`bold ${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText("ARMD: Drusen in Bruch's → CNV grows through → Wet ARMD",cx,H*0.9);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 42,
+    subtitle: "The Blood-Aqueous Barrier is formed by tight junctions of the non-pigmented ciliary epithelium. Uveitis breaks this barrier, causing protein flare and cells in the anterior chamber.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Blood-Aqueous Barrier',t,H*0.1);
+      const cx=W/2;
+      // Blood side
+      ctx.save();
+      ctx.globalAlpha=Math.min(1,e*3);
+      ctx.fillStyle='rgba(231,76,60,0.1)';
+      ctx.beginPath();ctx.roundRect(W*0.05,H*0.2,W*0.35,H*0.6,8);ctx.fill();
+      ctx.strokeStyle='#e74c3c55';ctx.lineWidth=1.5;ctx.stroke();
+      ctx.fillStyle='#e74c3c';ctx.font=`bold ${Math.max(13,W*0.024)}px Segoe UI`;
+      ctx.textAlign='center';ctx.fillText('BLOOD',W*0.225,H*0.3);
+      ctx.fillStyle='#aaa';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+      ctx.fillText('Plasma proteins',W*0.225,H*0.42);
+      ctx.fillText('Cells',W*0.225,H*0.48);
+      ctx.fillText('Ions',W*0.225,H*0.54);
+      ctx.restore();
+      // Aqueous side
+      ctx.save();
+      ctx.globalAlpha=Math.min(1,e*3);
+      ctx.fillStyle='rgba(74,144,226,0.1)';
+      ctx.beginPath();ctx.roundRect(W*0.6,H*0.2,W*0.35,H*0.6,8);ctx.fill();
+      ctx.strokeStyle='#4a90e255';ctx.lineWidth=1.5;ctx.stroke();
+      ctx.fillStyle='#4a90e2';ctx.font=`bold ${Math.max(13,W*0.024)}px Segoe UI`;
+      ctx.textAlign='center';ctx.fillText('AQUEOUS',W*0.775,H*0.3);
+      ctx.fillStyle='#aaa';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+      ctx.fillText('Clear fluid',W*0.775,H*0.42);
+      ctx.fillText('Glucose, O₂',W*0.775,H*0.48);
+      ctx.fillText('Ascorbate',W*0.775,H*0.54);
+      ctx.restore();
+      // Barrier wall
+      if(e>0.25){
+        const a=Math.min(1,(e-0.25)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='rgba(46,196,182,0.15)';
+        ctx.strokeStyle='#2ec4b6';ctx.lineWidth=3;
+        ctx.beginPath();ctx.roundRect(W*0.42,H*0.25,W*0.16,H*0.5,6);
+        ctx.fill();ctx.stroke();
+        ctx.fillStyle='#2ec4b6';ctx.font=`bold ${Math.max(10,W*0.017)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText('BARRIER',cx,H*0.38);
+        ctx.fillStyle='#aaa';ctx.font=`${Math.max(9,W*0.015)}px Segoe UI`;
+        ctx.fillText('Non-pig.',cx,H*0.46);
+        ctx.fillText('ciliary',cx,H*0.50);
+        ctx.fillText('epithelium',cx,H*0.54);
+        // Block arrows for large molecules
+        ctx.fillStyle='#e74c3c';ctx.font=`${Math.max(16,W*0.03)}px serif`;
+        ctx.fillText('🚫',cx-8,H*0.65);
+        ctx.restore();
+      }
+      // Uveitis note
+      if(e>0.65){
+        const a=Math.min(1,(e-0.65)*5);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#f39c12';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText('Uveitis → Barrier breaks → AC flare + cells',cx,H*0.88);
+        ctx.restore();
+      }
+    }
+  },
+];
+const player = new VideoPlayer('vidCanvas', slides);
+document.getElementById('progressWrap').addEventListener('click', function(e) {
+  const rect = this.getBoundingClientRect();
+  const pct = (e.clientX - rect.left) / rect.width;
+  const targetTime = pct * player.totalDuration;
+  let acc = 0;
+  for (let i = 0; i < player.slides.length; i++) {
+    acc += player.slides[i].duration;
+    if (acc >= targetTime) { player.seekToSlide(i); break; }
+  }
+});
+</script>
+</body>
+</html>

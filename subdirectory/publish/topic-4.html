@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic 4: Anatomy of Sclera — Anatomy & Physiology</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="index.html" class="logo">👁 OphthoLearn</a>
+  <a href="index.html" class="back-btn">← Back to Topics</a>
+</nav>
+
+<div class="hero">
+  <div class="topic-badge">Topic 4 · Anatomy</div>
+  <h1>Detailed Anatomy of the Sclera</h1>
+  <p>Thickness variation, lamina cribrosa in glaucoma, and the episcleral vascular supply</p>
+</div>
+
+<div class="video-section">
+<div class="container">
+  <div class="video-player">
+    <div class="video-canvas-wrap" style="aspect-ratio:16/9"><canvas id="vidCanvas"></canvas></div>
+    <div class="chapter-pills">
+      <span class="chapter-pill active" onclick="player.seekToSlide(0)">Overview</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(1)">Thickness</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(2)">Lamina Cribrosa</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(3)">Episclera</span>
+      <span class="chapter-pill" onclick="player.seekToSlide(4)">Clinical Pearls</span>
+    </div>
+    <div class="video-controls">
+      <button class="vid-btn" id="restartBtn" onclick="player.restart()">⏮</button>
+      <button class="vid-btn" id="playPauseBtn" onclick="player.toggle()">▶</button>
+      <div class="progress-wrap" id="progressWrap">
+        <div class="progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+      <span class="vid-time" id="vidTime">0:00 / 0:00</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="article-section">
+<div class="container">
+
+  <div class="section-heading">
+    <div class="icon">🦷</div>
+    <h2>Detailed Anatomy of the Sclera</h2>
+  </div>
+
+  <div class="diagram-wrap">
+    <h3>Scleral Thickness Variation</h3>
+    <svg viewBox="0 0 640 320" width="640" height="320">
+      <rect width="640" height="320" fill="#0a0e1a" rx="10"/>
+      <!-- Eyeball outline -->
+      <ellipse cx="280" cy="160" rx="155" ry="148" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+      <!-- Sclera arc with variable thickness -->
+      <!-- Posterior pole (1mm) -->
+      <path d="M380,100 A155,148 0 0,1 380,220" fill="none" stroke="#e8e0d0" stroke-width="18" stroke-linecap="round"/>
+      <!-- At muscle insertion (0.3mm) -->
+      <path d="M230,70 A155,148 0 0,0 230,250" fill="none" stroke="#e8e0d0" stroke-width="5" opacity="0.6"/>
+      <!-- Equator (~0.6mm) -->
+      <ellipse cx="280" cy="160" rx="155" ry="148" fill="none" stroke="#e8e0d0" stroke-width="10" stroke-dasharray="30,330" stroke-dashoffset="-80" opacity="0.7"/>
+
+      <!-- Lamina cribrosa -->
+      <circle cx="432" cy="160" r="20" fill="rgba(255,107,107,0.2)" stroke="#ff6b6b" stroke-width="2"/>
+      <line x1="432" y1="160" x2="490" y2="160" stroke="#ff6b6b" stroke-width="10" opacity="0.4"/>
+      <!-- Grid pattern for lamina -->
+      <g fill="none" stroke="#ff6b6b" stroke-width="1" opacity="0.5">
+        <line x1="424" y1="150" x2="440" y2="150"/>
+        <line x1="424" y1="157" x2="440" y2="157"/>
+        <line x1="424" y1="164" x2="440" y2="164"/>
+        <line x1="424" y1="171" x2="440" y2="171"/>
+        <line x1="428" y1="145" x2="428" y2="175"/>
+        <line x1="435" y1="145" x2="435" y2="175"/>
+      </g>
+
+      <!-- Labels -->
+      <line x1="395" y1="105" x2="480" y2="80" stroke="#e8e0d0" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="488" y="75" fill="#e8e0d0" font-size="11" font-weight="bold">Posterior Pole</text>
+      <text x="488" y="89" fill="#aaa" font-size="10">Thickest: 1 mm</text>
+
+      <line x1="232" y1="85" x2="160" y2="60" stroke="#aaa" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="60" y="55" fill="#e74c3c" font-size="11" font-weight="bold">Rectus insertion</text>
+      <text x="60" y="68" fill="#aaa" font-size="10">Thinnest: 0.3 mm</text>
+
+      <line x1="290" y1="15" x2="290" y2="40" stroke="#f39c12" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="290" y="12" fill="#f39c12" font-size="11" font-weight="bold" text-anchor="middle">Equator ~0.6mm</text>
+
+      <line x1="432" y1="178" x2="432" y2="230" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="432" y="244" fill="#ff6b6b" font-size="11" font-weight="bold" text-anchor="middle">Lamina Cribrosa</text>
+      <text x="432" y="258" fill="#aaa" font-size="10" text-anchor="middle">Optic nerve exit · Glaucoma site</text>
+
+      <!-- Episclera layer -->
+      <ellipse cx="280" cy="160" rx="170" ry="163" fill="none" stroke="#2ec4b6" stroke-width="4" stroke-dasharray="8,6" opacity="0.5"/>
+      <text x="500" y="170" fill="#2ec4b6" font-size="10" font-weight="bold">Episclera</text>
+      <text x="500" y="183" fill="#aaa" font-size="9">(vascularized)</text>
+
+      <!-- Tenon's capsule -->
+      <ellipse cx="280" cy="160" rx="183" ry="176" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="5,8" opacity="0.35"/>
+
+      <!-- Thickness bar -->
+      <rect x="20" y="280" width="600" height="30" fill="rgba(255,255,255,0.04)" rx="5"/>
+      <text x="300" y="300" text-anchor="middle" fill="#ccc" font-size="11">Key Rule: Thinnest at muscle insertion (0.3mm) — DANGER ZONE during strabismus surgery</text>
+    </svg>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-basic">🟢 Basic</div>
+    <h3>The Sclera: "The White of the Eye"</h3>
+    <p>The sclera makes up the <strong>posterior 5/6</strong> of the outer fibrous tunic. It is opaque, tough, and gives the eyeball its structural rigidity. Unlike the cornea, the scleral collagen fibers are arranged irregularly rather than in a lattice, which is exactly why the sclera is opaque while the cornea is clear.</p>
+  </div>
+
+  <div class="card fade-in">
+    <div class="level-badge level-intermediate">🟡 Intermediate</div>
+    <h3>Thickness Variation</h3>
+    <table>
+      <thead><tr><th>Location</th><th>Thickness</th><th>Significance</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Posterior pole</strong> (around optic nerve)</td><td><strong>1 mm</strong> (Thickest)</td><td>Strong protection for optic nerve</td></tr>
+        <tr><td><strong>Equator</strong></td><td>~0.6 mm</td><td>—</td></tr>
+        <tr><td><strong>Just posterior to rectus insertion</strong></td><td><strong>0.3 mm</strong> (Thinnest)</td><td>⚠️ Risk of scleral perforation during strabismus surgery!</td></tr>
+      </tbody>
+    </table>
+    <div class="clinical-pearl" style="margin-top:14px">
+      <span class="pearl-icon">⚠️</span>
+      <p>During <strong>strabismus surgery</strong>, the sclera is thinnest (0.3mm) just posterior to muscle insertions. Inadvertent perforation here can cause retinal tear or vitreous hemorrhage.</p>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="card fade-in">
+      <div class="level-badge level-advanced">🔴 Advanced</div>
+      <h3>Lamina Cribrosa: The Glaucoma Site</h3>
+      <p>The <strong>lamina cribrosa</strong> is the sieve-like portion of the sclera through which the optic nerve fibers exit the eye. It has multiple small openings (foramina) through which nerve fiber bundles pass.</p>
+      <div class="highlight-box">
+        <strong>In glaucoma:</strong> Raised intraocular pressure pushes the lamina cribrosa backward. As it bows posteriorly, it pinches the nerve fiber bundles passing through its foramina. That mechanical compression leads to optic nerve damage and progressive visual field loss.
+      </div>
+      <ul style="margin-top:10px">
+        <li>Normal IOP: <strong>10–21 mmHg</strong></li>
+        <li>In glaucoma: optic cup enlarges (C/D ratio &gt;0.6)</li>
+        <li>The lamina cribrosa is the primary site of mechanical injury</li>
+      </ul>
+    </div>
+    <div class="card fade-in">
+      <div class="level-badge level-intermediate">🟡 Intermediate</div>
+      <h3>Episclera &amp; Tenon's Capsule</h3>
+      <p>Several layers cover the sclera externally:</p>
+      <ul style="margin-top:10px">
+        <li><strong>Episclera:</strong> Thin, <strong>vascularized</strong> loose connective tissue directly on the sclera. Provides nutrition to the avascular sclera. Contains the deep episcleral venous plexus (receives aqueous drainage).</li>
+        <li><strong>Tenon's Capsule (Fascia Bulbi):</strong> Fibrous membrane that envelops the eyeball. Acts as a socket for eye movement.</li>
+        <li><strong>Conjunctiva:</strong> Outermost, thin mucous membrane.</li>
+      </ul>
+      <div class="clinical-pearl" style="margin-top:12px">
+        <span class="pearl-icon">💎</span>
+        <p><strong>Episcleritis vs Scleritis:</strong> Episcleritis is a superficial, moveable, pink injection that settles on its own. Scleritis goes deeper, with a characteristic bluish-red hue, severe pain, tenderness, and a strong association with autoimmune conditions like RA or lupus.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<footer style="text-align:center;padding:28px;color:#aaa;font-size:0.85rem;border-top:1px solid #e0e0e0;margin-top:20px;">
+  <a href="topic-3.html" style="color:#636e72;text-decoration:none">← Topic 3</a>
+  &nbsp;·&nbsp;
+  <a href="topic-5.html" style="color:#1a6b8a;text-decoration:none;font-weight:600">Next: Topic 5 — Uvea →</a>
+</footer>
+
+<script src="video-player.js"></script>
+<script>
+const slides = [
+  {
+    duration: 18,
+    subtitle: "Topic 4: The Sclera, the tough white outer coat forming 5/6 of the fibrous tunic. It is avascular and provides structural integrity to the eyeball.",
+    draw(ctx, W, H, t, e) {
+      const cx=W/2,cy=H*0.5;
+      ctx.save();
+      ctx.globalAlpha=Math.min(1,e*3);
+      ctx.beginPath();
+      ctx.ellipse(cx,cy,150*e,140*e,0,0,Math.PI*2);
+      ctx.strokeStyle='#e8e0d0';
+      ctx.lineWidth=18;
+      ctx.stroke();
+      ctx.restore();
+      drawTitle(ctx,W,H,'The Sclera',t,H*0.12);
+      if(e>0.4){
+        const a=Math.min(1,(e-0.4)*4);
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#e8e0d0';ctx.font=`bold ${Math.max(14,W*0.026)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('"White of the Eye"',cx,H*0.82);
+        ctx.fillStyle='#aaa';ctx.font=`${Math.max(11,W*0.018)}px Segoe UI`;
+        ctx.fillText('Avascular · Collagen fibers · Structural support',cx,H*0.88);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 45,
+    subtitle: "Scleral thickness varies: thickest at the posterior pole (1mm), thinnest just behind rectus muscle insertions (0.3mm). This thin spot is the danger zone in strabismus surgery.",
+    draw(ctx, W, H, t, e) {
+      const cx=W/2,cy=H*0.52;
+      drawTitle(ctx,W,H,'Scleral Thickness Variation',t,H*0.1);
+      // Draw eyeball
+      ctx.save();
+      ctx.globalAlpha=Math.min(1,e*4)*0.3;
+      ctx.beginPath();
+      ctx.ellipse(cx,cy,140,132,0,0,Math.PI*2);
+      ctx.strokeStyle='#555';ctx.lineWidth=2;ctx.stroke();
+      ctx.restore();
+      // Thickness markers
+      const spots=[
+        {angle:0,r:138,thick:18,label:'Posterior Pole\n1 mm (Thickest)',color:'#27ae60',la:0},
+        {angle:Math.PI*0.5,r:137,thick:10,label:'Equator\n~0.6 mm',color:'#f39c12',la:0.3},
+        {angle:Math.PI*1.1,r:115,thick:5,label:'Rectus insertion\n0.3 mm (THINNEST)',color:'#e74c3c',la:0.6},
+      ];
+      spots.forEach((s,i)=>{
+        const a=Math.max(0,Math.min(1,(e-s.la)*4));
+        if(a<=0) return;
+        const bx=cx+Math.cos(s.angle)*s.r;
+        const by=cy+Math.sin(s.angle)*s.r;
+        ctx.save();ctx.globalAlpha=a;
+        // Draw thick arc
+        ctx.beginPath();
+        ctx.arc(cx,cy,s.r,s.angle-0.2,s.angle+0.2);
+        ctx.strokeStyle=s.color;
+        ctx.lineWidth=s.thick;
+        ctx.stroke();
+        // Label
+        const lx=bx+(bx-cx)*0.6;
+        const ly=by+(by-cy)*0.6;
+        ctx.fillStyle=s.color;
+        ctx.font=`bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign=lx>cx?'left':'right';
+        ctx.textBaseline='middle';
+        s.label.split('\n').forEach((line,li)=>{
+          ctx.fillText(line, lx, ly + li*22 - 11);
+        });
+        ctx.restore();
+      });
+    }
+  },
+  {
+    duration: 48,
+    subtitle: "The Lamina Cribrosa is the sieve-like part of the sclera where optic nerve fibers exit. In glaucoma, elevated pressure bows it backward, compressing nerve fibers and causing visual field loss.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Lamina Cribrosa & Glaucoma',t,H*0.1);
+      const cx=W*0.35,cy=H*0.52;
+      // Sclera arc
+      ctx.save();
+      ctx.globalAlpha=Math.min(1,e*4)*0.5;
+      ctx.beginPath();
+      ctx.arc(cx,cy,130,Math.PI*1.1,Math.PI*0.9,true);
+      ctx.strokeStyle='#e8e0d0';ctx.lineWidth=16;ctx.stroke();
+      ctx.restore();
+      // Lamina cribrosa
+      if(e>0.2){
+        const a=Math.min(1,(e-0.2)*4);
+        ctx.save();ctx.globalAlpha=a;
+        // Normal lamina (flat)
+        const lx=cx+130,ly=cy;
+        ctx.strokeStyle='#ff6b6b';ctx.lineWidth=6;
+        ctx.beginPath();ctx.moveTo(lx,ly-30);ctx.lineTo(lx,ly+30);ctx.stroke();
+        // Grid
+        ctx.strokeStyle='rgba(255,107,107,0.6)';ctx.lineWidth=1.5;
+        for(let y=ly-25;y<=ly+25;y+=12){
+          ctx.beginPath();ctx.moveTo(lx-4,y);ctx.lineTo(lx+4,y);ctx.stroke();
+        }
+        ctx.fillStyle='#ff6b6b';ctx.font=`bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText('Lamina Cribrosa',lx+14,ly-20);
+        ctx.fillStyle='#aaa';ctx.font=`${Math.max(9,W*0.016)}px Segoe UI`;
+        ctx.fillText('(sieve for optic fibers)',lx+14,ly-4);
+        // Optic nerve fibers
+        for(let fy=ly-22;fy<=ly+22;fy+=8){
+          ctx.strokeStyle='rgba(255,255,100,0.3)';ctx.lineWidth=2;
+          ctx.beginPath();ctx.moveTo(lx+8,fy);ctx.lineTo(lx+60,fy);ctx.stroke();
+        }
+        ctx.restore();
+      }
+      // Glaucoma effect - bowed lamina
+      if(e>0.55){
+        const a=Math.min(1,(e-0.55)*4);
+        const bow=(e-0.55)*50;
+        ctx.save();ctx.globalAlpha=a;
+        // IOP pressure arrow
+        ctx.strokeStyle='rgba(231,76,60,0.6)';ctx.lineWidth=3;
+        ctx.beginPath();
+        for(let y=cy-25;y<=cy+25;y+=10){
+          ctx.moveTo(cx-80,y);ctx.lineTo(cx+100,y);
+        }
+        ctx.stroke();
+        ctx.fillStyle='rgba(231,76,60,0.4)';
+        ctx.beginPath();
+        ctx.moveTo(cx+100,cy-5);ctx.lineTo(cx+115,cy);ctx.lineTo(cx+100,cy+5);
+        ctx.fill();
+        ctx.fillStyle='#e74c3c';ctx.font=`bold ${Math.max(11,W*0.019)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('IOP ↑',cx-40,cy-70);
+        // Bowed lamina
+        const lx2=cx+130+bow*0.4;
+        ctx.strokeStyle='rgba(255,107,107,0.8)';ctx.lineWidth=5;
+        ctx.beginPath();
+        ctx.moveTo(lx2,cy-28);
+        ctx.quadraticCurveTo(lx2+bow*0.8,cy,lx2,cy+28);
+        ctx.stroke();
+        ctx.fillStyle='#ff6b6b';ctx.font=`bold ${Math.max(11,W*0.02)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText('Backward bowing →',lx2+6,cy-50);
+        ctx.fillText('Nerve fiber compression',lx2+6,cy-32);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 38,
+    subtitle: "The Episclera is a thin vascularized layer on top of the sclera. It provides nutrition to the avascular sclera and contains the deep episcleral venous plexus for aqueous drainage.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Episclera — Vascular Supply',t,H*0.1);
+      const cx=W/2,cy=H*0.5;
+      // Layers
+      [[160,'#555','Tenon\'s Capsule'],[148,'#2ec4b6','Episclera (vascularized)'],[130,'#e8e0d0','Sclera (avascular)']].forEach(([r,col,name],i)=>{
+        const a=Math.max(0,Math.min(1,(e-i*0.25)*5));
+        if(a<=0) return;
+        ctx.save();ctx.globalAlpha=a;
+        ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+        ctx.strokeStyle=col;
+        ctx.lineWidth=i===1?14:i===0?6:16;
+        ctx.stroke();
+        ctx.fillStyle=col;
+        ctx.font=`bold ${Math.max(10,W*0.018)}px Segoe UI`;
+        ctx.textAlign='center';
+        ctx.fillText(name,cx,cy-r-14);
+        ctx.restore();
+      });
+      // Blood vessels on episclera
+      if(e>0.45){
+        const a=Math.min(1,(e-0.45)*4);
+        ctx.save();ctx.globalAlpha=a*0.8;
+        for(let ang=0;ang<Math.PI*2;ang+=0.35){
+          const vx=cx+148*Math.cos(ang);
+          const vy=cy+148*Math.sin(ang);
+          ctx.beginPath();
+          ctx.arc(vx,vy,4,0,Math.PI*2);
+          ctx.fillStyle='#e74c3c';
+          ctx.fill();
+        }
+        ctx.restore();
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='#2ec4b6';ctx.font=`bold ${Math.max(12,W*0.022)}px Segoe UI`;
+        ctx.textAlign='center';ctx.fillText('Nutrition flows: Episclera → Sclera',cx,H*0.88);
+        ctx.restore();
+      }
+    }
+  },
+  {
+    duration: 40,
+    subtitle: "Clinical: Episcleritis is superficial and benign. Scleritis is deep, severe, and associated with autoimmune disease. Blue sclera means seen in osteogenesis imperfecta and Marfan syndrome.",
+    draw(ctx, W, H, t, e) {
+      drawTitle(ctx,W,H,'Clinical Pearls — Sclera',t,H*0.1);
+      const items=[
+        {icon:'🔴',title:'Episcleritis',text:'Superficial inflammation of episclera. Mobile injection, mild. Often self-limiting. Benign.',color:'#e67e22'},
+        {icon:'🔥',title:'Scleritis',text:'Deep inflammation. Severe pain, blue-red "violaceous" discolouration. Associated with RA, SLE, Wegener\'s.',color:'#e74c3c'},
+        {icon:'🔵',title:'Blue Sclera',text:'Thin sclera → choroid shows through = blue color. Seen in Osteogenesis Imperfecta, Marfan syndrome.',color:'#4a90e2'},
+        {icon:'🎯',title:'Staphyloma',text:'Ectasia (bulging) of thin sclera lined by uvea. Posterior staphyloma in high myopia.',color:'#9b59b6'},
+      ];
+      items.forEach((p,i)=>{
+        const a=Math.max(0,Math.min(1,(e-i*0.22)*5));
+        if(a<=0) return;
+        const y=H*0.2+i*H*0.17;
+        ctx.save();ctx.globalAlpha=a;
+        ctx.fillStyle='rgba(255,255,255,0.04)';
+        ctx.beginPath();ctx.roundRect(W*0.06,y,W*0.88,H*0.14,8);ctx.fill();
+        ctx.strokeStyle=p.color+'55';ctx.lineWidth=1.5;ctx.stroke();
+        ctx.font=`${Math.max(20,H*0.05)}px serif`;ctx.textAlign='center';
+        ctx.fillText(p.icon,W*0.12,y+H*0.07);
+        ctx.fillStyle=p.color;ctx.font=`bold ${Math.max(12,W*0.022)}px Segoe UI`;
+        ctx.textAlign='left';ctx.fillText(p.title,W*0.18,y+H*0.045);
+        ctx.fillStyle='#ccc';ctx.font=`${Math.max(10,W*0.017)}px Segoe UI`;
+        wrapText(ctx,p.text,W*0.18,y+H*0.095,W*0.72,H*0.035);
+        ctx.restore();
+      });
+    }
+  },
+];
+const player = new VideoPlayer('vidCanvas', slides);
+document.getElementById('progressWrap').addEventListener('click', function(e) {
+  const rect = this.getBoundingClientRect();
+  const pct = (e.clientX - rect.left) / rect.width;
+  const targetTime = pct * player.totalDuration;
+  let acc = 0;
+  for (let i = 0; i < player.slides.length; i++) {
+    acc += player.slides[i].duration;
+    if (acc >= targetTime) { player.seekToSlide(i); break; }
+  }
+});
+</script>
+</body>
+</html>
