@@ -311,9 +311,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-.diagram-wrap svg {
+.diagram-wrap svg,
+.diagram-wrap .diagram-img {
   max-width: 100%;
   height: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Key facts grid */
