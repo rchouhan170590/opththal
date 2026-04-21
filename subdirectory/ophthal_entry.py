@@ -1,3 +1,4 @@
+import base64
 import html
 import os
 import re
@@ -65,6 +66,57 @@ def _read_publish_file(name: str) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def _assets_base_url() -> str:
+    """Optional public base for diagram PNGs (e.g. raw.githubusercontent.com/.../publish)."""
+    v = os.environ.get("OPHTHAL_ASSETS_BASE_URL", "").strip().rstrip("/")
+    if v:
+        return v
+    try:
+        if hasattr(st, "secrets") and st.secrets.get("OPHTHAL_ASSETS_BASE_URL"):
+            return str(st.secrets["OPHTHAL_ASSETS_BASE_URL"]).strip().rstrip("/")
+    except Exception:
+        pass
+    return ""
+
+
+def _mime_for_asset(rel: str) -> str:
+    lower = rel.lower()
+    if lower.endswith(".png"):
+        return "image/png"
+    if lower.endswith((".jpg", ".jpeg")):
+        return "image/jpeg"
+    if lower.endswith(".gif"):
+        return "image/gif"
+    if lower.endswith(".webp"):
+        return "image/webp"
+    if lower.endswith(".svg"):
+        return "image/svg+xml"
+    return "application/octet-stream"
+
+
+def _rewrite_image_src_for_streamlit(raw: str) -> str:
+    """Browser loads st.html in Streamlit origin; relative assets/... URLs 404.
+    Either prefix OPHTHAL_ASSETS_BASE_URL (e.g. raw GitHub base) or embed as data: from disk.
+    """
+    assets_base = _assets_base_url()
+
+    def repl(m: re.Match[str]) -> str:
+        rel = m.group(1)
+        if not rel.startswith("assets/"):
+            return m.group(0)
+        if assets_base:
+            url = f"{assets_base}/{rel}"
+            return f'src="{html.escape(url, quote=True)}"'
+        path = PUBLISH_DIR / rel
+        if not path.is_file():
+            return m.group(0)
+        b64 = base64.b64encode(path.read_bytes()).decode("ascii")
+        mime = _mime_for_asset(rel)
+        return f'src="data:{mime};base64,{b64}"'
+
+    return re.sub(r'src=\"(assets/[^\"]+)\"', repl, raw)
+
+
 def _prepare_html(raw: str, *, iframe: bool, canonical_base: str = "") -> str:
     css = _read_publish_file("styles.css")
     raw = raw.replace(
@@ -79,6 +131,8 @@ def _prepare_html(raw: str, *, iframe: bool, canonical_base: str = "") -> str:
             f"<script>\n{js}\n</script>",
             1,
         )
+
+    raw = _rewrite_image_src_for_streamlit(raw)
 
     base = canonical_base or _canonical_app_url()
 
