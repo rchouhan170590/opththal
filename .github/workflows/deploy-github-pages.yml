@@ -1,12 +1,15 @@
-# Publishes subdirectory/publish as the GitHub Pages site root (static HTML/CSS/JS).
+# Publishes subdirectory/publish to the gh-pages branch.
+# This avoids the deploy-pages "404 / Get Pages site failed" error, which only goes
+# away after manually setting Source = "GitHub Actions" in repo Pages settings.
 #
-# deploy-pages returns HTTP 404 until Pages "Source" is GitHub Actions (not a branch).
-# If Source is "Deploy from a branch", this workflow will always fail at deploy — switch it:
+# One-time setup (after the first successful run of this workflow):
 #   https://github.com/rchouhan170590/opththal/settings/pages
-#   Build and deployment → Source → select "GitHub Actions" → save (ignore template prompts
-#   if this workflow file is already on the default branch).
+#   Build and deployment
+#     Source: Deploy from a branch
+#     Branch: gh-pages    Folder: / (root)    Save
 #
-# We skip actions/configure-pages; plain static deploy does not need it.
+# Site will be served at:
+#   https://rchouhan170590.github.io/opththal/
 
 name: Deploy GitHub Pages
 
@@ -16,26 +19,26 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: github-pages
+  group: gh-pages
   cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: subdirectory/publish
+      - name: Add .nojekyll
+        run: touch subdirectory/publish/.nojekyll
 
-      - id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./subdirectory/publish
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "deploy: ${{ github.sha }}"
