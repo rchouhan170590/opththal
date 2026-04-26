@@ -265,13 +265,19 @@ body {
 
 /* Highlight box */
 .highlight-box {
-  background: linear-gradient(135deg, rgba(26,107,138,0.06), rgba(46,196,182,0.08));
-  border-left: 4px solid var(--secondary);
+  background: #e3eef2;
+  border-left: 4px solid #1a8a8a;
   border-radius: 0 10px 10px 0;
   padding: 16px 20px;
   margin: 16px 0;
+  color: #1a1a2e;
+  font-size: 0.97rem;
+  line-height: 1.75;
 }
-.highlight-box strong { color: var(--primary); }
+.highlight-box strong {
+  color: #0d4a5c;
+  font-weight: 700;
+}
 
 /* Clinical pearl */
 .clinical-pearl {
