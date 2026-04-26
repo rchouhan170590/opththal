@@ -1,15 +1,10 @@
-# Publishes subdirectory/publish to the gh-pages branch.
-# This avoids the deploy-pages "404 / Get Pages site failed" error, which only goes
-# away after manually setting Source = "GitHub Actions" in repo Pages settings.
+# Deploys the full study portal (root index.html + chapters/ + assets/) to gh-pages.
 #
-# One-time setup (after the first successful run of this workflow):
+# GitHub Pages settings (one-time — already configured):
 #   https://github.com/rchouhan170590/opththal/settings/pages
-#   Build and deployment
-#     Source: Deploy from a branch
-#     Branch: gh-pages    Folder: / (root)    Save
+#   Source: Deploy from a branch  |  Branch: gh-pages  |  Folder: / (root)
 #
-# Site will be served at:
-#   https://rchouhan170590.github.io/opththal/
+# Site: https://rchouhan170590.github.io/opththal/
 
 name: Deploy GitHub Pages
 
@@ -31,14 +26,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Add .nojekyll
-        run: touch subdirectory/publish/.nojekyll
+      - name: Add .nojekyll (prevents Jekyll from hiding assets/ folder)
+        run: touch .nojekyll
 
-      - name: Publish to gh-pages branch
+      - name: Deploy site root to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./subdirectory/publish
+          publish_dir: ./
           publish_branch: gh-pages
           force_orphan: true
+          exclude_assets: '.github,subdirectory,deploy-to-repo.sh,requirements.txt'
           commit_message: "deploy: ${{ github.sha }}"

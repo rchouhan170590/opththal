@@ -39,7 +39,7 @@ function buildSidebar() {
       <div class="sidebar-logo">
         <div class="logo-icon"></div>
         <h1>OphthalStudy</h1>
-        <p>AK Khurana &mdash; UG &amp; PG</p>
+        <p> MedCad &mdash; UG &amp; PG</p>
       </div>
       <div class="sidebar-search">
         <input type="text" id="sidebar-search" placeholder="Search chapters..." />
