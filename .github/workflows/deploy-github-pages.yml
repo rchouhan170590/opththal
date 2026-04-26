@@ -1,11 +1,12 @@
 # Publishes subdirectory/publish as the GitHub Pages site root (static HTML/CSS/JS).
 #
-# Required once per repo (otherwise deploy APIs return 404):
-#   Settings → Pages → Build and deployment → Source → GitHub Actions
-#   https://github.com/<owner>/<repo>/settings/pages
+# deploy-pages returns HTTP 404 until Pages "Source" is GitHub Actions (not a branch).
+# If Source is "Deploy from a branch", this workflow will always fail at deploy — switch it:
+#   https://github.com/rchouhan170590/opththal/settings/pages
+#   Build and deployment → Source → select "GitHub Actions" → save (ignore template prompts
+#   if this workflow file is already on the default branch).
 #
-# We intentionally skip actions/configure-pages: it calls "get Pages site" and fails
-# with Not Found until the setting above is saved. Plain static deploy does not need it.
+# We skip actions/configure-pages; plain static deploy does not need it.
 
 name: Deploy GitHub Pages
 
