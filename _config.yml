@@ -1,0 +1,8 @@
+# GitHub Pages configuration
+title: OphthalStudy
+description: AK Khurana Comprehensive Ophthalmology Study Portal
+theme: null
+plugins: []
+exclude:
+  - "*.md"
+  - "*.txt"

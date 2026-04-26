@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>OphthalStudy — AK Khurana Comprehensive Ophthalmology</title>
+ <meta name="description" content="Complete ophthalmology study portal covering all 18 chapters of AK Khurana. Theory, MCQs, PYQs, and diagrams for MBBS, NEET PG, DNB students." />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/style.css" />
+ <style>
+ .home-main { flex: 1; }
+ .section-label {
+ font-size: 13px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: var(--text-light);
+ padding: 24px 28px 10px;
+ }
+ .high-yield-strip {
+ background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(245,158,11,0.08));
+ border: 1px solid rgba(239,68,68,0.2);
+ border-radius: var(--radius-md);
+ margin: 0 28px 20px;
+ padding: 16px 20px;
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ }
+ .high-yield-strip .hy-icon { font-size: 28px; }
+ .high-yield-strip h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+ .high-yield-strip p { font-size: 13px; color: var(--text-medium); }
+ .hy-links { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+ .hy-link {
+ padding: 4px 12px;
+ border-radius: 20px;
+ font-size: 12px;
+ font-weight: 600;
+ text-decoration: none;
+ background: var(--bg-card);
+ border: 1px solid var(--border);
+ color: var(--text-dark);
+ transition: all 0.15s;
+ }
+ .hy-link:hover { border-color: var(--accent-red); color: var(--accent-red); }
+ </style>
+</head>
+<body>
+<div class="app-layout">
+ <!-- Sidebar Mount -->
+ <div id="sidebar-mount"></div>
+
+ <!-- Main -->
+ <div class="main-content home-main">
+ <!-- Top bar -->
+ <div class="top-bar">
+ <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+ <div class="breadcrumb">OphthalStudy <span>— Home</span></div>
+ <div class="tag-group">
+ <span class="tag tag-ug">UG Ready</span>
+ <span class="tag tag-pg">PG Ready</span>
+ </div>
+ </div>
+
+ <!-- Hero -->
+ <div class="home-hero">
+ <h1>Complete Ophthalmology Study Portal</h1>
+ <p>Based on AK Khurana's Comprehensive Ophthalmology. Concise theory, clinical cases, MCQ banks, and previous year questions — for MBBS, NEET PG &amp; DNB students.</p>
+ <div class="home-stats">
+ <div class="home-stat">
+ <div class="stat-num">18</div>
+ <div class="stat-label">Chapters</div>
+ </div>
+ <div class="home-stat">
+ <div class="stat-num">250+</div>
+ <div class="stat-label">MCQs</div>
+ </div>
+ <div class="home-stat">
+ <div class="stat-num">100+</div>
+ <div class="stat-label">PYQs</div>
+ </div>
+ <div class="home-stat">
+ <div class="stat-num">50+</div>
+ <div class="stat-label">Diagrams</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- High-yield strip -->
+ <div class="high-yield-strip" style="margin-top:20px">
+ 
+ <div>
+ <h3>High-Yield Chapters for NEET PG / DNB</h3>
+ <p>These chapters carry maximum weight in entrance exams — start here.</p>
+ <div class="hy-links">
+ <a href="chapters/ch07-glaucoma.html" class="hy-link">Glaucoma</a>
+ <a href="chapters/ch10-retina.html" class="hy-link">Retina</a>
+ <a href="chapters/ch08-lens.html" class="hy-link">Cataract</a>
+ <a href="chapters/ch04-cornea.html" class="hy-link">Cornea</a>
+ <a href="chapters/ch11-neuro.html" class="hy-link">Neuro-Ophth</a>
+ <a href="chapters/ch02-optics.html" class="hy-link">Optics</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Chapter Grid -->
+ <div class="section-label">All 18 Chapters</div>
+ <div class="chapter-grid">
+
+ <a href="chapters/ch01-anatomy.html" class="chapter-card">
+ <div class="ch-num">Chapter 1</div>
+ <h3>Anatomy &amp; Physiology of the Eye</h3>
+ <p>Eyeball layers, blood supply, visual pathway, aqueous dynamics</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch02-optics.html" class="chapter-card">
+ <div class="ch-num">Chapter 2</div>
+ <h3>Optics &amp; Refraction</h3>
+ <p>Errors of refraction, lenses, contact lenses, refractive surgery</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ </a>
+
+ <a href="chapters/ch03-conjunctiva.html" class="chapter-card">
+ <div class="ch-num">Chapter 3</div>
+ <h3>Diseases of the Conjunctiva</h3>
+ <p>Conjunctivitis, trachoma, PCPF, pterygium, tumours</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch04-cornea.html" class="chapter-card">
+ <div class="ch-num">Chapter 4</div>
+ <h3>Diseases of the Cornea</h3>
+ <p>Keratitis, ulcers, keratoconus, dystrophies, grafting</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ </a>
+
+ <a href="chapters/ch05-sclera.html" class="chapter-card">
+ <div class="ch-num">Chapter 5</div>
+ <h3>Diseases of the Sclera</h3>
+ <p>Episcleritis, scleritis, staphyloma</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span></div>
+ </a>
+
+ <a href="chapters/ch06-uvea.html" class="chapter-card">
+ <div class="ch-num">Chapter 6</div>
+ <h3>Uveal Tract</h3>
+ <p>Uveitis, choroiditis, HLA associations, tumours</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch07-glaucoma.html" class="chapter-card">
+ <div class="ch-num">Chapter 7</div>
+ <h3>Glaucoma</h3>
+ <p>POAG, PACG, IOP, optic disc changes, medical &amp; surgical management</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ </a>
+
+ <a href="chapters/ch08-lens.html" class="chapter-card">
+ <div class="ch-num">Chapter 8</div>
+ <h3>Lens &amp; Cataract</h3>
+ <p>Cataract types, IOL power, phacoemulsification, complications</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch09-vitreous.html" class="chapter-card">
+ <div class="ch-num">Chapter 9</div>
+ <h3>Vitreous</h3>
+ <p>Vitreous anatomy, floaters, PVD, vitreous haemorrhage</p>
+ <div class="ch-tags"><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch10-retina.html" class="chapter-card">
+ <div class="ch-num">Chapter 10</div>
+ <h3>Diseases of the Retina</h3>
+ <p>DR, ARMD, RD, CRVO, BRVO, ROP, retinitis pigmentosa</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ </a>
+
+ <a href="chapters/ch11-neuro.html" class="chapter-card">
+ <div class="ch-num">Chapter 11</div>
+ <h3>Neuro-Ophthalmology</h3>
+ <p>Visual fields, optic neuropathies, papilloedema, pupil pathways</p>
+ <div class="ch-tags"><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ </a>
+
+ <a href="chapters/ch12-strabismus.html" class="chapter-card">
+ <div class="ch-num">Chapter 12</div>
+ <h3>Strabismus</h3>
+ <p>Esotropia, exotropia, amblyopia, Hess chart, surgery</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch13-eyelids.html" class="chapter-card">
+ <div class="ch-num">Chapter 13</div>
+ <h3>Diseases of the Eyelids</h3>
+ <p>Ptosis, entropion, ectropion, chalazion, blepharitis, tumours</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch14-lacrimal.html" class="chapter-card">
+ <div class="ch-num">Chapter 14</div>
+ <h3>Lacrimal System</h3>
+ <p>Dacryocystitis, epiphora, dry eye, DCR, DCT</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch15-orbit.html" class="chapter-card">
+ <div class="ch-num">Chapter 15</div>
+ <h3>Diseases of the Orbit</h3>
+ <p>Proptosis, orbital cellulitis, thyroid eye disease, tumours</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch16-trauma.html" class="chapter-card">
+ <div class="ch-num">Chapter 16</div>
+ <h3>Ocular Trauma</h3>
+ <p>Chemical burns, blunt trauma, penetrating injuries, hyphema</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ </a>
+
+ <a href="chapters/ch17-operations.html" class="chapter-card">
+ <div class="ch-num">Chapter 17</div>
+ <h3>Ophthalmic Operations</h3>
+ <p>Surgical principles, instruments, common procedures, anaesthesia</p>
+ <div class="ch-tags"><span class="tag tag-pg">PG</span><span class="tag tag-surgery">Surgery</span></div>
+ </a>
+
+ <a href="chapters/ch18-community.html" class="chapter-card">
+ <div class="ch-num">Chapter 18</div>
+ <h3>Community Ophthalmology</h3>
+ <p>Blindness causes, National programmes, VISION 2020, school screening</p>
+ <div class="ch-tags"><span class="tag tag-ug">UG</span></div>
+ </a>
+
+ </div><!-- end chapter-grid -->
+
+ <!-- Footer -->
+ <div style="padding:24px 28px;border-top:1px solid var(--border);color:var(--text-light);font-size:12px;text-align:center;">
+ OphthalStudy · Based on AK Khurana's Comprehensive Ophthalmology (7th Ed.) · For educational purposes only
+ </div>
+ </div>
+</div>
+
+<script src="assets/js/sidebar.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

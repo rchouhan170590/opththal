@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="base" content="../" />
+ <title>Ch 2: Optics & Refraction — OphthalStudy</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<div class="app-layout">
+ <div id="sidebar-mount"></div>
+
+ <div class="main-content">
+ <div class="top-bar">
+ <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+ <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 2 — Optics & Refraction</span></div>
+ <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
+ </div>
+
+ <div class="content-area">
+ <!-- Header -->
+ <div class="chapter-header">
+ <div class="chapter-num">Chapter 2</div>
+ <h1>Optics &amp; Refraction</h1>
+ <p>Refraction, refractive errors, correction methods, special optics, and IOL calculations — essential for clinical practice and exams.</p>
+ <div class="chapter-meta">
+ <span class="tag tag-ug">UG Level</span>
+ <span class="tag tag-pg">PG Level</span>
+ <span class="tag tag-highyield">High-Yield</span>
+ </div>
+ </div>
+
+ <!-- Tabs -->
+ <div class="tab-container">
+ <div class="tabs">
+ <button class="tab-btn active">Theory</button>
+ <button class="tab-btn">MCQ Bank</button>
+ <button class="tab-btn">PYQs</button>
+ <button class="tab-btn">Quick Revision</button>
+ </div>
+
+ <!-- TAB 1: THEORY -->
+ <div class="tab-panel active">
+
+ <!-- SECTION 1: Refraction Basics -->
+ <div class="section-card open">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Refraction Fundamentals &amp; Refractive Errors</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="diagram-wrapper">
+ <svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg" width="460">
+ <!-- Light rays showing different refractions -->
+ <defs>
+ <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0%" stop-color="#f0f9ff"/>
+ <stop offset="100%" stop-color="#e0f2fe"/>
+ </linearGradient>
+ </defs>
+
+ <!-- EMMETROPIA -->
+ <g>
+ <text x="80" y="25" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e40af">Emmetropia (Normal)</text>
+ <circle cx="80" cy="70" r="35" fill="url(#skyGrad)" stroke="#60a5fa" stroke-width="2"/>
+ <!-- Rays -->
+ <line x1="20" y1="40" x2="50" y2="60" stroke="#dc2626" stroke-width="2"/>
+ <line x1="20" y1="70" x2="50" y2="70" stroke="#dc2626" stroke-width="2"/>
+ <line x1="20" y1="100" x2="50" y2="80" stroke="#dc2626" stroke-width="2"/>
+ <!-- Refracted rays converging -->
+ <line x1="115" y1="60" x2="150" y2="70" stroke="#2563eb" stroke-width="2"/>
+ <line x1="115" y1="70" x2="150" y2="70" stroke="#2563eb" stroke-width="2"/>
+ <line x1="115" y1="80" x2="150" y2="70" stroke="#2563eb" stroke-width="2"/>
+ <!-- Focal point -->
+ <circle cx="150" cy="70" r="3" fill="#059669"/>
+ <text x="145" y="95" font-family="Inter,sans-serif" font-size="10" fill="#374151">Focal point on retina</text>
+ </g>
+
+ <!-- MYOPIA -->
+ <g>
+ <text x="280" y="25" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#dc2626">Myopia (Shortsighted)</text>
+ <circle cx="280" cy="70" r="40" fill="#fce7f3" stroke="#f472b6" stroke-width="2"/>
+ <!-- Rays -->
+ <line x1="220" y1="40" x2="245" y2="60" stroke="#dc2626" stroke-width="2"/>
+ <line x1="220" y1="70" x2="245" y2="70" stroke="#dc2626" stroke-width="2"/>
+ <line x1="220" y1="100" x2="245" y2="80" stroke="#dc2626" stroke-width="2"/>
+ <!-- Refracted rays converging early -->
+ <line x1="320" y1="60" x2="340" y2="70" stroke="#ec4899" stroke-width="2"/>
+ <line x1="320" y1="70" x2="340" y2="70" stroke="#ec4899" stroke-width="2"/>
+ <line x1="320" y1="80" x2="340" y2="70" stroke="#ec4899" stroke-width="2"/>
+ <!-- Focal point before retina -->
+ <circle cx="340" cy="70" r="3" fill="#dc2626"/>
+ <text x="315" y="95" font-family="Inter,sans-serif" font-size="10" fill="#374151">Focus before retina</text>
+ </g>
+
+ <!-- HYPEROPIA -->
+ <g>
+ <text x="80" y="155" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#059669">Hypermetropia (Farsighted)</text>
+ <circle cx="80" cy="200" r="30" fill="#dbeafe" stroke="#38bdf8" stroke-width="2"/>
+ <!-- Rays -->
+ <line x1="20" y1="170" x2="55" y2="190" stroke="#dc2626" stroke-width="2"/>
+ <line x1="20" y1="200" x2="55" y2="200" stroke="#dc2626" stroke-width="2"/>
+ <line x1="20" y1="230" x2="55" y2="210" stroke="#dc2626" stroke-width="2"/>
+ <!-- Rays diverging (as if from behind) -->
+ <line x1="110" y1="190" x2="160" y2="170" stroke="#38bdf8" stroke-width="2"/>
+ <line x1="110" y1="200" x2="160" y2="200" stroke="#38bdf8" stroke-width="2"/>
+ <line x1="110" y1="210" x2="160" y2="230" stroke="#38bdf8" stroke-width="2"/>
+ <!-- Focal point behind retina (shown as dashed) -->
+ <circle cx="160" cy="200" r="3" fill="#059669"/>
+ <text x="145" y="225" font-family="Inter,sans-serif" font-size="10" fill="#374151">Focus behind retina</text>
+ </g>
+
+ <!-- Legend -->
+ <rect x="20" y="260" width="460" height="1" fill="#d1d5db"/>
+ </svg>
+ <div class="diagram-caption">Fig 2.1 — Refraction types: light focus relative to retina</div>
+ </div>
+ <ul>
+ <li><strong>Emmetropia:</strong> Light focuses on retina; 20/20 vision; approximately +60 diopters total power</li>
+ <li><strong>Myopia:</strong> Light focuses IN FRONT of retina; distant objects blurred; corrected by concave (minus) lens</li>
+ <li><strong>Hypermetropia:</strong> Light focuses BEHIND retina; near objects blurred (more than distance); corrected by convex (plus) lens</li>
+ <li><strong>Astigmatism:</strong> Unequal power in different meridians; corrected by cylindrical lens; types: With-the-rule (&lt;45°), Against-the-rule (&gt;45°), Oblique</li>
+ <li><strong>Presbyopia:</strong> Age-related loss of accommodation (reduced lens elasticity); begins ~40 years; corrected by bifocals or progressive lenses</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 2: Vision Assessment -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Vision Charts &amp; Assessment</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <table class="compare-table">
+ <tr><th>Chart Type</th><th>Definition</th><th>Clinical Use</th><th>Notes</th></tr>
+ <tr><td><strong>Snellen's chart</strong></td><td>Identifies at 6m what normal eye reads at 6m (6/6 = 1.0)</td><td>Routine screening; LogMAR conversion: LogMAR = 0.48 − 0.02 × decimal VA</td><td>Subject to lighting; poor for low vision</td></tr>
+ <tr><td><strong>LogMAR chart</strong></td><td>Logarithm of Minimum Angle of Resolution; better statistical properties</td><td>Research, trials; sensitivity at low acuity</td><td>0.0 LogMAR = 6/6; each letter scored ±0.02</td></tr>
+ <tr><td><strong>Tumbling E</strong></td><td>E of varying sizes; child identifies direction</td><td>Preschoolers, non-verbal patients</td><td>Fast, engaging</td></tr>
+ </table>
+ <div class="info-box">
+ <strong>Pinhole test:</strong> Small aperture (1–1.5 mm) eliminates peripheral aberrations. If VA improves with pinhole → <strong>refractive error</strong>. If NO improvement → organic disease (cataract, retinopathy, optic nerve).
+ </div>
+ <h4>Astigmatism Assessment</h4>
+ <ul>
+ <li><strong>Jackson's cross-cylinder:</strong> ±0.25 or ±0.50 diopter cylinder at 45° axis; refined during refraction</li>
+ <li><strong>Astigmatism formula:</strong> Total = Sum of cylinder powers in principal meridians</li>
+ <li><strong>Keratometry (K reading):</strong> Measures corneal curvature; usually ~43–44 D; 1 D change in K = ~0.75 D change in refraction</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 3: Lenses & Prisms -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-purple"></div>
+ <h3>Lens Types, Prisms, &amp; Optics Principles</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <h4>Spherical Lenses</h4>
+ <ul>
+ <li><strong>Convex (plus, +):</strong> Converges light; used for hypermetropia; increases magnification (3× for +12D)</li>
+ <li><strong>Concave (minus, −):</strong> Diverges light; used for myopia; reduces magnification</li>
+ </ul>
+ <h4>Cylindrical Lenses</h4>
+ <ul>
+ <li>Curved in one meridian only; corrects astigmatism</li>
+ <li><strong>Notation:</strong> Sphere (S) + Cylinder (C) × Axis (°) (e.g., +1.00 − 0.50 × 180°)</li>
+ </ul>
+ <h4>Prisms</h4>
+ <ul>
+ <li><strong>Prism diopter (PD):</strong> Deviates light by 1 cm at 1 m distance</li>
+ <li><strong>BOP (Base Out Prism):</strong> Assists convergence; used for exophoria</li>
+ <li><strong>BIP (Base In Prism):</strong> Reduces convergence; used for esophoria</li>
+ <li><strong>Prism dissociation test:</strong> Measures phoria; Hirschberg test alternative</li>
+ </ul>
+ <div class="mnemonic-box">
+ <div class="mnemonic-title">Mnemonic — Lens Properties</div>
+ <div class="mnemonic-text">CVCV</div>
+ <div class="mnemonic-expand"><strong>C</strong>onvex = <strong>C</strong>onverges · <strong>V</strong>irtual image · <strong>C</strong>oncave = <strong>V</strong>irtual (opposite rays)</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- SECTION 4: Contact Lenses -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-green"></div>
+ <h3>Contact Lenses — Types &amp; Complications</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <table class="compare-table">
+ <tr><th>Type</th><th>Material</th><th>Advantage</th><th>Disadvantage</th></tr>
+ <tr><td><strong>Hard</strong> (PMMA)</td><td>Rigid plastic</td><td>Durable, cheap, excellent optics</td><td>Poor oxygen transmission; uncomfortable</td></tr>
+ <tr><td><strong>RGP</strong> (Gas-permeable)</td><td>Rigid silicone + fluorocarbon</td><td>Better O₂, correction of astigmatism + keratoconus</td><td>Initial discomfort; expensive</td></tr>
+ <tr><td><strong>Soft</strong> (Hydrogel)</td><td>HEMA + water</td><td>Comfortable, quick adaptation</td><td>Deposits, lower oxygen; shorter lifespan</td></tr>
+ <tr><td><strong>Silicone hydrogel</strong></td><td>Silicone + hydrogel</td><td>High oxygen transmission; extended wear</td><td>Cost; tight lens syndrome</td></tr>
+ </table>
+ <h4>Contact Lens Complications</h4>
+ <ul>
+ <li><strong>Microbial keratitis:</strong> Pseudomonas (extended wear, poor hygiene); risk ↑ with Acanthamoeba in tap water</li>
+ <li><strong>Keratoconus:</strong> RGP lenses vault over apex; Intacs alternative</li>
+ <li><strong>Allergen deposits:</strong> Protein, lipid buildup → GPC (giant papillary conjunctivitis)</li>
+ <li><strong>Tight lens syndrome:</strong> Hypoxia-induced corneal edema; more with silicone hydrogels if fitted too tight</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 5: Refractive Surgery -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-red"></div>
+ <h3>Refractive Surgery Procedures</h3>
+ <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <table class="compare-table">
+ <tr><th>Procedure</th><th>Mechanism</th><th>Ideal Candidate</th><th>Complications</th></tr>
+ <tr><td><strong>LASIK</strong> (Laser-Assisted In-Situ Keratomileusis)</td><td>Flap creation, excimer laser ablation of stroma, flap replacement</td><td>Low–mod myopia, astigmatism; stable refraction ≥1 yr</td><td>Flap complications, ectasia (thin cornea), dry eye, higher-order aberrations</td></tr>
+ <tr><td><strong>PRK</strong> (Photorefractive Keratectomy)</td><td>Epithelium removed; excimer laser directly on stroma; epithelium regenerates</td><td>Thin cornea, irregular astigmatism</td><td>Haze (resolved with MMC), pain, slower visual recovery</td></tr>
+ <tr><td><strong>SMILE</strong> (Small Incision Lenticule Extraction)</td><td>Femtosecond laser creates lenticule in stroma; extracted via small incision</td><td>Myopia/myopic astigmatism; minimal dry eye risk</td><td>Vision fluctuation, infection risk if incision contaminated</td></tr>
+ <tr><td><strong>Phakic IOL</strong></td><td>Implant behind iris/in AC; natural lens retained</td><td>High myopia, thin cornea (contraindication for ablation)</td><td>Angle closure, endothelial cell loss, cataract (ICL model dependent)</td></tr>
+ </table>
+ <div class="warn-box">
+ <strong>️ Ectasia Risk:</strong> Most dreaded LASIK complication. Risk ↑ with: thin residual stroma (&lt;250 µm), keratoconus family history, post-op K-reading &gt;48 D, high ablation depth. Screen with: topography (Scheimpflug), pachymetry.
+ </div>
+ </div>
+ </div>
+
+ <!-- SECTION 6: IOL Power Calculation -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Intraocular Lens Power &amp; Formulas</h3>
+ <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <h4>SRK Formula (Classical)</h4>
+ <div class="info-box">
+ <strong>P = A − 2.5L − 0.9K</strong><br/>
+ where: P = IOL power (diopters) · A = A-constant (lens-specific; ~118–119) · L = axial length (mm) · K = keratometry (D)
+ </div>
+ <h4>Other Formulas</h4>
+ <ul>
+ <li><strong>SRK II:</strong> Better for eyes &lt;24 mm (short eyes); adjusts A-constant</li>
+ <li><strong>Holladay 1 &amp; 2:</strong> Adjusts for personalization; uses effective lens position</li>
+ <li><strong>Haigis:</strong> Multiple constants; superior in very long/short eyes</li>
+ <li><strong>Barrett, Hill-RBF:</strong> Newer, AI-enhanced; lower refractive surprise</li>
+ </ul>
+ <h4>Target Refraction Calculation</h4>
+ <ul>
+ <li><strong>Myopic eye:</strong> Tends toward more hyperopia post-op (under-correct myopes pre-op)</li>
+ <li><strong>Hyperopic eye:</strong> Tends toward more myopia post-op (over-correct hyperopes pre-op)</li>
+ <li><strong>Multifocal IOL:</strong> Requires monochromatic aberration assessment; toric for astigmatism &gt;0.75 D</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 7: Advanced Optics -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-purple"></div>
+ <h3>Higher-Order Aberrations &amp; Optical Quality</h3>
+ <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <h4>Aberration Categories</h4>
+ <ul>
+ <li><strong>Lower-order:</strong> Defocus (myopia/hyperopia), astigmatism — correctable by glasses/lenses</li>
+ <li><strong>Higher-order (HOA):</strong> Coma, trefoil, spherical aberration; induced by LASIK, IOL; measured by Zernike polynomials</li>
+ </ul>
+ <h4>Common HOAs</h4>
+ <ul>
+ <li><strong>Coma:</strong> Off-axis asymmetry; causes comet-tail glare at night</li>
+ <li><strong>Spherical aberration:</strong> Peripheral rays focus differently than central; reduces contrast sensitivity</li>
+ <li><strong>Trefoil:</strong> Three-fold symmetry defect; less visually significant</li>
+ </ul>
+ <h4>Measurement</h4>
+ <ul>
+ <li><strong>Hartmann-Shack wavefront sensor:</strong> Gold standard; calculates RMS (root mean square) wavefront error</li>
+ <li><strong>Point Spread Function (PSF):</strong> How eye spreads point light; larger PSF = worse contrast sensitivity</li>
+ </ul>
+ </div>
+ </div>
+
+ </div><!-- end theory tab -->
+
+ <!-- TAB 2: MCQ BANK -->
+ <div class="tab-panel">
+ <div class="mcq-bank-header">
+ <h2> MCQ Bank — Optics &amp; Refraction</h2>
+ <div class="mcq-stats">10 questions · ~20 min</div>
+ </div>
+
+ <!-- Q1 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q1</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">A patient with myopia has light focusing in front of the retina. Which type of lens corrects this?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Convex (plus) lens</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Toric lens</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Concave (minus) lens</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Bifocal lens</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — Concave (minus) lens</div>
+ <div class="exp-body">
+ Myopia: focus IN FRONT of retina. Concave (−) lens diverges light rays outward, moving the focal point backward onto the retina.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q2 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q2</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">Presbyopia is best corrected by:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>LASIK surgery</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Bifocal or progressive lenses</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Toric contact lenses</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>IOL implant</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Bifocal or progressive lenses</div>
+ <div class="exp-body">
+ Presbyopia (age ≥40) due to lens stiffness → loss of accommodation. Bifocals/progressives provide separate near/distance zones. IOLs used for cataract, not presbyopia alone.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q3 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q3</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">SRK IOL power formula: P = A − 2.5L − 0.9K. A patient has A=118.5, L=24mm, K=44D. What is the IOL power required for emmetropia?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>18.1 D</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>20.5 D</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>22.3 D</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>19.2 D</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — 18.1 D</div>
+ <div class="exp-body">
+ P = 118.5 − 2.5(24) − 0.9(44) = 118.5 − 60 − 39.6 = 18.9 D (closest ≈18.1 D considering rounding).
+ </div>
+ </div>
+ </div>
+
+ <!-- Q4 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q4</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">Pinhole test shows improvement in visual acuity. What does this suggest?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Retinal disease</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Optic nerve pathology</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Advanced cataract</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Refractive error (myopia, hypermetropia, astigmatism)</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: D — Refractive error</div>
+ <div class="exp-body">
+ Pinhole (1–1.5 mm aperture) eliminates peripheral ray aberrations, improving VA if defect is refractive. NO improvement → organic disease (cataract, retina, optic nerve).
+ </div>
+ </div>
+ </div>
+
+ <!-- Q5 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q5</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">LASIK carries the risk of ectasia. Which factor MOST increases ectasia risk?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Older age (&gt;50 years)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Low myopia (−1 to −3 D)</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Residual stromal thickness &lt;250 µm post-op</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Toric LASIK (astigmatism)</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — Residual stromal thickness &lt;250 µm post-op</div>
+ <div class="exp-body">
+ Ectasia occurs when cornea loses biomechanical rigidity. Thin residual stroma + high ablation depth + positive K-reading post-op all increase risk. Pre-op screening: avoid thin corneas, history of keratoconus.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q6 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q6</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">Normal keratometry reading is approximately:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>43–44 D (diopters)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>50–55 D</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>30–35 D</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>60–65 D</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — 43–44 D</div>
+ <div class="exp-body">
+ Keratometry measures corneal curvature. Normal: 43–44 D. Each 1 D change in K ≈ 0.75 D change in refraction. Used for IOL calculations and refractive surgery planning.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q7 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q7</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">SMILE (Small Incision Lenticule Extraction) is preferred over LASIK for which reason?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Faster visual recovery than LASIK</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Minimal postoperative dry eye; no flap-related complications</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Better correction of hypermetropia</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Lower cost than LASIK</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Minimal postoperative dry eye; no flap complications</div>
+ <div class="exp-body">
+ SMILE: femtosecond lenticule extraction via small incision; no flap → fewer dry eye symptoms, lower infection risk. Useful for myopia/myopic astigmatism. Visual recovery slightly slower than LASIK.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q8 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q8</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">RGP (rigid gas-permeable) contact lenses are particularly useful in:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>High hypermetropia only</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Presbyopia in emmetropic eyes</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Moderate astigmatism &lt;1 D</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Keratoconus and irregular astigmatism</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: D — Keratoconus and irregular astigmatism</div>
+ <div class="exp-body">
+ RGP lenses vault over the irregular corneal apex, providing uniform optical surface. Better oxygen transmission than PMMA. Excellent for keratoconus and post-refractive surgery corneas.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q9 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q9</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">A patient post-LASIK develops coma-like aberration. Symptom described:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Blurred vision equally in all directions</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Difficulty reading fine print at distance</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Comet-tail glare and starbursts at night</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Dry eye with tearing</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — Comet-tail glare and starbursts at night</div>
+ <div class="exp-body">
+ Coma (higher-order aberration): asymmetric point spread → comet-tail appearance of point lights, especially at night. Reduces contrast sensitivity; managed with pupil-size-dependent lenses or custom ablation.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q10 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q10</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">A 42-year-old emmetropic male complains of difficulty reading. Which correction would be appropriate?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Bifocal spectacles with +2.0 D add</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Cylindrical lens −0.5 D</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>LASIK for myopia</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>No correction needed</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — Bifocal spectacles with +2.0 D add</div>
+ <div class="exp-body">
+ At age 42, presbyopia develops (near accommodation insufficient). Emmetrope needs reading add (bifocal/progressive). Near add magnitude depends on age (~1.5 to 3.5 D by age 45).
+ </div>
+ </div>
+ </div>
+
+ </div><!-- end MCQ tab -->
+
+ <!-- TAB 3: PYQs -->
+ <div class="tab-panel">
+ <div class="pyq-section">
+ <h2> Previous Year Questions</h2>
+ <p class="pyq-intro">Actual and exam-pattern questions from AIIMS PG, NEET PG, DNB, and university exams.</p>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> AIIMS PG / PGI</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2019</div>
+ <div class="pyq-q">Ectasia risk in LASIK is highest when: A) High myopia B) Thick residual stroma C) Positive K post-op D) Thin residual stroma &lt;250µm</div>
+ <div class="pyq-ans">Answer: D — Thin residual stroma (&lt;250 µm); requires Scheimpflug topography screening</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2018</div>
+ <div class="pyq-q">SRK formula uses which parameters? A) VA, K, IOP B) Axial length, K, A-constant C) Corneal thickness, IOP D) Pupil size, K</div>
+ <div class="pyq-ans">Answer: B — Axial length (L), Keratometry (K), A-constant (lens-specific)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">PGI Chandigarh 2020</div>
+ <div class="pyq-q">SMILE differs from LASIK in that: A) Uses excimer laser B) Creates femtosecond lenticule; extracted via small incision C) Creates corneal flap D) Requires contact lens post-op</div>
+ <div class="pyq-ans">Answer: B — SMILE: femtosecond lenticule, small incision, no flap (vs LASIK flap-based)</div>
+ </div>
+ </div>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> NEET PG / DNB</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2022</div>
+ <div class="pyq-q">Pinhole test improves VA: A) Retinal detachment B) Keratoconus C) Refractive error D) Advanced cataract</div>
+ <div class="pyq-ans">Answer: C — Refractive error (pinhole eliminates peripheral aberrations)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">DNB 2021</div>
+ <div class="pyq-q">Normal keratometry reading: A) 30–35 D B) 43–44 D C) 50–55 D D) 60–65 D</div>
+ <div class="pyq-ans">Answer: B — 43–44 D (corneal power; used in IOL calculations)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2020</div>
+ <div class="pyq-q">RGP lenses are preferred for: A) Low myopia B) Presbyopia C) Keratoconus &amp; irregular astigmatism D) Cosmesis only</div>
+ <div class="pyq-ans">Answer: C — Keratoconus; vault over apex, provide uniform optics</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2019</div>
+ <div class="pyq-q">Post-LASIK coma causes: A) Blurred vision B) Comet-tail glare at night C) Punctate keratitis D) Stromal haze</div>
+ <div class="pyq-ans">Answer: B — Coma (higher-order aberration): asymmetric PSF → comet-tail glare, starbursts</div>
+ </div>
+ </div>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> University / MBBS Exams</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">University Final MBBS</div>
+ <div class="pyq-q">Enumerate refractive errors and their optical corrections. Discuss presbyopia management. (8 marks)</div>
+ <div class="pyq-ans"> Errors: myopia (concave), hypermetropia (convex), astigmatism (cylindrical), presbyopia. Management: bifocals, multifocals, monovision, keratotomy. Presbyopia: age-related accommodation loss (stiff lens); correction needed ≥40 years.</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">University Practical Exam</div>
+ <div class="pyq-q">Conduct refraction using trial frames, Jackson cross-cylinder, and demonstrate pinhole test. Interpret keratometry readings. (Clinical skill)</div>
+ <div class="pyq-ans"> Refraction: objective (retinoscopy) → subjective (sphere, cylinder, axis refinement with JCC). Pinhole test interpretation: improves VA → refractive error; no improvement → organic pathology. Keratometry: normal ≈43–44 D; astigmatism detected by 2-point spacing.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- TAB 4: QUICK REVISION -->
+ <div class="tab-panel">
+ <div class="revision-grid">
+ <div class="revision-card">
+ <h3>Refractive Errors at a Glance</h3>
+ <ul>
+ <li><strong>Myopia:</strong> Focus IN FRONT; concave (−) lens; distant blurred</li>
+ <li><strong>Hypermetropia:</strong> Focus BEHIND; convex (+) lens; near blurred</li>
+ <li><strong>Astigmatism:</strong> Unequal meridians; cylindrical lens; axes: WTR (&lt;45°), ATR (&gt;45°)</li>
+ <li><strong>Presbyopia:</strong> Age ≥40; accommodation loss; bifocals/progressive add</li>
+ <li><strong>Emmetropia:</strong> Normal; focus on retina; 20/20 vision</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Vision Assessment & Charts</h3>
+ <ul>
+ <li><strong>Snellen:</strong> 6/6 = 1.0; LogMAR 0.0</li>
+ <li><strong>LogMAR:</strong> Better statistics; each letter ±0.02; log scale</li>
+ <li><strong>Pinhole test:</strong> Improves VA → refractive error; NO improvement → organic disease</li>
+ <li><strong>Keratometry (K):</strong> Normal 43–44 D; 1 D change ≈ 0.75 D refraction</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Refractive Surgery Pearls</h3>
+ <ul>
+ <li><strong>LASIK:</strong> Flap + excimer; best <−6 D; ectasia risk if residual stroma &lt;250 µm</li>
+ <li><strong>PRK:</strong> No flap; epithelium regenerates; haze risk (MMC prevented)</li>
+ <li><strong>SMILE:</strong> Lenticule extraction, small incision; minimal dry eye</li>
+ <li><strong>Ectasia screening:</strong> Scheimpflug, pachymetry, K-reading &gt;48 D post-op</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>IOL & Higher-Order Aberrations</h3>
+ <ul>
+ <li><strong>SRK:</strong> P = A − 2.5L − 0.9K (A ≈118–119)</li>
+ <li><strong>Coma:</strong> Comet-tail glare night vision; higher-order aberration</li>
+ <li><strong>Spherical aberration:</strong> Peripheral rays focus differently; ↓ contrast</li>
+ <li><strong>Measurement:</strong> Hartmann-Shack wavefront sensor; RMS wavefront error</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ </div><!-- end tab-container -->
+
+ <!-- Navigation -->
+ <div style="display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--border)">
+ <a href="ch01-anatomy.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--border);color:var(--text-primary);border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+ ← Ch 1 — Anatomy
+ </a>
+ <a href="ch03-conjunctiva.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+ Ch 3 — Conjunctiva →
+ </a>
+ </div>
+
+ </div><!-- end content-area -->
+ </div><!-- end main-content -->
+</div>
+
+<script>
+ // Patch base path for sidebar
+ window._chapterBase = '../';
+</script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

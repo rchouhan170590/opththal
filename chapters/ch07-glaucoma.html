@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="base" content="../" />
+ <title>Ch 7: Glaucoma — OphthalStudy</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<div class="app-layout">
+ <div id="sidebar-mount"></div>
+
+ <div class="main-content">
+ <div class="top-bar">
+ <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+ <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 7 — Glaucoma</span></div>
+ <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
+ </div>
+
+ <div class="content-area">
+ <!-- Header -->
+ <div class="chapter-header">
+ <div class="chapter-num">Chapter 7</div>
+ <h1>Glaucoma</h1>
+ <p>Optic neuropathy with progressive disc and visual field changes. Classification (POAG, PACG, NTG, secondary, congenital), diagnosis, and management.</p>
+ <div class="chapter-meta">
+ <span class="tag tag-ug">UG Level</span>
+ <span class="tag tag-pg">PG Level</span>
+ <span class="tag tag-highyield">High-Yield</span>
+ <span class="tag" style="background:#dc2626;color:white">Critical</span>
+ </div>
+ </div>
+
+ <!-- Tabs -->
+ <div class="tab-container">
+ <div class="tabs">
+ <button class="tab-btn active">Theory</button>
+ <button class="tab-btn">MCQ Bank</button>
+ <button class="tab-btn">PYQs</button>
+ <button class="tab-btn">Quick Revision</button>
+ </div>
+
+ <!-- TAB 1: THEORY -->
+ <div class="tab-panel active">
+
+ <!-- SECTION 1: Definition & Pathophysiology -->
+ <div class="section-card open">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Definition & Pathophysiology</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>Definition:</strong> Glaucoma is a progressive optic neuropathy characterized by a <strong>triad:</strong> (1) IOP >21 mmHg, (2) optic disc changes, (3) visual field defects. NOT all patients with elevated IOP have glaucoma; NOT all glaucoma patients have elevated IOP.
+ </div>
+ <h4>Aqueous Dynamics (Pathophysiology)</h4>
+ <ul>
+ <li><strong>Production:</strong> Ciliary epithelium secretes ~2 µL/min; primarily active secretion (Na-K ATPase)</li>
+ <li><strong>Drainage:</strong>
+ <ul>
+ <li><strong>Trabecular (conventional) pathway (85%):</strong> Via trabecular meshwork → Schlemm's canal → collector channels → episcleral veins</li>
+ <li><strong>Uveoscleral (unconventional) pathway (15%):</strong> Via ciliary muscle bundles → suprachoroidal space → exit through sclera</li>
+ </ul>
+ </li>
+ <li><strong>IOP = (Aqueous production − Aqueous drainage) + Episcleral venous pressure</strong></li>
+ <li><strong>Normal IOP:</strong> 10–21 mmHg; diurnal variation up to 5 mmHg</li>
+ </ul>
+ <div class="mnemonic-box">
+ <div class="mnemonic-title">IOP Dynamics Mnemonic</div>
+ <div class="mnemonic-expand"><strong>85:15</strong> rule = Trabecular 85% : Uveoscleral 15% aqueous drainage</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- SECTION 2: Classification of Glaucoma -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-purple"></div>
+ <h3>Classification of Glaucoma</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <table class="compare-table">
+ <tr><th>Type</th><th>Angle Status</th><th>Characteristics</th><th>Key Features</th></tr>
+ <tr><td colspan="4" style="background:#f3f4f6;font-weight:700">PRIMARY GLAUCOMAS</td></tr>
+ <tr><td><strong>POAG</strong></td><td>Open</td><td>Insidious, bilateral, painless; trabecular meshwork dysfunction</td><td>Most common (60–70% of glaucoma); IOP >21; gradual VF loss</td></tr>
+ <tr><td><strong>PACG</strong></td><td>Closed</td><td>Acute attack with intense pain, red eye, hazy cornea; narrow angle</td><td>IOP can exceed 50 mmHg; requires urgent laser PI</td></tr>
+ <tr><td><strong>NTG</strong></td><td>Open</td><td>IOP ≤21 mmHg but disc + VF changes present; vasospasm; poor perfusion</td><td>5–10% of glaucoma; more common in Asian populations</td></tr>
+ <tr><td colspan="4" style="background:#f3f4f6;font-weight:700">SECONDARY GLAUCOMAS</td></tr>
+ <tr><td><strong>Open-angle secondary</strong></td><td>Open</td><td>Inflammation (uveitis), blood (hyphema), lens (phacomorphic), PEX (pseudoexfoliation)</td><td>Treat underlying cause + IOP control</td></tr>
+ <tr><td><strong>Angle-closure secondary</strong></td><td>Closed</td><td>Neovascular glaucoma (diabetes, CRVO), silicone oil, pupil block</td><td>May need drainage, peripheral iridotomy, or trabeculectomy</td></tr>
+ <tr><td colspan="4" style="background:#f3f4f6;font-weight:700">CONGENITAL / DEVELOPMENTAL</td></tr>
+ <tr><td><strong>Congenital glaucoma (Buphthalmos)</strong></td><td>Usually open</td><td>Abnormal angle development; large cornea (>12 mm); Haab's striae; photophobia, epiphora</td><td>Requires surgical intervention (goniotomy, trabeculotomy) in infancy</td></tr>
+ </table>
+ </div>
+ </div>
+
+ <!-- SECTION 3: Primary Open Angle Glaucoma (POAG) -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-red"></div>
+ <h3>Primary Open Angle Glaucoma (POAG)</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>Most common type (60–70% of glaucoma).</strong> Insidious onset; patients often unaware until advanced.
+ </div>
+ <h4>Clinical Features</h4>
+ <ul>
+ <li><strong>Painless</strong> vision loss (no acute symptoms)</li>
+ <li><strong>Bilateral</strong> but asymmetrical</li>
+ <li><strong>Risk factors:</strong> Age, family Hx, African descent, myopia, elevated IOP, thin cornea, low perfusion pressure</li>
+ </ul>
+ <h4>Optic Disc Changes (Progressive)</h4>
+ <ul>
+ <li><strong>Cup-to-disc (C:D) ratio ≥0.6</strong> (suspect glaucoma; normal ≤0.3–0.4)</li>
+ <li><strong>Asymmetry >0.2</strong> between eyes is significant</li>
+ <li><strong>Vertical elongation</strong> of cup (not horizontal)</li>
+ <li><strong>Disc haemorrhages</strong> at margin (Drance haemorrhages)</li>
+ <li><strong>RNFL (retinal nerve fibre layer) loss</strong> — thinning/vertical pallor</li>
+ <li><strong>Baring of circumlinear vessel</strong> — innermost rim vessel exposed at disc edge</li>
+ <li><strong>Notching at superior/inferior poles</strong> (glaucomatous notch)</li>
+ <li><strong>ISNT rule:</strong> Inferior ≥ Superior ≥ Nasal ≥ Temporal rim thickness. Violation = suspect glaucoma</li>
+ </ul>
+ <h4>Visual Field Defects (Progression Pattern)</h4>
+ <ul>
+ <li><strong>Early:</strong> Nasal step (peripheral nasal loss), paracentral scotoma</li>
+ <li><strong>Mid:</strong> Bjerrum scotoma (arcuate defect in Bjerrum area)</li>
+ <li><strong>Arcuate scotoma</strong> from superior/inferior pole → follows RNFL path</li>
+ <li><strong>Ring scotoma</strong> — complete ring around fixation</li>
+ <li><strong>Central island</strong> spared in advanced disease (rod vision preserved)</li>
+ <li><strong>Total VF loss</strong> — end-stage</li>
+ </ul>
+ <div class="warn-box">
+ <strong>️ Exam Pearl:</strong><strong>Bjerrum scotoma</strong> (arcuate defect in Bjerrum area, 10–20 degrees from fixation) is PATHOGNOMONIC for POAG. Most commonly asked VF defect.
+ </div>
+ </div>
+ </div>
+
+ <!-- SECTION 4: Primary Angle Closure Glaucoma (PACG) -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-orange"></div>
+ <h3>Primary Angle Closure Glaucoma (PACG) — Acute Attack</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>Ophthalmic Emergency.</strong> IOP >50 mmHg; permanent vision loss without urgent treatment.
+ </div>
+ <h4>Risk Factors (Anatomical)</h4>
+ <ul>
+ <li><strong>Hyperopic eye</strong> (shorter axial length) — most important</li>
+ <li><strong>Shallow anterior chamber</strong> (A-V distance <2.5 mm)</li>
+ <li><strong>Thick lens</strong> (age, nuclear sclerosis)</li>
+ <li><strong>Forward iris bowing</strong> (pupil block)</li>
+ <li><strong>Female > male</strong> (2–4:1)</li>
+ <li><strong>Age >50 years</strong></li>
+ </ul>
+ <h4>Acute Attack Symptoms & Signs</h4>
+ <table class="compare-table">
+ <tr><th>Feature</th><th>Findings</th></tr>
+ <tr><td><strong>Pain</strong></td><td>Severe eye pain (not photophobia); radiates to head/neck</td></tr>
+ <tr><td><strong>Vision</strong></td><td>Blurred vision (corneal oedema from high IOP)</td></tr>
+ <tr><td><strong>Pupil</strong></td><td>Mid-dilated (4–6 mm), FIXED (ischemic sphincter)</td></tr>
+ <tr><td><strong>Cornea</strong></td><td>Hazy (corneal oedema; "frosted glass")</td></tr>
+ <tr><td><strong>Iris</strong></td><td>Ischemic (pale, atrophic); sector atrophy from ischemia</td></tr>
+ <tr><td><strong>IOP</strong></td><td>>50 mmHg (often 40–80 mmHg)</td></tr>
+ <tr><td><strong>Anterior chamber</strong></td><td>Very shallow; angle completely closed on gonioscopy</td></tr>
+ <tr><td><strong>Systemic</strong></td><td>Nausea, vomiting (may mimic abdomen pain/gastroenteritis)</td></tr>
+ </table>
+ <h4>Treatment Sequence (Emergency Protocol)</h4>
+ <ol>
+ <li><strong>IV Acetazolamide 500 mg IV</strong> (carbonic anhydrase inhibitor; reduces aqueous production)</li>
+ <li><strong>Topical Beta-blocker:</strong> Timolol 0.5% TDS (reduces aqueous production; also increases uveoscleral drainage)</li>
+ <li><strong>Topical Alpha-2 agonist:</strong> Brimonidine TDS (reduces aqueous production; avoid in acute attack if systemically unwell)</li>
+ <li><strong>Topical Prostaglandin analogue:</strong> Latanoprost 0.005% at night (increases uveoscleral drainage)</li>
+ <li><strong>Topical Steroid:</strong> Dexamethasone/prednisolone 1% QID (reduce inflammation)</li>
+ <li><strong>Miotics (Pilocarpine 2% TID):</strong> Constrict pupil, deepen AC; use AFTER IOP <40 mmHg and cornea clear (earlier use worsens angle closure by forward lens iris diaphragm)</li>
+ <li><strong>Definitive:</strong> Laser Peripheral Iridotomy (once IOP controlled and cornea clear; prevents recurrence)</li>
+ </ol>
+ <div class="warn-box">
+ <strong>️ Pitfall:</strong> Do NOT use pilocarpine first in acute PACG. Use it ONLY after IOP controlled and cornea clear. Early pilocarpine worsens attack by forward lens iris diaphragm.
+ </div>
+ </div>
+ </div>
+
+ <!-- SECTION 5: Normal Tension Glaucoma (NTG) -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-green"></div>
+ <h3>Normal Tension Glaucoma (NTG)</h3>
+ <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>Definition:</strong> Optic disc and visual field changes consistent with glaucoma but IOP ≤21 mmHg (untreated). Accounts for 5–10% of glaucoma; more common in Asian populations.
+ </div>
+ <h4>Pathophysiology</h4>
+ <ul>
+ <li><strong>Primary mechanism:</strong> Vascular insufficiency (ischaemia) rather than mechanical IOP-related damage</li>
+ <li><strong>Vasospastic dysfunction:</strong> Poor autoregulation of optic nerve head perfusion; exaggerated response to IOP or systemic BP changes</li>
+ <li><strong>Flammer syndrome:</strong> Association with cold extremities, low perfusion pressure, migraine</li>
+ <li><strong>Risk factors:</strong> Female, Japanese/Asian descent, migraine, Raynaud's phenomenon, low systemic BP</li>
+ </ul>
+ <h4>Clinical Features</h4>
+ <ul>
+ <li>IOP always ≤21 mmHg (multiple readings needed to exclude high-tension glaucoma with diurnal variation)</li>
+ <li>Optic disc changes similar to POAG (but often more focal, deeper cupping)</li>
+ <li>VF defects: Often nasal steps or paracentral scotomas; central defects more common than in POAG</li>
+ <li>May progress despite IOP control (due to vascular component)</li>
+ </ul>
+ <h4>Management</h4>
+ <ul>
+ <li><strong>Systemic BP control:</strong> Avoid aggressive BP lowering (preserve perfusion pressure)</li>
+ <li><strong>IOP reduction:</strong> Even modest reduction (25%) may slow progression; use prostaglandin analogues (increase uveoscleral flow)</li>
+ <li><strong>Optimize vascular perfusion:</strong> Address migraine, vasospasm; avoid vasoconstrictors</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 6: Congenital Glaucoma (Buphthalmos) -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-purple"></div>
+ <h3>Congenital Glaucoma (Buphthalmos)</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>Definition:</strong> Developmental abnormality of the trabecular meshwork/Schwalbe's line. Presents in infancy (<3 years usually).
+ </div>
+ <h4>Classic Triad</h4>
+ <ul>
+ <li><strong>Photophobia</strong> (light sensitivity; infant squints, irritable in bright light)</li>
+ <li><strong>Epiphora</strong> (excessive tearing; not from blocked nasolacrimal duct but pain response)</li>
+ <li><strong>Blepharospasm</strong> (eye closure from pain)</li>
+ </ul>
+ <h4>Clinical Signs</h4>
+ <ul>
+ <li><strong>Large cornea (>12 mm)</strong> — eye stretches due to elevated IOP in infancy (sclera is elastic)</li>
+ <li><strong>Haab's striae</strong> — horizontal breaks in Descemet's membrane from corneal stretching</li>
+ <li><strong>Horizontal corneal striae</strong> (may appear as linear scars)</li>
+ <li><strong>Deep optic cupping</strong> — disc enlargement and deepening of cup</li>
+ <li><strong>Elevated IOP</strong> — often >30 mmHg</li>
+ </ul>
+ <h4>Management</h4>
+ <ul>
+ <li><strong>Goniotomy (angle surgery):</strong> Incise abnormal Schwalbe's line; success rate ~50–80%; first-line surgical treatment</li>
+ <li><strong>Trabeculotomy:</strong> Ab-externo approach; success ~70–80%; often combined with goniotomy</li>
+ <li><strong>Trabeculectomy:</strong> If goniotomy/trabeculotomy fail; more invasive</li>
+ <li><strong>Medical management:</strong> Topical prostaglandin analogues, beta-blockers, CAI as bridge to surgery</li>
+ <li><strong>Early intervention crucial:</strong> Prevent permanent optic atrophy and blindness</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 7: Medical Management -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Medical Management of Glaucoma</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-highyield">High-Yield</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>Target IOP ≤21 mmHg (or 20–30% reduction from baseline).</strong> Most glaucomas managed medically first.
+ </div>
+ <table class="compare-table">
+ <tr><th>Drug Class</th><th>Mechanism</th><th>Key Agent(s)</th><th>Efficacy (IOP ↓)</th><th>Contraindications / Side Effects</th></tr>
+ <tr><td><strong>Prostaglandin Analogues (1st-line)</strong></td><td>↑ Uveoscleral aqueous outflow</td><td>Latanoprost 0.005%, bimatoprost, travoprost</td><td>25–35%</td><td>Iris darkening, hypertrichosis (eyelash growth); uveitis in susceptible</td></tr>
+ <tr><td><strong>Beta-blockers</strong></td><td>↓ Aqueous production</td><td>Timolol 0.5%, betaxolol (beta-1 selective), levobunolol</td><td>20–25%</td><td>Bradycardia, bronchospasm (non-selective); avoid in asthma/COPD</td></tr>
+ <tr><td><strong>Alpha-2 agonists</strong></td><td>↓ Production + ↑ uveoscleral drainage</td><td>Brimonidine 0.15–0.2%</td><td>15–20%</td><td>Tachyphylaxis (tolerance develops); drowsiness; avoid in children <2 yrs</td></tr>
+ <tr><td><strong>Carbonic anhydrase inhibitors (CAI)</strong></td><td>↓ Aqueous production (ciliary epithelium)</td><td><strong>Topical:</strong> Dorzolamide 1%, brinzolamide 1%; <strong>Systemic:</strong> Acetazolamide 500 mg PO/IV</td><td>15–20% (topical); 20–30% (systemic)</td><td>Sulfonamide allergy; systemic: paresthesias, nephrolithiasis, metabolic acidosis</td></tr>
+ <tr><td><strong>Miotics (Parasympathomimetics)</strong></td><td>Ciliary muscle contraction; ↑ aqueous outflow + ↓ production</td><td>Pilocarpine 2–4%</td><td>15–20%</td><td>Brow ache, myopia, cataract formation (long-term); less used now</td></tr>
+ <tr><td><strong>Rho-kinase inhibitors (Newer)</strong></td><td>Trabecular meshwork remodeling; ↑ outflow</td><td>Netarsudil 0.02% (Rhopressa), latanoprostene bunod (Vyzulta = latanoprost + netarsudil)</td><td>20–30%</td><td>Hyperaemia (redness); compatible with all drugs</td></tr>
+ </table>
+ <div class="mnemonic-box">
+ <div class="mnemonic-title">First-Line in Order</div>
+ <div class="mnemonic-expand"><strong>PLBAC</strong> = <strong>P</strong>rostaglandin (1st-line, best efficacy) | <strong>L</strong>atanoprost | <strong>B</strong>eta-blocker | <strong>A</strong>lpha-2 agonist | <strong>C</strong>AI</div>
+ </div>
+ <h4>Treatment Algorithm</h4>
+ <ul>
+ <li><strong>First-line (monotherapy):</strong> Prostaglandin analogue (latanoprost — best efficacy, once-daily dosing)</li>
+ <li><strong>Dual therapy:</strong> Prostaglandin + Beta-blocker (timolol) or Prostaglandin + CAI</li>
+ <li><strong>Triple therapy:</strong> Prostaglandin + Beta-blocker + CAI (or Alpha-2 agonist)</li>
+ <li><strong>Laser/Surgery:</strong> If medical therapy fails or IOP target not met</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 8: Surgical Management -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-red"></div>
+ <h3>Surgical & Laser Management</h3>
+ <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <h4>Laser Procedures</h4>
+ <ul>
+ <li><strong>Laser Peripheral Iridotomy (LPI):</strong> Nd:YAG or argon; creates opening in iris periphery → deepens AC angle → relieved angle-closure. Gold standard for acute/chronic PACG.</li>
+ <li><strong>Laser Trabeculoplasty:</strong> Argon (ALT) or Selective (SLT); stimulates TM cells → ↑ aqueous outflow by ~20%; can be repeated.</li>
+ <li><strong>Cyclophotocoagulation:</strong> Destroys ciliary body epithelium → ↓ aqueous production; palliative for advanced glaucoma or phthisical eyes.</li>
+ </ul>
+ <h4>Surgical Procedures</h4>
+ <ul>
+ <li><strong>Trabeculectomy:</strong> Gold standard for POAG; creates fistula from AC to subconjunctival space (filtering bleb). Success ~70–80% at 5 years. Enhanced with Mitomycin C (MMC) or 5-FU to prevent scarring.</li>
+ <li><strong>MIGS (Minimally Invasive Glaucoma Surgery):</strong> iStent (trabecular micro-bypass), Hydrus (supraciliary device), XEN (gel implant). Lower IOP reduction than trabeculectomy but fewer complications; good for mild-moderate glaucoma.</li>
+ <li><strong>Cyclodiode/Cyclodestructive procedures:</strong> For refractory glaucoma (phthisical eyes, neovascular glaucoma); last resort.</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 9: Diagnostic Summary -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-green"></div>
+ <h3>Diagnostic Investigations & Monitoring</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <ul>
+ <li><strong>Tonometry:</strong> Goldmann applanation (gold standard); normal 10–21 mmHg. Also Rebound (NCT), Pneumotonometry.</li>
+ <li><strong>Gonioscopy:</strong> Grade angle opening (Shaffer classification); essential to differentiate open-angle from angle-closure.</li>
+ <li><strong>Optic Disc Assessment:</strong> C:D ratio, disc photography, ISNT rule, disc haemorrhages, RNFL thinning.</li>
+ <li><strong>Visual Field (Perimetry):</strong> Standard Automated Perimetry (SAP); detects scotomas (nasal step, Bjerrum, arcuate, ring); monitors progression.</li>
+ <li><strong>OCT (Optical Coherence Tomography):</strong> Quantifies RNFL thickness, macular volume; excellent for monitoring; may detect changes before visual field.</li>
+ <li><strong>Fundus Photography:</strong> Serial imaging to detect disc changes, haemorrhages, pallor.</li>
+ <li><strong>Corneal Pachymetry:</strong> Measure corneal thickness; thin cornea (<555 µm) = risk for glaucoma (same IOP causes more damage).</li>
+ </ul>
+ </div>
+ </div>
+
+ </div><!-- end theory tab -->
+
+ <!-- TAB 2: MCQ BANK -->
+ <div class="tab-panel">
+ <div class="mcq-bank-header">
+ <h2> MCQ Bank — Glaucoma</h2>
+ <div class="mcq-stats">14 questions · ~28 min</div>
+ </div>
+
+ <!-- Q1 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q1</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">What percentage of aqueous humour drains through the trabecular (conventional) pathway?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>15%</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>85%</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>50%</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>100%</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — 85%</div>
+ <div class="exp-body">
+ 85% drains via trabecular meshwork → Schlemm's canal → collector channels → episcleral veins. 15% via uveoscleral (unconventional) pathway through ciliary muscle bundles. This is the 85:15 rule.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q2 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q2</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">Which is the most common type of glaucoma?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Primary angle-closure glaucoma</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Normal tension glaucoma</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Congenital glaucoma</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Primary open-angle glaucoma</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: D — POAG</div>
+ <div class="exp-body">
+ POAG accounts for 60–70% of all glaucoma cases. It is insidious, painless, and bilateral but asymmetrical. Patients often present late with advanced disease.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q3 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q3</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">Which finding on optic disc examination is PATHOGNOMONIC for primary open-angle glaucoma?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Optic disc pallor</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Disc hyperaemia</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Bjerrum scotoma on visual field</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Papilloedema</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — Bjerrum scotoma</div>
+ <div class="exp-body">
+ Bjerrum scotoma (arcuate defect in Bjerrum area, 10–20 degrees from fixation) is PATHOGNOMONIC for POAG. It follows the RNFL distribution and is characteristic of glaucomatous VF loss. This is a high-yield exam finding.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q4 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q4</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">In primary angle-closure glaucoma, what is the typical IOP during acute attack?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>&gt;50 mmHg (often 40–80 mmHg)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>21–30 mmHg</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>30–40 mmHg</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>&lt;10 mmHg</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — >50 mmHg</div>
+ <div class="exp-body">
+ In acute PACG, IOP can exceed 50 mmHg (often 40–80 mmHg). This extreme elevation causes corneal oedema ("frosted glass"), fixed mid-dilated pupil, and ischemic iris changes. Requires urgent treatment.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q5 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q5</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">What is the first-line systemic agent in acute angle-closure glaucoma?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Mannitol IV</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Acetazolamide 500 mg IV</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Pilocarpine 2% eye drops</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Dexamethasone 8 mg IV</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Acetazolamide 500 mg IV</div>
+ <div class="exp-body">
+ IV Acetazolamide (carbonic anhydrase inhibitor) is the first systemic agent; reduces aqueous production rapidly. Followed by topical beta-blockers, alpha-2 agonists, and prostaglandins. Pilocarpine is used ONLY after IOP is controlled and cornea is clear.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q6 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q6</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">The ISNT rule in glaucoma refers to:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Inferior chamber angle opening</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Intraocular pressure temporal change</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Iris sphincter thickness</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Inferior ≥ Superior ≥ Nasal ≥ Temporal rim thickness</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: D — ISNT rule (rim thickness order)</div>
+ <div class="exp-body">
+ ISNT rule states normal neuroretinal rim thickness follows: Inferior ≥ Superior ≥ Nasal ≥ Temporal. Violation of this rule (e.g., Temporal ≥ Inferior) is suspicious for glaucoma. Used to screen for early POAG.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q7 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q7</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">Which drug is the first-line monotherapy for primary open-angle glaucoma?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Latanoprost (prostaglandin analogue)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Timolol (beta-blocker)</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Dorzolamide (CAI)</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Pilocarpine (miotic)</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — Latanoprost</div>
+ <div class="exp-body">
+ Prostaglandin analogues (latanoprost, bimatoprost, travoprost) are first-line monotherapy. They are the most effective (25–35% IOP reduction), well-tolerated, and dosed once daily (at night). Beta-blockers are second-line if PG contraindicated.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q8 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q8</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">The classic triad of congenital glaucoma (buphthalmos) includes all EXCEPT:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Photophobia</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Epiphora</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Mydriasis (pupil dilation)</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Blepharospasm</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — Mydriasis</div>
+ <div class="exp-body">
+ Classic triad: Photophobia, Epiphora, Blepharospasm (from corneal pain due to high IOP). NOT mydriasis. Also present: large cornea (>12 mm), Haab's striae (corneal stretching marks), deep cupping, elevated IOP.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q9 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q9</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">In normal tension glaucoma, which mechanism is MOST important?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Vascular insufficiency (ischaemia) and vasospasm</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Elevated intraocular pressure</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Trabecular meshwork obstruction</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Angle closure</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — Vascular insufficiency</div>
+ <div class="exp-body">
+ NTG is driven by vascular insufficiency and poor perfusion (ischaemia), NOT elevated IOP. Vasospastic dysfunction is key. Associated with Flammer syndrome, migraine, low BP. Management focuses on improving perfusion and modest IOP reduction.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q10 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q10</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">What is the first-line surgical procedure for primary open-angle glaucoma?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Laser trabeculoplasty</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Trabeculectomy</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Cyclophotocoagulation</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Peripheral iridotomy</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Trabeculectomy</div>
+ <div class="exp-body">
+ Trabeculectomy is the gold standard surgical procedure for POAG. It creates a filtering bleb from AC to subconjunctival space; ~70–80% success rate at 5 years. Can be enhanced with MMC or 5-FU. MIGS procedures are newer alternatives with lower IOP reduction but fewer complications.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q11 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q11</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">In acute angle-closure glaucoma, when should pilocarpine be used?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>As first-line agent to constrict pupil immediately</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Before starting IV acetazolamide</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>ONLY after IOP <40 mmHg and cornea becomes clear</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Never; it worsens angle closure</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — After IOP controlled and cornea clear</div>
+ <div class="exp-body">
+ <strong>CRITICAL EXAM POINT:</strong> Do NOT use pilocarpine early in acute PACG. High IOP causes corneal oedema; early pilocarpine worsens angle closure by forward lens-iris diaphragm displacement. Use ONLY after IV acetazolamide, topical beta-blockers, and alpha-2 agonists have controlled IOP and cleared cornea.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q12 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q12</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">Which of the following is a contraindication to beta-blockers in glaucoma?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Diabetes mellitus</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Hypertension</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Coronary artery disease</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Asthma or COPD (especially non-selective beta-blockers)</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: D — Asthma/COPD</div>
+ <div class="exp-body">
+ Non-selective beta-blockers (timolol, levobunolol) can cause bronchospasm in asthma/COPD. Beta-1 selective agents (betaxolol) are safer. Avoid beta-blockers also in heart failure, bradycardia. Check systemic contraindications before prescribing topical beta-blockers.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q13 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q13</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">Which prostaglandin analogue side effect may limit patient compliance?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Iris darkening and periocular skin darkening (hypertrichosis)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Corneal clouding</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Acute uveitis</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Cataract formation</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — Iris darkening & hypertrichosis</div>
+ <div class="exp-body">
+ Prostaglandin analogues can cause iris darkening (cosmetic concern, especially in light-colored irises), increased eyelash growth (hypertrichosis), and periocular skin darkening. These cosmetic side effects can reduce patient compliance. Inform patients beforehand.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q14 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q14</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">Which medication has the risk of developing tachyphylaxis (tolerance) in glaucoma treatment?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Latanoprost</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Brimonidine (alpha-2 agonist)</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Dorzolamide</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Timolol</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Brimonidine</div>
+ <div class="exp-body">
+ Brimonidine has significant risk of tachyphylaxis (tolerance develops over weeks to months), requiring dose escalation or drug substitution. Due to this limitation and systemic side effects (drowsiness), it's usually not first-line monotherapy but is useful in combination therapy.
+ </div>
+ </div>
+ </div>
+
+ </div><!-- end MCQ tab -->
+
+ <!-- TAB 3: PYQs -->
+ <div class="tab-panel">
+ <div class="pyq-section">
+ <h2> Previous Year Questions</h2>
+ <p class="pyq-intro">High-yield exam questions on glaucoma from medical entrance exams (AIIMS, NEET PG, DNB).</p>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> AIIMS PG (2015–2022)</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2022</div>
+ <div class="pyq-q">Which is the first-line drug for glaucoma? A) Timolol B) Dorzolamide C) Pilocarpine D) Latanoprost</div>
+ <div class="pyq-ans">Answer: D — Latanoprost (prostaglandin analogue; best efficacy 25–35% IOP reduction)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2020</div>
+ <div class="pyq-q">Bjerrum scotoma is most commonly seen in: A) Retinitis pigmentosa B) Primary open-angle glaucoma C) Branch retinal artery occlusion D) Age-related macular degeneration</div>
+ <div class="pyq-ans">Answer: B — POAG (pathognomonic arcuate defect in Bjerrum area, 10–20° from fixation)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2018</div>
+ <div class="pyq-q">In acute angle-closure glaucoma, the sequence of treatment is: A) Pilocarpine → IV Acetazolamide → Timolol → LPI B) IV Acetazolamide → Timolol → LPI → Pilocarpine C) LPI → Pilocarpine → Timolol → Acetazolamide D) Timolol → Acetazolamide → Pilocarpine → LPI</div>
+ <div class="pyq-ans">Answer: B — IV Acetazolamide → Timolol/alpha-2 agonist → [pilocarpine after IOP control] → LPI</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2016</div>
+ <div class="pyq-q">ISNT rule in glaucoma refers to: A) IOP changes over inferior sector B) Iris sphincter necrosis threshold C) Inferior≥Superior≥Nasal≥Temporal rim thickness D) Iris sector necrosis-temporal transition</div>
+ <div class="pyq-ans">Answer: C — Neuroretinal rim thickness order; violation suggests glaucoma</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS 2015</div>
+ <div class="pyq-q">Normal intraocular pressure is: A) 0–10 mmHg B) 10–21 mmHg C) 21–30 mmHg D) >30 mmHg</div>
+ <div class="pyq-ans">Answer: B — 10–21 mmHg (measured via Goldmann applanation tonometry)</div>
+ </div>
+ </div>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> NEET PG (2018–2023)</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2023</div>
+ <div class="pyq-q">Which visual field defect is pathognomonic for glaucoma? A) Altitudinal hemianopia B) Bjerrum scotoma C) Bitemporal hemianopia D) Homonymous hemianopia</div>
+ <div class="pyq-ans">Answer: B — Bjerrum scotoma (arcuate defect following RNFL pattern)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2021</div>
+ <div class="pyq-q">Treatment of congenital glaucoma (buphthalmos) is: A) Medical management only B) Goniotomy/trabeculotomy C) Trabeculectomy only D) Conservative management</div>
+ <div class="pyq-ans">Answer: B — Goniotomy (preferred first-line) or trabeculotomy; requires early surgical intervention</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2020</div>
+ <div class="pyq-q">The 85:15 rule in aqueous dynamics refers to: A) Trabecular vs uveoscleral drainage (85% vs 15%) B) IOP variation C) Aqueous production rate D) Episcleral venous pressure</div>
+ <div class="pyq-ans">Answer: A — 85% trabecular, 15% uveoscleral drainage pathway</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2019</div>
+ <div class="pyq-q">Haab's striae are seen in: A) Congenital glaucoma B) Corneal dystrophy C) Keratoconus D) Bullous keratopathy</div>
+ <div class="pyq-ans">Answer: A — Haab's striae (horizontal breaks in Descemet's membrane from corneal stretching in buphthalmos)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2018</div>
+ <div class="pyq-q">A 68-year-old presents with severe eye pain, red eye, mid-dilated fixed pupil, hazy cornea, IOP 70 mmHg. What is the diagnosis? A) Acute uveitis B) Acute angle-closure glaucoma C) Acute keratitis D) Acute iritis</div>
+ <div class="pyq-ans">Answer: B — Acute PACG (classic presentation: severe pain, fixed mid-dilated pupil, hazy cornea, very high IOP)</div>
+ </div>
+ </div>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> DNB & University Exams</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">DNB 2020</div>
+ <div class="pyq-q">What percentage of aqueous is produced by ciliary epithelium? A) 1 µL/min B) 2 µL/min C) 5 µL/min D) 10 µL/min</div>
+ <div class="pyq-ans">Answer: B — 2 µL/min is the standard aqueous production rate</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">MBBS Final Practicals</div>
+ <div class="pyq-q">Classify glaucoma and discuss the clinical presentation and management of POAG. (10 marks)</div>
+ <div class="pyq-ans">Correct Answer: Classify into primary (POAG, PACG, NTG) and secondary. POAG: insidious, bilateral, painless; disc cupping, VF loss (Bjerrum scotoma); manage medically (latanoprost 1st-line) then surgical if needed (trabeculectomy).</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">University Practicals</div>
+ <div class="pyq-q">Discuss the acute attack of angle-closure glaucoma. What is the emergency management sequence? (8 marks)</div>
+ <div class="pyq-ans">Correct Answer: Acute PACG presents with severe pain, red eye, fixed pupil, hazy cornea, IOP>50. Emergency treatment: IV Acetazolamide → topical beta-blocker/alpha-2 agonist → [pilocarpine after control] → laser PI. Sequence is critical; pilocarpine early worsens attack.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- TAB 4: QUICK REVISION -->
+ <div class="tab-panel">
+ <div class="revision-grid">
+ <div class="revision-card">
+ <h3>Aqueous Dynamics</h3>
+ <ul>
+ <li>Production: ~2 µL/min by ciliary epithelium</li>
+ <li>Drainage: 85% trabecular, 15% uveoscleral</li>
+ <li>Normal IOP: 10–21 mmHg</li>
+ <li>Diurnal variation: up to 5 mmHg</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Glaucoma Classification</h3>
+ <ul>
+ <li><strong>POAG (60–70%):</strong> Open angle, insidious, painless</li>
+ <li><strong>PACG:</strong> Closed angle, acute pain, IOP >50 mmHg</li>
+ <li><strong>NTG:</strong> IOP ≤21 mmHg but disc + VF changes (vasospasm)</li>
+ <li><strong>Congenital (Buphthalmos):</strong> Large cornea, Haab's striae, photophobia</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>POAG Disc Changes</h3>
+ <ul>
+ <li>C:D ≥0.6 (normal ≤0.3–0.4)</li>
+ <li>ISNT rule: Inferior ≥ Superior ≥ Nasal ≥ Temporal</li>
+ <li>Disc notching, haemorrhage, RNFL loss</li>
+ <li>Baring of circumlinear vessel</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>VF Defects (POAG)</h3>
+ <ul>
+ <li><strong>Pathognomonic:</strong> Bjerrum scotoma (arcuate, 10–20° from fixation)</li>
+ <li>Nasal step, arcuate, ring scotoma, central island</li>
+ <li>Follow RNFL distribution pattern</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>PACG Acute Attack</h3>
+ <ul>
+ <li>Severe pain, red eye, hazy cornea, IOP >50 mmHg</li>
+ <li>Mid-dilated FIXED pupil, ischemic iris</li>
+ <li>Emergency: IV Acetazolamide → Timolol → (Pilocarpine after control) → Laser PI</li>
+ <li><strong>NEVER pilocarpine first!</strong></li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>First-Line Drugs</h3>
+ <ul>
+ <li><strong>Monotherapy:</strong> Latanoprost (PG analogue; 25–35% IOP ↓)</li>
+ <li><strong>Dual:</strong> PG + Timolol or PG + CAI</li>
+ <li><strong>Triple:</strong> PG + Beta-blocker + CAI</li>
+ <li>Beta-blockers: avoid in asthma/COPD</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Congenital Glaucoma</h3>
+ <ul>
+ <li>Classic triad: Photophobia, Epiphora, Blepharospasm</li>
+ <li>Large cornea (>12 mm), Haab's striae, deep cupping</li>
+ <li>Treatment: Goniotomy (1st-line) or trabeculotomy</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Surgical Options</h3>
+ <ul>
+ <li><strong>Trabeculectomy:</strong> Gold standard; ~70–80% success with MMC/5-FU</li>
+ <li><strong>MIGS:</strong> iStent, Hydrus, XEN; lower IOP reduction, fewer complications</li>
+ <li><strong>Laser:</strong> PI (PACG), trabeculoplasty (POAG), cyclophotocoagulation (refractory)</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ </div><!-- end tab-container -->
+
+ <!-- Navigation -->
+ <div style="display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--border)">
+ <a href="ch06-uvea.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+ ← Prev: Ch 6 — Diseases of the Uveal Tract
+ </a>
+ <a href="ch08-lens.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+ Next: Ch 8 — Lens & Cataract →
+ </a>
+ </div>
+
+ </div><!-- end content-area -->
+ </div><!-- end main-content -->
+</div>
+
+<script>
+ // Patch base path for sidebar
+ window._chapterBase = '../';
+</script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
