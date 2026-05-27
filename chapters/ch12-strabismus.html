@@ -1,626 +1,1083 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <meta name="base" content="../" />
- <title>Ch 12: Strabismus — OphthalStudy</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../assets/css/style.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="base" content="../" />
+  <title>Ch 12: Strabismus — OphthalStudy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 <div class="app-layout">
- <div id="sidebar-mount"></div>
+  <div id="sidebar-mount"></div>
+  <div class="main-content">
+    <div class="top-bar">
+      <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+      <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> <span>&#8250; Ch 12 &#8212; Strabismus</span></div>
+      <div class="tag-group"><div id="score-badge"></div><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+    </div>
+    <div class="content-area">
+      <div class="chapter-header">
+        <div class="chapter-num">Chapter 12</div>
+        <h1>Strabismus</h1>
+        <p>Covering the full spectrum of squint — from terminology and classification to amblyopia management, binocular vision testing, Hess chart interpretation, and surgical correction.</p>
+        <div class="chapter-meta"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+      </div>
 
- <div class="main-content">
- <div class="top-bar">
- <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
- <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 12 — Strabismus</span></div>
- <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
- </div>
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab-btn active">Snapshot</button>
+          <button class="tab-btn">Deep Dive</button>
+          <button class="tab-btn">Clinical Skills</button>
+          <button class="tab-btn">Q-Bank</button>
+        </div>
 
- <div class="content-area">
- <!-- Header -->
- <div class="chapter-header">
- <div class="chapter-num">Chapter 12</div>
- <h1>Strabismus & Ocular Motility Disorders</h1>
- <p>Eye alignment, cover tests, amblyopia, esotropia, exotropia, restrictive syndromes — clinical diagnosis and surgical management.</p>
- <div class="chapter-meta">
- <span class="tag tag-ug">UG Level</span>
- <span class="tag tag-pg">PG Level</span>
- <span class="tag tag-highyield">High-Yield</span>
- </div>
- </div>
+        <!-- ==================== TAB 1: SNAPSHOT ==================== -->
+        <div class="tab-panel active">
+          <p class="snapshot-intro">Six cards covering the highest-yield facts in strabismus — the definitions that examiners test repeatedly, the classification rules for esotropia and exotropia, amblyopia management, Hess chart logic, and the mnemonic to understand yoke muscle relationships. Use these for rapid revision before any OSCE or written paper.</p>
 
- <!-- Tabs -->
- <div class="tab-container">
- <div class="tabs">
- <button class="tab-btn active">Theory</button>
- <button class="tab-btn">MCQ Bank</button>
- <button class="tab-btn">PYQs</button>
- <button class="tab-btn">Quick Revision</button>
- </div>
+          <div class="snapshot-grid">
 
- <!-- TAB 1: THEORY -->
- <div class="tab-panel active">
+            <!-- Card 1: Key Terminology -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-blue"></span>
+                <h4>Key Terminology <span class="hy-badge">HY</span></h4>
+              </div>
+              <div class="snap-card-body">
+                <p><strong>Tropia</strong> is a manifest deviation — the eye is visibly misaligned at rest, even with both eyes open. <strong>Phoria</strong> is a latent deviation that only becomes apparent when fusion is interrupted, for instance by the cover test.</p>
+                <ul class="snap-list">
+                  <li><strong>Esotropia:</strong> Eye turns inward (convergent)</li>
+                  <li><strong>Exotropia:</strong> Eye turns outward (divergent)</li>
+                  <li><strong>Hypertropia:</strong> Eye turns upward</li>
+                  <li><strong>Hypotropia:</strong> Eye turns downward</li>
+                </ul>
+                <p><strong>Comitant squint:</strong> The angle of deviation remains the same in all directions of gaze. <strong>Incomitant squint:</strong> The angle changes with gaze direction, which points toward an extraocular muscle palsy or mechanical restriction.</p>
+              </div>
+            </div>
 
- <!-- SECTION 1: Definitions & Cover Tests -->
- <div class="section-card open">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Definitions & Assessment Methods</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <ul>
- <li><strong>Orthophoria:</strong> Eyes perfectly aligned (no latent or manifest deviation)</li>
- <li><strong>Heterophoria (latent):</strong> Deviation present only when fusion interrupted (cover test reveals it); symptom-free at distance</li>
- <li><strong>Heterotropia (manifest):</strong> Obvious misalignment; eye deviation visible without cover test</li>
- </ul>
- <h4>Cover Tests (Gold Standard)</h4>
- <ul>
- <li><strong>Cover-Uncover Test:</strong> Covers one eye, observe movement of other eye when cover removed (detects fixation preference, strabismic deviation)</li>
- <li><strong>Alternate Cover Test:</strong> Covers each eye alternately (measures total deviation = phoria + tropia)</li>
- <li><strong>Unilateral Cover Test:</strong> Reveals which eye is dominant (fixation with uncovered eye)</li>
- </ul>
- <div class="info-box">
- <strong>Prism Cover Test:</strong> After cover test, place prism in front of eye until no movement occurs on cover removal — prism value = magnitude of deviation (diopters/prism diopters).
- </div>
- </div>
- </div>
+            <!-- Card 2: Esotropia Types -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-violet"></span>
+                <h4>Esotropia Types <span class="hy-badge">HY</span></h4>
+              </div>
+              <div class="snap-card-body">
+                <p><strong>Infantile (Congenital) Esotropia:</strong> Onset before 6 months, large angle typically over 30 PD, no significant hypermetropia, cross-fixation present (the child uses the right medial rectus to fixate in the left field and vice versa). Inferior oblique overaction and DVD develop later. Surgery by age 2 is the goal to give the visual system the best chance of developing binocularity.</p>
+                <p><strong>Accommodative Esotropia:</strong> Appears in a hypermetropic child around age 2 to 3 years. The excess accommodation needed to compensate for hyperopia drives convergence through the AC/A synkinesis. Fully accommodative — corrects completely with glasses. Partially accommodative — glasses reduce but do not eliminate the deviation; the residual non-accommodative component needs surgery.</p>
+              </div>
+            </div>
 
- <!-- SECTION 2: Amblyopia -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Amblyopia ("Lazy Eye")</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <ul>
- <li><strong>Definition:</strong> Reduced visual acuity not correctable by glasses; due to abnormal visual experience during critical period</li>
- <li><strong>Sensitive period:</strong> Birth to 8 years (peak plasticity 4–6 years)</li>
- <li><strong>Types:</strong>
- <ul>
- <li><strong>Strabismic:</strong> Most common (40–50%); fixation preference → non-fixating eye suppressed</li>
- <li><strong>Anisometropic:</strong> Refractive error difference (e.g., one eye myopic, other hyperopic) → one eye blurred</li>
- <li><strong>Deprivation:</strong> Cataract, corneal opacity, vitreous hemorrhage → stimulus deprivation</li>
- <li><strong>Refractive:</strong> High bilateral refractive error (rare)</li>
- </ul>
- </li>
- <li><strong>Treatment (SPECT):</strong>
- <ul>
- <li><strong>S</strong>pectacles — correct refractive error first</li>
- <li><strong>P</strong>risms — correct strabismus</li>
- <li><strong>E</strong>xercises/orthoptics</li>
- <li><strong>C</strong>yclopentolate penalisation OR <strong>O</strong>cclusion (patching better eye 1–6 hrs/day)</li>
- <li><strong>T</strong>oxin (botulinum) — temporary paralysis of fixating eye muscles</li>
- <li><strong>S</strong>urgery — realign eyes if patching fails</li>
- </ul>
- </li>
- </ul>
- <div class="warn-box">
- <strong>️ Critical Window:</strong> Prognosis worsens after age 8. Therapy less effective after age 12. Early diagnosis = best outcome.
- </div>
- </div>
- </div>
+            <!-- Card 3: Amblyopia -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-green"></span>
+                <h4>Amblyopia <span class="hy-badge">HY</span></h4>
+              </div>
+              <div class="snap-card-body">
+                <p>Reduced BCVA below 6/9 in a structurally normal eye that cannot be improved by glasses alone, caused by abnormal visual experience during the critical period from birth to approximately 7 to 8 years.</p>
+                <ul class="snap-list">
+                  <li><strong>Anisometropic:</strong> Most common overall type — unequal refractive error between the two eyes</li>
+                  <li><strong>Strabismic:</strong> The deviating eye is suppressed; most common in clinical practice settings</li>
+                  <li><strong>Deprivation:</strong> Most severe — dense cataract, ptosis covering the pupil, corneal opacity; requires the most urgent treatment</li>
+                </ul>
+                <p><strong>Treatment:</strong> Correct spectacle refraction first, allow 6 to 10 weeks of adaptation, then occlusion therapy — patching the dominant eye 2 to 6 hours per day depending on severity. Atropine penalisation to the dominant eye is an alternative with fewer compliance issues.</p>
+              </div>
+            </div>
 
- <!-- SECTION 3: Esotropia -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Esotropia (Convergent Strabismus)</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <table class="compare-table">
- <tr><th>Type</th><th>Onset</th><th>Angle</th><th>Key Feature</th><th>Management</th></tr>
- <tr><td><strong>Infantile (Congenital) ET</strong></td><td>&lt;6 months</td><td>Large (40–60 PD)</td><td>Cross-fixation; esotropic in both directions; no AC/A relevance</td><td>Early surgery (6–12 months); medial rectus recession bilaterally</td></tr>
- <tr><td><strong>Accommodative ET</strong></td><td>6 months–3 years</td><td>Variable</td><td><strong>Hypermetropia</strong> triggers; glasses fully correct deviation; AC/A ratio normal</td><td>Prescribe glasses; surgery if residual deviation persists</td></tr>
- <tr><td><strong>Non-accommodative Acquired</strong></td><td>Any age</td><td>Moderate</td><td>No hypermetropia; doesn't respond to glasses alone</td><td>Surgery (medial rectus recession, lateral rectus resection)</td></tr>
- <tr><td><strong>VI Nerve Palsy</strong></td><td>Variable</td><td>Variable</td><td><strong>Esotropia worsens in abduction</strong>; limited abduction</td><td>Botulinum toxin or surgery (lateral rectus resection)</td></tr>
- </table>
- </div>
- </div>
+            <!-- Card 4: Hess Chart -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-amber"></span>
+                <h4>Hess Chart Interpretation <span class="hy-badge">HY</span></h4>
+              </div>
+              <div class="snap-card-body">
+                <p>The Hess chart maps ocular movements in all nine positions of gaze by dissociating the eyes with red-green glasses. Two charts are produced — one for each eye.</p>
+                <ul class="snap-list">
+                  <li><strong>Smaller chart</strong> belongs to the affected eye — the underacting muscle makes that field contracted</li>
+                  <li><strong>Larger chart</strong> belongs to the fellow eye — the yoke muscle overacts by Hering's law</li>
+                </ul>
+                <p>To identify the paretic muscle: find the most contracted field on the smaller chart. The muscle responsible for movement in that direction is the culprit. For example, if the smaller chart is contracted on lateral gaze to the right, the right lateral rectus is paretic.</p>
+                <p>Hering's law states that equal and simultaneous innervation is sent to yoke muscles — so when one muscle underacts, its contralateral yoke overacts, producing the characteristic asymmetry on the Hess chart.</p>
+              </div>
+            </div>
 
- <!-- SECTION 4: Exotropia & Other Strabismus -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Exotropia, Hypertropia, Restrictive Syndromes</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Exotropia (Divergent Strabismus)</h4>
- <ul>
- <li><strong>Divergence excess:</strong> Deviation larger at distance; treat with base-out prisms or bilateral lateral rectus recession</li>
- <li><strong>Convergence insufficiency:</strong> Deviation worse at near; exercises or base-in prisms</li>
- <li><strong>Basic exotropia:</strong> Equal at distance and near; bilateral medial rectus resection</li>
- </ul>
+            <!-- Card 5: Prism Cover Test -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-red"></span>
+                <h4>Prism Cover Test <span class="hy-badge">HY</span></h4>
+              </div>
+              <div class="snap-card-body">
+                <p>The most accurate method for measuring the angle of deviation. After the alternate cover test reveals the direction of the squint, prisms are placed in front of the deviating eye and the strength is increased until no corrective movement occurs when the cover is moved from one eye to the other.</p>
+                <ul class="snap-list">
+                  <li><strong>Base-out prism</strong> for esotropia (neutralises inward deviation)</li>
+                  <li><strong>Base-in prism</strong> for exotropia</li>
+                  <li><strong>Base-down prism</strong> for hypertropia</li>
+                </ul>
+                <p>The result in prism dioptres guides surgical planning. As a rough guide, each millimetre of recession or resection corrects approximately 3 to 5 PD of deviation, though the dose-response varies by muscle and individual.</p>
+              </div>
+            </div>
 
- <h4>Hypertropia & CN IV Palsy</h4>
- <ul>
- <li><strong>Superior oblique palsy (CN IV):</strong> Head tilt to opposite side (compensatory); <strong>Bielschowsky head tilt test POSITIVE</strong> (tilting head to affected side improves hypertropia)</li>
- <li><strong>Treatment:</strong> Head posture counseling; surgery (SO tendon lengthening, IR weakening)</li>
- </ul>
+            <!-- Card 6: Mnemonic Card -->
+            <div class="snap-card mnemonic-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-teal"></span>
+                <h4>Mnemonics &amp; Key Ratios</h4>
+              </div>
+              <div class="snap-card-body">
+                <p><strong>Yoke muscles (Hering's law pairs):</strong></p>
+                <ul class="snap-list">
+                  <li>Right lateral rectus pairs with left medial rectus (right gaze)</li>
+                  <li>Right superior rectus pairs with left inferior oblique (right and up)</li>
+                  <li>Right inferior rectus pairs with left superior oblique (right and down)</li>
+                </ul>
+                <p style="margin-top:10px"><strong>AC/A ratio</strong> (accommodative convergence to accommodation): normal is 3 to 5 prism dioptres per dioptre of accommodation. A high AC/A ratio means the eye converges excessively for each unit of accommodation — this produces esotropia preferentially at near, as seen in convergence excess and high AC/A accommodative esotropia. Bifocals reduce the near demand and are the optical solution.</p>
+                <p style="margin-top:10px"><strong>Kappa angle:</strong> A positive angle kappa (nasal fovea displacement) gives a false appearance of exotropia — pseudoexotropia. A negative angle kappa (temporal fovea) gives pseudoesotropia. Epicanthal folds cause the most common apparent squint in children.</p>
+              </div>
+            </div>
 
- <h4>Duane's Retraction Syndrome</h4>
- <ul>
- <li><strong>Type I (most common):</strong> Abduction failure; normal adduction; eye retracts and narrows on adduction</li>
- <li><strong>Type II:</strong> Adduction failure; abduction normal</li>
- <li><strong>Type III:</strong> Both adduction and abduction limited</li>
- <li><strong>Pathophysiology:</strong> CN VI nucleus aplasia or hypoplasia; aberrant CN III innervation → co-contraction of recti</li>
- <li><strong>Treatment:</strong> Surgery only if cosmetically significant; prisms for diplopia</li>
- </ul>
+          </div>
+        </div>
+        <!-- END SNAPSHOT TAB -->
 
- <h4>Brown's Syndrome</h4>
- <ul>
- <li><strong>Feature:</strong> Restriction of elevation in adduction (SO tendon sheath thickening/adhesions)</li>
- <li><strong>Landmark sign:</strong> Clicking and <strong>widening of palpebral fissure on forced elevation in adduction</strong></li>
- <li><strong>Congenital vs acquired:</strong> Congenital = idiopathic; acquired = post-trauma, surgery, inflammation</li>
- </ul>
- </div>
- </div>
+        <!-- ==================== TAB 2: DEEP DIVE ==================== -->
+        <div class="tab-panel">
+          <div class="pg-badge">PG Depth &#8212; Content follows AIIMS / NEET PG / DNB exam standards</div>
 
- <!-- SECTION 5: Hess Chart Interpretation -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-red"></div>
- <h3>Hess Chart & A/V Patterns</h3>
- <div class="section-tags"><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Hess Chart (Tangent Screen Test)</h4>
- <ul>
- <li><strong>Uses:</strong> Quantify ocular motility; diagnose paralytic vs restrictive strabismus</li>
- <li><strong>Normal chart:</strong> Square-ish field of fixation, symmetrical</li>
- <li><strong>Paralytic palsy:</strong> Chart contracted on side of affected muscle (e.g., CN VI palsy = contracted on lateral gaze)</li>
- <li><strong>Restrictive:</strong> Opposite eye's field contracted (e.g., thyroid eye disease = restricted elevation)</li>
- </ul>
+          <!-- Section 1: Classification & Terminology -->
+          <div class="section-card open">
+            <div class="section-header">
+              <div class="section-bar sb-blue"></div>
+              <h3>Classification and Terminology</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Manifest versus Latent Deviation</h4>
+                <p>The first distinction to make in any squinting patient is whether the deviation is manifest or latent. A <strong>tropia</strong> is present constantly — the eye deviates even with both eyes open, and fusion is insufficient to overcome it. A <strong>phoria</strong> is latent — the eyes appear straight when both are open because fusion is maintaining alignment, but the underlying tendency to deviate becomes visible when fusion is disrupted by the cover test. Phorias are extremely common and generally asymptomatic; they only become problematic when the vergence reserve fails, leading to decompensation.</p>
 
- <h4>A & V Patterns</h4>
- <ul>
- <li><strong>A pattern:</strong> Esotropia increases or exotropia decreases in upgaze; opposite in downgaze</li>
- <li><strong>V pattern:</strong> Exotropia increases or esotropia decreases in upgaze; opposite in downgaze</li>
- <li><strong>Causes A:</strong> Overaction of obliques or underaction of vertical recti</li>
- <li><strong>Causes V:</strong> Underaction of obliques or overaction of vertical recti</li>
- <li><strong>Treatment:</strong> Bifocals, vertical prisms, surgery (oblique surgery)</li>
- </ul>
- </div>
- </div>
+                <h4>Comitant versus Incomitant</h4>
+                <p>In comitant strabismus, the angle of deviation is the same regardless of the direction of gaze. The classic example is infantile esotropia, where the large inward deviation is constant in all positions. In incomitant strabismus, the angle varies with gaze direction — typically it is greatest in the field of action of the paretic or restricted muscle. This pattern should always raise the suspicion of an extraocular muscle palsy, mechanical restriction (as in thyroid eye disease), or a restrictive syndrome such as Duane's or Brown's.</p>
 
- <!-- SECTION 6: SPECT Principle & Treatment -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>SPECT Principle — Conservative to Surgical Management</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <div class="mnemonic-box">
- <div class="mnemonic-title">SPECT Principle (Sequential Treatment)</div>
- <div class="mnemonic-text">S-P-E-C-T-S</div>
- <div class="mnemonic-expand">
- <strong>S</strong>pectacles — Correct refractive error (accommodative ET requires glasses) ·
- <strong>P</strong>risms — Reduce deviation, reduce suppression, improve fusion ·
- <strong>E</strong>xercises/orthoptics — Improve vergence, accommodation ·
- <strong>C</strong>yclopentolate penalisation — Blur dominant eye to force fixation on amblyopic eye ·
- <strong>T</strong>oxin (botulinum) — Temporary muscle paralysis ·
- <strong>S</strong>urgery — Recession/resection of extraocular muscles when conservative therapy fails
- </div>
- </div>
- <h4>Surgical Principles</h4>
- <ul>
- <li><strong>Recession:</strong> Detach muscle origin and reattach farther back → weakens muscle (for overpull)</li>
- <li><strong>Resection:</strong> Shorten muscle by excising a segment → strengthens muscle (for underpull)</li>
- <li><strong>Dosing:</strong> Calculate based on deviation magnitude and type</li>
- </ul>
- </div>
- </div>
+                <h4>Methods of Measuring the Angle of Deviation</h4>
+                <p>The <strong>Hirschberg corneal reflex test</strong> is the simplest estimate. A penlight is held 33 cm in front of the patient and the position of the corneal reflex is noted in each eye. Normally the reflex sits slightly nasal to centre, at approximately the centre of the pupil. Each millimetre of displacement from the pupil centre corresponds to approximately 15 to 20 prism dioptres of deviation. The test is quick and works in young children and those who cannot cooperate with prisms.</p>
+                <p>The <strong>Krimsky test</strong> is a refinement of Hirschberg. Prisms are placed in front of the deviating eye and increased until the corneal reflex is centred. The prism strength at that point is the estimated angle. It does not require fixation on a target and is useful in very young children.</p>
+                <p>The <strong>prism and cover test</strong> is the gold standard. It requires alternating cover combined with prisms until no movement is seen — it measures the full angle including both phoric and tropic components. Always measure at distance (6 metres) and at near (1/3 metre) separately, because the two measurements differ in conditions such as accommodative esotropia and convergence insufficiency exotropia.</p>
 
- <!-- SECTION 7: Diplopia & Symptomatology -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Diplopia, Suppression, Fusion</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <ul>
- <li><strong>Monocular diplopia:</strong> Persists with one eye closed (corneal, lens, refractive defect — not strabismus)</li>
- <li><strong>Binocular diplopia:</strong> Disappears when one eye covered (indicates strabismus with both eyes open)</li>
- <li><strong>Suppression:</strong> CNS ignores image from deviating eye; develops in childhood strabismus (amblyopia risk); adult onset = no suppression → diplopia</li>
- <li><strong>Fusion:</strong> Binocular single vision; requires normal alignment + normal cortical development</li>
- </ul>
- <div class="info-box">
- <strong>Presentation difference:</strong> Childhood-onset strabismus → suppression, no diplopia, amblyopia risk. Adult-onset → no suppression, diplopia (uncomfortable but preserves vision).
- </div>
- </div>
- </div>
+                <div class="info-box">
+                  <strong>Pseudoesotropia and the Kappa angle:</strong> The most common reason a child is referred for squint and found to have none is pseudoesotropia from epicanthal folds. The broad nasal bridge and skin folds cover the nasal sclera, giving the appearance of an inward deviation. The corneal reflex test is symmetrical and the cover test shows no movement. Explanation and reassurance are all that is needed. The kappa angle refers to the angle between the visual axis and the pupillary axis. A positive kappa angle (nasal displacement of the fovea relative to the pupil) makes the reflex appear temporal and creates an impression of exotropia. A negative kappa angle creates the impression of esotropia.
+                </div>
 
- </div><!-- end theory tab -->
+                <h4>Naming Convention</h4>
+                <p>By convention, the prefixes describe the direction of the deviation: eso for convergent, exo for divergent, hyper for upward, and hypo for downward. The suffix tropia indicates a manifest deviation and phoria a latent one. So esophoria is a latent tendency for the eye to converge, while esotropia is a manifest convergent squint. Vertical deviations are named by the eye that is higher — if the right eye is elevated, the patient has a right hypertropia, which is the same as a left hypotropia.</p>
+              </div>
+            </div>
+          </div>
 
- <!-- TAB 2: MCQ BANK -->
- <div class="tab-panel">
- <div class="mcq-bank-header">
- <h2> MCQ Bank — Strabismus</h2>
- <div class="mcq-stats">10 questions · ~20 min</div>
- </div>
+          <!-- Section 2: Esotropia in Detail -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-violet"></div>
+              <h3>Esotropia in Detail</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Infantile Esotropia</h4>
+                <p>By definition, infantile esotropia presents before six months of age. The angle is characteristically large, usually between 30 and 60 prism dioptres, and comitant. There is no significant hypermetropic refractive error driving the deviation — the condition is not accommodative. Cross-fixation is a useful clinical sign: the child uses the left eye to fixate in the right field of gaze and the right eye to fixate in the left field, employing each medial rectus for fixation in the contralateral field. This can mimic bilateral abduction failure, but is distinguished by the fact that both eyes abduct normally when the vestibulo-ocular reflex is tested (doll's head manoeuvre).</p>
+                <p>As these children grow, inferior oblique overaction commonly develops, and dissociated vertical deviation (DVD) also appears. In DVD, one eye drifts up and outward when it is not being used for fixation, but crucially this upward drift is equal in each eye — it is not a true hypertropia because there is no corresponding depression of the other eye. DVD is driven by abnormal visual development rather than a specific muscle palsy.</p>
+                <p>Management is surgical. Spectacles should be prescribed if there is significant hypermetropia, but the primary treatment is bilateral medial rectus recession. The goal is alignment before the age of two years, when binocular cortical development still has some plasticity. Alignment achieved by two years offers a reasonable chance of peripheral fusion even if central stereoacuity is not achieved.</p>
 
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q1</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">A 3-year-old child is brought with inward deviation of the right eye since 6 months of age. The angle is large (~50 prism diopters), and the child cross-fixes well. What is the diagnosis and immediate management?</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>Accommodative esotropia; prescribe glasses</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Infantile (congenital) esotropia; refer for early surgical correction</div>
- <div class="mcq-option"><span class="opt-letter">C</span>VI nerve palsy; neuroimaging and medical management</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Strabismic amblyopia; start occlusion therapy alone</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Infantile esotropia; early surgery</div>
- <div class="exp-body">
- Onset <6 months, large angle, cross-fixation, no hypermetropia correction = infantile ET. Surgery should be done by 6–12 months to establish binocular vision and prevent permanent suppression.
- </div>
- </div>
- </div>
+                <h4>Accommodative Esotropia</h4>
+                <p>This is perhaps the most conceptually important esotropia for exam purposes. The child is hypermetropic — typically +2.50 dioptres or more — and uses accommodation to obtain a clear retinal image. Accommodation drives convergence through the synkinetic relationship quantified by the AC/A ratio. In a susceptible child, this convergence exceeds the divergence fusional reserve, and esotropia develops. The typical presentation is a child between the ages of 18 months and 3 years who was noticed to have an inward turn, often after a febrile illness or period of visual stress.</p>
+                <p>On cycloplegic refraction, significant hypermetropia is found. Prescribing the full cycloplegic refraction and asking the child to wear the glasses consistently is the first and most important step. In fully accommodative esotropia, the deviation corrects completely with glasses — surgery is not needed, and the goal is simply to maintain spectacle wear through the critical period. The eyes may straighten within weeks of wearing glasses.</p>
+                <p>Partially accommodative esotropia has a residual deviation despite glasses because of an additional non-accommodative component — often a decompensated esophoria. In this case, glasses reduce but do not eliminate the deviation, and the residual angle requires surgery, typically bilateral medial rectus recession.</p>
 
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q2</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">A 2-year-old with esotropia is found to have +3.00 D hypermetropia. After prescribing glasses, the esotropia fully resolves. What is the mechanism?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Accommodative esotropia triggered by hypermetropia; glasses relax accommodation and reduce convergence</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Glasses correct the refractive error and improve retinal focus</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Glasses weaken the medial rectus muscle</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Spontaneous resolution unrelated to glasses</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: A — Accommodative esotropia</div>
- <div class="exp-body">
- In hypermetropia, accommodation is needed to maintain focus. Accommodation triggers convergence (synkinesis). Glasses allow relaxed accommodation → reduced convergence demand → esotropia resolves.
- </div>
- </div>
- </div>
+                <h4>High AC/A Ratio Esotropia</h4>
+                <p>In some children, the AC/A ratio is abnormally high — meaning the eyes converge far more than expected for a given amount of accommodation. The practical consequence is that the esotropia is much worse at near (where accommodation is high) than at distance (where accommodation is minimal). These children are straight at distance but cross at near. The treatment is bifocal spectacles — the addition in the lower segment reduces the accommodation demand at near, reducing the convergence response and straightening the eyes at near distance.</p>
 
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q3</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A 6-year-old child presents with reduced vision in the left eye (OD: 6/6, OS: 6/36). No refractive error is found on cycloplegic refraction. Cover test shows left eye esotropia. What is the likely diagnosis and FIRST-LINE treatment?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Refractive amblyopia; prescribe spectacles</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Strabismic amblyopia; start occlusion of right eye (patching)</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Deprivation amblyopia; investigate for corneal opacity</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Anisometropic amblyopia; start cycloplegic penalisation</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Strabismic amblyopia; occlusion</div>
- <div class="exp-body">
- Strabismic amblyopia (most common, 40–50% of cases) occurs when fixation preference → suppression of non-fixating eye. Treatment: occlusion of better eye (OD) to force fixation and development of left eye. Child is within critical period (age 8).
- </div>
- </div>
- </div>
+                <div class="compare-table">
+                  <table>
+                    <tr>
+                      <th>Feature</th>
+                      <th>Infantile ET</th>
+                      <th>Fully Accommodative ET</th>
+                      <th>Partially Accommodative ET</th>
+                    </tr>
+                    <tr>
+                      <td>Onset</td>
+                      <td>Before 6 months</td>
+                      <td>1.5 to 3 years</td>
+                      <td>1.5 to 4 years</td>
+                    </tr>
+                    <tr>
+                      <td>Angle</td>
+                      <td>Large (30 to 60 PD)</td>
+                      <td>Variable</td>
+                      <td>Variable</td>
+                    </tr>
+                    <tr>
+                      <td>Refractive error</td>
+                      <td>None or low</td>
+                      <td>Significant hypermetropia</td>
+                      <td>Significant hypermetropia</td>
+                    </tr>
+                    <tr>
+                      <td>Response to glasses</td>
+                      <td>No change</td>
+                      <td>Fully corrects</td>
+                      <td>Partial correction only</td>
+                    </tr>
+                    <tr>
+                      <td>Management</td>
+                      <td>Surgery by age 2</td>
+                      <td>Full spectacle correction</td>
+                      <td>Glasses plus surgery for residual</td>
+                    </tr>
+                  </table>
+                </div>
 
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q4</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">In a patient with duane retraction syndrome Type I, the primary defect is:
-</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Absent abduction due to CN VI nucleus aplasia with aberrant CN III fibers</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Overaction of medial rectus</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Paralysis of lateral rectus</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Primary overaction of obliques</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: A — CN VI nucleus aplasia with aberrant CN III</div>
- <div class="exp-body">
- Duane syndrome Type I: abduction failure (no CN VI), but adduction normal. Co-innervation of both rectus muscles → palpebral fissure narrows on adduction. Congenital; no surgical treatment unless cosmetically significant.
- </div>
- </div>
- </div>
+                <div class="mnemonic-box">
+                  <div class="mnemonic-title">Non-accommodative component in esotropia</div>
+                  <div class="mnemonic-expand">When glasses do not fully correct the esotropia, think of a decompensated esophoria, microtropia, or a secondary esotropia following amblyopia treatment. Microtropia (monofixation syndrome) is a small-angle esotropia (typically less than 10 PD) with peripheral fusion and a central suppression scotoma. It often masquerades as a cured accommodative esotropia when in fact a small residual angle persists.</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q5</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A patient with Brown's syndrome (congenital) presents with complaint of vertical diplopia on upgaze. Which clinical finding is PATHOGNOMONIC?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Hypertropia in abduction</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Widening of palpebral fissure on forced elevation in adduction with clicking</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Esotropia in upgaze</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Exotropia in downgaze</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Widening of fissure with clicking on forced elevation in adduction</div>
- <div class="exp-body">
- Brown's syndrome = SO tendon sheath adhesions → restriction of elevation in adduction. Landmark sign: <strong>clicking + widening of palpebral fissure</strong> (relaxation of restrictive force when patient attempts forceful elevation in adduction).
- </div>
- </div>
- </div>
+          <!-- Section 3: Exotropia -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-green"></div>
+              <h3>Exotropia</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Intermittent Exotropia</h4>
+                <p>This is the most common form of exotropia. The deviation is not present all the time — the eyes are straight under good lighting conditions and when the child is attentive, but the deviation becomes manifest when the child is tired, unwell, or looking into bright light. The reason it tends to break in bright light is that the child closes or squints one eye to avoid diplopia. Parents often describe the child closing one eye in the sun before any frank deviation is noticed.</p>
+                <p>Suppression is the mechanism that keeps these children symptom-free despite the intermittent turn. When the eye deviates, the cortex suppresses the image from that eye, preventing diplopia. Because suppression is intermittent rather than constant, binocular vision is preserved to a degree. This is why intermittent exotropia has a better prognosis for binocularity than constant exotropia or suppression-based infantile esotropia.</p>
+                <p>Two patterns are important to recognise. In <strong>divergence excess type</strong>, the exotropia is larger at distance than at near — the divergence control is weakest when convergence demand is lowest. In <strong>convergence insufficiency type</strong>, the exotropia is worse at near, driven by an inability to sustain convergence. Near convergence insufficiency responds well to convergence exercises and base-in prisms.</p>
 
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q6</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">Alternate cover test reveals 10 prism diopters of exotropia at distance and 15 prism diopters at near. Which type of exotropia is this?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Divergence excess</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Basic exotropia</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Convergence insufficiency</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Intermittent exotropia</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — Convergence insufficiency</div>
- <div class="exp-body">
- Convergence insufficiency: deviation WORSE at near (15 PD) than distance (10 PD). Treatment: exercises or base-in prisms. Divergence excess = worse at distance. Basic = equal distance/near.
- </div>
- </div>
- </div>
+                <h4>Management of Exotropia</h4>
+                <p>Part-time patching of the dominant eye can stimulate motor fusion in intermittent exotropia. Orthoptic exercises to improve fusional convergence amplitude are helpful in convergence insufficiency. When the deviation is constant or breaking down frequently, surgery is indicated. The standard procedure for divergence excess type is bilateral lateral rectus recession; for convergence insufficiency, bilateral medial rectus resection is preferred. Overcorrection by 10 to 15 PD at the time of surgery is acceptable and expected because the initial alignment tends to drift back toward exotropia over time.</p>
 
- <div class="mcq-card" data-correct="3">
- <div class="mcq-meta">
- <span class="mcq-num">Q7</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A Hess chart in a patient with CN III palsy shows:</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Enlarged field of fixation on the affected side</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Symmetrical field (normal Hess)</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Contracted field on the affected side (especially downgaze and abduction)</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Contracted field on the opposite (normal) side due to compensatory movements</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — Contracted field on affected side</div>
- <div class="exp-body">
- Paralytic strabismus (CN III palsy) = field contracted on SIDE OF LESION. Restrictive (e.g., thyroid eye disease) = opposite eye's field contracted. Hess chart helps differentiate paralytic vs restrictive.
- </div>
- </div>
- </div>
+                <div class="info-box">
+                  <strong>Constant versus intermittent exotropia:</strong> Constant exotropia in infancy (before 12 months) is unusual and should raise the suspicion of a sensory exotropia — a deviation driven by poor vision in one eye, where the visual cortex suppresses a chronically blurred image and the eye drifts outward. The cause is usually a significant unilateral refractive error, amblyopia, or intraocular pathology. Always check visual acuity and refraction before attributing any deviation to a primary motor problem.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q8</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">Which of the following represents a V pattern in strabismus?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Esotropia increases in upgaze and exotropia decreases in downgaze</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Exotropia increases in upgaze and esotropia decreases in upgaze</div>
- <div class="mcq-option"><span class="opt-letter">C</span>No change in deviation with vertical gaze</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Hypertropia in abduction</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: A — Esotropia ↑ in upgaze, Exotropia ↓ in upgaze</div>
- <div class="exp-body">
- V pattern: Esotropia increases or exotropia decreases in upgaze. A pattern: opposite (esotropia increases or exotropia decreases in downgaze). Caused by oblique muscle imbalance.
- </div>
- </div>
- </div>
+          <!-- Section 4: Amblyopia -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-amber"></div>
+              <h3>Amblyopia</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Pathophysiology and the Critical Period</h4>
+                <p>Amblyopia results from abnormal visual experience during the critical period of visual cortical development. The critical period extends from birth to approximately 7 to 8 years, with the peak of cortical plasticity between 18 months and 5 years. During this window, the visual cortex is actively forming and refining the connections that underlie spatial vision. If one eye provides a consistently degraded, blurred, or suppressed signal to the cortex, the connections for that eye are not established properly, and the resulting reduction in acuity cannot be corrected by optical means alone once the critical period closes.</p>
 
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q9</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">In a patient with adult-onset esotropia, why does diplopia occur while a child with childhood-onset esotropia does NOT experience diplopia?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Adult eye muscles are stiffer and cannot compensate</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Child's brain undergoes suppression of the deviating eye due to cortical plasticity; adult brain cannot suppress</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Adult has worse visual acuity baseline</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Children have larger pupils and better accommodative response</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Suppression in children, not in adults</div>
- <div class="exp-body">
- Childhood strabismus: CNS suppresses image from deviating eye → no diplopia but amblyopia risk. Adult-onset: no plastic suppression → diplopia (uncomfortable but vision preserved). Adult prognosis better; child prognosis needs urgent intervention.
- </div>
- </div>
- </div>
+                <h4>Types of Amblyopia</h4>
+                <p><strong>Anisometropic amblyopia</strong> results from a significant difference in refractive error between the two eyes. The eye with the higher refractive error — most commonly the more hyperopic or more astigmatic eye — receives a chronically blurred image regardless of where the eyes are pointing. There is no manifest squint, so parents rarely notice it, which is why this type tends to present late. Hyperopic anisometropia causes amblyopia more readily than myopic anisometropia because in myopia the child can bring objects close to compensate, while in hyperopia no such strategy exists without spectacles.</p>
+                <p><strong>Strabismic amblyopia</strong> occurs because the cortex develops a strong preference for the fixating eye and actively suppresses the signal from the deviating eye to avoid diplopia. Over time this suppression deepens into true amblyopia. The suppression scotoma is central — it covers the fovea of the deviating eye — which is why the acuity loss is specifically in the central vision.</p>
+                <p><strong>Deprivation amblyopia</strong> is the most severe type because a complete barrier to form vision — a dense congenital cataract, a corneal opacity, or a complete ptosis covering the pupil — prevents any image formation during the critical period. The cortex never receives the visual input it needs to develop normal connections. Even a few weeks of deprivation in a newborn can produce profound, irreversible amblyopia. This is why congenital cataract must be extracted within the first six to eight weeks of life and optical correction provided immediately.</p>
 
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q10</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">The SPECT principle in strabismus management emphasizes treatment in what order?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Surgery first, then glasses, then prisms</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Spectacles → Prisms → Exercises → Cyclopentolate/Occlusion → Toxin → Surgery</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Occlusion therapy followed immediately by surgery</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Botulinum toxin before glasses</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Sequential SPECT approach</div>
- <div class="exp-body">
- SPECT: Start conservative, progress to surgical if needed. Most accommodative ET corrected by glasses alone. Amblyopia treated with occlusion. Surgery reserved for when conservative measures insufficient.
- </div>
- </div>
- </div>
+                <h4>Management</h4>
+                <p>Treatment follows a logical sequence. The first step is always to remove the cause: surgery for a deprivation amblyopia (cataract extraction, ptosis repair), and full optical correction for refractive amblyopia. The spectacles alone produce improvement over weeks to months in anisometropic amblyopia because even the act of wearing the correct correction improves the retinal image quality — a phenomenon called refractive adaptation.</p>
+                <p>Once optical correction is in place, active occlusion therapy begins. Patching the dominant eye forces the amblyopic eye to take over fixation, stimulating the dormant cortical connections. The prescription depends on severity: approximately 2 hours daily for mild amblyopia and up to 6 hours daily for moderate or severe cases. Treatment must continue until the acuity is equal or has plateaued at maximum improvement — stopping too early causes regression.</p>
+                <p>Atropine penalisation is an alternative for children who will not tolerate a patch. A drop of atropine 1% in the dominant eye blurs its near vision, forcing the amblyopic eye to take over for near tasks. It is particularly useful in mild to moderate amblyopia and for maintaining gains after successful patching. Compliance is generally better than with patching.</p>
 
- </div><!-- end MCQ tab -->
+                <div class="warn-box">
+                  The critical window closes by approximately 8 years of age. Treatment is still worth attempting up to age 10 to 12 in motivated children, but the results diminish significantly with age. After 12 years, treatment rarely produces meaningful improvement. This is why every child should have vision screening at school entry — undetected anisometropic amblyopia at age 5 is treatable; discovered at age 12, it rarely is.
+                </div>
 
- <!-- TAB 3: PYQs -->
- <div class="tab-panel">
- <div class="pyq-section">
- <h2> Previous Year Questions</h2>
- <p class="pyq-intro">Actual exam-pattern questions from AIIMS PG, NEET PG, DNB, and university exams.</p>
+                <div class="clinical-box">
+                  <strong>Practical point — always correct the refraction first:</strong> It is a common mistake to patch before giving spectacles. Prescribing spectacles first and waiting 6 to 10 weeks for adaptation is essential because some of the apparent amblyopia is simply blur from uncorrected refractive error. After adaptation, reassess acuity; the residual deficit after full refractive correction is the true depth of the amblyopia, and that is what patching then addresses.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> AIIMS PG / PGI</div>
+          <!-- Section 5: Incomitant Squint -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-red"></div>
+              <h3>Incomitant Squint — Paralytic and Restrictive</h3>
+              <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Paralytic Strabismus — General Features</h4>
+                <p>In paralytic strabismus, an extraocular muscle or its nerve supply has failed. The key clinical features distinguish it from comitant squint: sudden onset in an adult with binocular diplopia; the diplopia is worst in the direction of action of the paretic muscle; and the secondary deviation (the deviation when the paretic eye is fixating) is greater than the primary deviation (when the normal eye fixates). This difference is explained by Hering's law — when the paretic eye fixates, extra innervation must be sent to it to maintain fixation, and by the law of equal innervation, that same excess signal is sent to the yoke muscle of the other eye, causing it to overact and swing further in the opposite direction.</p>
+                <p>Patients develop a compensatory head posture to move their eyes away from the field of action of the paretic muscle, reducing diplopia. This posture is a useful clinical sign and should prompt examination of ocular motility in any child or adult with a habitual head tilt or face turn.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">AIIMS 2021</div>
- <div class="pyq-q">A 2-year-old child with sudden esotropia is noted to have +4 D hypermetropia. Which is the FIRST line of management? A) Immediate surgery B) Prescribe glasses C) Cyclopentolate penalisation D) Botulinum toxin injection</div>
- <div class="pyq-ans">Answer: B — Prescribe glasses (accommodative esotropia may fully resolve with refractive correction)</div>
- </div>
+                <h4>Superior Oblique Palsy (CN IV)</h4>
+                <p>Fourth nerve palsy is the most common cause of a vertical diplopia and the most common cranial nerve palsy to affect ocular motility. The superior oblique depresses and intorts the eye, with its main depressor action being greatest in adduction. A superior oblique palsy therefore produces a hypertropia of the affected eye that is worst on adduction and on head tilt to the ipsilateral side.</p>
+                <p>The <strong>Bielschowsky head tilt test</strong> is the diagnostic test. When the head is tilted toward the shoulder on the side of the palsy, the ipsilateral eye intorts to maintain correct orientation. This intorsion should be performed by the superior oblique. With the superior oblique paralysed, the superior rectus (the only other intortor) takes over, and because the superior rectus is an elevator, the hypertropia of the affected eye worsens on ipsilateral head tilt. The test is positive when the hypertropia increases on head tilt toward the affected side.</p>
+                <p>The compensatory head posture in CN IV palsy is a contralateral head tilt — tilting away from the affected side to use the unopposed intortion of the fellow eye and reduce the vertical diplopia. A child with long-standing CN IV palsy will often have facial asymmetry from the sustained head tilt, which is an important clue to the chronicity of the condition.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">AIIMS 2020</div>
- <div class="pyq-q">What is the most common type of amblyopia? A) Refractive B) Strabismic C) Deprivation D) Anisometropic</div>
- <div class="pyq-ans">Answer: B — Strabismic (40–50% of amblyopia cases)</div>
- </div>
+                <h4>Duane's Retraction Syndrome</h4>
+                <p>Duane's syndrome is a congenital co-innervation anomaly caused by absence or hypoplasia of the abducens nucleus, with the lateral rectus being supplied by a branch of the third nerve. The consequence is co-contraction of the medial and lateral recti on attempted adduction, causing the globe to retract into the orbit and the palpebral fissure to narrow. Type I is by far the most common — abduction is limited or absent while adduction is normal or near-normal. Type II shows limited adduction with relatively preserved abduction. Type III shows limitation of both movements.</p>
+                <p>The globe retraction and fissure narrowing on adduction are pathognomonic. There is no diplopia in most cases because suppression develops in childhood. A face turn is common — toward the affected side in Type I to keep the eye in the abducted position where it functions best. Surgery is indicated when there is a significant head posture, a large deviation in primary position, or troublesome upshooting or downshooting on adduction (from slippage of the co-contracting recti). The aim is always to improve the primary position and head posture, not to restore full motility.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">PGI Chandigarh 2022</div>
- <div class="pyq-q">A patient presents with absence of abduction in one eye but normal adduction with palpebral fissure narrowing on adduction. What is the diagnosis? A) Paralytic CN VI palsy B) Duane retraction syndrome C) Brown's syndrome D) Internuclear ophthalmoplegia</div>
- <div class="pyq-ans">Answer: B — Duane retraction syndrome Type I (CN VI nucleus aplasia)</div>
- </div>
- </div>
+                <div class="info-box">
+                  <strong>A and V patterns:</strong> Some patients show a change in horizontal alignment with vertical gaze. An A pattern is present when the eyes are more esotropic in upgaze or more exotropic in downgaze — the deviation narrows toward the top of the letter A. A V pattern is present when the eyes are more exotropic in upgaze or more esotropic in downgaze. A patterns are usually associated with superior oblique overaction or inferior oblique underaction; V patterns more commonly reflect inferior oblique overaction. Surgical correction involves oblique weakening or vertical transposition of the horizontal recti.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> NEET PG / DNB</div>
+          <!-- Section 6: Binocular Vision and Hess Chart -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-teal"></div>
+              <h3>Binocular Vision and Hess Chart</h3>
+              <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Grades of Binocular Single Vision</h4>
+                <p>Normal binocular vision has three grades, assessed classically using the synoptophore. The first grade is <strong>simultaneous perception</strong> — the brain can process an image from each eye at the same time without suppressing either. This is the most basic level. The second grade is <strong>fusion</strong> — the brain combines slightly different images from the two eyes into a single percept. Fusion has a motor component (vergence movements to maintain alignment) and a sensory component (the actual combining of images). The third and highest grade is <strong>stereopsis</strong> — the perception of depth that arises from the disparity between the two retinal images.</p>
+                <p>Stereoacuity tests include the Frisby test (random dot, no glasses needed — the most "natural" test), the TNO test (random dot anaglyph requiring red-green glasses), the Lang stereo test (no glasses, suitable for young children), the Randot test, and the Titmus fly test. For detailed clinical measurement across all three grades, the synoptophore is used. The Worth 4-dot test assesses fusion at near and distance using red-green glasses and a torch with coloured dots — it can identify suppression, normal fusion, or diplopia.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">NEET PG 2022</div>
- <div class="pyq-q">Alternate cover test shows 20 PD esotropia at distance and 25 PD at near. This indicates: A) Accommodative esotropia B) Non-accommodative esotropia C) Convergence excess D) Divergence insufficiency</div>
- <div class="pyq-ans">Answer: C — Convergence excess (deviation increases at near, more convergence needed)</div>
- </div>
+                <h4>The Hess Chart in Detail</h4>
+                <p>The Hess chart (and its variant, the Lees screen) tests ocular motility by dissociating the eyes with red-green goggles. The patient sits 50 cm from a calibrated screen. With one eye covered by the red filter and the other by the green, the examiner projects a light spot to each of the nine positions of gaze and asks the patient to superimpose their own torch onto the projected spot. Because of dissociation, each eye independently indicates where it thinks it is pointing in each position of gaze.</p>
+                <p>The chart of the affected eye will be contracted — its movements are limited, so it falls short of the correct positions in the field of action of the paretic muscle. The chart of the fellow eye will be expanded — the yoke muscle overacts (Hering's law), so it goes beyond the correct positions in the conjugate direction.</p>
+                <p>To interpret a Hess chart, always first determine which chart is smaller. That eye is affected. Then look for the most contracted part of the smaller chart — the direction of maximum underaction identifies the paretic muscle. For example, a right lateral rectus palsy will produce a contracted chart of the right eye on right lateral gaze, with an expanded chart of the left eye on left lateral gaze (left medial rectus overaction, the yoke muscle).</p>
 
- <div class="pyq-item">
- <div class="pyq-source">DNB 2021</div>
- <div class="pyq-q">The critical period for development of amblyopia extends up to what age? A) 5 years B) 8 years C) 12 years D) 18 years</div>
- <div class="pyq-ans">Answer: B — 8 years (peak plasticity 4–6 years; treatment less effective after 12 years)</div>
- </div>
+                <div class="clinical-box">
+                  <strong>Hess chart serial monitoring:</strong> In an acute paralytic strabismus where the aetiology is known to be benign (such as microvascular CN III or IV palsy in diabetes), serial Hess charts are extremely useful for tracking recovery. A progressively expanding affected chart indicates recovery of the paretic muscle. Spread of comitance — when the two charts begin to approach equal size — indicates secondary contracture of the antagonist muscle, a sign of longstanding palsy.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-item">
- <div class="pyq-source">NEET PG 2020</div>
- <div class="pyq-q">Which muscle is involved in Duane's retraction syndrome Type II? A) Lateral rectus B) Medial rectus C) Superior rectus D) Inferior rectus</div>
- <div class="pyq-ans">Answer: B — Medial rectus (Type II = adduction failure, but abduction normal, due to aberrant CN III innervation)</div>
- </div>
- </div>
+          <!-- Section 7: Surgical Management -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-violet"></div>
+              <h3>Surgical Management of Strabismus</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Principles: Weakening and Strengthening Procedures</h4>
+                <p>All strabismus surgery is built on two fundamental operations. <strong>Recession</strong> weakens a muscle by detaching it from its insertion on the sclera and reattaching it at a more posterior point. By moving the insertion backward, the effective pulling force of the muscle is reduced. A bilateral medial rectus recession is the standard approach for esotropia — weakening both convergence-producing muscles to allow the eyes to straighten.</p>
+                <p><strong>Resection</strong> strengthens a muscle by removing a segment of it and reattaching the muscle at the original insertion point. The shortened muscle has more resting tension and pulls the eye more effectively in its direction of action. Medial rectus resection strengthens convergence; lateral rectus resection strengthens abduction.</p>
+                <p>Operations are often combined. A recession-resection procedure on one eye involves recessing the antagonist (weakening the overacting or deviating muscle) and resecting the agonist (strengthening the underacting muscle) on the same eye. For example, in an esotropia treated unilaterally, the medial rectus is recessed and the lateral rectus resected.</p>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> University / MBBS Exams</div>
+                <h4>Dose Planning</h4>
+                <p>The amount of recession or resection is calculated from the measured angle of deviation. The relationship is not linear and depends on the muscle being operated and the pre-operative angle. As a rough clinical guide, 1 mm of medial rectus recession corrects approximately 3 to 4 prism dioptres of esotropia; 1 mm of lateral rectus recession corrects approximately 2 to 3 prism dioptres of exotropia. Dose tables are available and adjusted for the specific muscle. The pre-operative angle must be stable and measured carefully at both distance and near before planning surgery.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">University Final MBBS</div>
- <div class="pyq-q">Describe the cover test, alternate cover test, and their interpretation in a case of manifest esotropia. What is the diagnostic value of prism cover test? (5 marks)</div>
- <div class="pyq-ans"> Cover test: detects fixation preference. Alternate cover test: measures total deviation (phoria + tropia). Prism cover test: prism strength at which pupil stops moving = magnitude of deviation in prism diopters. Helps quantify and track progression.</div>
- </div>
- </div>
- </div>
- </div>
+                <h4>Adjustable Sutures</h4>
+                <p>In cooperative adults, adjustable sutures allow the surgeon to modify the surgical result under topical anaesthesia on the operating table or more commonly on the day after surgery. The muscle is initially attached with a slip-knot; once the patient is awake and alignment can be assessed in the clinic, the suture is adjusted to advance or recess the muscle further. This approach is particularly valuable in patients with thyroid eye disease, longstanding paralytic strabismus with contracture, or re-operations where the response to surgery is unpredictable.</p>
 
- <!-- TAB 4: QUICK REVISION -->
- <div class="tab-panel">
- <div class="revision-grid">
- <div class="revision-card">
- <h3>Definitions & Key Tests</h3>
- <ul>
- <li><strong>Orthophoria:</strong> Perfect alignment</li>
- <li><strong>Heterophoria:</strong> Latent deviation (fusion breaks it)</li>
- <li><strong>Heterotropia:</strong> Manifest deviation (obvious)</li>
- <li><strong>Cover-uncover:</strong> Detects which eye fixates (preference)</li>
- <li><strong>Alternate cover:</strong> Measures total deviation (phoria + tropia)</li>
- <li><strong>Prism cover:</strong> Quantifies deviation in prism diopters</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Amblyopia</h3>
- <ul>
- <li><strong>Definition:</strong> Reduced VA not correctable by glasses</li>
- <li><strong>Sensitive period:</strong> Birth–8 yr (peak 4–6 yr)</li>
- <li><strong>Most common:</strong> Strabismic (40–50%)</li>
- <li><strong>Treatment:</strong> SPECT principle (sequential)</li>
- <li><strong>Prognosis:</strong> Better <8 yr; poor >12 yr</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Esotropia Types</h3>
- <ul>
- <li><strong>Infantile (congenital):</strong><6mo, large angle, cross-fixation → surgery 6–12 mo</li>
- <li><strong>Accommodative:</strong> Hypermetropia-triggered → glasses correct fully</li>
- <li><strong>Non-accommodative:</strong> No hypermetropia → surgery needed</li>
- <li><strong>VI nerve palsy:</strong> Esotropia worsens in abduction</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Other Strabismus</h3>
- <ul>
- <li><strong>Exotropia:</strong> Divergence excess (worse at distance); Convergence insufficiency (worse at near); Basic (equal)</li>
- <li><strong>CN IV palsy:</strong> Hypertropia; Bielschowsky head tilt test POSITIVE</li>
- <li><strong>Duane syndrome:</strong> Type I = abduction failure; fissure narrows on adduction</li>
- <li><strong>Brown's syndrome:</strong> SO adhesion; clicking + fissure widens on forced elevation in adduction</li>
- </ul>
- </div>
- </div>
- </div>
+                <h4>Complications</h4>
+                <p>The most feared surgical complication is a slipped or lost muscle, where the muscle retracts under the conjunctiva or behind Tenon's capsule. This causes a sudden large overcorrection in the direction away from the operated muscle. Urgent re-exploration and retrieval are needed. Globe perforation by the scleral suture needle is rare but serious; it is more common during resection and in high myopes with thin sclera. Anterior segment ischaemia can develop if surgery is performed on more than two recti from the same eye in one session, because the anterior ciliary arteries — which travel within the recti — are the primary blood supply to the anterior segment. This risk is highest in the elderly and in patients with vascular disease.</p>
 
- </div><!-- end tab-container -->
+                <div class="mnemonic-box">
+                  <div class="mnemonic-title">Recession versus Resection</div>
+                  <div class="mnemonic-expand">
+                    Recession weakens — the muscle is moved back (posteriorly), reducing its mechanical advantage. Think of a rubber band stretched further before it has to contract. Resection strengthens — the muscle is shortened, making it tighter. The operated eye will move more easily in the direction of the resected muscle. When confused, remember: Recession = Relax; Resection = Reinforce.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <!-- Navigation -->
- <div style="display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--border)">
- <a href="ch11-neuro.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--secondary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
- ← Prev: Ch 11 — Neuro-Ophthalmology
- </a>
- <a href="ch13-eyelids.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
- Next: Ch 13 — Eyelids →
- </a>
- </div>
+        </div>
+        <!-- END DEEP DIVE TAB -->
 
- </div><!-- end content-area -->
- </div><!-- end main-content -->
+        <!-- ==================== TAB 3: CLINICAL SKILLS ==================== -->
+        <div class="tab-panel">
+          <p class="skills-intro">These guides describe the core examination techniques in strabismus practice. Knowing the steps is necessary but not sufficient — understanding what each step is designed to reveal, and what a finding actually means, is what separates a competent examiner from one who simply goes through the motions.</p>
+
+          <!-- Skill 1: Cover-Uncover and Alternate Cover Test -->
+          <div class="skill-section">
+            <div class="skill-section-title">Cover-Uncover Test and Alternate Cover Test <span class="skill-tag">Bedside</span></div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Setup and Target</h5>
+                  <p>Seat the patient comfortably at the appropriate distance — 6 metres for distance fixation, 33 cm for near. Use an accommodative target: a detailed letter or picture that the child must look at carefully to keep accommodation active. In young children, an interesting toy with fine detail works well. If accommodation is not controlled, an accommodative esotropia will appear straight. Always assess both distance and near because the deviation may differ.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Cover-Uncover Test — Detecting the Tropia</h5>
+                  <p>Cover one eye with an occluder and watch the other (uncovered) eye. If the uncovered eye moves to take up fixation when the fellow eye is covered, a tropia is present in the uncovered eye. The direction of the movement tells you the type of deviation: if the uncovered eye moves inward to pick up fixation, it was deviated outward — exotropia. If it moves outward, the eye was in esotropia. Now uncover the covered eye and watch it: if it drifts before returning to fixation, a phoria is present. The cover-uncover test thus detects both tropias (movement of the uncovered eye) and phorias (drift and recovery of the covered eye on uncovering).</p>
+                  <div class="step-tip">A common exam error is not watching the right eye. When you cover the right eye, watch the left eye for movement (detecting tropia in the left eye). When you cover the left eye, watch the right eye. Then repeat the uncover component for each side.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Alternate Cover Test — Measuring Total Deviation</h5>
+                  <p>Move the cover briskly from one eye to the other without allowing any period of binocular viewing. This fully dissociates the eyes, breaking fusion. The total deviation — phoria plus tropia — is now visible. Each time the cover is moved, watch the eye that is being uncovered: the direction it moves from when uncovered indicates the direction of the latent or manifest deviation. This is the test you combine with prisms to measure the full angle. The alternate cover test will always show a larger movement than the cover-uncover test in the same patient, because it includes the phoric component.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h5>Interpreting the Findings</h5>
+                  <p>If the cover-uncover test is negative but the alternate cover test reveals a deviation, the patient has a phoria — there is a latent tendency to deviate that is maintained by fusion in normal binocular viewing. If the cover-uncover test is positive, there is a tropia. The size of the movement gives a rough estimate of the angle; for accurate measurement, prisms are needed. Always test in at least the six cardinal positions of gaze in addition to primary position to determine whether the deviation is comitant.</p>
+                  <div class="step-normal">Performing cover tests in a child requires patience. Use an interesting target, work quickly, and accept that multiple attempts may be needed. A brief non-fixating moment should not be interpreted as a tropia — ensure the child is genuinely fixating before you cover.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Hirschberg and Krimsky -->
+          <div class="skill-section">
+            <div class="skill-section-title">Hirschberg Corneal Reflex Test and Krimsky Test <span class="skill-tag">Bedside</span></div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Hirschberg Test</h5>
+                  <p>Hold a pen torch at arm's length (approximately 33 cm) directly in front of the patient. Ask the patient to look at the light. The corneal reflex normally falls just slightly nasal to the centre of the pupil in each eye. If one reflex is displaced, the eye is deviated. A reflex at the pupil margin corresponds to approximately 15 prism dioptres; at the mid-iris, approximately 30 PD; at the limbus, approximately 45 PD. The direction of displacement is opposite to the direction of deviation — a reflex displaced temporally means the eye is deviated nasally (esotropia); a reflex displaced nasally means exotropia.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Krimsky Test</h5>
+                  <p>This test refines the Hirschberg estimate by using prisms to centre the displaced reflex. Place prisms of increasing strength in front of the deviating eye, apex toward the direction of deviation, until the corneal reflexes appear symmetric. The prism power at which symmetry is achieved is the estimated angle. The Krimsky test is particularly useful when the patient cannot cooperate with a formal prism cover test — for instance, in infants or patients with very poor vision in one eye who cannot alternate fixation.</p>
+                  <div class="step-tip">Remember the Krimsky convention: for esotropia, the prism base is placed outward (base-out) in front of the esotropic eye. For exotropia, base-in in front of the exotropic eye. The prism displaces the image to match the position of the deviated eye.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Angle Kappa and Pseudostrabismus</h5>
+                  <p>Always check for a significant angle kappa before concluding a deviation is present. If the corneal reflex appears to be displaced but the cover test reveals no movement, the apparent displacement is due to the angle kappa. A positive angle kappa (fovea displaced nasally) makes the reflex appear temporal and simulates exotropia. Epicanthal folds are a far more common cause of apparent esotropia in infants than any true deviation — the fold narrows the apparent nasal sclera, creating the impression of inward deviation. The cover-uncover test immediately distinguishes the two.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: Prism Cover Test Technique -->
+          <div class="skill-section">
+            <div class="skill-section-title">Prism Cover Test Technique <span class="skill-tag">Clinic</span></div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Prerequisites</h5>
+                  <p>The patient must be wearing their full refractive correction. The target must be an accommodative fixation target at the correct distance. You need a prism bar (loose prisms are an acceptable alternative for high angles). Perform the alternate cover test first without prisms to confirm the direction of the deviation and get a rough estimate of the angle. This tells you which prism orientation to use and where to start.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Technique</h5>
+                  <p>Hold the prism bar in front of one eye — conventionally the deviating eye, though in practice either eye may be used as long as it is consistent. Begin with a low prism value and perform the alternate cover test while maintaining the prism in position. Increase the prism strength incrementally. The endpoint is reached when there is no movement of the eye when the cover is transferred from one eye to the other. At this point, the prism exactly neutralises the deviation — all the image displacement caused by the squint is being corrected by the prism, and there is no stimulus for a corrective movement.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Recording and What to Measure</h5>
+                  <p>Record the prism value at the endpoint, the eye in front of which the prism was held, and whether the measurement was at distance or near. Always measure at both distances. Note any difference between distance and near measurements — a deviation that is significantly larger at near indicates a high AC/A ratio or convergence insufficiency, while a deviation larger at distance suggests divergence excess. The difference between distance and near measurements is as diagnostically important as either value alone.</p>
+                  <div class="step-tip">Avoid looking through the prism yourself when assessing the patient's eye movement — the prism will distort your view. Keep the prism in front of the patient's eye and look past it to observe the movement of the eye you are covering and uncovering.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Hess Chart Reading -->
+          <div class="skill-section">
+            <div class="skill-section-title">Reading a Hess Chart <span class="skill-tag">Investigations</span></div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Orientation</h5>
+                  <p>The Hess chart records the movement of each eye in nine positions of gaze. Two charts are produced — one for the right eye, one for the left. The charts are printed on a standard grid with the nine gaze positions arranged in the same anatomical configuration as gaze: centre is primary position, right is right gaze, upper right is right and up, and so on. The patient's own eye movements are plotted as points, which are then connected to form a polygon. A normal polygon fills the grid symmetrically in all nine positions.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Identifying the Affected Eye</h5>
+                  <p>The smaller chart belongs to the affected eye. When a muscle is paretic, the eye falls short of the correct position in that muscle's field of action, making the plotted polygon smaller in that direction. Compare the two charts: whichever is clearly smaller (contracted) contains the paretic eye. This is a fundamental rule that should not be applied in reverse — the larger chart does not belong to the affected eye.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Identifying the Paretic Muscle</h5>
+                  <p>On the smaller chart, find the field of action that is most contracted — the position where the polygon is furthest from the outer border of the grid. The muscle responsible for movement in that direction is the paretic muscle. Use the standard muscle actions: lateral rectus — lateral gaze; medial rectus — medial gaze; superior rectus — up and in; inferior rectus — down and in; superior oblique — down and in (primarily); inferior oblique — up and out. Cross-reference with the larger chart to confirm: the most expanded field of the fellow eye should be in the conjugate position, indicating overaction of the yoke muscle by Hering's law.</p>
+                  <div class="step-tip">A practical sequence: (1) Find the smaller chart. (2) Find its most contracted field. (3) Name the eye and the gaze direction. (4) Name the muscle responsible for that gaze direction in that eye. (5) Confirm by checking the fellow eye's chart shows expansion in the conjugate field.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h5>Paralytic versus Restrictive Pattern</h5>
+                  <p>A paralytic pattern shows the smaller chart on the side of the affected muscle. A restrictive pattern — such as thyroid eye disease limiting elevation — will show an unusual finding: the restricted eye cannot elevate, but because restriction mechanically prevents the eye from moving (rather than failure of innervation), the Hering's law effect on the fellow eye is different. In restriction, the fellow eye's chart may actually be contracted in the opposite direction because the restricted eye needs less innervation than expected. Serial Hess charts over weeks allow tracking of recovery or progression and are far more informative than a single measurement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- END CLINICAL SKILLS TAB -->
+
+        <!-- ==================== TAB 4: Q-BANK ==================== -->
+        <div class="tab-panel">
+          <div class="qbank-nav">
+            <button class="qbank-btn ug-btn active" data-target="ug-mcqs">UG MCQs <span class="q-count">12</span></button>
+            <button class="qbank-btn pg-btn" data-target="pg-mcqs">NEET PG MCQs <span class="q-count">12</span></button>
+            <button class="qbank-btn la-btn" data-target="long-ans">Long Answers <span class="q-count">4</span></button>
+            <button class="qbank-btn pyq-btn" data-target="pyqs">PYQs <span class="q-count">6</span></button>
+          </div>
+
+          <!-- UG MCQs -->
+          <div class="qbank-panel active" id="ug-mcqs">
+            <div class="qbank-info">Twelve MCQs covering the core UG-level concepts in strabismus — the definitions, cover test principles, amblyopia rules, and syndrome recognition that every MBBS student must know before the clinical posting and final examination.</div>
+
+            <!-- Q1 -->
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">1</span><span class="mcq-q">Which of the following best distinguishes a phoria from a tropia?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>A phoria is always convergent; a tropia is always divergent</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>A phoria is a latent deviation controlled by fusion; a tropia is a manifest deviation present with both eyes open</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>A phoria requires surgery; a tropia is managed conservatively</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>A phoria is detected by the Hirschberg test; a tropia by the Hess chart</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> A phoria is a latent deviation that only appears when binocular fusion is disrupted — as by the cover test. Both eyes appear aligned in normal binocular viewing. A tropia is manifest; the eye deviates even with both eyes open because fusion is insufficient to control it. Phorias are far more common and usually asymptomatic. Tropias require active management to prevent amblyopia and loss of binocularity.</div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">2</span><span class="mcq-q">On the cover-uncover test, when the right eye is covered, the left eye moves outward to take up fixation. What does this indicate?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Left exotropia</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Right esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Left esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Right exotropia</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> When the right eye is covered and the left eye moves outward (temporally) to pick up fixation, the left eye was previously deviated inward — it was in an esotropic position. Covering the right eye breaks fusion and forces the left eye to take over, revealing its resting deviated posture. The direction of the refixation movement is opposite to the direction of the deviation: outward movement means the eye was deviated inward, so this is a left esotropia.</div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="mcq-card" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">3</span><span class="mcq-q">In the Hirschberg corneal reflex test, a displacement of the reflex to the pupil margin of one eye corresponds to approximately how many prism dioptres of deviation?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>15 prism dioptres</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>30 prism dioptres</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>45 prism dioptres</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>5 prism dioptres</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> In the Hirschberg test, each millimetre of corneal reflex displacement from the pupil centre corresponds to approximately 15 prism dioptres. A reflex at the pupil margin represents about 15 PD; at the mid-iris, about 30 PD; at the limbus, about 45 PD. The test gives a rough estimate — the prism and cover test is needed for accurate measurement. The Krimsky test is a more accurate modification that uses prisms to neutralise the reflex asymmetry.</div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="mcq-card" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">4</span><span class="mcq-q">Up to what age does the critical period for visual cortical development extend, making amblyopia treatment most effective?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>2 years</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>5 years</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>12 years</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>7 to 8 years</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The critical period for visual cortical development extends to approximately 7 to 8 years, with peak plasticity between 18 months and 5 years. Amblyopia treatment during this window produces the best results. Treatment is still attempted up to age 10 to 12 in motivated children but with diminishing returns. After 12 years, the cortex is largely mature and treatment rarely improves acuity. This window is why universal vision screening at school entry is so important — anisometropic amblyopia detected at 5 years is very treatable; at 12 years it is not.</div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="mcq-card" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">5</span><span class="mcq-q">A 3-year-old hypermetropic child develops esotropia. Glasses with the full cycloplegic refraction are prescribed and the esotropia fully resolves. What is this condition?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Fully accommodative esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Infantile esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Duane's retraction syndrome</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Partially accommodative esotropia</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Full correction of the hypermetropic refraction relaxes accommodation, which in turn reduces convergence through the AC/A synkinesis. When the esotropia completely resolves with spectacles alone, the condition is fully accommodative esotropia. Surgery is not needed — the goal is consistent spectacle wear through the critical period. If the deviation corrects only partially with glasses, a non-accommodative component exists, making it partially accommodative esotropia, and surgery is required for the residual angle.</div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">6</span><span class="mcq-q">Which of the following best describes dissociated vertical deviation (DVD)?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Hypertropia of one eye due to inferior oblique overaction</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Upward drift of the covered eye that resolves when the cover is removed — present in both eyes equally</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Upward, outward, and extorting drift of an eye when it is not fixating, without a corresponding depression of the other eye</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>A complication of bilateral lateral rectus recession</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> DVD is a complex motor anomaly associated with infantile esotropia and early-onset visual deprivation. The defining feature is that the non-fixating eye drifts upward, outward, and extorts — but there is no corresponding downward movement of the other eye. This distinguishes it from a true hypertropia (which would cause a corresponding hypotropia of the other eye by Hering's law). DVD is thought to represent abnormal supranuclear control from early disruption of binocular vision development.</div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="mcq-card" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">7</span><span class="mcq-q">Duane's retraction syndrome Type I is characterised by:</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Absent or severely limited abduction with normal or near-normal adduction, globe retraction and fissure narrowing on adduction</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Limited adduction with normal abduction</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Limitation of both abduction and adduction</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Progressive worsening of abduction deficit with age</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Type I is the most common form of Duane's syndrome. The sixth nerve nucleus is absent or hypoplastic; the lateral rectus receives aberrant innervation from the third nerve. On attempted adduction, both the medial and lateral recti contract simultaneously (co-contraction), retracting the globe and narrowing the palpebral fissure — the pathognomonic sign. Abduction is severely limited or absent. Type II has limited adduction. Type III has limitation of both movements.</div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">8</span><span class="mcq-q">The three grades of binocular single vision, in ascending order of complexity, are:</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Fusion, simultaneous perception, stereopsis</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Simultaneous perception, fusion, stereopsis</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Stereopsis, fusion, simultaneous perception</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Fusion, stereopsis, simultaneous perception</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The grades of binocular single vision progress from most basic to most sophisticated: first, simultaneous perception (the brain can receive and process images from both eyes at the same time); second, fusion (the images from both eyes are combined into a single percept); third, stereopsis (true three-dimensional depth perception from retinal image disparity). This hierarchy is assessed using the synoptophore. Loss of a lower grade inevitably means the higher grades are also absent.</div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="mcq-card" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">9</span><span class="mcq-q">In the Hess chart, the eye with the smaller (contracted) chart is:</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>The eye with the overacting yoke muscle</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>The normal eye</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>The eye with the highest refractive error</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>The affected eye with the paretic or underacting muscle</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The smaller chart belongs to the affected eye because its paretic muscle cannot reach the correct positions in the field of action, so the polygon falls short — it is contracted. The fellow eye's chart is larger (expanded) because by Hering's law, the yoke muscle of the paretic muscle receives excess innervation and overacts, pushing the eye further than expected. Always identify the smaller chart first, then look for its most contracted direction to name the paretic muscle.</div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">10</span><span class="mcq-q">What is the most common apparent cause of squint referred in healthy infants under one year of age in India?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Infantile esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Accommodative esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Pseudoesotropia from epicanthal folds</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Duane's retraction syndrome</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Pseudoesotropia from epicanthal folds is by far the most common cause of apparent squint in infants. The skin folds overlie the nasal sclera, reducing visible white space and creating the impression that the eyes are crossing. The cover test is entirely negative — no movement of either eye occurs, confirming that there is no true deviation. The Hirschberg reflex is symmetric. The condition resolves spontaneously as the nasal bridge develops and the epicanthal folds diminish in the first few years of life.</div>
+            </div>
+
+            <!-- Q11 -->
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">11</span><span class="mcq-q">In strabismus surgery, what does a recession procedure accomplish?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Shortens the muscle to increase its pulling force</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Moves the muscle insertion posteriorly, reducing its mechanical advantage and weakening the muscle</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Removes the muscle and reattaches it to a new location to change the direction of pull</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Transfers the muscle to an adjacent position to address a vertical deviation</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Recession is a weakening procedure. The muscle is detached from its insertion and sutured to the sclera at a point posterior to the original insertion. Moving the insertion backward reduces the moment arm of the muscle — it pulls the eye less effectively in its original direction of action. Recession is used for an overacting or deviating muscle (for example, bilateral medial rectus recession for esotropia). Resection is the strengthening procedure: a segment of the muscle is excised and the shortened muscle is reattached at the original insertion.</div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="mcq-card" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">12</span><span class="mcq-q">Which type of amblyopia has the worst prognosis and requires the most urgent treatment?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Strabismic amblyopia</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Anisometropic amblyopia</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Refractive amblyopia</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Deprivation amblyopia</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Deprivation amblyopia is the most severe form because a complete barrier to form vision — a dense congenital cataract, a corneal opacity, or ptosis covering the pupil — prevents any patterned image from reaching the retina during the critical period. Even a few weeks of visual deprivation in a newborn can produce profound, largely irreversible amblyopia. Congenital cataract should be extracted within the first 6 to 8 weeks of life and optical correction provided immediately, followed by aggressive patching. Strabismic and anisometropic amblyopia are less severe because some patterned vision reaches the retina.</div>
+            </div>
+
+          </div>
+          <!-- END UG MCQs -->
+
+          <!-- PG MCQs -->
+          <div class="qbank-panel" id="pg-mcqs">
+            <div class="qbank-info">Twelve scenario-based MCQs at NEET PG / DNB / AIIMS level — covering clinical presentations of paralytic squint, Hess chart interpretation, amblyopia management decisions, and surgical principles.</div>
+
+            <!-- PG Q1 -->
+            <div class="mcq-card pg" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">1</span><span class="mcq-q">A 6-year-old child has a habitual head tilt to the left. On examination, there is a right hypertropia that worsens on tilting the head to the right shoulder. Which cranial nerve is involved and what is the most likely diagnosis?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Left CN IV palsy — left superior oblique weakness</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Right CN IV palsy — right superior oblique palsy with positive Bielschowsky head tilt test to the right</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Right CN III palsy — inferior oblique overaction</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Right CN VI palsy — with compensatory head turn</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The Bielschowsky head tilt test is positive when tilting the head toward the affected side worsens the hypertropia. Here, tilting to the right (ipsilateral) worsens the right hypertropia — so the right superior oblique is paretic (right CN IV palsy). The compensatory posture is a head tilt to the left (contralateral) to reduce the hypertropia and avoid diplopia. In CN IV palsy, the affected eye is hypertropic (SO depresses) and the worsening on ipsilateral head tilt occurs because the superior rectus — the only remaining intortor — elevates the eye further when intorsion is demanded.</div>
+            </div>
+
+            <!-- PG Q2 -->
+            <div class="mcq-card pg" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">2</span><span class="mcq-q">An infant presents at 4 months with a constant, large-angle inward deviation of approximately 45 prism dioptres. Cycloplegic refraction shows +1.00 D hypermetropia. Cross-fixation is demonstrated. What is the correct management?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Prescribe glasses for the hypermetropia and review in 3 months</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Observe until age 2 years, then plan surgery</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Plan bilateral medial rectus recession surgery before age 2 years to allow binocular cortical development</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Botulinum toxin to the medial recti as definitive treatment</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> This is infantile esotropia. The +1.00 D hypermetropia is insufficient to cause accommodative esotropia (which typically requires +2.50 D or more). The large angle, early onset, and cross-fixation are characteristic. Surgery — bilateral medial rectus recession — should be planned before age 2 years to give the visual cortex the best opportunity to develop even rudimentary peripheral fusion. Delaying to age 2 is acceptable but not beyond. Glasses for 1 D of hypermetropia will not change the deviation. Botulinum toxin has a role but does not produce durable alignment in large-angle infantile esotropia.</div>
+            </div>
+
+            <!-- PG Q3 -->
+            <div class="mcq-card pg" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">3</span><span class="mcq-q">A 5-year-old child has BCVA of 6/6 in the right eye and 6/36 in the left eye. Cycloplegic refraction shows +1.00 D in the right eye and +4.50 D in the left eye. Cover test is orthophoric. What is the diagnosis and first treatment step?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Anisometropic amblyopia — prescribe full cycloplegic refraction as the first step and allow 6 to 10 weeks of adaptation before reassessing acuity</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Strabismic amblyopia — begin patching immediately</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Deprivation amblyopia — examine for cataract</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Normal variation — no treatment needed at this age</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> This is classic anisometropic amblyopia. The 3.50 D difference in refractive error between the two eyes has caused the left eye (the more hypermetropic eye) to receive a chronically blurred image, producing amblyopia without any squint. Spectacle correction must come first — both to provide the left eye with a clear image and to allow refractive adaptation over 6 to 10 weeks. After adaptation, reassess BCVA; the acuity that does not improve with glasses alone is the true amblyopic deficit. Patching begins after adaptation is confirmed to be complete.</div>
+            </div>
+
+            <!-- PG Q4 -->
+            <div class="mcq-card pg" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">4</span><span class="mcq-q">A Hess chart shows the right eye chart is contracted in the right lateral gaze direction, and the left eye chart is expanded in the left lateral gaze direction. What is the diagnosis?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Left lateral rectus palsy</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Left medial rectus palsy</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Right medial rectus palsy</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Right lateral rectus palsy — right CN VI palsy</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The smaller chart is on the right side — so the right eye is affected. The most contracted field is on lateral gaze, indicating underaction of the muscle responsible for right eye abduction — the right lateral rectus. This is consistent with a right CN VI palsy, producing an esotropia that is worst on right lateral gaze (incomitant esotropia). The left eye chart is expanded in the left lateral gaze field because the left medial rectus — the yoke muscle of the right lateral rectus — overacts by Hering's law.</div>
+            </div>
+
+            <!-- PG Q5 -->
+            <div class="mcq-card pg" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">5</span><span class="mcq-q">A child has esotropia of 30 PD at distance and 45 PD at near. Cycloplegic refraction is +3.00 D. After full spectacle correction, the deviation measures 10 PD at distance and 25 PD at near. What explains the residual deviation at near?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Glasses have not been worn long enough</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>High AC/A ratio causing convergence excess at near — bifocals are indicated to reduce the near accommodation demand</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Surgery is needed for the fully accommodative component</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>The glasses are underprescribed — increase the prescription</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The deviation at distance has reduced substantially with glasses (30 to 10 PD) but the near deviation remains large (45 to 25 PD) relative to the distance deviation. This pattern — near deviation disproportionately larger than distance deviation, even with glasses — indicates a high AC/A ratio. At near, the child accommodates more and, because of the high AC/A ratio, generates excessive convergence. Bifocal addition reduces the near accommodation demand, reducing the convergence reflex and bringing the near deviation into control. Surgery is reserved for any residual distance deviation that persists after optical management.</div>
+            </div>
+
+            <!-- PG Q6 -->
+            <div class="mcq-card pg" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">6</span><span class="mcq-q">In strabismus surgery, anterior segment ischaemia is most likely to occur when:</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Surgery is performed on the inferior oblique muscle</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>A single medial rectus recession is performed in isolation</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>More than two recti are operated on in the same eye in a single session</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Adjustable sutures are used instead of fixed sutures</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> The anterior segment receives its blood supply primarily through the anterior ciliary arteries, which travel within the substance of the four recti. If more than two recti are detached from one eye in a single surgery, the anterior segment blood supply is compromised and anterior segment ischaemia can result. This is characterised by corneal oedema, anterior chamber flare, shallow AC, and iris atrophy. The risk is highest in elderly patients and those with systemic vascular disease. The obliques do not carry anterior ciliary arteries, so oblique surgery does not carry this risk.</div>
+            </div>
+
+            <!-- PG Q7 -->
+            <div class="mcq-card pg" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">7</span><span class="mcq-q">Intermittent exotropia with divergence excess pattern (deviation larger at distance than near) is best treated surgically by:</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Bilateral lateral rectus recession</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Bilateral medial rectus resection</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Unilateral lateral rectus recession plus medial rectus resection on the same eye</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Inferior oblique weakening bilaterally</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Divergence excess exotropia — where the deviation is largest at distance — is caused by excessive divergence at distance. The surgical correction is bilateral lateral rectus recession, which weakens the diverging forces symmetrically. Medial rectus resection (strengthening convergence) is preferred when the deviation is primarily at near (convergence insufficiency type). A unilateral recession-resection is suitable for smaller angles or where a monocular approach is preferred, but bilateral LR recession is the standard for divergence excess exotropia of moderate to large angle.</div>
+            </div>
+
+            <!-- PG Q8 -->
+            <div class="mcq-card pg" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">8</span><span class="mcq-q">A 35-year-old woman with thyroid eye disease has restricted elevation in the right eye on forced duction testing. The prism cover test shows a right hypotropia of 18 PD in primary position. What does a Hess chart in this patient most likely show?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Right eye chart expanded in upgaze; left eye chart contracted in downgaze</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Both charts normal — thyroid eye disease does not affect the Hess chart</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Right eye chart expanded; left eye chart contracted</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Right eye chart contracted in upgaze (restricted elevation); left eye chart expanded in downgaze (inferior rectus overaction by Hering's law)</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> In restrictive strabismus from thyroid eye disease, the inferior rectus fibroses and restricts elevation. The right eye chart will be contracted in upgaze because the eye cannot elevate. By Hering's law, the superior rectus of the right eye must send excess innervation to try to overcome the restriction — this innervation is also sent equally to the left inferior rectus (the yoke muscle), causing it to pull the left eye down more than usual — appearing as expansion of the left eye chart in downgaze. This is the expected Hess pattern in right inferior rectus restriction.</div>
+            </div>
+
+            <!-- PG Q9 -->
+            <div class="mcq-card pg" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">9</span><span class="mcq-q">A 7-year-old child has 6/36 vision in the left eye. Full cycloplegic correction and 8 weeks of spectacle wear are completed. Acuity in the left eye is now 6/24. Patching of the right eye is prescribed for 4 hours daily. What should be the endpoint of patching therapy?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Continue patching until acuity in the left eye equals the right eye or plateaus at maximum improvement with no further change over 3 months</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Stop patching once 6/12 is achieved in the left eye</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Patch for a fixed 6 months regardless of response</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Stop patching at age 8 regardless of visual outcome</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Patching must continue until acuity is equal in both eyes or until it has plateaued — meaning three consecutive assessments at one-month intervals show no further improvement. Stopping prematurely causes regression, which is very common and can undo weeks of successful treatment. After successful patching, maintenance patching at a reduced dose (1 to 2 hours per day) is often continued until the child is past the critical period to prevent relapse. Arbitrary fixed endpoints (a specific acuity or a fixed duration) are not appropriate because individual responses vary enormously.</div>
+            </div>
+
+            <!-- PG Q10 -->
+            <div class="mcq-card pg" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">10</span><span class="mcq-q">In a patient with right CN III palsy, which finding on examination would indicate complete palsy (as opposed to partial)?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Exotropia in primary position</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Preserved adduction</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Complete ptosis with a fixed dilated pupil, exotropia, and hypotropia</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Mild ptosis with pupil sparing</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> Complete CN III palsy produces: complete ptosis (levator palpebrae superioris), a fixed dilated pupil (pupillomotor fibres run superficially in the nerve and are affected by compressive lesions), exotropia (the eye adopts the position of the intact lateral rectus and superior oblique), and hypotropia (superior oblique, CN IV, pulls the eye down and inward). Pupil involvement in CN III palsy is an important red flag suggesting a compressive cause (aneurysm of the posterior communicating artery) requiring urgent neuroimaging. Pupil-sparing CN III palsy is more typical of microvascular ischaemia (diabetic, hypertensive).</div>
+            </div>
+
+            <!-- PG Q11 -->
+            <div class="mcq-card pg" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">11</span><span class="mcq-q">A patient's strabismus surgery has been planned using adjustable sutures. On the day after surgery under topical anaesthesia, the patient is looking 15 prism dioptres esotropic. What adjustment should be made?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Advance the medial rectus to strengthen convergence</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Recess the medial rectus further (loosen the suture to advance the recession) to reduce the undercorrected esotropia</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Return to the operating room and perform a formal lateral rectus resection</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Observe for 6 weeks before deciding on any adjustment</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> If the patient remains esotropic after medial rectus recession, the recession was insufficient. With adjustable sutures, the slip-knot can be adjusted under topical anaesthesia — in this case, the medial rectus should be recessed further (the suture is loosened to allow more recession) to reduce the convergent deviation. Adjustable sutures allow fine-tuning of the surgical result in the immediate post-operative period when the patient is awake and cooperative. They are particularly valuable in unpredictable cases such as thyroid eye disease and re-operations.</div>
+            </div>
+
+            <!-- PG Q12 -->
+            <div class="mcq-card pg" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">12</span><span class="mcq-q">A V pattern exotropia with bilateral inferior oblique overaction is detected. What surgical approach addresses both the horizontal and vertical component?</span></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span>Bilateral superior oblique tuck</div>
+                <div class="mcq-option"><span class="opt-letter">B</span>Bilateral superior rectus recession</div>
+                <div class="mcq-option"><span class="opt-letter">C</span>Bilateral medial rectus resection with superior transposition</div>
+                <div class="mcq-option"><span class="opt-letter">D</span>Bilateral inferior oblique weakening (myectomy or anterior transposition) combined with lateral rectus recession for the horizontal deviation</div>
+              </div>
+              <div class="mcq-explanation"><span class="expl-label">Explanation:</span> In a V pattern exotropia with inferior oblique overaction, the inferior obliques are responsible for the pattern — they elevate and abduct the eye, creating more exotropia in upgaze. Weakening the inferior obliques (myectomy, recession, or anterior transposition) addresses the V pattern. The horizontal exotropia is then managed with the appropriate recession or recession-resection on the lateral and medial recti. If the IO overaction is present bilaterally and is severe, anterior transposition of the inferior oblique (moving its insertion to a point just temporal to the inferior rectus insertion) additionally weakens and eliminates the DVD, making it a useful combined procedure.</div>
+            </div>
+
+          </div>
+          <!-- END PG MCQs -->
+
+          <!-- Long Answers -->
+          <div class="qbank-panel" id="long-ans">
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">1</span>
+                <span class="la-q">Classify amblyopia and describe the management of strabismic and anisometropic amblyopia.</span>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show / Hide Answer Outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Definition</h5>
+                  <p>Amblyopia is a reduction in BCVA in a structurally normal eye to below 6/9, not correctable by glasses alone, resulting from abnormal visual experience during the critical period of visual cortical development (birth to approximately 7 to 8 years).</p>
+                  <h5>Classification</h5>
+                  <p>Three main types. Strabismic: caused by suppression of the deviating eye; cortex develops fixation preference for the non-deviating eye. Anisometropic: unequal refractive error causes one eye to receive a chronically blurred image; hyperopic anisometropia is more amblyogenic than myopic; astigmatic amblyopia can occur with high unilateral astigmatism. Deprivation: most severe; caused by complete obstruction of the visual axis — dense congenital cataract, corneal opacity, complete ptosis; even brief deprivation in the neonatal period produces profound amblyopia. Bilateral deprivation (bilateral cataracts) can occur but is rarer and the prognosis with early treatment is better than unilateral.</p>
+                  <h5>Management of Strabismic Amblyopia</h5>
+                  <p>Correct any refractive error first. Treat the strabismus (if surgery is indicated, this may be done before or after amblyopia treatment depending on the case). Occlusion therapy: patch the dominant (fixating) eye for 2 to 6 hours daily — the duration depends on depth of amblyopia. Monitor acuity monthly. Continue until acuity equalises or plateaus over 3 months. After successful patching, maintenance patching is often continued at a reduced dose (1 hour per day) until age 7 to 8 years to prevent regression.</p>
+                  <h5>Management of Anisometropic Amblyopia</h5>
+                  <p>Full cycloplegic refraction prescription first. Allow 6 to 10 weeks of adaptation — significant improvement in acuity occurs from spectacles alone during this period. Reassess BCVA after adaptation; the residual deficit is the true amblyopic depth. Then add occlusion therapy (patching dominant eye 2 hours daily for mild, up to 6 hours for severe). Atropine 1% to the dominant eye is an alternative — less intrusive, shown in PEDIG trials to produce equivalent outcomes to patching for mild to moderate amblyopia. Monitor monthly. Prognosis depends on depth of amblyopia and age at presentation; younger age = better outcome.</p>
+                  <h5>Prognosis Factors</h5>
+                  <p>Age at presentation and start of treatment: the younger, the better. Depth of amblyopia: mild amblyopia responds faster and more completely than dense amblyopia. Type: deprivation = worst; anisometropic = good if treated early; strabismic = intermediate. Compliance with patching: the single most modifiable prognostic factor.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">2</span>
+                <span class="la-q">Describe the cover test and prism cover test in the assessment of strabismus. How is the angle of deviation measured?</span>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show / Hide Answer Outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Cover-Uncover Test</h5>
+                  <p>Detects manifest deviation (tropia). Cover one eye and observe the uncovered eye — if it moves to take fixation, a tropia is present. The direction of movement indicates the type: inward movement (nasal) indicates the eye was deviated outward (exotropia); outward movement (temporal) indicates esotropia. Then uncover the covered eye — if it drifts before recovering fixation, a phoria is present. Repeat for the other eye. Test at both 6 metres and 33 cm with an accommodative target and full spectacle correction.</p>
+                  <h5>Alternate Cover Test</h5>
+                  <p>Measures total deviation (phoria + tropia). The cover is moved briskly from eye to eye without any period of binocular fusion. Observe the uncovered eye each time — the direction of refixation movement indicates the full angle of deviation. The alternate cover test always reveals a larger movement than the cover-uncover test in the same patient because it includes the latent phoric component.</p>
+                  <h5>Hirschberg and Krimsky Tests</h5>
+                  <p>Hirschberg: penlight 33 cm in front, assess corneal reflex symmetry. 1 mm displacement = 15 to 20 PD. At pupil margin = 15 PD; mid-iris = 30 PD; limbus = 45 PD. Krimsky: prisms are placed to centre the asymmetric reflex — a more accurate estimate than Hirschberg alone. Useful when the patient cannot cooperate with cover tests.</p>
+                  <h5>Prism Cover Test — Gold Standard</h5>
+                  <p>After the alternate cover test reveals the direction of deviation, prisms are placed apex toward the deviation in front of the deviating (or fixating) eye. The alternate cover test is repeated with prisms of increasing strength until no movement is seen on switching the cover. The neutralising prism power in prism dioptres is the angle of deviation. Always measure at distance (6 m) and near (33 cm) separately. Record separately for each distance and note the difference, which is diagnostically significant. Prism base orientation: base-out for esotropia, base-in for exotropia, base-down for hypertropia of the higher eye.</p>
+                  <h5>Interpretation of Difference Between Distances</h5>
+                  <p>Esotropia worse at near: high AC/A ratio or convergence excess — consider bifocals. Esotropia worse at distance: divergence insufficiency (or distant fixation-dependent esophoria breakdown). Exotropia worse at near: convergence insufficiency — exercises and base-in prisms. Exotropia worse at distance: divergence excess — bilateral lateral rectus recession.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">3</span>
+                <span class="la-q">Discuss accommodative esotropia — pathophysiology, classification, and management.</span>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show / Hide Answer Outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Pathophysiology</h5>
+                  <p>The accommodative convergence to accommodation (AC/A) relationship means that every dioptre of accommodation drives a certain number of prism dioptres of convergence. In a hypermetropic child, correcting the blur on the retina requires active accommodation. This drives excessive convergence through the synkinesis, overcoming the divergence fusional reserve and resulting in esotropia. The degree of esotropia depends on the amount of hypermetropia, the AC/A ratio, and the strength of the divergence fusional reserve.</p>
+                  <h5>Classification</h5>
+                  <p>Fully accommodative esotropia: high hypermetropia, normal AC/A ratio, deviation fully corrects with spectacles. No surgery needed. Partially accommodative esotropia: glasses correct part of the deviation; a non-accommodative component persists (often a decompensated esophoria). Requires surgery for the residual angle. High AC/A ratio (convergence excess) esotropia: deviation much worse at near than distance, even with full hypermetropic correction. AC/A ratio above 6:1. Managed with bifocal addition to reduce near accommodation demand.</p>
+                  <h5>Diagnosis</h5>
+                  <p>Cycloplegic refraction is essential — atropine 1% for 3 days before refraction in children under 6 years (cyclopentolate 1% is acceptable over 6 years). Prescribe the full cycloplegic refraction. Measure deviation at distance and near with glasses. If deviation is more than 10 PD larger at near than at distance with glasses, the AC/A ratio is high.</p>
+                  <h5>Management</h5>
+                  <p>Fully accommodative: prescribe full cycloplegic refraction; review every 6 months; update glasses as needed. Partially accommodative: glasses first, then surgery (bilateral MR recession) for the residual deviation at distance after 3 to 6 months of spectacle wear. High AC/A ratio: bifocal addition (+2.50 to +3.00 D addition in the lower segment); reduces near accommodation, reduces convergence, straightens eyes at near. Surgery may eventually be needed if bifocal dependence becomes problematic. Amblyopia management throughout — patch if there is fixation preference.</p>
+                  <h5>Prognosis</h5>
+                  <p>Fully accommodative esotropia: excellent — most children maintain alignment as the hypermetropia gradually reduces with growth. A proportion develop good stereoacuity. Partially accommodative: depends on how early treatment is started and how much residual deviation remains after surgery. High AC/A: may need bifocals indefinitely through childhood; many outgrow it by teenage years as the AC/A ratio normalises.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">4</span>
+                <span class="la-q">Describe the surgical management of strabismus — principles of recession and resection, indications for adjustable sutures, and important complications.</span>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show / Hide Answer Outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Surgical Principles</h5>
+                  <p>Strabismus surgery modifies the mechanical properties of the extraocular muscles to change the resting position of the eyes and their movement in different gazes. Two fundamental procedures: recession (weakening) and resection (strengthening). For each, the muscle is first disinserted from the sclera. Recession: the muscle is reattached more posteriorly — reducing its moment arm and mechanical advantage. Resection: a segment of the muscle is excised and the shortened muscle is reattached at the original insertion — increasing its tension and action.</p>
+                  <h5>Dose Planning</h5>
+                  <p>Based on the angle of deviation measured by prism cover test at distance and near. As a rough guide: medial rectus recession corrects 3 to 4 PD per millimetre; lateral rectus recession corrects 2 to 3 PD per mm. These are approximations — surgeon-specific and patient-specific dose tables refine these estimates. For very large angles, combined procedures on multiple muscles are needed. The pre-operative measurements must be stable over at least two sessions to be reliable for planning.</p>
+                  <h5>Types of Procedures</h5>
+                  <p>Bilateral recession (symmetric weakening): used for comitant strabismus where the deviation is equal in both eyes — standard approach for infantile esotropia (bilateral MR recession) and divergence excess exotropia (bilateral LR recession). Recession-resection on one eye: used for smaller angles or when a monocular approach is preferred; weakens the dominant muscle and strengthens its antagonist on the same eye. Oblique procedures: IO weakening (myectomy, recession, or anterior transposition) for IO overaction and V patterns; SO tuck or harada-ito for SO palsy with torsional diplopia.</p>
+                  <h5>Adjustable Sutures</h5>
+                  <p>Indicated in: thyroid eye disease (unpredictable response), longstanding paralytic strabismus with contracture, re-operations after previous surgery, cases where the pre-operative deviation is unstable. The muscle is attached with a slip-knot at surgery. Postoperatively (same day or next morning), under topical anaesthesia, the alignment is assessed and the suture adjusted to advance or recess the muscle further. Not suitable for children or uncooperative adults. Shown to improve surgical accuracy in complex cases.</p>
+                  <h5>Complications</h5>
+                  <p>Slipped/lost muscle: muscle retracts behind Tenon's capsule — emergency re-exploration needed. Globe perforation: needle penetrates sclera during muscle reattachment — examine for retinal breaks; higher risk in high myopes. Anterior segment ischaemia: if more than two recti disinserted from one eye — compromises anterior ciliary artery supply; presents as corneal oedema, severe iritis, hypotony. Undercorrection and overcorrection: most common; may need re-operation. Conjunctival scarring and chemosis.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- END LONG ANSWERS -->
+
+          <!-- PYQs -->
+          <div class="qbank-panel" id="pyqs">
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">AIIMS Nov 2019</span>
+                <span class="pyq-q">A 2-year-old child presents with an esotropia of 40 prism dioptres. Cycloplegic refraction reveals +3.50 D hypermetropia. Glasses are prescribed and worn for 8 weeks. The deviation decreases to 15 PD at distance and 20 PD at near. What is the next step?</span>
+                <span class="pyq-exam">AIIMS PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer</button>
+              <div class="pyq-answer">
+                <strong>Answer: Surgery for the residual non-accommodative component — bilateral medial rectus recession for the residual deviation</strong>
+                <p>This is partially accommodative esotropia. The glasses have corrected the accommodative component (40 to 15 PD at distance), but a significant residual deviation of 15 PD at distance and 20 PD at near persists. This residual non-accommodative angle is an indication for surgery. Bilateral medial rectus recession is performed for the residual distance deviation. The near excess (5 PD more at near than distance) may reflect a mild high AC/A component and can be addressed with bifocal consideration. The glasses must continue to be worn after surgery to maintain the accommodative correction.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">NEET PG 2020</span>
+                <span class="pyq-q">Which clinical test is positive in superior oblique palsy?</span>
+                <span class="pyq-exam">NEET PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer</button>
+              <div class="pyq-answer">
+                <strong>Answer: Bielschowsky head tilt test</strong>
+                <p>The Bielschowsky head tilt test is positive in superior oblique palsy. When the head is tilted toward the shoulder on the side of the palsy (ipsilateral tilt), the hypertropia of the affected eye worsens. This is because tilting toward the affected side creates a stimulus for intorsion of that eye. With the SO paralysed, the only remaining intortor is the superior rectus — and because the superior rectus also elevates the eye, the hyptertropia increases. Contralateral head tilt compensates and is the habitual posture these patients adopt. The three steps of the Parks-Bielschowsky test identify the affected eye: (1) which eye is hypertropic in primary position, (2) which gaze direction worsens the hypertropia, (3) which head tilt worsens it.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">DNB Dec 2018</span>
+                <span class="pyq-q">What is the most common type of exotropia in children?</span>
+                <span class="pyq-exam">DNB</span>
+              </div>
+              <button class="pyq-toggle">Show Answer</button>
+              <div class="pyq-answer">
+                <strong>Answer: Intermittent exotropia</strong>
+                <p>Intermittent exotropia is by far the most common form of exotropia in children. The eyes are straight under normal binocular viewing conditions and in bright lighting, but the deviation breaks down at distance, when the child is tired or unwell, and in monocular suppression conditions. The child typically squints or closes one eye in bright sunlight — a pathognomonic clinical history. Bifoveal fusion maintains alignment during near tasks. Management is conservative initially (part-time patching, convergence exercises), with surgery reserved for frequent breakdowns or a cosmetically unacceptable deviation.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">AIIMS May 2021</span>
+                <span class="pyq-q">In Hess chart, the smaller field belongs to which eye?</span>
+                <span class="pyq-exam">AIIMS PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer</button>
+              <div class="pyq-answer">
+                <strong>Answer: The affected (paretic) eye</strong>
+                <p>The smaller (contracted) chart on the Hess chart always belongs to the affected eye. The paretic muscle fails to move the eye to the correct position in its field of action, so the plotted points fall short of the outer grid boundary, making the polygon smaller in that direction. By Hering's law, the yoke muscle in the fellow eye receives excess innervation (to compensate for the paretic muscle's underaction), causing it to overact — this produces the expanded (larger) chart in the fellow eye. The direction of maximum contraction on the smaller chart identifies the paretic muscle. This is the fundamental rule for all Hess chart interpretation.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">NEET PG 2022</span>
+                <span class="pyq-q">A child closes one eye in bright sunlight and otherwise appears to have normal eye alignment. What is the likely diagnosis?</span>
+                <span class="pyq-exam">NEET PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer</button>
+              <div class="pyq-answer">
+                <strong>Answer: Intermittent exotropia</strong>
+                <p>Closing one eye in bright sunlight is a classic and highly characteristic complaint of intermittent exotropia. The reason is not fully established but is thought to be related to the loss of binocular suppression in bright conditions — the child closes one eye to avoid diplopia rather than allowing the deviation to manifest. The eye alignment appears normal in the clinic because the child maintains fusion actively. The diagnosis is confirmed by a cover test at distance (preferably outdoors or in a large room with a distant fixation target) which reveals the exotropia. This history alone should prompt a cover test and referral for orthoptic assessment if the deviation is confirmed.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">University Final MBBS 2021</span>
+                <span class="pyq-q">Describe the cover test and how it distinguishes a phoria from a tropia. (5 marks)</span>
+                <span class="pyq-exam">University</span>
+              </div>
+              <button class="pyq-toggle">Show Answer</button>
+              <div class="pyq-answer">
+                <strong>Answer: Cover-uncover test detects tropia; alternate cover test detects full deviation including phoria</strong>
+                <p>Cover-Uncover Test: Cover one eye and watch the other. If the uncovered eye moves to fixate, a tropia is present in the uncovered eye. The direction of refixation indicates deviation type (inward movement = exotropia was present; outward movement = esotropia). Then uncover and watch the formerly covered eye — if it drifts and then recovers, a phoria is present in that eye. This step detects the latent deviation that fusion was controlling.</p>
+                <p>Alternate Cover Test: Move the cover briskly from eye to eye without allowing binocular fusion. This reveals the maximum possible deviation — both the manifest (tropia) and latent (phoria) components. The movement seen is larger than in the cover-uncover test because fusion is not allowed to recover.</p>
+                <p>Key distinction: If the cover-uncover test is negative but the alternate cover test shows movement, the patient has a phoria only — the deviation is controlled by fusion under binocular conditions. If the cover-uncover test is positive, a tropia is present — the eyes deviate even with both eyes open. Combining both tests gives a complete picture of the binocular status.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- END PYQs -->
+
+        </div>
+        <!-- END Q-BANK TAB -->
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--border)">
+      <a href="ch11-neuro.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--secondary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+        Prev: Ch 11 — Neuro-Ophthalmology
+      </a>
+      <a href="ch13-eyelids.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+        Next: Ch 13 — Eyelids
+      </a>
+    </div>
+
+  </div>
 </div>
 
 <script>
- window._chapterBase = '../';
+  window._chapterBase = '../';
 </script>
 <script src="../assets/js/sidebar.js"></script>
 <script src="../assets/js/main.js"></script>

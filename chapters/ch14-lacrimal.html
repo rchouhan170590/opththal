@@ -1,649 +1,803 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <meta name="base" content="../" />
- <title>Ch 14: Lacrimal System — OphthalStudy</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../assets/css/style.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="base" content="../" />
+  <title>Ch 14: Lacrimal System — OphthalStudy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 <div class="app-layout">
- <div id="sidebar-mount"></div>
+  <div id="sidebar-mount"></div>
+  <div class="main-content">
+    <div class="top-bar">
+      <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+      <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> <span>&#8250; Ch 14 — Lacrimal System</span></div>
+      <div class="tag-group">
+        <div id="score-badge"></div>
+        <span class="tag tag-ug">UG</span>
+        <span class="tag tag-pg">PG</span>
+      </div>
+    </div>
+    <div class="content-area">
+      <div class="chapter-header">
+        <div class="chapter-num">Chapter 14</div>
+        <h1>Lacrimal System</h1>
+        <p>Tear film, dry eye syndrome, dacryocystitis, lacrimal drainage anatomy, and DCR — with clinical assessment methods and practical management.</p>
+        <div class="chapter-meta">
+          <span class="tag tag-ug">UG</span>
+          <span class="tag tag-pg">PG</span>
+        </div>
+      </div>
 
- <div class="main-content">
- <div class="top-bar">
- <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
- <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 14 — Lacrimal System</span></div>
- <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
- </div>
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab-btn active">Snapshot</button>
+          <button class="tab-btn">Deep Dive</button>
+          <button class="tab-btn">Clinical Skills</button>
+          <button class="tab-btn">Q-Bank</button>
+        </div>
 
- <div class="content-area">
- <!-- Header -->
- <div class="chapter-header">
- <div class="chapter-num">Chapter 14</div>
- <h1>Lacrimal System & Disorders</h1>
- <p>Anatomy, dry eye, epiphora, dacryocystitis, DCR, lacrimal tumours — investigation and surgical management.</p>
- <div class="chapter-meta">
- <span class="tag tag-ug">UG Level</span>
- <span class="tag tag-pg">PG Level</span>
- <span class="tag tag-highyield">High-Yield</span>
- </div>
- </div>
+        <!-- TAB 1: SNAPSHOT -->
+        <div class="tab-panel active">
+          <p class="snapshot-intro">The lacrimal system is examined clinically more often than it appears in textbooks. These cards cover the anatomy, the investigations, the pathology, and the surgery in a format built for rapid revision.</p>
+          <div class="snapshot-grid">
 
- <!-- Tabs -->
- <div class="tab-container">
- <div class="tabs">
- <button class="tab-btn active">Theory</button>
- <button class="tab-btn">MCQ Bank</button>
- <button class="tab-btn">PYQs</button>
- <button class="tab-btn">Quick Revision</button>
- </div>
+            <!-- Card 1: Tear Film Structure -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-blue"></span>
+                <h4>Tear Film Structure</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>The tear film has three layers, each from a different source, and each with a distinct function.</p>
+                <ul class="snap-list">
+                  <li><strong>Mucin layer (innermost)</strong> — secreted by conjunctival goblet cells; converts the hydrophobic corneal epithelium to a hydrophilic surface, allowing the aqueous layer to spread and adhere</li>
+                  <li><strong>Aqueous layer (middle)</strong> — secreted by the lacrimal gland; accounts for 98% of tear film thickness; contains lysozyme, lactoferrin, IgA, and growth factors</li>
+                  <li><strong>Lipid layer (outermost)</strong> — secreted by Meibomian glands; retards evaporation; stabilises the tear film between blinks</li>
+                </ul>
+                <p style="margin-top:8px">TBUT (tear break-up time) below 10 seconds indicates an unstable tear film. Schirmer's I below 10 mm in 5 minutes indicates deficient aqueous production.</p>
+                <span class="hy-badge">High-Yield</span>
+              </div>
+            </div>
 
- <!-- TAB 1: THEORY -->
- <div class="tab-panel active">
+            <!-- Card 2: Dry Eye Classification -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-violet"></span>
+                <h4>Dry Eye Classification</h4>
+              </div>
+              <div class="snap-card-body">
+                <ul class="snap-list">
+                  <li><strong>Aqueous deficient dry eye</strong> — Sjögren's syndrome (keratoconjunctivitis sicca + xerostomia + autoimmune disease; anti-Ro/SSA and anti-La/SSB antibodies); Non-Sjögren's (lacrimal gland disease, reflex secretion loss, drugs — antihistamines, antidepressants)</li>
+                  <li><strong>Evaporative dry eye</strong> — Meibomian gland dysfunction (most common overall cause), reduced blink rate (screen use), lagophthalmos, contact lens wear, post-LASIK, vitamin A deficiency</li>
+                </ul>
+                <p style="margin-top:8px">DEWS II (Dry Eye Workshop II) grading: mild (symptoms without signs), moderate (symptoms with signs), severe (debilitating symptoms with significant corneal involvement). In practice these overlap, and most patients have a mixed picture.</p>
+                <span class="hy-badge">High-Yield</span>
+              </div>
+            </div>
 
- <!-- SECTION 1: Anatomy -->
- <div class="section-card open">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Lacrimal System Anatomy</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Lacrimal Gland</h4>
- <ul>
- <li><strong>Anatomy:</strong> Orbital lobe (main, ~80% tears) + palpebral lobe (smaller, ~20%)</li>
- <li><strong>Innervation:</strong> Parasympathetic secretomotor: CN VII (facial) → greater petrosal nerve → pterygopalatine ganglion → zygomatic branch → lacrimal nerve → gland</li>
- <li><strong>Tear secretion:</strong> Continuous (basal) + reflex (emotion, irritation)</li>
- </ul>
+            <!-- Card 3: Acute Dacryocystitis -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-green"></span>
+                <h4>Acute Dacryocystitis</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>Acute dacryocystitis is one of those conditions where getting the anatomy right changes the diagnosis. The swelling is below and medial to the medial palpebral ligament — at the lacrimal sac fossa. Swelling at the medial canthus above the ligament suggests preseptal cellulitis or a different diagnosis entirely.</p>
+                <ul class="snap-list">
+                  <li>Causative organisms: Staphylococcus aureus most common; Streptococcus pneumoniae; Haemophilus influenzae in children</li>
+                  <li>Regurgitation test: pressure over the lacrimal sac region forces mucopus through the punctum — confirms NLDO</li>
+                  <li>Management: systemic antibiotics; warm compresses; I&D if fluctuant; DCR after complete resolution (not in the acute phase)</li>
+                </ul>
+                <span class="hy-badge">High-Yield</span>
+              </div>
+            </div>
 
- <h4>Lacrimal Drainage System</h4>
- <ul>
- <li><strong>Puncta lacrimal ia:</strong> Upper (~0.5 mm) + lower (~0.5 mm) on lid margin at medial canthus</li>
- <li><strong>Canaliculi:</strong> Upper (~8 mm horizontal) + lower (~9 mm horizontal); superior and inferior unite to form common canaliculus</li>
- <li><strong>Lacrimal sac:</strong> Dilated portion; ~12 mm height; mucocutaneous junction</li>
- <li><strong>Nasolacrimal duct (NLD):</strong> ~12 mm; runs along nasal floor; opens into inferior meatus of nose via plica lacrimalis (Hasner's valve)</li>
- </ul>
+            <!-- Card 4: DCR Methods -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-amber"></span>
+                <h4>DCR Methods</h4>
+              </div>
+              <div class="snap-card-body">
+                <ul class="snap-list">
+                  <li><strong>External DCR</strong> — gold standard; curvilinear skin incision 3 mm medial to the medial canthus; bony ostium (12 mm x 12 mm) created through the lacrimal bone into nasal cavity; anterior and posterior flaps of sac and nasal mucosa anastomosed; silicone stenting; success rate 90 to 95%</li>
+                  <li><strong>Endonasal (endoscopic) DCR</strong> — same principle via nasal endoscope; no external scar; success 85 to 90%; requires skilled endonasal surgeon; preferred when there is concurrent nasal pathology to address</li>
+                  <li><strong>Laser DCR (PANDO-L)</strong> — lower success rates (60 to 70%); less tissue damage; useful in anticoagulated patients</li>
+                  <li><strong>Probing and syringing</strong> — for congenital NLDO in children; performed under GA at 12 to 18 months</li>
+                </ul>
+              </div>
+            </div>
 
- <h4>Tear Film Composition</h4>
- <ul>
- <li><strong>Lipid layer (outermost):</strong> Meibomian gland secretion; prevents evaporation</li>
- <li><strong>Aqueous layer (middle):</strong> Lacrimal gland + accessory lacrimal glands; IgA, lysozyme, lactoferrin (antibacterial)</li>
- <li><strong>Mucous layer (innermost):</strong> Conjunctival goblet cells; adheres to epithelium</li>
- </ul>
- </div>
- </div>
+            <!-- Card 5: Drainage Anatomy Mnemonic (wide) -->
+            <div class="snap-card wide mnemonic-card">
+              <div class="snap-card-header">
+                <span class="snap-dot snap-dot-violet"></span>
+                <h4>Lacrimal Drainage Anatomy — Mnemonic</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>Tears drain from the puncta through a series of structures before reaching the nasal cavity. The pathway and key dimensions are tested repeatedly in examinations.</p>
+                <ul class="snap-list">
+                  <li><strong>Puncta</strong> — 0.5 mm openings at the medial end of each lid; surrounded by a fibrovascular ring (ampulla); upper and lower puncta are normally applied to the globe (eversion = ectropion)</li>
+                  <li><strong>Canaliculi</strong> — upper and lower; each has a 2 mm vertical segment then an 8 mm horizontal segment; they join to form the common canaliculus</li>
+                  <li><strong>Common canaliculus</strong> — joins the lacrimal sac at the valve of Rosenmuller (prevents reflux)</li>
+                  <li><strong>Lacrimal sac</strong> — 12 to 15 mm long; lies in the lacrimal fossa between the anterior and posterior lacrimal crests; the medial canthal tendon crosses anteriorly</li>
+                  <li><strong>Nasolacrimal duct</strong> — 18 mm long; descends in a bony canal in the maxilla; opens into the inferior meatus</li>
+                  <li><strong>Valve of Hasner</strong> — mucosal fold at the lower end of the NLD where it opens into the inferior meatus; fails to open in 30% of neonates causing congenital NLDO</li>
+                </ul>
+                <div class="mnemonic-box" style="margin-top:10px">
+                  <div class="mnemonic-title">Mnemonic — Lacrimal Drainage Pathway</div>
+                  <div class="mnemonic-expand"><strong>Please Can Clinicians Love New Hospitals</strong>: <strong>P</strong>unctum, <strong>C</strong>analiculus, <strong>C</strong>ommon canaliculus, <strong>L</strong>acrimal sac, <strong>N</strong>asolacrimal duct, <strong>H</strong>asner's valve.</div>
+                </div>
+                <span class="hy-badge">High-Yield</span>
+              </div>
+            </div>
 
- <!-- SECTION 2: Dry Eye -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Dry Eye Disease (TFOS DEWS II Classification)</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Classification by Mechanism</h4>
- <ul>
- <li><strong>Aqueous-deficient:</strong>
- <ul>
- <li><strong>Sjögren's syndrome:</strong> Autoimmune; anti-SSA/Ro, anti-SSB/La antibodies; dry eye + dry mouth; female predominance</li>
- <li><strong>Non-Sjögren's:</strong> Systemic disease (RA, SLE, graft-vs-host disease), lacrimal gland damage (radiation, chemotherapy), congenital absence</li>
- </ul>
- </li>
- <li><strong>Evaporative:</strong>
- <ul>
- <li><strong>Meibomian gland disease (MGD):</strong> Dysfunction → lipid layer deficiency → increased evaporation (MOST COMMON cause of dry eye)</li>
- <li><strong>Ocular surface disease:</strong> Atopy, blepharitis, chemical burn, Stevens-Johnson syndrome</li>
- </ul>
- </li>
- </ul>
+          </div>
+        </div>
+        <!-- END SNAPSHOT TAB -->
 
- <h4>Investigations</h4>
- <ul>
- <li><strong>TBUT (Tear Break-Up Time):</strong> Normal >10 sec; <10 sec = abnormal (evaporative defect)</li>
- <li><strong>Schirmer's test I (without anaesthetic):</strong> Measures reflex + basal secretion; normal >15 mm in 5 min</li>
- <li><strong>Schirmer's test II (with anaesthetic):</strong> Measures basal secretion only; normal >5 mm in 5 min (aqueous-deficient if <5)</li>
- <li><strong>Lissamine green / Rose Bengal:</strong> Vital dye staining; highlights damaged epithelial cells</li>
- <li><strong>Tear osmolarity:</strong> >305 mOsm/L = abnormal</li>
- <li><strong>MMP-9 test:</strong> Marker of ocular surface inflammation</li>
- </ul>
+        <!-- TAB 2: DEEP DIVE -->
+        <div class="tab-panel">
+          <div class="pg-badge">PG Level — Detailed Notes</div>
 
- <h4>Management (Stepwise)</h4>
- <ul>
- <li><strong>First-line:</strong> Artificial tears (preservative-free), lid hygiene, warm compress (MGD)</li>
- <li><strong>Aqueous-deficient:</strong> Cyclosporine A 0.05% drops (T-cell inhibitor; increases goblet cell density)</li>
- <li><strong>Evaporative:</strong> IPL (intense pulsed light) + meibomian gland expression, LipiFlow (thermal treatment)</li>
- <li><strong>Punctal plugs:</strong> Temporary or permanent; blocks tear drainage, increases tear retention</li>
- </ul>
- </div>
- </div>
+          <!-- SECTION 1: Anatomy -->
+          <div class="section-card open">
+            <div class="section-header">
+              <div class="section-bar sb-blue"></div>
+              <h3>Lacrimal System Anatomy</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Secretory System</h4>
+                <p>Tear production comes from two sources: the main lacrimal gland and the accessory lacrimal glands. The main lacrimal gland sits in the lacrimal fossa in the superolateral orbit, divided by the lateral horn of the levator aponeurosis into a larger orbital lobe and a smaller palpebral lobe. It is a serous gland whose 10 to 15 ducts open into the superior conjunctival fornix. It is responsible for reflex tearing — the secretion triggered by emotional stimuli, corneal irritation, or the trigeminolacrimal reflex (V1 stimulation reflexively activating lacrimal secretion via the greater petrosal nerve and pterygopalatine ganglion).</p>
+                <p>The accessory lacrimal glands are responsible for basal tear secretion — the background, unstimulated production that keeps the ocular surface continuously moist. The glands of Krause (42 to 48 in the upper fornix, 6 to 8 in the lower) and Wolfring (2 to 5 at the upper border of the upper tarsus, 2 at the lower border of the lower tarsus) are histologically identical to the main gland. This distinction between basal (accessory glands) and reflex (main gland) secretion is important when interpreting Schirmer's tests — Schirmer's I (without anaesthetic) tests both; Schirmer's II (with anaesthetic to abolish reflex) tests basal secretion only.</p>
 
- <!-- SECTION 3: Epiphora (Watering Eye) -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Epiphora — Causes & Investigation</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Two Main Categories</h4>
- <ul>
- <li><strong>Hypersecretion (excess tear production):</strong> Reflex tearing from irritation (dry eye paradoxically, foreign body, atopy); less common</li>
- <li><strong>Drainage failure (obstruction/dysfunction):</strong> NLD stenosis, canalicular obstruction, lid malposition (entropion, ectropion); common</li>
- </ul>
+                <h4>Tear Film Composition</h4>
+                <p>The aqueous layer of the tear film contains water (98%), electrolytes, glucose, urea, dissolved oxygen, and a rich array of proteins. Lysozyme is one of the most abundant tear proteins and has antibacterial properties by cleaving the peptidoglycan of Gram-positive bacteria. Lactoferrin chelates iron, depriving bacteria of a necessary growth factor. Secretory IgA provides immunological defence. Epidermal growth factor (EGF) and other growth factors promote corneal epithelial healing. Tear film osmolarity is approximately 302 mOsm/L in normal eyes; hyperosmolarity (above 308 mOsm/L) is a biomarker of dry eye and contributes to ocular surface inflammation by activating stress response pathways in epithelial cells.</p>
 
- <h4>Congenital NLD Obstruction (Most Common Cause of Epiphora in Infants)</h4>
- <ul>
- <li><strong>Pathology:</strong> Incompletely canalized NLD; Hasner's valve doesn't open at birth; 95% resolve by age 12 months</li>
- <li><strong>Presentation:</strong> Epiphora, mucoid discharge; usually unilateral; presents in first 4–8 weeks</li>
- <li><strong>Treatment:</strong><strong>Crigler's massage</strong> — downward pressure over medial canthus/lacrimal sac (3–5 times daily); unclogs duct. Probing at 9–12 months if no resolution. Punctal plug if needed for comfort</li>
- </ul>
+                <h4>Drainage Anatomy in Surgical Detail</h4>
+                <p>The puncta (0.5 mm in diameter) sit at the medial end of each lid margin, surrounded by a fibrovascular ring (the ampulla) that keeps them patent. They drain into the canaliculi, which have a 2 mm vertical segment before turning medially for an 8 mm horizontal segment. The two canaliculi join in 90% of people to form a common canaliculus (5 to 8 mm) before entering the lacrimal sac — in 10% they enter separately. The junction of the common canaliculus with the sac is guarded by the valve of Rosenmuller, which prevents reflux of sac contents into the canaliculi.</p>
+                <p>The lacrimal sac (12 to 15 mm long) occupies the lacrimal fossa, bounded by the anterior and posterior lacrimal crests. The medial canthal tendon attaches to both crests and crosses anterior to the sac — this is why swelling of the sac displaces the tendon forward, producing the characteristic swelling that is visible and palpable below the tendon. The angular vein runs just anterior to the sac and must be ligated during external DCR. The nasolacrimal duct (18 mm) descends in a bony canal within the maxilla, passing lateral to and behind the inferior turbinate to open into the inferior meatus at the valve of Hasner.</p>
+              </div>
+            </div>
+          </div>
 
- <h4>Diagnostic Tests</h4>
- <ul>
- <li><strong>Syringing and probing:</strong> Saline syringe into lacrimal punctum; if flows into nasal cavity = patent NLD; resistance/reflux = obstruction</li>
- <li><strong>ROPLAS test:</strong> Rose Bengal or Lissamine green instilled; appears in nose within 5 min = patent; delayed/absent = obstruction</li>
- <li><strong>Dacryocystography/CT scan:</strong> For complex anatomy</li>
- </ul>
- </div>
- </div>
+          <!-- SECTION 2: Dry Eye -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-violet"></div>
+              <h3>Dry Eye Syndrome</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Prevalence and Risk Factors</h4>
+                <p>Dry eye is among the most common conditions seen in any ophthalmic practice. It affects roughly 5 to 35% of the population depending on the diagnostic criteria used, with prevalence increasing with age, female sex, contact lens wear, screen use (blink rate falls from 18 to 4 blinks per minute during concentrated screen work), post-LASIK state, and a range of systemic medications including antihistamines, antidepressants, diuretics, beta-blockers, and isotretinoin.</p>
 
- <!-- SECTION 4: Dacryocystitis -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-red"></div>
- <h3>Dacryocystitis — Acute vs Chronic</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <table class="compare-table">
- <tr><th>Feature</th><th>Acute Dacryocystitis</th><th>Chronic Dacryocystitis</th></tr>
- <tr><td><strong>Onset</strong></td><td><strong>Acute</strong> (hours–days)</td><td>Insidious; weeks–months</td></tr>
- <tr><td><strong>Symptoms</strong></td><td><strong>Painful</strong> medial canthal swelling; red, hot, tender; fever; purulent discharge; may form fistula</td><td><strong>Painless</strong> swelling at medial canthus; mild mucoid discharge; epiphora</td></tr>
- <tr><td><strong>Organisms</strong></td><td>Haemophilus influenzae, Staphylococcus, Streptococcus (commonest)</td><td>Mixed flora; often Staph, Strep, anaerobes</td></tr>
- <tr><td><strong>Investigation</strong></td><td>Culture swab (if draining); may need CT for abscess</td><td><strong>ROPLAS test positive</strong> (delayed appearance); syringing shows reflux</td></tr>
- <tr><td><strong>Treatment</strong></td><td><strong>Emergency:</strong> IV antibiotics (Cef 3rd gen or Cipro); warm compress; analgesics; systemic antibiotics 10–14 days. Avoid I&C (risk of fistula). DCR after acute phase resolves (4–6 weeks)</td><td>Conservative: antibiotics, lacrimal massage; DCR if symptomatic/recurrent; <strong>rule out underlying obstruction</strong> (NLD stenosis, canalicular obstruction)</td></tr>
- </table>
+                <h4>Symptoms and Signs</h4>
+                <p>Patients describe burning, stinging, grittiness, and a foreign body sensation. A paradoxical epiphora (watering despite a dry eye) is classic — the unstable, hyperosmolar tear film reflexly stimulates reflex secretion from the main lacrimal gland, producing intermittent tearing that coexists with the chronic dryness. Symptoms are typically worse in low humidity environments, in air conditioning, toward the end of the day, or during screen use.</p>
+                <p>Clinical signs include reduced TBUT (tear film breaks up in less than 10 seconds, seen as dark patches in the fluorescein-stained tear film under blue light), corneal punctate epithelial erosions staining with fluorescein (inferior one-third distribution in aqueous deficiency; interpalpebral distribution in evaporative dry eye), reduced Schirmer's values, and meibomian gland orifice capping or irregular posterior lid margin. Rose Bengal or lissamine green stain dead and devitalised cells in the interpalpebral conjunctiva.</p>
 
- <div class="warn-box">
- <strong>️ Clinical Pearl:</strong> In acute dacryocystitis, do NOT perform incision and drainage (I&C) immediately — risk of fistula formation. Start IV antibiotics; DCR after inflammation subsides.
- </div>
- </div>
- </div>
+                <h4>Sjögren's Syndrome</h4>
+                <p>Sjögren's syndrome is an autoimmune exocrinopathy that destroys lacrimal and salivary gland tissue through lymphocytic infiltration. Primary Sjögren's presents with keratoconjunctivitis sicca (dry eye) and xerostomia (dry mouth) without an associated connective tissue disease. Secondary Sjögren's occurs in the context of rheumatoid arthritis, SLE, systemic sclerosis, primary biliary cirrhosis, or other autoimmune diseases. Serology: anti-Ro (SSA) antibodies are positive in 70 to 75% of Sjögren's patients and anti-La (SSB) in 50 to 60%. The ANA is positive in most. Definitive diagnosis has traditionally required labial salivary gland biopsy (minor salivary gland biopsy from the inner lip) showing focal periductal lymphocytic sialadenitis with a focus score of 1 or more (one or more foci of 50 or more lymphocytes per 4 mm2).</p>
 
- <!-- SECTION 5: Dacryocystorhinostomy (DCR) -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Dacryocystorhinostomy (DCR) — Indications & Technique</h3>
- <div class="section-tags"><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Indications</h4>
- <ul>
- <li><strong>Chronic dacryocystitis</strong> (recurrent infections)</li>
- <li><strong>NLD stenosis/obstruction</strong> (confirmed by syringing or ROPLAS)</li>
- <li><strong>Symptomatic epiphora</strong> (watering eye not responding to conservative treatment)</li>
- </ul>
+                <h4>Investigations</h4>
+                <p>Schirmer's test I: a strip of Whatman no. 41 filter paper (35 mm x 5 mm) is folded at the 5 mm mark and placed in the lower fornix at the junction of the middle and outer thirds. After 5 minutes, the length of wetted paper is measured. Without anaesthesia, normal wetting is above 10 mm. Values below 5 mm are definitely abnormal; 5 to 10 mm is borderline. Schirmer's test II (basic secretion test, BST) is performed with topical anaesthetic in place — this abolishes reflex tearing, leaving only basal secretion. Normal BST wetting is above 10 mm in 5 minutes; below 5 mm indicates severely deficient basal secretion.</p>
+                <p>TBUT is measured by instilling fluorescein, asking the patient to blink three times and then keep the eyes open, while the examiner watches the tear film under blue light for the first dry spot to appear. The average of three measurements is recorded; below 10 seconds is abnormal, below 5 seconds is severely abnormal. Meibography (infrared imaging of Meibomian gland structure) documents gland drop-out and is increasingly used to grade MGD severity. Tear osmolarity measurement (TearLab) above 308 mOsm/L supports the diagnosis.</p>
 
- <h4>Principle</h4>
- <ul>
- <li>Creates <strong>artificial fistula</strong> between lacrimal sac and nasal cavity (inferior meatus)</li>
- <li>Bypasses obstructed NLD</li>
- <li>Success rate: 90–95% (lower if canalicular obstruction)</li>
- </ul>
+                <h4>Management</h4>
+                <p>Management is stepwise based on severity. For mild disease, lifestyle modification — regular breaks from screens, humidified environments, adequate fluid intake, omega-3 supplementation — combined with preservative-free artificial tear substitutes (carboxymethylcellulose, sodium hyaluronate, hydroxypropyl methylcellulose). The viscosity of the artificial tear is chosen based on symptom severity: watery drops for mild, gel drops for moderate, ointments (petroleum-based) for severe and nocturnal use.</p>
+                <p>Lid hygiene (warm compresses and lid scrubs) is the treatment for the MGD component. Topical cyclosporine 0.05% (Restasis) or 0.1% (Ikervis) is an immunomodulator that reduces T-cell-mediated inflammation of the lacrimal gland — it is particularly effective in inflammatory dry eye and Sjögren's and takes 3 to 6 months to reach full effect. Punctal plugs (collagen — temporary; silicone — permanent) block tear drainage at the punctum, retaining tears on the ocular surface; they are effective but can cause epiphora if oversized, and they are contraindicated if there is concurrent ocular surface inflammation (retained inflammatory mediators worsen the condition). Autologous serum drops (20 to 50% concentration) provide growth factors, fibronectin, and vitamin A that recombinant artificial tears cannot — they are reserved for severe cases and post-LASIK neurotrophic dry eye. For Sjögren's, hydroxychloroquine may help systemic symptoms but has limited direct effect on the ocular surface.</p>
 
- <h4>Approaches</h4>
- <ul>
- <li><strong>External DCR:</strong> Incision over lacrimal sac; easier to learn; traditional; more postoperative swelling; scar</li>
- <li><strong>Endoscopic (endonasal) DCR:</strong> Endoscope through nose; no facial scar; better cosmetics; requires specialized equipment and training; growing preference</li>
- </ul>
+                <div class="info-box">
+                  <strong>Paradoxical epiphora:</strong> A patient who says "my eyes water all the time" may actually have dry eye. The reflex tearing from the main lacrimal gland is triggered by the hyperosmolar, unstable tear film irritating the corneal surface. A TBUT measurement resolves the question — if TBUT is low and Schirmer's is low, you are dealing with dry eye regardless of the watering.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <h4>Outcome</h4>
- <ul>
- <li><strong>Success:</strong> Epiphora resolves; patent ostium maintained</li>
- <li><strong>Complications:</strong> Scarring/stenosis of ostium (5–10%), infection, residual epiphora (canalicular disease)</li>
- </ul>
- </div>
- </div>
+          <!-- SECTION 3: Dacryocystitis -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-red"></div>
+              <h3>Dacryocystitis</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Acute Dacryocystitis</h4>
+                <p>Acute dacryocystitis results from bacterial infection of a lacrimal sac that has been obstructed — usually by a nasolacrimal duct obstruction that has allowed stasis and bacterial overgrowth. The presentation is dramatic: sudden onset of painful, red, tender swelling in the medial canthal region, specifically below the medial palpebral ligament at the lacrimal sac fossa. This anatomical point matters — swelling above the ligament at the inner canthus suggests dacryoadenitis or canaliculitis, not dacryocystitis. Pressure over the sac produces regurgitation of mucopus at the punctum (regurgitation test positive), confirming that the sac is full. The common organisms are Staphylococcus aureus, Streptococcus pneumoniae, and Haemophilus influenzae.</p>
+                <p>The swelling may organise into a lacrimal abscess — fluctuant, pointing toward the skin surface. If untreated, the abscess may point and drain spontaneously (creating a fistula to skin) or, more dangerously, rupture posteriorly through the orbital septum causing orbital cellulitis — a vision and life-threatening complication. Management: systemic antibiotics as the priority (amoxicillin-clavulanic acid 625 mg three times daily, or cephalexin, or in penicillin allergy, clindamycin). Hot fomentation several times daily helps localise and point the abscess. Syringing and probing are strictly contraindicated in the acute phase. When the abscess is fluctuant, incision and drainage through the skin gives rapid relief. After the infection has fully resolved — typically 4 to 6 weeks — DCR is performed to establish permanent drainage.</p>
 
- <!-- SECTION 6: Lacrimal Gland Tumours -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-red"></div>
- <h3>Lacrimal Gland Tumours</h3>
- <div class="section-tags"><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <h4>Benign Tumours</h4>
- <ul>
- <li><strong>Pleomorphic adenoma (mixed tumour) — MOST COMMON benign lacrimal tumour</strong>
- <ul>
- <li>Location: Lateral third of upper eyelid (from orbital lobe)</li>
- <li>Presentation: <strong>S-shaped ptosis</strong> (ptosis with lateral mass); painless; slow-growing; firm</li>
- <li>Treatment: Surgical excision (superficial or total parotidectomy-style approach with intact capsule)</li>
- <li><strong>Risk:</strong> Malignant transformation (~2–5%); handle carefully to avoid rupture</li>
- </ul>
- </li>
- </ul>
+                <h4>Chronic Dacryocystitis</h4>
+                <p>Chronic dacryocystitis is a more insidious presentation: the patient notices persistent painless watering of one eye with intermittent episodes of mucopus. There is no acute swelling or tenderness. The regurgitation test is positive — gentle pressure over the lacrimal sac (below the medial canthal tendon) produces mucopus or clear mucus at the punctum. Syringing demonstrates obstruction: the irrigating fluid cannot pass into the nose but regurgitates from the opposite punctum. The aetiology is nasolacrimal duct obstruction from stones (dacryoliths), nasal polyps, rhinosinusitis, or idiopathic fibrosis of the duct. The definitive treatment is DCR.</p>
+                <p>A mucocoele develops when the sac is completely obstructed and the secretions continue to accumulate, gradually distending the sac into a large cystic swelling below the medial canthal tendon. It is not acutely infected, tends to be non-tender, and transilluminates. Treatment is DCR; aspiration alone leads to rapid recurrence.</p>
 
- <h4>Malignant Tumours</h4>
- <ul>
- <li><strong>Adenoid cystic carcinoma (ACC) — MOST COMMON malignant lacrimal tumour</strong>
- <ul>
- <li>Aggressive; <strong>perineural invasion</strong> (spreads along nerves)</li>
- <li>Prognosis: Poor; 5-year survival ~20%; high recurrence</li>
- <li>Treatment: Radical excision (orbit, globe if needed) + adjuvant radiotherapy</li>
- </ul>
- </li>
- <li><strong>Lacrimal carcinoma (ductal origin):</strong> Less common; similar aggressive behavior</li>
- </ul>
+                <div class="warn-box">
+                  <strong>Never perform probing or syringing in acute dacryocystitis.</strong> Forcing fluid through an infected, obstructed, and inflamed sac risks bacteraemia, spreading the infection into the orbit, and damaging the already-inflamed canalicular mucosa. Wait until the acute phase has resolved completely before any instrumentation.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="info-box">
- <strong>Key Distinction:</strong> Pleomorphic adenoma = painless, slow-growing, benign (but with malignant potential). ACC = aggressive, painful, poor prognosis, early perineural spread.
- </div>
- </div>
- </div>
+          <!-- SECTION 4: Congenital NLDO -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-amber"></div>
+              <h3>Congenital Nasolacrimal Duct Obstruction</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Pathophysiology and Epidemiology</h4>
+                <p>At birth, the lower end of the nasolacrimal duct — the valve of Hasner — is covered by a thin mucous membrane that normally ruptures at or shortly after birth with the onset of nasal breathing. In approximately 30% of neonates, this membrane persists and the NLD remains obstructed. The vast majority (95%) resolve spontaneously by 12 months of age as the duct canalize and the membrane ruptures. This high rate of spontaneous resolution is the reason why conservative management is first-line: the parents can be counselled honestly that in most cases nothing further will need to be done.</p>
 
- <!-- SECTION 7: Tear Tests Summary -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Lacrimal Tests — Quick Reference</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <table class="compare-table">
- <tr><th>Test</th><th>Method</th><th>Normal Value</th><th>Interpretation</th></tr>
- <tr><td><strong>TBUT</strong></td><td>Fluorescein instil, measure break-up time</td><td>>10 sec</td><td><10 sec = evaporative defect (lipid/mucus layer issue)</td></tr>
- <tr><td><strong>Schirmer I</strong><br/>(no anesthetic)</td><td>Dry strip in lower fornix, 5 min</td><td>>15 mm</td><td><5 mm = aqueous-deficient; 5–15 mm = borderline</td></tr>
- <tr><td><strong>Schirmer II</strong><br/>(with anesthetic)</td><td>After instilling anesthetic, 5 min</td><td>>5 mm</td><td><5 mm = low basal tear secretion (Sjögren's)</td></tr>
- <tr><td><strong>Syringing</strong></td><td>Cannulate punctum, flush saline</td><td>Flow into nose</td><td>Resistance/reflux = NLD obstruction</td></tr>
- <tr><td><strong>ROPLAS</strong></td><td>Rose Bengal in eye, observe nasal appearance</td><td>In nasal cavity <5 min</td><td>Delayed/absent = drainage obstruction</td></tr>
- </table>
- </div>
- </div>
+                <h4>Presentation</h4>
+                <p>The key clinical point is distinguishing congenital NLDO from neonatal conjunctivitis. In NLDO: epiphora (watering) and mucopus begin in the first few weeks of life; the conjunctiva is white — there is no injection; pressing on the lacrimal sac produces a reflux of mucopus at the punctum. In neonatal conjunctivitis (ophthalmia neonatorum): the conjunctiva is red; there is chemosis; gonococcal infection (24 to 48 hours after birth) or chlamydial infection (5 to 14 days after birth) are the classic causes; this is a medical emergency as gonococcal keratitis can perforate. The absence of conjunctival injection in NLDO is the critical distinguishing feature.</p>
 
- </div><!-- end theory tab -->
+                <h4>Management</h4>
+                <p>Conservative management (0 to 12 months): Crigler's massage — the parent places the tip of the index finger at the medial canthus below the tendon and applies firm downward pressure with a pumping motion 10 times, four times daily. The aim is to build enough hydrostatic pressure within the sac to rupture the membranous obstruction at Hasner's valve. Parents must be taught the correct technique — the finger needs to be below the tendon to compress the sac, not above it where it compresses nothing useful.</p>
+                <p>Probing under GA (12 to 18 months if not resolved): a Bowman's probe is passed through the upper or lower canaliculus, through the common canaliculus, into the sac, and down the NLD until the resistance of the membrane is felt and then overcome with gentle pressure. A characteristic give is felt when the membrane ruptures. The NLD is then irrigated to confirm patency. Success rates for a single probing are 90 to 95% if done before 18 months; rates decline with age and after 3 years they fall substantially. If the first probing fails, a second can be attempted or silicone intubation (Crawford tubes) can be performed — a silicone rod and tube is passed through both canaliculi, down the NLD, and retrieved from the nose, where it is tied to maintain the lumen open for 3 to 6 months. If intubation fails, formal DCR (external or endonasal) is performed, generally not before age 3 to 4 years when the nasal anatomy is sufficiently developed.</p>
 
- <!-- TAB 2: MCQ BANK -->
- <div class="tab-panel">
- <div class="mcq-bank-header">
- <h2> MCQ Bank — Lacrimal System</h2>
- <div class="mcq-stats">10 questions · ~20 min</div>
- </div>
+                <div class="clinical-box">
+                  <strong>Counselling parents:</strong> The most anxiety-provoking aspect for parents is the mucopus — it looks like an infection but it is not. The absence of conjunctival redness is reassuring. Explain the 95% spontaneous resolution rate clearly. A mother who understands this will be much more adherent to the massage protocol and much less distressed.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q1</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">A 6-week-old infant presents with unilateral epiphora and mild mucoid discharge from the left eye. Syringing shows no patency into the nose. What is the diagnosis and first-line management?</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>Acute dacryocystitis; IV antibiotics and urgent DCR</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Congenital NLD obstruction; Crigler's massage and observation until age 12 months</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Canalicular obstruction; lacrimal probing at 2 months</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Dacryolith; immediate DCR</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Congenital NLD obstruction; Crigler's massage</div>
- <div class="exp-body">
- Congenital NLD obstruction is most common cause of epiphora in infants. 95% resolve by 12 months with Crigler's massage (downward pressure over lacrimal sac). Probing reserved for age 9–12 months if no resolution.
- </div>
- </div>
- </div>
+          <!-- SECTION 5: DCR -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-green"></div>
+              <h3>Dacryocystorhinostomy (DCR)</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Indications</h4>
+                <p>DCR creates a new drainage pathway from the lacrimal sac directly into the nasal cavity (middle meatus), bypassing the obstructed NLD. Indications include chronic NLDO with epiphora or dacryocystitis, mucocoele of the lacrimal sac, recurrent acute dacryocystitis, and as an adjunct to manage lacrimal sac tumours. It is not indicated for purely canalicular obstruction — that requires a different bypass procedure (Jones tube). DCR is performed after any acute infection has completely resolved.</p>
 
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q2</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">A 45-year-old woman with Sjögren's syndrome presents with dry eye. Which test directly measures the aqueous secretion component?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>TBUT (tear break-up time)</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Schirmer I test (without anesthetic)</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Schirmer II test (with anesthetic)</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Lissamine green staining</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — Schirmer II test</div>
- <div class="exp-body">
- Schirmer II (with anesthetic) measures basal tear secretion only (aqueous layer). Normal >5 mm in 5 min. Schirmer I measures both reflex + basal. Sjögren's = low basal secretion.
- </div>
- </div>
- </div>
+                <h4>External DCR</h4>
+                <p>External DCR is the gold standard with the highest success rates (90 to 95%). A curvilinear skin incision is made 3 mm medial to the inner canthus, directly over the anterior lacrimal crest. The angular vessels (angular vein and artery) are identified and ligated or cauterised. The periosteum is elevated from the lacrimal bone and the bony ostium — typically 12 mm x 12 mm — is created using a drill or osteotome. The bone at this site is thin (the lacrimal bone is the thinnest bone in the skull) and little force is needed. The lacrimal sac is then opened with a vertical incision to create anterior and posterior flaps. The nasal mucosa is similarly incised to create corresponding flaps. The posterior flaps are sutured together first, then the anterior flaps, creating a wide anastomosis between sac and nasal mucosa. A Crawford silicone tube is threaded through both canaliculi, down through the new anastomosis, and retrieved from the nose, where it is tied and left for 3 to 6 months. The skin incision is closed in layers.</p>
 
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q3</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A 55-year-old woman develops acute pain, swelling, and purulent discharge at the medial canthus with fever. Diagnosis: acute dacryocystitis. What is the appropriate emergency management?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Immediate incision and drainage of the abscess</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Warm compress, topical antibiotics, and analgesics only</div>
- <div class="mcq-option"><span class="opt-letter">C</span>IV antibiotics (cephalosporin or fluoroquinolone), warm compress, analgesics; DCR after acute phase resolves</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Immediate DCR to relieve obstruction</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — IV antibiotics + warm compress; DCR later</div>
- <div class="exp-body">
- Acute dacryocystitis is a medical emergency. Do NOT perform I&C (risk of fistula). IV antibiotics immediately. Warm compress and analgesics. Once acute inflammation resolves (4–6 weeks), proceed with elective DCR.
- </div>
- </div>
- </div>
+                <h4>Endonasal DCR</h4>
+                <p>Endonasal (endoscopic) DCR achieves the same anastomosis from inside the nose, using a nasal endoscope. No external incision is made, so there is no scar. The nasal mucosa overlying the lacrimal bone is incised and elevated, the bone is removed to expose the sac, and the sac medial wall is opened to create the same anastomosis. Success rates of 85 to 90% are slightly lower than external DCR, partly because the posterior flap anastomosis is harder to create endoscopically, and partly because the ostium may scar more readily without anterior lamella support. Endonasal DCR is preferred when the patient strongly objects to a facial scar, when concurrent nasal pathology (deviated septum, polyps) needs addressing simultaneously, or when the surgeon has strong endoscopic skills. Revision after failed external DCR may also be performed endonasally.</p>
 
- <div class="mcq-card" data-correct="3">
- <div class="mcq-meta">
- <span class="mcq-num">Q4</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">The parasympathetic innervation of the lacrimal gland follows which pathway?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>CN V (trigeminal) → zygomatic nerve → lacrimal gland</div>
- <div class="mcq-option"><span class="opt-letter">B</span>CN VII (facial) → greater petrosal nerve → pterygopalatine ganglion → lacrimal nerve</div>
- <div class="mcq-option"><span class="opt-letter">C</span>CN III (oculomotor) → ciliary ganglion → lacrimal gland</div>
- <div class="mcq-option"><span class="opt-letter">D</span>CN IX (glossopharyngeal) → otic ganglion</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — CN VII pathway</div>
- <div class="exp-body">
- Lacrimal secretion is controlled by CN VII parasympathetic fibres: CN VII → greater petrosal nerve → pterygopalatine ganglion → zygomatic/lacrimal branches → lacrimal gland.
- </div>
- </div>
- </div>
+                <h4>Jones Tube for Canalicular Obstruction</h4>
+                <p>When the obstruction is in the canaliculi (rather than the NLD), there is no sac to drain from — the entire bypass from the conjunctiva to the nose must be created. The Jones tube (a pyrex glass tube, 2.5 to 4 mm diameter, 17 to 30 mm long) is inserted from the medial canthal region through the caruncle, through the soft tissue, and into the middle meatus, creating a permanent fistula. Tears drain passively and by capillary action into the tube and into the nose. Jones tubes require diligent maintenance — they need periodic checking to ensure patency and correct positioning — but provide excellent long-term function in experienced hands.</p>
 
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q5</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A 60-year-old presents with painless swelling at the lateral aspect of the upper eyelid with S-shaped ptosis. Imaging reveals a mass in the orbital lobe of the lacrimal gland. What is the most likely diagnosis and treatment?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Adenoid cystic carcinoma; radical orbital exenteration</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Pleomorphic adenoma; careful surgical excision with intact capsule</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Sjögren's syndrome; immunosuppression</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Sarcoid; systemic steroids</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Pleomorphic adenoma</div>
- <div class="exp-body">
- Painless, slow-growing orbital mass with S-shaped ptosis = pleomorphic adenoma (most common benign lacrimal tumour). Handle carefully to avoid rupture (malignant transformation risk). ACC would be painful and aggressive.
- </div>
- </div>
- </div>
+                <table class="compare-table">
+                  <thead><tr><th>Feature</th><th>External DCR</th><th>Endonasal DCR</th><th>Jones Tube</th></tr></thead>
+                  <tbody>
+                    <tr><td>Indication</td><td>NLDO, dacryocystitis</td><td>NLDO (no scar preference)</td><td>Canalicular obstruction</td></tr>
+                    <tr><td>Success rate</td><td>90 to 95%</td><td>85 to 90%</td><td>80 to 90%</td></tr>
+                    <tr><td>Scar</td><td>Small (fades well)</td><td>None</td><td>Minimal</td></tr>
+                    <tr><td>Anaesthesia</td><td>GA or LA</td><td>GA</td><td>GA or LA</td></tr>
+                    <tr><td>Special requirement</td><td>None</td><td>Endoscopic skill</td><td>Long-term tube maintenance</td></tr>
+                  </tbody>
+                </table>
 
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q6</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">An adult with chronic bilateral dry eye has TBUT <5 sec and Schirmer II test showing 3 mm. What is the primary defect?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Evaporative defect due to meibomian gland dysfunction</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Aqueous-deficient dry eye with reduced lacrimal secretion</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Reflex hypersecretion causing epiphora</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Corneal ulcer secondary to trauma</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Aqueous-deficient</div>
- <div class="exp-body">
- Schirmer II test (basal secretion) = 3 mm (<5 mm = abnormal) = aqueous-deficient dry eye. Low TBUT might be secondary. Suggests lacrimal gland disease (Sjögren's, non-Sjögren's) or damage.
- </div>
- </div>
- </div>
+                <div class="info-box">
+                  <strong>Why DCR is not done during acute dacryocystitis:</strong> The inflamed, oedematous tissues make identification of the sac and nasal mucosa flaps difficult, haemostasis is poor, infection risk to the surgical site is high, and the already-compromised tissues do not heal well. Waiting 4 to 6 weeks after resolution ensures clean planes, easier dissection, and significantly better outcomes.
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q7</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A 50-year-old woman with chronic nasolacrimal duct stenosis unresponsive to conservative therapy is referred for DCR. Which statement about DCR is INCORRECT?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>DCR creates an artificial fistula between lacrimal sac and nasal cavity</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Endoscopic DCR has a lower success rate than external DCR</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Success rate is 90–95% if NLD is obstructed; lower if canalicular obstruction</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Endoscopic DCR avoids facial scar and has better cosmetics</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — False (Endo-DCR has comparable success to external)</div>
- <div class="exp-body">
- Endoscopic DCR has comparable or better success rates (90–95%) compared to external DCR. It's less traumatic, better cosmetics. Statement B is INCORRECT — hence the answer.
- </div>
- </div>
- </div>
+          <!-- SECTION 6: Lacrimal Gland Disorders -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-teal"></div>
+              <h3>Lacrimal Gland Disorders and Epiphora Workup</h3>
+              <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+                <h4>Dacryoadenitis</h4>
+                <p>Acute dacryoadenitis is inflammation of the main lacrimal gland. It presents with painful swelling of the superolateral lid, producing an S-shaped ptosis — the lid droops medially from the weight of the swollen gland pulling it down laterally, creating a double curve. The conjunctival fornix may be injected, and the gland is palpable under the lateral upper lid. The most common cause in young adults is viral — mumps, EBV, CMV. Management is supportive (analgesics, warm compresses). Bacterial dacryoadenitis (Staphylococcus, Neisseria) requires systemic antibiotics; abscess formation needs drainage.</p>
+                <p>Chronic dacryoadenitis has a broader differential and a more insidious presentation. Sarcoidosis classically involves the lacrimal gland bilaterally, causing bilateral dry eye with a firm, non-tender gland. Lymphoma of the lacrimal gland (MALT lymphoma most commonly) presents similarly and can be confused with sarcoidosis clinically — biopsy is required to distinguish them. Tuberculosis, IgG4-related disease, and Wegener's granulomatosis also involve the lacrimal gland. Any chronic, firm, bilateral lacrimal gland enlargement needs a systemic workup and biopsy.</p>
 
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q8</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">Which lacrimal gland tumour is known for perineural invasion and aggressive behaviour with poor prognosis?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Pleomorphic adenoma</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Oncocytoma</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Adenoid cystic carcinoma</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Lymphoma</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — Adenoid cystic carcinoma</div>
- <div class="exp-body">
- ACC is the most common malignant lacrimal tumour. Hallmark = perineural invasion (spreads along nerves). Aggressive; poor prognosis (5-year survival ~20%). Requires radical surgery + radiotherapy.
- </div>
- </div>
- </div>
+                <h4>Lacrimal Gland Tumours</h4>
+                <p>Lacrimal gland tumours are classified as epithelial (50%) and non-epithelial (50%). Among epithelial tumours, pleomorphic adenoma (benign mixed tumour) is the most common — 50% of epithelial lacrimal gland tumours, 25% of all lacrimal gland tumours. It presents as a slowly progressive, painless, firm superolateral lid swelling with inferomedial globe displacement and proptosis. CT shows a well-defined oval mass that remodels (but does not destroy) the surrounding orbital bone. Treatment is complete excision including the surrounding pseudocapsule — incisional biopsy is contraindicated because tumour spillage leads to recurrence and malignant transformation into carcinoma ex pleomorphic adenoma. The entire gland with the tumour must be excised en bloc through a lateral orbitotomy.</p>
+                <p>Adenoid cystic carcinoma is the most common malignant lacrimal gland tumour. It is an aggressive tumour with characteristic perineural invasion — it grows along nerve sheaths, which explains why pain (from nerve involvement) is a prominent early feature, in contrast to the painless slow growth of pleomorphic adenoma. Pain in any lacrimal gland lesion should strongly suggest adenoid cystic carcinoma. CT shows bone destruction. Treatment is radical surgery (orbital exenteration in most cases) followed by radiotherapy, but prognosis remains poor — 5-year survival is around 50 to 60% and long-term recurrence rates are high.</p>
 
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q9</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">In the TFOS DEWS II classification, what is the most common CAUSE of dry eye disease globally?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Meibomian gland dysfunction (evaporative)</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Sjögren's syndrome (aqueous-deficient)</span>
- <div class="mcq-option"><span class="opt-letter">C</span>Corneal dystrophy</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Stevens-Johnson syndrome</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: A — Meibomian gland dysfunction</div>
- <div class="exp-body">
- MGD is the most common cause of dry eye (~60% of cases), leading to evaporative defect. Sjögren's is important but less common. TFOS DEWS II emphasizes MGD as primary target for management.
- </div>
- </div>
- </div>
+                <h4>Workup for Epiphora</h4>
+                <p>Epiphora (excessive watering of the eye) requires a systematic assessment to localise the site of obstruction or dysfunction. History establishes whether watering is constant or intermittent, unilateral or bilateral, whether there is associated mucopus, and any history of trauma, surgery, or nasal disease. Examination includes the regurgitation test, assessment of lid position (punctal eversion, entropion, ectropion), and nasal examination. Syringing and probing is the most informative bedside test: a Bowman probe is passed into the canaliculus, and irrigating fluid is injected; a hard stop (probe meets resistance in the canalicular wall) suggests canalicular obstruction; a soft stop (probe meets resistance before the hard wall) suggests sac or NLD blockage; free flow into the nose confirms patency. CT dacryocystography (CT DCG) — with contrast injected through the punctum — provides detailed imaging of the drainage system and identifies the site and nature of obstruction. Dacryoscintillography (nuclear medicine scan using technetium-99m) is a functional test that shows the physiological flow of tears through the drainage system and is useful when symptoms persist but syringing is patent.</p>
+              </div>
+            </div>
+          </div>
 
- <div class="mcq-card" data-correct="3">
- <div class="mcq-meta">
- <span class="mcq-num">Q10</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">The tear film consists of three layers. Which layer is secreted by the lacrimal gland?</div>
- <div class="mcq-options">
- <div class="opt-letter">A</span>Lipid layer (outermost)</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Aqueous layer (middle) — contains IgA, lysozyme</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Mucous layer (innermost)</div>
- <div class="mcq-option"><span class="opt-letter">D</span>All three layers equally</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Aqueous layer</div>
- <div class="exp-body">
- Lacrimal gland secretes the aqueous (middle) layer, which contains immune proteins (IgA, lysozyme, lactoferrin). Lipid = meibomian glands. Mucous = conjunctival goblet cells.
- </div>
- </div>
- </div>
+        </div>
+        <!-- END DEEP DIVE TAB -->
 
- </div><!-- end MCQ tab -->
+        <!-- TAB 3: CLINICAL SKILLS -->
+        <div class="tab-panel">
+          <p class="skills-intro">The lacrimal clinical skills are among the most consistently tested procedural topics in practical and viva examinations. Each technique is described as it would be performed in the clinic or theatre.</p>
 
- <!-- TAB 3: PYQs -->
- <div class="tab-panel">
- <div class="pyq-section">
- <h2> Previous Year Questions</h2>
- <p class="pyq-intro">Actual exam-pattern questions from AIIMS PG, NEET PG, DNB, and university exams.</p>
+          <!-- Skill 1: Schirmer's Test -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              Schirmer's Test
+              <span class="skill-tag">Diagnostic Technique</span>
+            </div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Schirmer's Test I (Without Anaesthesia)</h5>
+                  <p>Fold a strip of Whatman no. 41 filter paper (35 mm x 5 mm) at the 5 mm notch. Place the folded end over the lateral third of the lower lid margin at the junction of the middle and outer thirds, with the long end hanging down. The patient sits quietly with eyes gently closed. After exactly 5 minutes, remove both strips simultaneously and measure the total length of wetting from the fold. Normal is above 10 mm. Values below 5 mm indicate severe aqueous deficiency. Test both eyes at the same time for comparability. Schirmer's I tests both basal and reflex secretion — any ocular irritation from the strip itself will trigger reflex tearing from the main lacrimal gland and can produce falsely high readings.</p>
+                  <div class="step-tip">If the strip is saturated (all 30 mm wet) at any point before 5 minutes, note the time and record it as "greater than 30 mm in X minutes." This is still normal and much better than recording 30 mm after 5 minutes where the true value might have been 60 mm at 5 minutes.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Schirmer's Test II (Basic Secretion Test)</h5>
+                  <p>Instil topical anaesthetic (proxymetacaine 0.5% or oxybuprocaine 0.4%) and wait 5 minutes. Gently blot the conjunctival fornix dry with a cotton bud to remove any residual tear fluid and anaesthetic drops. Then place the Schirmer's strips as described above and measure after 5 minutes. Anaesthesia abolishes the reflex arc, so only basal secretion from the accessory glands (Krause and Wolfring) is measured. Normal basic secretion is above 10 mm in 5 minutes; values below 5 mm indicate severely compromised basal secretion. Compare Schirmer's I and II: if Schirmer's I is low but BST is normal, the problem is reflex secretion; if BST itself is low, basal secretion is fundamentally compromised.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Interpretation</h5>
+                  <p>Schirmer's I below 10 mm in 5 minutes: aqueous deficient dry eye. Below 5 mm: severe deficiency, Sjögren's possible. The Schirmer's value correlates imperfectly with symptoms — some patients with values of 5 mm have minimal symptoms; others with 8 mm are very symptomatic. Always interpret the number alongside TBUT, corneal staining, and the clinical history. Unilateral low Schirmer's suggests local lacrimal gland disease rather than a systemic cause.</p>
+                  <div class="step-normal">The Schirmer's test has poor reproducibility — values can vary by 30 to 40% between tests on the same patient. This is a known limitation. Multiple measurements and correlation with other tests is the answer.</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> AIIMS PG / PGI</div>
+          <!-- Skill 2: TBUT -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              Tear Break-Up Time (TBUT)
+              <span class="skill-tag">Diagnostic Technique</span>
+            </div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Technique</h5>
+                  <p>Touch a moistened fluorescein strip to the inferior conjunctival fornix (not the central cornea — central corneal staining will obscure the TBUT pattern). Ask the patient to blink two or three times to spread the fluorescein evenly across the cornea. Then ask them to keep the eyes wide open and avoid blinking. At the slit lamp, switch to the cobalt blue filter and observe the tear film under broad beam illumination. Start a stopwatch from the last blink. Watch for the first black spot or dark streak to appear in the fluorescent green tear film — this is where the tear film has thinned to zero and the fluorescein is no longer visible. Stop the stopwatch at this point. The TBUT is the time between the last blink and the first break.</p>
+                  <div class="step-tip">Take three measurements and average them. Normal is above 10 seconds. Below 10 seconds is abnormal; below 5 seconds is severely abnormal and indicates significant tear film instability.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Non-Invasive TBUT (NIBUT)</h5>
+                  <p>Fluorescein TBUT is influenced by the fluorescein itself (which can slightly destabilise the tear film) and by the volume of fluorescein instilled. Non-invasive TBUT avoids this by projecting a Placido disc or a grid target onto the cornea (using instruments like the Keratograph) and measuring how quickly the reflection distorts — distortion indicates tear film breakup. NIBUT is more repeatable and is increasingly used as the gold standard in research and dry eye clinics. Values above 10 seconds are normal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-item">
- <div class="pyq-source">AIIMS 2021</div>
- <div class="pyq-q">A 7-year-old boy presents with unilateral epiphora and mucoid discharge since 2 months. Syringing is patent. What is the most likely diagnosis? A) NLD stenosis B) Congenital NLD obstruction C) Dacryocystitis D) Canalicular block</div>
- <div class="pyq-ans">Answer: B — Congenital NLD obstruction (95% resolve by age 12 months)</div>
- </div>
+          <!-- Skill 3: Syringing and Probing -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              Syringing and Probing of the Lacrimal Passages
+              <span class="skill-tag">Diagnostic Procedure</span>
+            </div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Preparation and Dilation</h5>
+                  <p>Instil topical anaesthetic into the conjunctival fornix. Ask the patient to look nasally to relax the medial lid tissue. Using a Nettleship punctum dilator, gently insert the tapered tip into the punctum and rotate slightly to dilate it — the punctum needs to accept the syringing cannula without resistance. Do not dilate forcefully; gentle progressive dilation is sufficient.</p>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Passing the Cannula and Syringing</h5>
+                  <p>Attach a lacrimal cannula (26-gauge blunt-tipped) to a 2 mL syringe filled with normal saline. Pass the cannula vertically into the lower punctum for 2 mm (the vertical part of the canaliculus), then rotate the lid laterally to straighten the horizontal canaliculus and advance the cannula horizontally for 6 to 8 mm until you feel it reach the medial wall of the lacrimal sac. Do not force past this — the sac wall provides gentle resistance. Gently inject the saline and observe the patient's response.</p>
+                  <div class="step-tip">Ask the patient to tell you if they taste salty fluid at the back of their nose or throat. This is the most reliable sign of a patent nasolacrimal system.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Interpreting the Results</h5>
+                  <p>Several outcomes are possible. Free flow into the nose (patient tastes saline): patent system. Regurgitation from the opposite punctum (fluid comes out of the upper punctum while you syringe the lower): the common canaliculus and canaliculi are patent but there is NLD obstruction — the sac fills and back-pressures fluid up through the opposite canaliculus. Regurgitation from the same punctum (fluid comes back from where you injected): canalicular obstruction between the cannula tip and the common canaliculus. Hard stop: advancing the probe meets a firm resistance before the sac wall — a concretion in the canaliculus or canalicular obliteration. Soft stop: the cannula reaches the sac wall but the wall feels abnormally soft and indentable — suggests periductal fibrosis or sac disease rather than bony obstruction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-item">
- <div class="pyq-source">AIIMS 2020</div>
- <div class="pyq-q">What is the most common cause of dry eye disease globally? A) Sjögren's syndrome B) Stevens-Johnson syndrome C) Meibomian gland dysfunction D) Ocular cicatricial pemphigoid</div>
- <div class="pyq-ans">Answer: C — Meibomian gland dysfunction (most common, ~60%)</div>
- </div>
+          <!-- Skill 4: Regurgitation Test -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              Regurgitation Test
+              <span class="skill-tag">Bedside Examination</span>
+            </div>
+            <div class="skill-steps">
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Technique</h5>
+                  <p>Ask the patient to look upward (to relax the medial lid). Using the tip of your index finger or the blunt end of a cotton bud, press firmly over the lacrimal sac — the soft tissue area just below and medial to the medial palpebral ligament. Apply steady downward pressure for 2 to 3 seconds then release. Observe the lower punctum (and upper punctum) for any material expressing through. A positive regurgitation test shows mucopus or clear mucus appearing at the punctum on pressure — this confirms that the lacrimal sac contains retained secretions and that the NLD below it is obstructed.</p>
+                  <div class="step-tip">Press below the medial palpebral ligament, not above it. The lacrimal sac sits below the tendon; pressing above it compresses nothing relevant. A common error is applying pressure too high and missing the sac entirely.</div>
+                </div>
+              </div>
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Interpretation</h5>
+                  <p>A positive test (mucopus or mucus at the punctum) confirms NLDO and lacrimal sac distension. The character of the regurgitate is informative: clear mucus suggests a mucocoele without infection; mucopus indicates bacterial dacryocystitis. Blood-stained or serosanguineous regurgitate should raise the suspicion of a lacrimal sac tumour and warrants urgent investigation including CT dacryocystography and sac biopsy at the time of DCR.</p>
+                  <div class="step-normal">A negative regurgitation test does not exclude NLDO — if the sac has already partially drained or if the canaliculi are also obstructed, there may be no regurgitate on pressing. Syringing is the more definitive test for patency.</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-item">
- <div class="pyq-source">PGI Chandigarh 2022</div>
- <div class="pyq-q">In a case of acute dacryocystitis, why should immediate incision and drainage be avoided? A) Risk of fistula formation B) Increases infection C) Delay healing D) Poor cosmetics</div>
- <div class="pyq-ans">Answer: A — Risk of fistula (emergency management = IV antibiotics first)</div>
- </div>
- </div>
+        </div>
+        <!-- END CLINICAL SKILLS TAB -->
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> NEET PG / DNB</div>
+        <!-- TAB 4: Q-BANK -->
+        <div class="tab-panel">
+          <div class="qbank-nav">
+            <button class="qbank-btn pg-btn active" data-target="ug-mcqs">UG MCQs <span class="q-count">10</span></button>
+            <button class="qbank-btn pg-btn" data-target="pg-mcqs">PG MCQs <span class="q-count">10</span></button>
+            <button class="qbank-btn la-btn" data-target="long-ans">Long Answer <span class="q-count">4</span></button>
+            <button class="qbank-btn pyq-btn" data-target="pyqs">PYQs <span class="q-count">6</span></button>
+          </div>
 
- <div class="pyq-item">
- <div class="pyq-source">NEET PG 2022</div>
- <div class="pyq-q">Schirmer test II (with anesthetic) in a patient with Sjögren's syndrome typically shows which result? A) >15 mm B) 10–15 mm C) 5–10 mm D) <5 mm</div>
- <div class="pyq-ans">Answer: D — <5 mm (low basal aqueous secretion characteristic of Sjögren's)</div>
- </div>
+          <!-- UG MCQs -->
+          <div class="qbank-panel active" id="ug-mcqs">
+            <div class="qbank-info">Undergraduate level MCQs — single best answer testing core lacrimal system concepts.</div>
 
- <div class="pyq-item">
- <div class="pyq-source">DNB 2021</div>
- <div class="pyq-q">A painless, slow-growing lacrimal gland mass with S-shaped ptosis is most likely: A) ACC B) Pleomorphic adenoma C) Sarcoid D) Lymphoma</div>
- <div class="pyq-ans">Answer: B — Pleomorphic adenoma (most common benign; ACC is painful/aggressive)</div>
- </div>
+            <div class="mcq-card" data-correct="B">
+              <div class="mcq-question"><span class="mcq-num">1.</span> The normal value for Schirmer's test I is:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. More than 5 mm in 5 minutes</div>
+                <div class="mcq-opt" data-opt="B">B. More than 10 mm in 5 minutes</div>
+                <div class="mcq-opt" data-opt="C">C. More than 15 mm in 5 minutes</div>
+                <div class="mcq-opt" data-opt="D">D. More than 20 mm in 5 minutes</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: B.</strong> Normal Schirmer's I (without anaesthesia, testing basal plus reflex secretion) is above 10 mm wetting in 5 minutes. Below 5 mm is definitely abnormal and suggests severe aqueous deficiency. Values between 5 and 10 mm are borderline. The 10 mm threshold is the standard cut-off used clinically and in examinations.</div>
+            </div>
 
- <div class="pyq-item">
- <div class="pyq-source">NEET PG 2021</div>
- <div class="pyq-q">What is the principle of DCR surgery? A) Reconstruct the NLD B) Create artificial fistula between lacrimal sac and nose C) Block the puncta D) Graft the canaliculus</div>
- <div class="pyq-ans">Answer: B — Creates artificial fistula between lacrimal sac and inferior meatus</div>
- </div>
- </div>
+            <div class="mcq-card" data-correct="C">
+              <div class="mcq-question"><span class="mcq-num">2.</span> Tears drain into the inferior meatus through the:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Valve of Rosenmuller</div>
+                <div class="mcq-opt" data-opt="B">B. Valve of Taillefer</div>
+                <div class="mcq-opt" data-opt="C">C. Valve of Hasner</div>
+                <div class="mcq-opt" data-opt="D">D. Valve of Krause</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: C.</strong> The valve of Hasner is the mucosal fold at the lower end of the nasolacrimal duct where it opens into the inferior meatus of the nose. Its failure to open at birth in approximately 30% of neonates causes congenital NLDO. The valve of Rosenmuller is at the junction of the common canaliculus with the lacrimal sac (prevents reflux).</div>
+            </div>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> University / MBBS Exams</div>
+            <div class="mcq-card" data-correct="A">
+              <div class="mcq-question"><span class="mcq-num">3.</span> The most common cause of congenital nasolacrimal duct obstruction is:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Failure of the valve of Hasner to open</div>
+                <div class="mcq-opt" data-opt="B">B. Atresia of the puncta</div>
+                <div class="mcq-opt" data-opt="C">C. Dacryolithiasis</div>
+                <div class="mcq-opt" data-opt="D">D. Nasal polyp</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: A.</strong> Congenital NLDO in 95% of cases results from a thin mucous membrane at the valve of Hasner persisting after birth. This membranous obstruction at the lower end of the NLD is the anatomical basis for conservative management with Crigler's massage — hydrostatic pressure from massage ruptures the membrane. The high spontaneous resolution rate (95% by 12 months) also reflects the fragility of this membrane.</div>
+            </div>
 
- <div class="pyq-item">
- <div class="pyq-source">University Final MBBS</div>
- <div class="pyq-q">Discuss the anatomy of the lacrimal drainage system. Describe the pathophysiology and management of congenital NLD obstruction. (5 marks)</div>
- <div class="pyq-ans"> Anatomy: puncta → canaliculi → lacrimal sac → NLD → nose. Congenital: incompletely canalized NLD; Hasner's valve unopened; Crigler's massage downward pressure over sac (9–12 months); probing if persists.</div>
- </div>
- </div>
- </div>
- </div>
+            <div class="mcq-card" data-correct="D">
+              <div class="mcq-question"><span class="mcq-num">4.</span> In acute dacryocystitis, which of the following is contraindicated:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Systemic antibiotics</div>
+                <div class="mcq-opt" data-opt="B">B. Warm compresses</div>
+                <div class="mcq-opt" data-opt="C">C. Incision and drainage</div>
+                <div class="mcq-opt" data-opt="D">D. Syringing and probing</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: D.</strong> Syringing and probing are strictly contraindicated in acute dacryocystitis. Forcing fluid through an infected, obstructed, and inflamed sac risks bacteraemia, spreading the infection into the orbit (causing orbital cellulitis), and damaging the already-inflamed canalicular mucosa. Definitive DCR is performed only after the acute episode has completely resolved, typically 4 to 6 weeks later.</div>
+            </div>
 
- <!-- TAB 4: QUICK REVISION -->
- <div class="tab-panel">
- <div class="revision-grid">
- <div class="revision-card">
- <h3>Lacrimal Anatomy & Function</h3>
- <ul>
- <li><strong>Lacrimal gland:</strong> Orbital + palpebral lobes; CN VII innervation</li>
- <li><strong>Drainage:</strong> Puncta → canaliculi → sac → NLD → nose</li>
- <li><strong>Tear film:</strong> Lipid (meibomian) + aqueous (lacrimal) + mucous (conjunctiva)</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Dry Eye (TFOS DEWS II)</h3>
- <ul>
- <li><strong>Aqueous-deficient:</strong> Sjögren's, non-Sjögren's; Schirmer II <5 mm</li>
- <li><strong>Evaporative:</strong> MGD (most common); TBUT <10 sec</li>
- <li><strong>Treatment:</strong> Artificial tears, cyclosporine, IPL, punctal plugs</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Epiphora & NLD Obstruction</h3>
- <ul>
- <li><strong>Congenital NLD:</strong> Infant epiphora; Crigler's massage; probe at 9–12 mo if persists</li>
- <li><strong>Acquired NLD stenosis:</strong> Syringing, ROPLAS test positive</li>
- <li><strong>DCR:</strong> Creates fistula between sac and nose; success 90–95%</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Dacryocystitis & Tumours</h3>
- <ul>
- <li><strong>Acute:</strong> Painful, purulent; IV antibiotics + warm compress; <strong>NO I&C</strong> (fistula risk); DCR after 4–6 weeks</li>
- <li><strong>Chronic:</strong> Painless, recurrent; ROPLAS positive; consider DCR</li>
- <li><strong>Benign:</strong> Pleomorphic adenoma (S-shaped ptosis, slow-growing)</li>
- <li><strong>Malignant:</strong> ACC (perineural invasion, poor prognosis)</li>
- </ul>
- </div>
- </div>
- </div>
+            <div class="mcq-card" data-correct="B">
+              <div class="mcq-question"><span class="mcq-num">5.</span> Regurgitation test is positive when:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Pressure over the lacrimal gland produces tearing</div>
+                <div class="mcq-opt" data-opt="B">B. Pressure over the lacrimal sac produces mucopus at the punctum</div>
+                <div class="mcq-opt" data-opt="C">C. Syringing fluid flows freely into the nose</div>
+                <div class="mcq-opt" data-opt="D">D. Schirmer's test shows less than 5 mm wetting</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: B.</strong> The regurgitation test is performed by pressing firmly below the medial palpebral ligament over the lacrimal sac. A positive result is the appearance of mucopus or mucus at the punctum, confirming that the sac contains retained secretions and the NLD below is obstructed. It is a simple, no-equipment bedside test that strongly suggests NLDO.</div>
+            </div>
 
- </div><!-- end tab-container -->
+            <div class="mcq-card" data-correct="C">
+              <div class="mcq-question"><span class="mcq-num">6.</span> The gold standard procedure for NLDO with the highest success rate is:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Endonasal DCR</div>
+                <div class="mcq-opt" data-opt="B">B. Laser DCR</div>
+                <div class="mcq-opt" data-opt="C">C. External DCR</div>
+                <div class="mcq-opt" data-opt="D">D. Jones tube insertion</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: C.</strong> External DCR has the highest success rates (90 to 95%) and remains the gold standard for NLDO. It allows direct visualisation and wide anastomosis of lacrimal sac and nasal mucosa flaps. Endonasal DCR has slightly lower success (85 to 90%) but offers the advantage of no external scar. Jones tube is for canalicular obstruction, not NLD obstruction. Laser DCR has significantly lower success rates (60 to 70%).</div>
+            </div>
 
- <!-- Navigation -->
- <div style="display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--border)">
- <a href="ch13-eyelids.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--secondary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
- ← Prev: Ch 13 — Eyelids
- </a>
- <a href="ch15-orbit.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
- Next: Ch 15 — Orbit →
- </a>
- </div>
+            <div class="mcq-card" data-correct="A">
+              <div class="mcq-question"><span class="mcq-num">7.</span> Tear break-up time (TBUT) below which value is abnormal:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. 10 seconds</div>
+                <div class="mcq-opt" data-opt="B">B. 15 seconds</div>
+                <div class="mcq-opt" data-opt="C">C. 20 seconds</div>
+                <div class="mcq-opt" data-opt="D">D. 5 seconds only</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: A.</strong> TBUT below 10 seconds is abnormal and indicates an unstable tear film. Normal TBUT is 10 to 34 seconds. Values below 5 seconds indicate severely unstable tear film, usually with evaporative dry eye or MGD. The 10-second threshold is the standard clinical cut-off.</div>
+            </div>
 
- </div><!-- end content-area -->
- </div><!-- end main-content -->
+            <div class="mcq-card" data-correct="D">
+              <div class="mcq-question"><span class="mcq-num">8.</span> Crigler's massage in congenital NLDO is aimed at:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Expressing meibum from the Meibomian glands</div>
+                <div class="mcq-opt" data-opt="B">B. Stimulating the nasolacrimal reflex</div>
+                <div class="mcq-opt" data-opt="C">C. Washing out the lacrimal sac with tears</div>
+                <div class="mcq-opt" data-opt="D">D. Building hydrostatic pressure to rupture the membranous obstruction at Hasner's valve</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: D.</strong> Crigler's massage applies firm downward pressure over the lacrimal sac region to build hydrostatic pressure within the NLD. This pressure is transmitted to the distal obstructing membrane at Hasner's valve. With repeated application, the membrane may rupture, establishing patency. The technique must be performed correctly — finger below the medial canthal tendon — to compress the sac rather than the tendon itself.</div>
+            </div>
+
+            <div class="mcq-card" data-correct="B">
+              <div class="mcq-question"><span class="mcq-num">9.</span> The lipid layer of the tear film is secreted by:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Goblet cells</div>
+                <div class="mcq-opt" data-opt="B">B. Meibomian glands</div>
+                <div class="mcq-opt" data-opt="C">C. Main lacrimal gland</div>
+                <div class="mcq-opt" data-opt="D">D. Glands of Krause</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: B.</strong> The outermost lipid layer of the tear film is secreted by the Meibomian glands (tarsal glands). It functions to prevent evaporation of the underlying aqueous layer. MGD causes evaporative dry eye by producing an abnormal or insufficient lipid layer. Goblet cells secrete mucin (innermost layer); the main lacrimal gland and accessory glands produce the aqueous middle layer.</div>
+            </div>
+
+            <div class="mcq-card" data-correct="C">
+              <div class="mcq-question"><span class="mcq-num">10.</span> In congenital NLDO, probing under GA is typically recommended at:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. 3 months if symptoms are present</div>
+                <div class="mcq-opt" data-opt="B">B. 6 months as a preventive measure</div>
+                <div class="mcq-opt" data-opt="C">C. 12 to 18 months if not resolved with conservative management</div>
+                <div class="mcq-opt" data-opt="D">D. At birth to prevent recurrent infections</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: C.</strong> Because 95% of congenital NLDO resolves spontaneously by 12 months with Crigler's massage, probing is deferred until the child has had a reasonable chance for spontaneous resolution. If the obstruction persists at 12 months, probing under GA is performed at 12 to 18 months. Success rates for probing are above 90% if done before 18 months and decline with increasing age.</div>
+            </div>
+
+          </div>
+          <!-- END UG MCQs -->
+
+          <!-- PG MCQs -->
+          <div class="qbank-panel" id="pg-mcqs">
+            <div class="qbank-info">Postgraduate level MCQs requiring understanding of pathophysiology, surgical detail, and clinical reasoning at MS/DNB examination depth.</div>
+
+            <div class="mcq-card pg" data-correct="B">
+              <div class="mcq-question"><span class="mcq-num">1.</span> Anti-Ro (SSA) antibodies are positive in approximately what percentage of patients with Sjögren's syndrome:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. 40 to 50%</div>
+                <div class="mcq-opt" data-opt="B">B. 70 to 75%</div>
+                <div class="mcq-opt" data-opt="C">C. 90 to 95%</div>
+                <div class="mcq-opt" data-opt="D">D. 100%</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: B.</strong> Anti-Ro (SSA) antibodies are positive in approximately 70 to 75% of patients with Sjögren's syndrome. Anti-La (SSB) antibodies are positive in about 50 to 60%. The combination of anti-Ro and anti-La with the clinical triad (dry eye, dry mouth, autoimmune disease) is highly specific. AChR antibodies are negative (this is myasthenia). A seronegative patient with typical symptoms may still have Sjögren's — lip biopsy remains the gold standard for diagnosis in such cases.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="D">
+              <div class="mcq-question"><span class="mcq-num">2.</span> A Jones tube is indicated specifically for:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Nasolacrimal duct obstruction</div>
+                <div class="mcq-opt" data-opt="B">B. Lacrimal sac mucocoele</div>
+                <div class="mcq-opt" data-opt="C">C. Chronic dacryocystitis</div>
+                <div class="mcq-opt" data-opt="D">D. Canalicular obstruction</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: D.</strong> A Jones tube is a bypass tube inserted from the medial canthal region (at the caruncle) through to the middle meatus, bypassing the entire canalicular system. It is indicated when the canaliculi are obstructed — a situation where standard DCR (which relies on patent canaliculi to drain tears into the anastomosis) will not work. NLD obstruction with patent canaliculi is treated by DCR alone.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="A">
+              <div class="mcq-question"><span class="mcq-num">3.</span> In syringing of the lacrimal passages, regurgitation of fluid from the opposite (upper) punctum when syringing through the lower punctum indicates:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Nasolacrimal duct obstruction with patent canaliculi</div>
+                <div class="mcq-opt" data-opt="B">B. Common canalicular obstruction</div>
+                <div class="mcq-opt" data-opt="C">C. Patent nasolacrimal system</div>
+                <div class="mcq-opt" data-opt="D">D. Upper canalicular obstruction</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: A.</strong> Regurgitation from the opposite (upper) punctum during syringing of the lower punctum tells you that: the lower canaliculus, common canaliculus, and lacrimal sac are patent (the fluid travelled all this way), but the NLD is obstructed (it could not pass into the nose). Back pressure caused the fluid to reflux through the common canaliculus and up through the upper canaliculus to emerge at the upper punctum. If fluid regurgitated from the same (lower) punctum, the obstruction would be in the lower canaliculus itself.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="C">
+              <div class="mcq-question"><span class="mcq-num">4.</span> In external DCR, the bone removed to create the ostium is primarily:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Frontal bone</div>
+                <div class="mcq-opt" data-opt="B">B. Nasal bone</div>
+                <div class="mcq-opt" data-opt="C">C. Lacrimal bone and adjacent maxilla</div>
+                <div class="mcq-opt" data-opt="D">D. Ethmoid bone</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: C.</strong> The ostium in external DCR is created through the lacrimal bone and adjacent frontal process of the maxilla. The lacrimal bone is the thinnest bone in the skull and offers minimal resistance. The ostium should be approximately 12 mm x 12 mm to ensure adequate drainage and to resist cicatricial closure. The bony window communicates with the middle meatus of the nose (not the inferior meatus — the NLD opens into the inferior meatus, but the DCR ostium bypasses this and opens into the middle meatus).</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="B">
+              <div class="mcq-question"><span class="mcq-num">5.</span> Cyclosporine 0.05% (Restasis) eye drops act in dry eye syndrome by:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Increasing goblet cell number</div>
+                <div class="mcq-opt" data-opt="B">B. Reducing T-cell-mediated lacrimal gland inflammation</div>
+                <div class="mcq-opt" data-opt="C">C. Stimulating Meibomian gland secretion</div>
+                <div class="mcq-opt" data-opt="D">D. Blocking acetylcholinesterase to increase tear production</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: B.</strong> Topical cyclosporine is an immunosuppressant that inhibits calcineurin, blocking T-cell activation and reducing the lymphocytic infiltration and inflammation of the lacrimal gland that underlies inflammatory aqueous deficient dry eye (particularly Sjögren's). This reduces lacrimal gland damage and eventually improves aqueous secretion. It takes 3 to 6 months to reach full effect, which must be communicated to patients who may otherwise stop too early.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="D">
+              <div class="mcq-question"><span class="mcq-num">6.</span> Incisional biopsy of a suspected pleomorphic adenoma of the lacrimal gland is contraindicated because:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. It causes unacceptable haemorrhage</div>
+                <div class="mcq-opt" data-opt="B">B. The diagnosis can be made on CT alone</div>
+                <div class="mcq-opt" data-opt="C">C. General anaesthesia risk is too high</div>
+                <div class="mcq-opt" data-opt="D">D. Tumour spillage causes seeding, recurrence, and malignant transformation</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: D.</strong> Pleomorphic adenoma has a thin, incomplete pseudocapsule. If this capsule is breached during biopsy, tumour cells seed the orbit. This leads to multiple recurrences which are progressively more difficult to excise, and each recurrence carries a risk of malignant transformation into carcinoma ex pleomorphic adenoma — a much more dangerous tumour. The correct approach is complete excision en bloc including the pseudocapsule via lateral orbitotomy, with the specimen intact.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="A">
+              <div class="mcq-question"><span class="mcq-num">7.</span> Dacryoscintillography is preferred over CT dacryocystography when:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. The patient has symptoms of epiphora but syringing is patent</div>
+                <div class="mcq-opt" data-opt="B">B. Acute dacryocystitis is suspected</div>
+                <div class="mcq-opt" data-opt="C">C. A lacrimal sac tumour is suspected</div>
+                <div class="mcq-opt" data-opt="D">D. Canalicular obstruction needs anatomical localisation</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: A.</strong> Dacryoscintillography (using Tc-99m pertechnetate drops instilled in the eye) is a functional test — it measures the physiological flow of tears through the drainage system, reflecting real-world drainage capacity. When a patient has symptomatic epiphora but syringing under pressure shows a patent system, it means the drainage fails under physiological conditions (normal tear flow and blinking) even though it can be overcome by syringing pressure. Scintillography identifies this functional obstruction. CT DCG provides anatomical information about where a structural blockage is and is preferred when anatomy needs delineating before surgery.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="C">
+              <div class="mcq-question"><span class="mcq-num">8.</span> Schirmer's II (basic secretion test) differs from Schirmer's I in that it:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Uses a longer strip of filter paper</div>
+                <div class="mcq-opt" data-opt="B">B. Is performed for 10 minutes rather than 5</div>
+                <div class="mcq-opt" data-opt="C">C. Is performed after instillation of topical anaesthesia, measuring only basal secretion</div>
+                <div class="mcq-opt" data-opt="D">D. Measures nasolacrimal reflex secretion</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: C.</strong> Schirmer's II (the basic secretion test) is performed after topical anaesthesia has abolished the corneal reflex arc, so reflex tearing from the main lacrimal gland is suppressed. Only basal secretion from the accessory glands (Krause and Wolfring) is measured. This isolates the basal secretory capacity of the lacrimal system. Normal is above 10 mm in 5 minutes; values below this on BST indicate fundamentally compromised basal secretion — a more severe deficiency than if only Schirmer's I is low.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="D">
+              <div class="mcq-question"><span class="mcq-num">9.</span> The most common malignant tumour of the lacrimal gland is:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. Squamous cell carcinoma</div>
+                <div class="mcq-opt" data-opt="B">B. Mucoepidermoid carcinoma</div>
+                <div class="mcq-opt" data-opt="C">C. Lymphoma</div>
+                <div class="mcq-opt" data-opt="D">D. Adenoid cystic carcinoma</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: D.</strong> Adenoid cystic carcinoma is the most common malignant epithelial tumour of the lacrimal gland and accounts for about 25 to 30% of all lacrimal gland epithelial tumours. Its characteristic features are perineural invasion (pain is a prominent early feature), bone destruction on CT, and a cribriform pattern on histology (Swiss cheese appearance). Prognosis is poor despite aggressive treatment. MALT lymphoma is a common non-epithelial lacrimal gland tumour but the question asks specifically about malignant tumours in the context of lacrimal gland — adenoid cystic is the standard answer.</div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="B">
+              <div class="mcq-question"><span class="mcq-num">10.</span> A patient with epiphora undergoes syringing. The irrigating fluid comes back from the same punctum (lower) through which it was injected, and a hard stop is felt. This indicates:</div>
+              <div class="mcq-options">
+                <div class="mcq-opt" data-opt="A">A. NLD obstruction with patent canaliculi</div>
+                <div class="mcq-opt" data-opt="B">B. Canalicular obstruction</div>
+                <div class="mcq-opt" data-opt="C">C. Common canalicular obstruction</div>
+                <div class="mcq-opt" data-opt="D">D. Patent nasolacrimal system with functional obstruction</div>
+              </div>
+              <div class="mcq-explanation"><strong>Answer: B.</strong> Regurgitation from the same punctum through which you are syringing (the lower punctum) tells you that the obstruction is between the cannula tip and the lacrimal sac — that is, within the lower canaliculus itself. A hard stop means the cannula met a firm wall rather than the soft sac wall, confirming canalicular rather than sac or NLD obstruction. This pattern would require canaliculoplasty or Jones tube rather than standard DCR, as the canaliculi cannot carry fluid to a DCR anastomosis if they are blocked.</div>
+            </div>
+
+          </div>
+          <!-- END PG MCQs -->
+
+          <!-- LONG ANSWERS -->
+          <div class="qbank-panel" id="long-ans">
+            <div class="qbank-info">Long answer questions covering the breadth of the lacrimal chapter as it appears in MS/DNB written examinations.</div>
+
+            <div class="la-card">
+              <div class="la-question">1. Classify dry eye syndrome. Describe the clinical features, investigations, and management. (10 marks)</div>
+              <div class="la-answer">
+                <h5>Classification</h5>
+                <p>Dry eye is classified into aqueous deficient and evaporative subtypes. Aqueous deficient dry eye: Sjögren's syndrome (keratoconjunctivitis sicca, xerostomia, and autoimmune disease — primary or secondary to RA/SLE/systemic sclerosis; anti-Ro/SSA and anti-La/SSB antibodies) and non-Sjögren's (lacrimal gland infiltration or damage, reflex block from V1 anaesthesia, Riley-Day syndrome). Evaporative dry eye: Meibomian gland dysfunction (most common overall), blink rate reduction, lagophthalmos, contact lens wear, post-LASIK, vitamin A deficiency, and preservative toxicity from eye drops.</p>
+                <h5>Clinical Features</h5>
+                <p>Symptoms include burning, grittiness, foreign body sensation, and paradoxical epiphora (reflex watering from an unstable tear film). Symptoms worsen with screen use, low humidity, air conditioning, and toward evening. Signs: reduced TBUT (below 10 seconds), corneal punctate epithelial staining with fluorescein (inferior one-third in aqueous deficiency, interpalpebral in evaporative), reduced Schirmer's values, rose bengal or lissamine green staining of devitalised interpalpebral conjunctiva, Meibomian gland orifice capping and turbid secretion in MGD, posterior lid margin telangiectasia.</p>
+                <h5>Investigations</h5>
+                <p>Schirmer's I (without anaesthesia — basal and reflex): normal above 10 mm in 5 minutes. Basic secretion test / Schirmer's II (with anaesthesia — basal only): normal above 10 mm. TBUT (fluorescein instilled, time to first dry spot after blink): normal above 10 seconds. For Sjögren's: ANA, anti-Ro, anti-La, RF, lip biopsy (focal periductal lymphocytic sialadenitis, focus score 1 or more). Tear osmolarity: above 308 mOsm/L supports dry eye. Meibography: Meibomian gland structure and drop-out.</p>
+                <h5>Management</h5>
+                <p>Mild: lifestyle modification (screen breaks, humidity), preservative-free artificial tears (carboxymethylcellulose, sodium hyaluronate), lid hygiene for MGD. Moderate: viscous drops or gels, warm compresses and lid scrubs, topical cyclosporine 0.05 to 0.1% (takes 3 to 6 months, reduces lacrimal gland inflammation), oral omega-3 supplements. Severe: topical steroids for acute inflammatory flares (FML, loteprednol — short course to avoid glaucoma/cataract), punctal plugs (only when inflammation is controlled), autologous serum drops 20 to 50% (for neurotrophic and severe Sjögren's dry eye). Scleral contact lenses for refractory cases. Systemic hydroxychloroquine for Sjögren's.</p>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-question">2. What is DCR? Describe the types, indications, steps, and complications of external DCR. (10 marks)</div>
+              <div class="la-answer">
+                <h5>Definition and Indications</h5>
+                <p>Dacryocystorhinostomy (DCR) creates a new drainage pathway from the lacrimal sac into the nasal cavity (middle meatus), bypassing the obstructed nasolacrimal duct. Indications: chronic NLDO with epiphora, recurrent acute dacryocystitis, lacrimal sac mucocoele, and lacrimal sac surgery where drainage must be re-established.</p>
+                <h5>Types</h5>
+                <p>External DCR (gold standard — 90 to 95% success): skin incision approach, direct sac-nasal anastomosis. Endonasal/endoscopic DCR (85 to 90% success): no scar, endonasal access, slightly lower success. Laser DCR (PANDO-L): 60 to 70% success, useful in anticoagulated patients. Jones tube (bypass): for canalicular obstruction, not NLD obstruction.</p>
+                <h5>Steps of External DCR</h5>
+                <p>1. Curvilinear skin incision 3 mm medial to medial canthus. 2. Identify and ligate angular vessels. 3. Periosteum elevated from anterior lacrimal crest. 4. Bony ostium (12 mm x 12 mm) created through lacrimal bone and frontal process of maxilla into middle meatus. 5. Lacrimal sac opened vertically — anterior and posterior flaps created. 6. Nasal mucosa similarly opened — anterior and posterior flaps. 7. Posterior flaps sutured together first; then anterior flaps. 8. Crawford silicone tube passed through both canaliculi, through the anastomosis, retrieved from nose, tied, and left for 3 to 6 months. 9. Skin closure in layers.</p>
+                <h5>Complications</h5>
+                <p>Intraoperative: haemorrhage (angular vessels, nasal mucosal bleeding), damage to medial rectus or trochlea (rare), cerebrospinal fluid leak (rare). Early postoperative: wound haematoma, infection, silicone tube prolapse. Late: restenosis/closure of the ostium (most common cause of failure), granuloma at the anastomosis, tube extrusion, persistent epiphora. The most common reason DCR fails is cicatricial closure of the ostium — prevention includes making an adequately large ostium, performing a tension-free anastomosis, and stenting with silicone for an adequate duration.</p>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-question">3. Describe acute and chronic dacryocystitis — clinical features, diagnosis, and management of each. (10 marks)</div>
+              <div class="la-answer">
+                <h5>Acute Dacryocystitis</h5>
+                <p>Acute dacryocystitis is bacterial infection of the lacrimal sac, usually complicating chronic NLDO. Presentation: sudden painful, red, tender swelling below the medial palpebral ligament (anatomically at the lacrimal sac fossa — this localisation distinguishes it from preseptal cellulitis which is above the tendon). Pressure over the sac (regurgitation test) produces mucopus at the punctum. Causative organisms: Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae. Complications if untreated: lacrimal abscess (fluctuant pointing), orbital cellulitis (if abscess ruptures posteriorly through orbital septum), skin fistula formation.</p>
+                <p>Management: systemic antibiotics (amoxicillin-clavulanic acid 625 mg three times daily, or cephalosporins; IV if spreading cellulitis). Warm compresses to localise the abscess. Topical antibiotic drops. Syringing and probing are contraindicated. I&D when abscess is fluctuant. DCR is the definitive treatment, performed 4 to 6 weeks after complete resolution.</p>
+                <h5>Chronic Dacryocystitis</h5>
+                <p>Chronic dacryocystitis presents insidiously with persistent unilateral epiphora and intermittent mucopus. There is no acute swelling or tenderness. Regurgitation test is positive (mucopus on sac pressure). Syringing: fluid regurgitates from the opposite punctum (NLD obstruction with patent canaliculi) and does not pass into the nose. Causes: dacryolithiasis, nasal disease, idiopathic fibrosis, or sequela of previous acute episode. A mucocoele develops when the sac is completely obstructed and distends with retained secretions — a non-tender, compressible swelling below the medial canthal tendon that transilluminates.</p>
+                <p>Management: syringing confirms the diagnosis. CT DCG if anatomy unclear or tumour suspected. Definitive treatment is external DCR (90 to 95% success). Mucocoele: DCR (aspiration alone leads to rapid recurrence).</p>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-question">4. Describe congenital nasolacrimal duct obstruction — aetiology, clinical features, differential diagnosis, and management. (10 marks)</div>
+              <div class="la-answer">
+                <h5>Aetiology</h5>
+                <p>Congenital NLDO results from failure of the valve of Hasner (mucous membrane at the lower end of the NLD opening into the inferior meatus) to rupture at or shortly after birth. This occurs in approximately 30% of neonates and is the most common congenital lacrimal anomaly. In 95% of cases it resolves spontaneously by 12 months. Rarely, more complex bony or canalicular anomalies cause congenital obstruction.</p>
+                <h5>Clinical Features</h5>
+                <p>Epiphora and mucopus are present from the first weeks of life. The conjunctiva is white — there is no injection. Pressure over the lacrimal sac produces mucopus at the punctum (regurgitation test positive). One or both eyes may be affected; bilateral involvement (30%) is common. The child otherwise appears well with no systemic features.</p>
+                <h5>Differential Diagnosis</h5>
+                <p>Ophthalmia neonatorum (neonatal conjunctivitis) must be distinguished: conjunctival injection and chemosis are present; gonococcal ophthalmia (24 to 48 hours, copious purulent discharge) and chlamydial ophthalmia (5 to 14 days, papillary conjunctivitis) are sight-threatening and require urgent systemic treatment. Congenital glaucoma (buphthalmos, photophobia, epiphora from corneal oedema) must also be excluded — the corneal diameter exceeds 12 mm and corneal haziness is present. Simple NLDO has clear corneas and no injection.</p>
+                <h5>Management</h5>
+                <p>Conservative management (birth to 12 months): Crigler's massage (firm downward pumping pressure over the lacrimal sac 10 times, four times daily) to build hydrostatic pressure to rupture the membrane. Topical antibiotic drops during episodes of mucopurulent discharge to prevent secondary infection. Probing under GA at 12 to 18 months if not resolved: Bowman's probe passed through the canalicular system to rupture the membranous obstruction; NLD irrigated to confirm patency; success rate above 90% before 18 months. Second probing or silicone intubation (Crawford tubes) if first probing fails: tubes left for 3 to 6 months to maintain patency. External or endonasal DCR if intubation fails: generally deferred until age 3 to 4 years when nasal anatomy is adequately developed.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- END LONG ANSWERS -->
+
+          <!-- PYQs -->
+          <div class="qbank-panel" id="pyqs">
+            <div class="qbank-info">Previous year questions from MS/DNB and AIIMS examinations on lacrimal system topics.</div>
+
+            <div class="pyq-card">
+              <div class="pyq-meta"><span class="pyq-source">MS Ophthalmology</span><span class="pyq-year">Recent</span></div>
+              <div class="pyq-question">Describe the anatomy of the lacrimal drainage system. What is the significance of the valve of Hasner?</div>
+              <div class="pyq-answer">The lacrimal drainage system carries tears from the puncta to the inferior meatus of the nose. Upper and lower puncta (0.5 mm openings at medial lid margin) drain into canaliculi: each canaliculus has a 2 mm vertical segment and an 8 mm horizontal segment. The canaliculi join as a common canaliculus (5 to 8 mm) guarded by the valve of Rosenmuller (prevents reflux). The lacrimal sac (12 to 15 mm) lies in the lacrimal fossa between anterior and posterior lacrimal crests. The nasolacrimal duct (18 mm) descends in a bony canal in the maxilla to open into the inferior meatus. The valve of Hasner is the mucosal fold at this opening. Its significance: failure to open at birth in 30% of neonates causes congenital NLDO — the most common congenital lacrimal condition. Crigler's massage aims to rupture this valve by hydrostatic pressure. It resolves spontaneously in 95% of cases by 12 months. It forms the target of lacrimal probing — the probe is advanced down the NLD until the resistance of this membrane is felt and overcome. Understanding its location in the inferior meatus (not middle meatus) distinguishes it from the DCR ostium which opens into the middle meatus.</div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-meta"><span class="pyq-source">DNB Ophthalmology</span><span class="pyq-year">Recent</span></div>
+              <div class="pyq-question">What is Sjögren's syndrome? How does it affect the eye and how is it diagnosed?</div>
+              <div class="pyq-answer">Sjögren's syndrome is an autoimmune exocrinopathy characterised by lymphocytic infiltration and destruction of exocrine glands, primarily lacrimal and salivary. Primary Sjögren's: dry eye (keratoconjunctivitis sicca) plus dry mouth (xerostomia). Secondary Sjögren's: same features in the context of rheumatoid arthritis, SLE, systemic sclerosis, or other connective tissue disease. Ocular effects: aqueous deficient dry eye from lacrimal gland destruction; keratoconjunctivitis sicca (KCS); severe cases develop filamentary keratitis (mucus strands attached to corneal epithelium), corneal ulceration, and band keratopathy. Diagnosis: Schirmer's I below 5 mm in 5 minutes; TBUT below 5 seconds; rose bengal interpalpebral staining score above 4 on van Bijsterveld scale; positive anti-Ro (SSA) antibodies in 70 to 75%, anti-La (SSB) in 50 to 60%; ANA positive; labial salivary gland biopsy showing focal periductal lymphocytic sialadenitis with focus score of 1 or more (gold standard for diagnosis). Management: preservative-free artificial tears (frequent), cyclosporine 0.05 to 0.1% eye drops, punctal plugs when inflammation controlled, autologous serum drops for severe cases, hydroxychloroquine for systemic disease.</div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-meta"><span class="pyq-source">AIIMS</span><span class="pyq-year">Recent</span></div>
+              <div class="pyq-question">What are the indications for DCR? Describe the steps of external DCR.</div>
+              <div class="pyq-answer">Indications: chronic NLDO with epiphora (most common), recurrent acute dacryocystitis, lacrimal sac mucocoele, dacryolith, and after lacrimal sac trauma requiring reconstruction. DCR is deferred until any acute infection has fully resolved. Steps of external DCR: 1. Curvilinear skin incision 3 mm medial to medial canthus (between medial canthal tendon and nasal bridge), deepened to periosteum. 2. Angular vessels identified and cauterised or ligated. 3. Periosteum elevated from anterior lacrimal crest — the lacrimal sac is reflected laterally within its periosteal pocket. 4. Bony ostium (12 mm x 12 mm) created through lacrimal bone and frontal process of maxilla using drill, Kerrison's rongeurs, or osteotome. 5. Lacrimal sac identified and opened with a vertical incision through the medial sac wall — anterior and posterior flaps created. 6. Nasal mucosa exposed through the bony ostium and incised — anterior and posterior flaps created. 7. Posterior sac and nasal mucosal flaps sutured together with 4-0 Vicryl (creating the posterior anastomosis). 8. Crawford silicone tube threaded through upper and lower canaliculi, through the anastomosis, retrieved from the nose and tied. 9. Anterior flaps of sac and nasal mucosa sutured together. 10. Skin closed in two layers. Tubes removed at 3 to 6 months. Success rate 90 to 95%.</div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-meta"><span class="pyq-source">MS Ophthalmology</span><span class="pyq-year">Recent</span></div>
+              <div class="pyq-question">Describe the management of congenital nasolacrimal duct obstruction.</div>
+              <div class="pyq-answer">Congenital NLDO results from failure of Hasner's valve to open. Management is age-dependent and stepwise. Birth to 12 months (conservative): Crigler's massage 10 times, four times daily — firm downward pressure on the lacrimal sac below the medial canthal tendon to build hydrostatic pressure. Topical antibiotic drops during mucopurulent episodes. 95% resolve spontaneously by 12 months. If not resolved at 12 months — probing under GA (12 to 18 months): Bowman's probe passed via the lower (or upper) canaliculus to the lacrimal sac, advanced down the NLD, and the membranous obstruction ruptured by gentle firm pressure; NLD irrigated after to confirm patency. Success above 90% before 18 months, declining with age. If probing fails — silicone intubation: Crawford tube passed through both canaliculi, down through the anastomosis, retrieved from the nose, tied to maintain the lumen open for 3 to 6 months. Success 70 to 90%. If intubation fails — external or endonasal DCR at age 3 to 4 years when nasal anatomy is adequate. At all stages, Crigler's massage continues and antibiotic drops are used during infective episodes. Parents are reassured about the high spontaneous resolution rate and taught correct massage technique below the tendon.</div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-meta"><span class="pyq-source">DNB Ophthalmology</span><span class="pyq-year">Recent</span></div>
+              <div class="pyq-question">What is the three-layer structure of the tear film? Describe dry eye investigations.</div>
+              <div class="pyq-answer">The tear film consists of three layers. Innermost mucin layer: secreted by conjunctival goblet cells; converts the hydrophobic corneal surface to hydrophilic, allowing aqueous to spread; deficiency causes rapid tear film breakup. Middle aqueous layer: secreted by main lacrimal gland and accessory glands (Krause and Wolfring); constitutes 98% of tear volume; contains lysozyme, lactoferrin, IgA, EGF; basal secretion from accessory glands, reflex secretion from main gland. Outer lipid layer: secreted by Meibomian glands; prevents evaporation; MGD causes evaporative dry eye. Investigations: TBUT (fluorescein instilled, time to first dry spot — normal above 10 seconds, below 5 seconds severe); Schirmer's I — without anaesthesia, tests basal plus reflex secretion, normal above 10 mm in 5 minutes; Schirmer's II (BST) — with anaesthesia, tests basal only, normal above 10 mm; Rose bengal or lissamine green staining — devitalised cells in interpalpebral zone, van Bijsterveld score above 4 abnormal; Corneal fluorescein staining — punctate staining in inferior or interpalpebral zone; Tear osmolarity (TearLab) — above 308 mOsm/L suggests dry eye; Meibography — infrared imaging of Meibomian gland structure and drop-out; Impression cytology — goblet cell density quantification.</div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-meta"><span class="pyq-source">AIIMS</span><span class="pyq-year">Recent</span></div>
+              <div class="pyq-question">What is the Jones tube and when is it indicated? Describe the differences between external and endonasal DCR.</div>
+              <div class="pyq-answer">Jones tube is a pyrex glass bypass tube inserted from the medial canthal region (at the caruncle) through the soft tissues of the medial canthus into the middle meatus, creating a permanent direct fistula between the conjunctival sac and the nasal cavity. It bypasses the entire canalicular system. Indication: canalicular obstruction (upper, lower, or common canalicular block) where the canaliculi cannot be used to carry tears to a standard DCR anastomosis. Technique: tube is 2.5 to 4 mm in diameter, 17 to 30 mm long; placed under GA or LA; a fistula is fashioned from the caruncle to the middle meatus, the tube is inserted and secured. Long-term maintenance — periodic checking and irrigation — is required. Comparison of external vs endonasal DCR: External DCR: curvilinear skin incision (leaves small scar), direct visualisation of sac and nasal mucosa, wide posterior and anterior flap anastomosis possible, success 90 to 95%, can be done under local anaesthesia, does not require endoscopic equipment or skill. Endonasal DCR: no external scar (cosmetic advantage), performed under GA with sinus endoscope, same bony ostium and sac opening principle, posterior flap anastomosis harder to create endoscopically (often omitted), success 85 to 90%, allows simultaneous management of nasal pathology (septal deviation, polyps), requires specialised endoscopic skill, preferred for revision of failed external DCR or when patient objects to scar.</div>
+            </div>
+
+          </div>
+          <!-- END PYQs -->
+
+        </div>
+        <!-- END Q-BANK TAB -->
+
+      </div>
+    </div>
+  </div>
 </div>
-
-<script>
- window._chapterBase = '../';
-</script>
-<script src="../assets/js/sidebar.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/app.js"></script>
 </body>
 </html>

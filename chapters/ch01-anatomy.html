@@ -1,565 +1,1216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <meta name="base" content="../" />
- <title>Ch 1: Anatomy & Physiology — OphthalStudy</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="../assets/css/style.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="base" content="../" />
+  <title>Ch 1: Anatomy &amp; Physiology — OphthalStudy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 <div class="app-layout">
- <div id="sidebar-mount"></div>
+  <div id="sidebar-mount"></div>
+  <div class="main-content">
+    <div class="top-bar">
+      <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+      <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> <span>&rsaquo; Ch 1 &mdash; Anatomy &amp; Physiology</span></div>
+      <div class="tag-group"><div id="score-badge"></div><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+    </div>
+    <div class="content-area">
+      <div class="chapter-header">
+        <div class="chapter-num">Chapter 1</div>
+        <h1>Anatomy &amp; Physiology of the Eye</h1>
+        <p>The structural and functional foundation of clinical ophthalmology. Understanding the anatomy of the eyeball, visual pathway, aqueous dynamics, and nerve supply is essential before approaching any disease.</p>
+        <div class="chapter-meta"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+      </div>
 
- <div class="main-content">
- <div class="top-bar">
- <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
- <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 1 — Anatomy & Physiology</span></div>
- <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
- </div>
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab-btn active">Snapshot</button>
+          <button class="tab-btn">Deep Dive</button>
+          <button class="tab-btn">Clinical Skills</button>
+          <button class="tab-btn">Q-Bank</button>
+        </div>
 
- <div class="content-area">
- <!-- Header -->
- <div class="chapter-header">
- <div class="chapter-num">Chapter 1</div>
- <h1>Anatomy &amp; Physiology of the Eye</h1>
- <p>Structural organisation, blood supply, visual pathway, aqueous humour dynamics — the foundation for all clinical ophthalmology.</p>
- <div class="chapter-meta">
- <span class="tag tag-ug">UG Level</span>
- <span class="tag tag-pg">PG Level</span>
- <span class="tag tag-highyield">High-Yield</span>
- </div>
- </div>
+        <!-- ===================== SNAPSHOT ===================== -->
+        <div class="tab-panel active">
+          <div class="snapshot-intro">
+            <p>Six high-yield cards covering what you need to recall in the first thirty seconds of any anatomy question. These are the anchors &mdash; everything else in the chapter hangs off them.</p>
+          </div>
+          <div class="snapshot-grid">
 
- <!-- Tabs -->
- <div class="tab-container">
- <div class="tabs">
- <button class="tab-btn active">Theory</button>
- <button class="tab-btn">MCQ Bank</button>
- <button class="tab-btn">PYQs</button>
- <button class="tab-btn">Quick Revision</button>
- </div>
+            <!-- Card 1: Layers of the Eyeball -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot-blue"></span>
+                <h4>Layers of the Eyeball</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>The adult eyeball is roughly 24 mm in anteroposterior diameter and is built in three concentric coats. The outer fibrous coat consists of the sclera posteriorly and the transparent cornea anteriorly. Inside that sits the middle uveal coat, which is the vascular layer made up of the choroid, ciliary body, and iris. The innermost coat is the retina, which is where all the photochemistry happens.</p>
+                <ul class="snap-list">
+                  <li><strong>Outer coat:</strong> Sclera (posterior 5/6) + Cornea (anterior 1/6)</li>
+                  <li><strong>Middle coat (uveal tract):</strong> Choroid + Ciliary body + Iris</li>
+                  <li><strong>Inner coat:</strong> Retina (neural + pigmented layers)</li>
+                  <li><strong>Three chambers:</strong> Anterior (aqueous), Posterior (aqueous), Vitreous</li>
+                  <li><strong>Axial length:</strong> 24 mm &mdash; every 1 mm increase equals roughly 3 D of myopia</li>
+                </ul>
+              </div>
+            </div>
 
- <!-- TAB 1: THEORY -->
- <div class="tab-panel active">
+            <!-- Card 2: Visual Pathway -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot-violet"></span>
+                <h4>Visual Pathway</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>Light hits the photoreceptors, signals travel inward through the bipolar and ganglion cells, exit as the optic nerve, partially cross at the chiasm, relay through the lateral geniculate nucleus, and finally reach the primary visual cortex. The crossing at the chiasm is the detail that gives every visual field defect its diagnostic character.</p>
+                <ul class="snap-list">
+                  <li>Retina &rarr; Optic nerve (CN II) &rarr; Optic chiasm (nasal fibres cross)</li>
+                  <li>Optic tract &rarr; Lateral Geniculate Nucleus (LGN) of thalamus</li>
+                  <li>Optic radiation &rarr; Primary visual cortex (V1, calcarine fissure, Area 17)</li>
+                  <li><strong>Meyer's loop:</strong> Inferior fibres loop through the temporal lobe; lesion here = contralateral superior quadrantanopia ("pie in the sky")</li>
+                  <li><strong>Baum's loop:</strong> Superior fibres via parietal lobe; lesion = inferior quadrantanopia</li>
+                </ul>
+              </div>
+            </div>
 
- <!-- SECTION 1: Overview -->
- <div class="section-card open">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Introduction</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <div class="info-box">
- <strong>Key Fact:</strong> The eyeball is an AP diameter of ~24 mm (axial length). Every 1 mm increase = ~3D of myopia.
- </div>
- <ul>
- <li>Adult eyeball: <strong>axial length 24 mm</strong>, horizontal 23.5 mm, vertical 23 mm</li>
- <li>Weight: ~7 g; Volume: ~6.5 mL</li>
- <li>Three coats: <strong>Fibrous</strong> (sclera + cornea) → <strong>Vascular</strong> (uvea: choroid + CB + iris) → <strong>Nervous</strong> (retina)</li>
- <li>Three chambers: Anterior (aqueous), Posterior (aqueous), Vitreous</li>
- </ul>
- </div>
- </div>
+            <!-- Card 3: Aqueous Dynamics -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot-green"></span>
+                <h4>Aqueous Dynamics</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>Aqueous humor is produced continuously by the ciliary epithelium, circulates through the anterior and posterior chambers, and drains through two separate routes. When production and drainage fall out of balance, intraocular pressure rises &mdash; and that is the fundamental mechanism behind glaucoma.</p>
+                <ul class="snap-list">
+                  <li><strong>Production:</strong> Ciliary epithelium, ~2 &mu;L/min (active transport predominantly)</li>
+                  <li><strong>Trabecular route:</strong> ~85% &rarr; canal of Schlemm &rarr; episcleral veins</li>
+                  <li><strong>Uveoscleral route:</strong> ~15% &rarr; ciliary muscle &rarr; suprachoroidal space</li>
+                  <li><strong>Normal IOP:</strong> 10&ndash;21 mmHg (Goldmann tonometer)</li>
+                  <li>Diurnal variation: highest in the morning, lowest at midnight</li>
+                </ul>
+              </div>
+            </div>
 
- <!-- SECTION 2: Cornea -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-blue"></div>
- <h3>Cornea — Structure & Layers</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <div class="diagram-wrapper">
- <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" width="460">
- <defs>
- <linearGradient id="cornGrad" x1="0" y1="0" x2="0" y2="1">
- <stop offset="0%" stop-color="#dbeafe"/>
- <stop offset="100%" stop-color="#bfdbfe"/>
- </linearGradient>
- </defs>
- <!-- Corneal arc -->
- <path d="M 60,110 Q 120,10 180,110" fill="none" stroke="#93c5fd" stroke-width="3"/>
- <path d="M 62,113 Q 122,13 178,113" fill="none" stroke="#60a5fa" stroke-width="2"/>
- <!-- Layer labels -->
- <rect x="200" y="20" width="280" height="170" rx="8" fill="url(#cornGrad)" stroke="#93c5fd" stroke-width="1.5"/>
- <text x="215" y="48" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e40af">CORNEAL LAYERS (anterior → posterior)</text>
- <text x="215" y="68" font-family="Inter,sans-serif" font-size="11" fill="#374151">1. Epithelium (5–6 layers, stratified squamous)</text>
- <text x="215" y="86" font-family="Inter,sans-serif" font-size="11" fill="#374151">2. Bowman's layer (acellular, can't regenerate)</text>
- <text x="215" y="104" font-family="Inter,sans-serif" font-size="11" fill="#374151">3. Stroma (90% of thickness, Type I collagen)</text>
- <text x="215" y="122" font-family="Inter,sans-serif" font-size="11" fill="#374151">4. Descemet's membrane (thickens with age)</text>
- <text x="215" y="140" font-family="Inter,sans-serif" font-size="11" fill="#374151">5. Endothelium (single layer, pumps fluid out)</text>
- <text x="215" y="162" font-family="Inter,sans-serif" font-size="10" fill="#6b7280" font-style="italic">Avg thickness: 0.52–0.55 mm centrally, 0.65 mm peripherally</text>
- <text x="215" y="178" font-family="Inter,sans-serif" font-size="10" fill="#dc2626" font-weight="600"> Avascular — nutrients from aqueous + limbal vessels</text>
- </svg>
- <div class="diagram-caption">Fig 1.1 — Corneal layers (anterior to posterior)</div>
- </div>
- <div class="mnemonic-box">
- <div class="mnemonic-title">Mnemonic</div>
- <div class="mnemonic-text">E B S D E</div>
- <div class="mnemonic-expand"><strong>E</strong>pithelium · <strong>B</strong>owman's · <strong>S</strong>troma · <strong>D</strong>escemet's · <strong>E</strong>ndothelium</div>
- </div>
- <ul>
- <li><strong>Corneal diameter:</strong> Horizontal 12 mm, Vertical 11 mm (adult)</li>
- <li><strong>Refractive power:</strong> +43 D (most powerful refracting surface)</li>
- <li>Avascular → immunologically privileged → allows corneal grafting</li>
- <li><strong>Endothelium:</strong> critical for dehydration of stroma; normal density ~2500 cells/mm²; if &lt;500 → bullous keratopathy</li>
- </ul>
- </div>
- </div>
+            <!-- Card 4: Blood Supply -->
+            <div class="snap-card">
+              <div class="snap-card-header">
+                <span class="snap-dot-amber"></span>
+                <h4>Blood Supply</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>The retina has a dual blood supply, which is why different disease processes affect different layers. The inner retina is supplied by the central retinal artery, which is an end artery &mdash; block it and the inner layers die within minutes. The outer retina, including the photoreceptors and RPE, depends entirely on the choroidal circulation.</p>
+                <ul class="snap-list">
+                  <li><strong>Ophthalmic artery:</strong> First intracranial branch of the internal carotid artery</li>
+                  <li><strong>Central retinal artery (CRA):</strong> Supplies inner 6 layers of the retina; true end artery</li>
+                  <li><strong>Short posterior ciliary arteries:</strong> Supply outer retina, RPE, and choriocapillaris</li>
+                  <li><strong>Circle of Zinn-Haller:</strong> Supplies optic nerve head; ischaemia here = AION</li>
+                  <li>Dual supply creates a watershed zone at the optic disc margin</li>
+                </ul>
+              </div>
+            </div>
 
- <!-- SECTION 3: Uveal Tract -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Uveal Tract — Iris, Ciliary Body, Choroid</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <table class="compare-table">
- <tr><th>Structure</th><th>Location</th><th>Key Function</th><th>Muscle / Feature</th></tr>
- <tr><td><strong>Iris</strong></td><td>Anterior uvea</td><td>Controls pupil size (light reflex)</td><td>Sphincter pupillae (PS) + Dilator pupillae (S)</td></tr>
- <tr><td><strong>Ciliary Body</strong></td><td>Middle uvea</td><td>Accommodation + aqueous production</td><td>Ciliary muscle; pars plana + pars plicata</td></tr>
- <tr><td><strong>Choroid</strong></td><td>Posterior uvea</td><td>Nutrition to outer retina</td><td>Rich vasculature; Bruch's membrane</td></tr>
- </table>
- <p><strong>Aqueous humour production:</strong> Ciliary epithelium secretes ~2 µL/min. Drains via trabecular meshwork (85%) and uveoscleral pathway (15%). Normal IOP: 10–21 mmHg.</p>
- </div>
- </div>
+            <!-- Card 5: Mnemonic -->
+            <div class="snap-card mnemonic-card">
+              <div class="snap-card-header">
+                <span class="snap-dot-red"></span>
+                <h4>Visual Field Defects by Site</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>The location of a lesion in the visual pathway produces a predictable field defect. Get this table into your head and you can answer almost any visual pathway question by working backwards from the defect.</p>
+                <ul class="snap-list">
+                  <li><strong>Retina / optic nerve:</strong> Monocular loss (one eye only)</li>
+                  <li><strong>Optic chiasm (central compression):</strong> Bitemporal hemianopia</li>
+                  <li><strong>Optic tract / LGN / cortex:</strong> Homonymous hemianopia (contralateral)</li>
+                  <li><strong>Meyer's loop (temporal lobe):</strong> Contralateral superior quadrantanopia &mdash; "pie in the sky"</li>
+                  <li><strong>Baum's loop (parietal lobe):</strong> Contralateral inferior quadrantanopia &mdash; "pie on the floor"</li>
+                  <li><strong>Occipital cortex:</strong> Congruent homonymous hemianopia with macular sparing</li>
+                </ul>
+                <div class="mnemonic-box">
+                  <div class="mnemonic-title">The Rule</div>
+                  <div class="mnemonic-expand">Before the chiasm = one eye. At the chiasm = bitemporal. After the chiasm = homonymous (both eyes, same side).</div>
+                </div>
+              </div>
+            </div>
 
- <!-- SECTION 4: Retina -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-red"></div>
- <h3>Retina — Layers & Macula</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <div class="diagram-wrapper">
- <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" width="460">
- <rect x="10" y="10" width="480" height="180" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
- <text x="20" y="32" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#92400e">10 LAYERS OF RETINA (Vitreous → Choroid)</text>
- <!-- Layers listed as alternating rows -->
- <rect x="20" y="40" width="460" height="18" rx="3" fill="#fef3c7"/>
- <text x="28" y="53" font-family="Inter,sans-serif" font-size="11" fill="#374151">1. Inner Limiting Membrane (ILM)</text>
- <rect x="20" y="60" width="460" height="18" rx="3" fill="white"/>
- <text x="28" y="73" font-family="Inter,sans-serif" font-size="11" fill="#374151">2. Nerve Fibre Layer (NFL) — axons of ganglion cells</text>
- <rect x="20" y="80" width="460" height="18" rx="3" fill="#fef3c7"/>
- <text x="28" y="93" font-family="Inter,sans-serif" font-size="11" fill="#374151">3. Ganglion Cell Layer (GCL) — 2nd order neuron</text>
- <rect x="20" y="100" width="460" height="18" rx="3" fill="white"/>
- <text x="28" y="113" font-family="Inter,sans-serif" font-size="11" fill="#374151">4. Inner Plexiform Layer</text>
- <rect x="20" y="120" width="460" height="18" rx="3" fill="#fef3c7"/>
- <text x="28" y="133" font-family="Inter,sans-serif" font-size="11" fill="#374151">5. Inner Nuclear Layer (bipolar, amacrine, Müller cells)</text>
- <rect x="20" y="140" width="460" height="18" rx="3" fill="white"/>
- <text x="28" y="153" font-family="Inter,sans-serif" font-size="11" fill="#374151">6. Outer Plexiform (Henle's fibre layer at macula)</text>
- <rect x="20" y="160" width="460" height="18" rx="3" fill="#fef3c7"/>
- <text x="28" y="173" font-family="Inter,sans-serif" font-size="11" fill="#374151">7. Outer Nuclear · 8. OLM · 9. Photoreceptors · 10. RPE</text>
- </svg>
- <div class="diagram-caption">Fig 1.2 — Ten layers of the retina</div>
- </div>
- <h4>Macula &amp; Fovea</h4>
- <ul>
- <li><strong>Macula lutea:</strong> Area of highest visual acuity; ~5 mm diameter, centered ~3.5 mm temporal to disc</li>
- <li><strong>Fovea centralis:</strong> Central depression; diameter ~1.5 mm; contains only cones (no rods)</li>
- <li><strong>Foveola:</strong> ~0.35 mm; thinnest part; only cone inner segments, no capillaries → avascular zone</li>
- <li><strong>Optic disc:</strong> 1.5 mm, blind spot; no photoreceptors; physiological cup:disc ratio ≤0.3</li>
- </ul>
- <div class="warn-box">
- <strong>️ Exam Trap:</strong> At the macula, GCL is 8–10 layers thick (not 1 like elsewhere). At fovea, only cones are present — no rods, no capillaries.
- </div>
- </div>
- </div>
+            <!-- Card 6: Nerve Supply (wide + teal) -->
+            <div class="snap-card wide">
+              <div class="snap-card-header">
+                <span class="snap-dot-teal"></span>
+                <h4>Nerve Supply of the Eye</h4>
+              </div>
+              <div class="snap-card-body">
+                <p>Six cranial nerves are involved in the eye and orbit. Mixing them up in an exam is avoidable. The mnemonic LR6 SO4 handles the extraocular muscles; everything else follows from anatomy.</p>
+                <ul class="snap-list">
+                  <li><strong>Optic nerve (CN II):</strong> Vision &mdash; all afferent visual information</li>
+                  <li><strong>Oculomotor (CN III):</strong> MR, SR, IR, IO muscles; levator palpebrae; parasympathetic to sphincter pupillae (constriction) and ciliary muscle (accommodation)</li>
+                  <li><strong>Trochlear (CN IV):</strong> Superior oblique only; the only cranial nerve to exit dorsally</li>
+                  <li><strong>Abducens (CN VI):</strong> Lateral rectus only</li>
+                  <li><strong>Nasociliary (branch of CN V1):</strong> Corneal sensation; also supplies the ciliary ganglion</li>
+                  <li><strong>Facial nerve (CN VII):</strong> Orbicularis oculi for lid closure; lesion = lagophthalmos</li>
+                  <li><strong>Mnemonic:</strong> <em>LR6 SO4 rest CN3</em> &mdash; Lateral Rectus: VI, Superior Oblique: IV, all others: III</li>
+                </ul>
+              </div>
+            </div>
 
- <!-- SECTION 5: Visual Pathway -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-purple"></div>
- <h3>Visual Pathway</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <div class="diagram-wrapper">
- <svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg" width="460">
- <!-- Pathway diagram -->
- <text x="200" y="20" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#374151" text-anchor="middle">LEFT EYE</text>
- <text x="300" y="20" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#374151" text-anchor="middle">RIGHT EYE</text>
- <!-- Retina boxes -->
- <rect x="140" y="28" width="120" height="24" rx="4" fill="#dbeafe" stroke="#93c5fd"/>
- <text x="200" y="44" font-family="Inter,sans-serif" font-size="10" fill="#1e40af" text-anchor="middle" font-weight="600">Retina (L)</text>
- <rect x="240" y="28" width="120" height="24" rx="4" fill="#dcfce7" stroke="#86efac"/>
- <text x="300" y="44" font-family="Inter,sans-serif" font-size="10" fill="#166534" text-anchor="middle" font-weight="600">Retina (R)</text>
- <!-- Lines to optic nerve -->
- <line x1="200" y1="52" x2="200" y2="80" stroke="#93c5fd" stroke-width="2"/>
- <line x1="300" y1="52" x2="300" y2="80" stroke="#86efac" stroke-width="2"/>
- <text x="160" y="76" font-family="Inter,sans-serif" font-size="10" fill="#6b7280">Optic nerve (CN II)</text>
- <!-- Optic chiasm -->
- <ellipse cx="250" cy="100" rx="60" ry="18" fill="#fef9c3" stroke="#fde047"/>
- <text x="250" y="104" font-family="Inter,sans-serif" font-size="11" fill="#713f12" text-anchor="middle" font-weight="700">Optic Chiasm</text>
- <!-- Nasal fibres cross -->
- <line x1="200" y1="80" x2="250" y2="100" stroke="#93c5fd" stroke-width="1.5"/>
- <line x1="300" y1="80" x2="250" y2="100" stroke="#86efac" stroke-width="1.5"/>
- <!-- Lines after chiasm -->
- <line x1="225" y1="118" x2="180" y2="148" stroke="#c084fc" stroke-width="2"/>
- <line x1="275" y1="118" x2="320" y2="148" stroke="#c084fc" stroke-width="2"/>
- <text x="145" y="145" font-family="Inter,sans-serif" font-size="10" fill="#6b7280">L optic tract</text>
- <text x="295" y="145" font-family="Inter,sans-serif" font-size="10" fill="#6b7280">R optic tract</text>
- <!-- LGN -->
- <rect x="150" y="150" width="60" height="20" rx="4" fill="#ede9fe" stroke="#c084fc"/>
- <text x="180" y="164" font-family="Inter,sans-serif" font-size="9" fill="#6d28d9" text-anchor="middle">L LGN</text>
- <rect x="290" y="150" width="60" height="20" rx="4" fill="#ede9fe" stroke="#c084fc"/>
- <text x="320" y="164" font-family="Inter,sans-serif" font-size="9" fill="#6d28d9" text-anchor="middle">R LGN</text>
- <!-- Optic radiation -->
- <line x1="180" y1="170" x2="180" y2="200" stroke="#a78bfa" stroke-width="2"/>
- <line x1="320" y1="170" x2="320" y2="200" stroke="#a78bfa" stroke-width="2"/>
- <text x="100" y="200" font-family="Inter,sans-serif" font-size="9" fill="#6b7280">Optic radiation</text>
- <text x="325" y="200" font-family="Inter,sans-serif" font-size="9" fill="#6b7280">Optic radiation</text>
- <!-- Visual cortex -->
- <rect x="130" y="205" width="240" height="24" rx="4" fill="#fce7f3" stroke="#f9a8d4"/>
- <text x="250" y="221" font-family="Inter,sans-serif" font-size="11" fill="#9d174d" text-anchor="middle" font-weight="700">Primary Visual Cortex (Area 17, Calcarine sulcus)</text>
- <!-- Crossover annotation -->
- <text x="30" y="110" font-family="Inter,sans-serif" font-size="10" fill="#dc2626" font-weight="600">Nasal fibres cross</text>
- <text x="30" y="122" font-family="Inter,sans-serif" font-size="10" fill="#374151">Temporal fibres</text>
- <text x="30" y="134" font-family="Inter,sans-serif" font-size="10" fill="#374151">stay ipsilateral</text>
- </svg>
- <div class="diagram-caption">Fig 1.3 — Visual pathway from retina to cortex</div>
- </div>
- <h4>Key Anatomical Points</h4>
- <ul>
- <li><strong>Optic chiasm:</strong> Nasal (crossing) fibres cross; temporal fibres stay ipsilateral</li>
- <li><strong>LGN (lateral geniculate nucleus):</strong> 6 layers — layers 1, 2 = magnocellular; 3, 4, 5, 6 = parvocellular</li>
- <li><strong>Meyer's loop:</strong> Inferior fibres of optic radiation loop into temporal lobe → lesion → contralateral superior quadrantanopia ("pie in the sky")</li>
- <li><strong>Baum's loop:</strong> Superior fibres → parietal lobe → lesion → inferior quadrantanopia ("pie on floor")</li>
- <li><strong>Visual cortex:</strong> Brodmann area 17 (striate), 18 &amp; 19 (parastriate); macular area occupies posterior pole (macular sparing in PCA territory infarcts)</li>
- </ul>
- </div>
- </div>
+          </div><!-- end snapshot-grid -->
+        </div><!-- end Snapshot tab -->
 
- <!-- SECTION 6: Blood Supply -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-red"></div>
- <h3>Blood Supply of the Eye</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <table class="compare-table">
- <tr><th>Structure</th><th>Artery</th><th>Key Feature</th></tr>
- <tr><td>Inner retina (inner 6 layers)</td><td><strong>Central retinal artery</strong> (branch of ophthalmic a.)</td><td>End artery — occlusion → acute CRAO</td></tr>
- <tr><td>Outer retina (outer 4 layers)</td><td><strong>Choriocapillaris</strong> via short posterior ciliary aa.</td><td>RPE depends on choroid</td></tr>
- <tr><td>Optic nerve head</td><td>Short posterior ciliary aa. (circle of Zinn-Haller)</td><td>AION results from ischaemia here</td></tr>
- <tr><td>Iris & ciliary body</td><td>Long posterior + anterior ciliary arteries</td><td>Major arterial circle of iris</td></tr>
- </table>
- <div class="info-box">
- <strong>Cilioretinal artery</strong> (present in 20%): arises from posterior ciliary → supplies papillomacular bundle → vision preserved in CRAO if present.
- </div>
- </div>
- </div>
+        <!-- ===================== DEEP DIVE ===================== -->
+        <div class="tab-panel">
+          <span class="pg-badge">PG Level Detail</span>
 
- <!-- SECTION 7: Extraocular Muscles -->
- <div class="section-card">
- <div class="section-header">
- <div class="section-icon si-green"></div>
- <h3>Extraocular Muscles</h3>
- <div class="section-tags"><span class="tag tag-ug">UG</span></div>
- <span class="section-chevron">▼</span>
- </div>
- <div class="section-body">
- <table class="compare-table">
- <tr><th>Muscle</th><th>Primary Action</th><th>Secondary</th><th>Nerve</th></tr>
- <tr><td>Medial rectus</td><td>Adduction</td><td>—</td><td>CN III</td></tr>
- <tr><td>Lateral rectus</td><td>Abduction</td><td>—</td><td>CN VI</td></tr>
- <tr><td>Superior rectus</td><td>Elevation</td><td>Intorsion, adduction</td><td>CN III</td></tr>
- <tr><td>Inferior rectus</td><td>Depression</td><td>Extorsion, adduction</td><td>CN III</td></tr>
- <tr><td>Superior oblique</td><td>Intorsion</td><td>Depression (abducted), depression (adducted)</td><td>CN IV</td></tr>
- <tr><td>Inferior oblique</td><td>Extorsion</td><td>Elevation, abduction</td><td>CN III</td></tr>
- </table>
- <div class="mnemonic-box">
- <div class="mnemonic-title">Mnemonic — Nerve Supply</div>
- <div class="mnemonic-text">LR₆ SO₄ rest CN III</div>
- <div class="mnemonic-expand">Lateral Rectus = CN VI · Superior Oblique = CN IV · All others = CN III</div>
- </div>
- </div>
- </div>
+          <!-- Section 1: Outer Coat (open) -->
+          <div class="section-card open">
+            <div class="section-header">
+              <div class="section-bar sb-blue"></div>
+              <h3>Outer Coat &mdash; Sclera and Cornea</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
 
- </div><!-- end theory tab -->
+                <h4>The Sclera</h4>
+                <p>The sclera forms the posterior five-sixths of the outer coat and gives the eyeball its shape and mechanical rigidity. It is white and opaque, composed of collagen bundles running in multiple directions &mdash; which is exactly why it is opaque while the cornea is not. Structurally it has five layers: episclera (superficial vascular), scleral stroma (dense collagen), lamina fusca (transitional zone with uvea), and the scleral spur at the corneoscleral junction. The extraocular muscles insert into sclera, which is why the Spiral of Tillaux matters surgically.</p>
+                <p>Emissary canals are the small passages through the sclera that transmit nerves and vessels. These same canals provide a route for intraocular tumours to spread extraocularly &mdash; something to keep in mind when staging choroidal melanoma.</p>
 
- <!-- TAB 2: MCQ BANK -->
- <div class="tab-panel">
- <div class="mcq-bank-header">
- <h2> MCQ Bank — Anatomy &amp; Physiology</h2>
- <div class="mcq-stats">10 questions · ~20 min</div>
- </div>
+                <h4>The Cornea</h4>
+                <p>Five layers, from anterior to posterior. The epithelium is stratified squamous, five to six cells deep, and regenerates remarkably fast because limbal stem cells at the corneoscleral junction are constantly replenishing it. Bowman's layer lies beneath &mdash; acellular, cannot regenerate, so a scar forms permanently when it is damaged. The stroma makes up about ninety percent of the corneal thickness and is collagen type I arranged in lamellae with remarkable regularity &mdash; the reason light passes through without scattering. Descemet's membrane is the basement membrane of the endothelium and actually thickens with age. The endothelium is a single layer of hexagonal cells that run a constant pump: sodium-potassium ATPase actively moves fluid out of the stroma to keep it in the dehydrated, transparent state. Normal density is around 2500 cells per square millimetre and there is essentially no regeneration in humans &mdash; when cells are lost, the remaining ones enlarge and migrate to fill the gaps.</p>
 
- <!-- Q1 -->
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q1</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">Which layer of the cornea CANNOT regenerate after injury?</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>Epithelium</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Bowman's layer</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Stroma</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Descemet's membrane</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Bowman's layer</div>
- <div class="exp-body">
- <ul>
- <li><strong>Bowman's layer</strong> is acellular — once destroyed it forms a scar. No regenerative capacity.</li>
- <li>Epithelium regenerates well (stem cells at limbus).</li>
- <li>Stroma regenerates partially.</li>
- <li>Descemet's membrane is regenerated by endothelium.</li>
- </ul>
- </div>
- </div>
- </div>
+                <div class="mnemonic-box">
+                  <div class="mnemonic-title">Corneal Layers</div>
+                  <div class="mnemonic-expand"><strong>E B S D E</strong> &mdash; Epithelium, Bowman's, Stroma, Descemet's, Endothelium</div>
+                </div>
 
- <!-- Q2 -->
- <div class="mcq-card" data-correct="2">
- <div class="mcq-meta">
- <span class="mcq-num">Q2</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">The fovea centralis of the retina is characterised by which of the following?</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>Presence of rods only</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Rich capillary network for high metabolism</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Cones only with no capillaries (avascular zone)</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Ganglion cell layer is 8–10 cells thick</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — Cones only with no capillaries</div>
- <div class="exp-body">
- Foveola is avascular — nutrients come from choriocapillaris. Contains only cone inner segments. All other retinal layers are displaced laterally (Henle's fibre layer). The GCL being 8–10 layers thick is a feature of the <em>macula</em>, not the foveola.
- </div>
- </div>
- </div>
+                <h4>Transparency of the Cornea</h4>
+                <p>Three things keep the cornea transparent. The stroma is avascular. The collagen lamellae are arranged in a regular lattice with spacing smaller than the wavelength of visible light, which prevents scattering. The endothelial pump maintains relative dehydration of the stroma &mdash; hydration disrupts the lattice and causes oedema and cloudiness, which is exactly what you see in bullous keratopathy or Fuchs endothelial dystrophy.</p>
 
- <!-- Q3 -->
- <div class="mcq-card" data-correct="3">
- <div class="mcq-meta">
- <span class="mcq-num">Q3</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">A lesion in Meyer's loop (temporal lobe portion of optic radiation) produces which visual field defect?</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>Ipsilateral monocular visual loss</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Contralateral inferior quadrantanopia</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Contralateral superior quadrantanopia ("pie in the sky")</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Bitemporal hemianopia</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: C — Contralateral superior quadrantanopia</div>
- <div class="exp-body">
- <ul>
- <li>Meyer's loop carries inferior visual field fibres (lower retina = upper visual field).</li>
- <li>Temporal lobe lesion → <strong>"pie in the sky"</strong> = contralateral superior quadrantanopia.</li>
- <li>Parietal lobe (Baum's loop, superior fibres) → contralateral inferior quadrantanopia = "pie on the floor".</li>
- <li>Optic chiasm → bitemporal hemianopia.</li>
- </ul>
- </div>
- </div>
- </div>
+                <h4>The Limbus</h4>
+                <p>The corneoscleral junction, the limbus, is where most surgical incisions for cataract surgery are placed. It also houses the palisades of Vogt where corneal epithelial stem cells reside. Loss of limbal stem cells &mdash; from Stevens-Johnson syndrome, chemical burns, or aniridia &mdash; leads to conjunctivalisation of the cornea and opacity that cannot be fixed with a routine corneal graft.</p>
 
- <!-- Q4 -->
- <div class="mcq-card" data-correct="0">
- <div class="mcq-meta">
- <span class="mcq-num">Q4</span>
- <span class="mcq-difficulty diff-ug">UG</span>
- </div>
- <div class="mcq-stem">Normal IOP range and the rate of aqueous humor production are, respectively:</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>10–21 mmHg; 2 µL/min</div>
- <div class="mcq-option"><span class="opt-letter">B</span>15–30 mmHg; 5 µL/min</div>
- <div class="mcq-option"><span class="opt-letter">C</span>10–21 mmHg; 0.5 µL/min</div>
- <div class="mcq-option"><span class="opt-letter">D</span>12–25 mmHg; 2 µL/min</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: A — 10–21 mmHg; 2 µL/min</div>
- <div class="exp-body">
- Normal IOP: <strong>10–21 mmHg</strong> (Goldmann tonometer). Aqueous produced at ~<strong>2 µL/min</strong> by ciliary epithelium. Drains 85% trabecular, 15% uveoscleral.
- </div>
- </div>
- </div>
+                <div class="info-box">
+                  <strong>Numbers worth knowing:</strong> Corneal diameter 12 mm horizontal, 11 mm vertical. Central thickness 0.52&ndash;0.55 mm. Refractive power +43 D &mdash; the most powerful refracting surface of the eye.
+                </div>
 
- <!-- Q5 -->
- <div class="mcq-card" data-correct="1">
- <div class="mcq-meta">
- <span class="mcq-num">Q5</span>
- <span class="mcq-difficulty diff-pg">PG</span>
- </div>
- <div class="mcq-stem">Which extraocular muscle is responsible for intorsion when the eye is in primary position?</div>
- <div class="mcq-options">
- <div class="mcq-option"><span class="opt-letter">A</span>Superior rectus</div>
- <div class="mcq-option"><span class="opt-letter">B</span>Superior oblique</div>
- <div class="mcq-option"><span class="opt-letter">C</span>Inferior rectus</div>
- <div class="mcq-option"><span class="opt-letter">D</span>Inferior oblique</div>
- </div>
- <div class="mcq-actions">
- <button class="btn-reveal">Reveal Answer</button>
- <button class="btn-reset">Reset</button>
- </div>
- <div class="mcq-explanation">
- <div class="exp-correct">Correct Answer: B — Superior oblique</div>
- <div class="exp-body">
- Superior oblique (CN IV): primary action = <strong>intorsion</strong>; secondary = depression and abduction. Inferior oblique: extorsion, elevation, abduction. Superior rectus: elevation, intorsion, adduction.
- </div>
- </div>
- </div>
+              </div>
+            </div>
+          </div>
 
- </div><!-- end MCQ tab -->
+          <!-- Section 2: Uveal Tract -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-violet"></div>
+              <h3>Uveal Tract &mdash; Choroid, Ciliary Body, and Iris</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
 
- <!-- TAB 3: PYQs -->
- <div class="tab-panel">
- <div class="pyq-section">
- <h2> Previous Year Questions</h2>
- <p class="pyq-intro">Actual and exam-pattern questions from AIIMS PG, NEET PG, DNB, and university exams.</p>
+                <h4>The Choroid</h4>
+                <p>The choroid is the most vascular tissue in the body by weight &mdash; it carries about eighty percent of total ocular blood flow. Its job is to nourish the outer retina, particularly the photoreceptors and RPE. Structurally it runs from Bruch's membrane on its inner surface outward through the choriocapillaris, Sattler's layer of medium vessels, and Haller's layer of larger vessels, to the suprachoroidal space. Bruch's membrane is a five-layered structure and its integrity is critical: breaks in Bruch's allow choroidal neovascularisation to grow through &mdash; the mechanism in wet AMD.</p>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> AIIMS PG / PGI</div>
+                <h4>The Ciliary Body</h4>
+                <p>The ciliary body extends from the scleral spur anteriorly to the ora serrata posteriorly and has two parts. The pars plicata (anterior 2 mm) contains the ciliary processes, which are responsible for aqueous secretion. The pars plana (posterior 3.5 mm) is flat, relatively avascular, and the surgeon's preferred entry point for vitreoretinal surgery &mdash; 3.5&ndash;4 mm from the limbus in phakic eyes. The ciliary muscle controls accommodation by changing the tension on the zonular fibres, which alters the shape of the crystalline lens. When the ciliary muscle contracts, the zonules relax, the lens rounds up, and near focus is achieved. This is Helmholtz's theory of accommodation.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">AIIMS 2019</div>
- <div class="pyq-q">Bowman's membrane is absent in which of the following? A) Cornea B) Lens C) Retina D) Conjunctiva</div>
- <div class="pyq-ans">Answer: D — Conjunctiva (Bowman's layer is specific to the cornea)</div>
- </div>
+                <h4>The Iris</h4>
+                <p>The iris is a diaphragm with a central aperture, the pupil. Sphincter pupillae encircles the pupil and is innervated by parasympathetic fibres from the ciliary ganglion via short ciliary nerves &mdash; constricting the pupil in response to light or near fixation. Dilator pupillae radiates from the pupil margin to the ciliary body and is innervated by sympathetic fibres. The colour of the iris is determined by the density of melanin in the anterior stroma; blue eyes have less anterior stromal pigment, brown eyes have more. The posterior pigment epithelium is constant regardless of eye colour.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">AIIMS 2018</div>
- <div class="pyq-q">Meyer's loop lesion causes: A) Homonymous hemianopia B) Bitemporal hemianopia C) Contralateral superior quadrantanopia D) Ipsilateral nasal hemianopia</div>
- <div class="pyq-ans">Answer: C — Contralateral superior quadrantanopia ("pie in the sky")</div>
- </div>
+                <div class="info-box">
+                  <strong>The angle of the anterior chamber</strong> is where iris, cornea, and trabecular meshwork meet. Gonioscopy visualises this angle directly. Narrow or closed angles obstruct aqueous outflow and raise IOP &mdash; angle-closure glaucoma.
+                </div>
 
- <div class="pyq-item">
- <div class="pyq-source">PGI Chandigarh 2020</div>
- <div class="pyq-q">Which is true about the fovea centralis? (Select all correct) A) Contains only cones B) Has maximum rod density C) Avascular D) Thinnest part of retina</div>
- <div class="pyq-ans">Answer: A, C, D — Fovea has only cones, is avascular, and is the thinnest area.</div>
- </div>
- </div>
+              </div>
+            </div>
+          </div>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> NEET PG / DNB</div>
+          <!-- Section 3: Retina -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-green"></div>
+              <h3>Retina &mdash; Ten Layers, Photoreceptors, and Special Zones</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
 
- <div class="pyq-item">
- <div class="pyq-source">NEET PG 2022</div>
- <div class="pyq-q">The layer of the cornea that pumps fluid out to maintain corneal transparency is: A) Bowman's B) Epithelium C) Endothelium D) Stroma</div>
- <div class="pyq-ans">Answer: C — Endothelium (Na-K ATPase pump; normal density ≥2000 cells/mm²)</div>
- </div>
+                <h4>The Ten Layers</h4>
+                <p>Working from inside (vitreous side) outward to the choroid, the retina has ten named layers. Inner limiting membrane, nerve fibre layer (containing ganglion cell axons), ganglion cell layer, inner plexiform layer, inner nuclear layer (bipolar, amacrine, and Muller cells), outer plexiform layer (Henle's fibre layer at the macula), outer nuclear layer, external limiting membrane, photoreceptor layer (inner and outer segments), and the RPE. The outer four layers &mdash; outer nuclear, outer plexiform, photoreceptors, and RPE &mdash; depend on the choroidal circulation for their oxygen and nutrients. The inner six depend on the central retinal artery. This division is what makes central retinal artery occlusion and choroidal ischaemia produce such different clinical pictures.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">DNB 2021</div>
- <div class="pyq-q">Axial length of adult eye is: A) 20 mm B) 22 mm C) 24 mm D) 26 mm</div>
- <div class="pyq-ans">Answer: C — 24 mm</div>
- </div>
+                <h4>Rods and Cones</h4>
+                <p>There are about 120 million rods and 6 million cones in the human retina. Rods dominate the peripheral retina and are exquisitely sensitive in dim light (scotopic vision). They contain rhodopsin, a photopigment made of opsin plus 11-cis retinal. Cones are concentrated at the fovea and are responsible for colour discrimination and high-acuity vision in bright light (photopic). The three cone types &mdash; short, medium, and long wavelength &mdash; underlie trichromatic colour vision. At the fovea there are roughly 199,000 cones per square millimetre and essentially no rods.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">NEET PG 2020</div>
- <div class="pyq-q">Lateral geniculate nucleus receives fibres from which cranial nerve? A) CN I B) CN II C) CN III D) CN V</div>
- <div class="pyq-ans">Answer: B — CN II (optic nerve → optic tract → LGN)</div>
- </div>
- </div>
+                <h4>Macula, Fovea, and Foveola</h4>
+                <p>The macula is the central 5 mm region of the retina responsible for all your detailed vision. Within it, the fovea is a 1.5 mm central depression where the retina is very thin because the inner layers are swept aside laterally (this lateral displacement of neurons is what creates Henle's fibre layer). The foveola, the central 0.35 mm zone, contains only cone inner segments with no overlying neurons, no blood vessels, and no inner layers at all. Nutrients reach the foveola entirely by diffusion from the underlying choriocapillaris. This is why the foveola appears dark on red-free photographs and why a cherry-red spot appears there in central retinal artery occlusion &mdash; the surrounding pale ischaemic retina contrasts with the visible choroidal circulation beneath the thin foveola.</p>
 
- <div class="pyq-year-group">
- <div class="pyq-year-label"> University / MBBS Exams</div>
+                <h4>Optic Disc and Physiological Blind Spot</h4>
+                <p>The optic disc is 1.5 mm in diameter and located about 4 mm nasal to the fovea. It has no photoreceptors and corresponds to the physiological blind spot. The disc has a central cup (the physiological cup) and a surrounding pink rim (the neuroretinal rim). Cup-to-disc ratio is normally less than 0.5 and the rim should be present throughout. In glaucoma the rim thins and the cup enlarges. A ratio above 0.5 warrants further investigation, though it is not pathological by itself.</p>
 
- <div class="pyq-item">
- <div class="pyq-source">University Final MBBS</div>
- <div class="pyq-q">Enumerate the layers of the cornea. Add a note on the clinical significance of corneal endothelium. (5 marks)</div>
- <div class="pyq-ans"> Layers: Epithelium → Bowman's → Stroma → Descemet's → Endothelium. Clinical: Endothelial cell density &lt;500/mm² → bullous keratopathy; targeted in DSAEK/DMEK surgery.</div>
- </div>
- </div>
- </div>
- </div>
+                <div class="warn-box">
+                  <strong>Exam trap:</strong> The GCL is 8&ndash;10 layers thick at the macula (not just 1 layer like elsewhere). At the foveola it is absent entirely. Rods are absent from the central fovea &mdash; this is why trying to see a faint star directly makes it disappear (you need to look slightly to the side, using the rod-rich parafovea).
+                </div>
 
- <!-- TAB 4: QUICK REVISION -->
- <div class="tab-panel">
- <div class="revision-grid">
- <div class="revision-card">
- <h3>Must-Know Numbers</h3>
- <ul>
- <li>Axial length = 24 mm (1 mm change = 3D)</li>
- <li>Normal IOP = 10–21 mmHg</li>
- <li>Aqueous production = 2 µL/min</li>
- <li>Corneal diameter = 12 mm (H), 11 mm (V)</li>
- <li>Optic disc diameter = 1.5 mm</li>
- <li>Normal C:D ratio ≤ 0.3–0.4</li>
- <li>Foveola = 0.35 mm (avascular)</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Classic Exam Facts</h3>
- <ul>
- <li>Bowman's layer: cannot regenerate → scar</li>
- <li>Endothelium: pumps fluid; no regen in humans</li>
- <li>Fovea: only cones, no capillaries</li>
- <li>LR6 SO4 rest CN3 — nerve to EOM</li>
- <li>Meyer's loop → "pie in the sky"</li>
- <li>Nasal fibres cross at chiasm</li>
- <li>Cilioretinal artery (20%) = spares vision in CRAO</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>Mnemonics</h3>
- <ul>
- <li>Cornea layers: <strong>E B S D E</strong></li>
- <li>EOM nerve: <strong>LR₆SO₄ rest CN3</strong></li>
- <li>Retinal layers (inside→out): <strong>NFL → GCL → IPL → INL → OPL → ONL → OLM → PR → RPE</strong></li>
- <li>Macular area = 5 mm; Fovea = 1.5 mm; Foveola = 0.35 mm</li>
- </ul>
- </div>
- <div class="revision-card">
- <h3>For PG Studentss</h3>
- <ul>
- <li>LGN: layers 1,2 magnocellular; 3–6 parvocellular</li>
- <li>Area 17 = primary visual cortex (striate)</li>
- <li>Macular sparing: posterior cerebral artery territory infarct</li>
- <li>Henle's fibre layer = outer plexiform at macula</li>
- <li>Müller cells = structural support across retina</li>
- </ul>
- </div>
- </div>
- </div>
+              </div>
+            </div>
+          </div>
 
- </div><!-- end tab-container -->
+          <!-- Section 4: Extraocular Muscles -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-amber"></div>
+              <h3>Extraocular Muscles</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
 
- <!-- Navigation -->
- <div style="display:flex;justify-content:flex-end;padding:20px 0;border-top:1px solid var(--border)">
- <a href="ch02-optics.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
- Next: Ch 2 — Optics &amp; Refraction →
- </a>
- </div>
+                <h4>Origins and Basic Anatomy</h4>
+                <p>All four rectus muscles and the superior oblique arise from the annulus of Zinn at the orbital apex. The inferior oblique is the exception &mdash; it originates from the anteromedial floor of the orbit, which is why it has no involvement in the annulus. Knowing this matters because orbital apex syndromes (which affect structures passing through the annulus) will spare inferior oblique function.</p>
 
- </div><!-- end content-area -->
- </div><!-- end main-content -->
-</div>
+                <h4>Actions</h4>
+                <p>The medial rectus adducts and the lateral rectus abducts. The story gets more nuanced with the obliques and vertical recti because the eye in primary position sits 23 degrees off the axis of these muscles. The superior rectus, when the eye is in the standard position, primarily elevates but also intorts and adducts. The inferior rectus depresses, extorts, and adducts. Superior oblique primarily intorts, and its secondary actions are depression (most effective when the eye is adducted) and abduction. Inferior oblique is the antagonist &mdash; extorsion, elevation, and abduction. Clinically the pure actions are tested in specific gaze positions to isolate each muscle.</p>
+
+                <table class="compare-table">
+                  <tr><th>Muscle</th><th>Primary Action</th><th>Secondary/Tertiary</th><th>Nerve</th></tr>
+                  <tr><td>Medial rectus</td><td>Adduction</td><td>&mdash;</td><td>CN III</td></tr>
+                  <tr><td>Lateral rectus</td><td>Abduction</td><td>&mdash;</td><td>CN VI</td></tr>
+                  <tr><td>Superior rectus</td><td>Elevation</td><td>Intorsion, adduction</td><td>CN III</td></tr>
+                  <tr><td>Inferior rectus</td><td>Depression</td><td>Extorsion, adduction</td><td>CN III</td></tr>
+                  <tr><td>Superior oblique</td><td>Intorsion</td><td>Depression, abduction</td><td>CN IV</td></tr>
+                  <tr><td>Inferior oblique</td><td>Extorsion</td><td>Elevation, abduction</td><td>CN III</td></tr>
+                </table>
+
+                <h4>Spiral of Tillaux and Surgical Relevance</h4>
+                <p>The rectus muscles insert into the sclera at varying distances from the limbus, forming a spiral pattern. Medial rectus inserts closest at 5.5 mm, inferior rectus at 6.5 mm, lateral rectus at 6.9 mm, and superior rectus farthest at 7.7 mm. This matters when planning strabismus surgery &mdash; the amount of recession or resection needed depends on where you start from.</p>
+
+                <h4>Yoke Muscles and Hering's Law</h4>
+                <p>Yoke muscles are the pairs of muscles that work together for conjugate gaze in each direction. Hering's law of equal innervation says that both muscles of a yoke pair receive equal neural impulses. The yoke pairs are: right lateral rectus with left medial rectus (for right gaze), right superior rectus with left inferior oblique (for right elevation), and right inferior rectus with left superior oblique (for right depression). Understanding this is the key to interpreting the Parks three-step test for superior oblique palsies.</p>
+
+                <div class="mnemonic-box">
+                  <div class="mnemonic-title">Nerve Supply</div>
+                  <div class="mnemonic-expand"><strong>LR6 SO4 rest CN3</strong> &mdash; Lateral Rectus (CN VI), Superior Oblique (CN IV), all other EOMs (CN III)</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5: Visual Pathway in Detail -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-blue"></div>
+              <h3>Visual Pathway in Detail</h3>
+              <div class="section-tags"><span class="tag tag-pg">PG</span><span class="tag tag-hyield">High-Yield</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+
+                <h4>From Retina to Cortex</h4>
+                <p>Each retinal quadrant maps to a specific part of the pathway and cortex. Nasal fibres of each retina cross at the chiasm to join the opposite optic tract. Temporal fibres of each retina do not cross and stay ipsilateral. The result is that the left optic tract carries information from the right visual field of both eyes. This is why lesions after the chiasm produce contralateral (homonymous) defects affecting the same half of the visual field in both eyes.</p>
+
+                <!-- SVG Visual Pathway Diagram -->
+                <div class="diagram-wrap">
+                  <svg viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:620px;display:block;margin:0 auto;">
+                    <defs>
+                      <marker id="arrowB" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+                        <path d="M0,1 L0,7 L7,4 Z" fill="#4f46e5"/>
+                      </marker>
+                      <marker id="arrowG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+                        <path d="M0,1 L0,7 L7,4 Z" fill="#059669"/>
+                      </marker>
+                    </defs>
+
+                    <!-- Eyes -->
+                    <ellipse cx="155" cy="30" rx="70" ry="22" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+                    <text x="155" y="34" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">LEFT EYE</text>
+                    <ellipse cx="465" cy="30" rx="70" ry="22" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+                    <text x="465" y="34" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">RIGHT EYE</text>
+
+                    <!-- Optic nerves down -->
+                    <line x1="155" y1="52" x2="155" y2="105" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowB)"/>
+                    <line x1="465" y1="52" x2="465" y2="105" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrowG)"/>
+                    <text x="88" y="85" font-family="Inter,sans-serif" font-size="10" fill="#4b5563">Optic nerve</text>
+                    <text x="490" y="85" font-family="Inter,sans-serif" font-size="10" fill="#4b5563">Optic nerve</text>
+
+                    <!-- Lesion A: Optic nerve -->
+                    <rect x="10" y="60" width="60" height="20" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+                    <text x="40" y="74" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">A. Monocular</text>
+                    <line x1="70" y1="70" x2="140" y2="70" stroke="#fca5a5" stroke-width="1" stroke-dasharray="3,3"/>
+
+                    <!-- Optic chiasm -->
+                    <ellipse cx="310" cy="130" rx="90" ry="25" fill="#fef9c3" stroke="#eab308" stroke-width="2"/>
+                    <text x="310" y="134" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#713f12" text-anchor="middle">Optic Chiasm</text>
+                    <!-- Nasal crossing lines -->
+                    <line x1="155" y1="105" x2="270" y2="130" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+                    <line x1="465" y1="105" x2="350" y2="130" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3"/>
+                    <!-- Temporal straight lines -->
+                    <line x1="155" y1="105" x2="230" y2="130" stroke="#3b82f6" stroke-width="2"/>
+                    <line x1="465" y1="105" x2="390" y2="130" stroke="#22c55e" stroke-width="2"/>
+
+                    <!-- Lesion B: Chiasm -->
+                    <rect x="530" y="115" width="80" height="30" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+                    <text x="570" y="128" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">B. Bitemporal</text>
+                    <text x="570" y="140" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle">hemianopia</text>
+                    <line x1="530" y1="130" x2="400" y2="130" stroke="#fca5a5" stroke-width="1" stroke-dasharray="3,3"/>
+
+                    <!-- Optic tracts -->
+                    <line x1="240" y1="155" x2="185" y2="195" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrowB)"/>
+                    <line x1="380" y1="155" x2="435" y2="195" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrowB)"/>
+                    <text x="150" y="185" font-family="Inter,sans-serif" font-size="10" fill="#6b7280">L optic tract</text>
+                    <text x="440" y="185" font-family="Inter,sans-serif" font-size="10" fill="#6b7280">R optic tract</text>
+
+                    <!-- Lesion C: Optic tract -->
+                    <rect x="10" y="165" width="75" height="30" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+                    <text x="47" y="178" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">C. Incongruent</text>
+                    <text x="47" y="190" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle">homonymous</text>
+                    <line x1="85" y1="180" x2="160" y2="180" stroke="#fca5a5" stroke-width="1" stroke-dasharray="3,3"/>
+
+                    <!-- LGN -->
+                    <rect x="130" y="198" width="110" height="26" rx="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+                    <text x="185" y="215" font-family="Inter,sans-serif" font-size="11" fill="#5b21b6" text-anchor="middle" font-weight="600">L LGN (6 layers)</text>
+                    <rect x="380" y="198" width="110" height="26" rx="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+                    <text x="435" y="215" font-family="Inter,sans-serif" font-size="11" fill="#5b21b6" text-anchor="middle" font-weight="600">R LGN (6 layers)</text>
+
+                    <!-- Optic radiation lines -->
+                    <line x1="185" y1="224" x2="185" y2="290" stroke="#8b5cf6" stroke-width="2"/>
+                    <line x1="435" y1="224" x2="435" y2="290" stroke="#8b5cf6" stroke-width="2"/>
+
+                    <!-- Meyer's loop annotation -->
+                    <path d="M185,260 Q 130,280 185,300" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,3"/>
+                    <text x="60" y="278" font-family="Inter,sans-serif" font-size="9" fill="#b45309" font-weight="600">Meyer's loop</text>
+                    <text x="60" y="290" font-family="Inter,sans-serif" font-size="9" fill="#b45309">(temporal lobe)</text>
+
+                    <!-- Lesion D: Meyer's loop -->
+                    <rect x="10" y="310" width="82" height="30" rx="4" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+                    <text x="51" y="323" font-family="Inter,sans-serif" font-size="9" fill="#92400e" text-anchor="middle" font-weight="600">D. Sup. quad.</text>
+                    <text x="51" y="335" font-family="Inter,sans-serif" font-size="9" fill="#92400e" text-anchor="middle">"Pie in sky"</text>
+
+                    <!-- Visual cortex -->
+                    <rect x="110" y="295" width="400" height="34" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
+                    <text x="310" y="312" font-family="Inter,sans-serif" font-size="11" fill="#9d174d" text-anchor="middle" font-weight="700">Primary Visual Cortex V1 &mdash; Area 17, Calcarine Fissure</text>
+                    <text x="310" y="326" font-family="Inter,sans-serif" font-size="10" fill="#be185d" text-anchor="middle">Macular area at posterior pole (macular sparing in PCA infarcts)</text>
+
+                    <!-- Lesion E: Cortex -->
+                    <rect x="530" y="295" width="82" height="30" rx="4" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+                    <text x="571" y="308" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle" font-weight="600">E. Congruent</text>
+                    <text x="571" y="320" font-family="Inter,sans-serif" font-size="9" fill="#dc2626" text-anchor="middle">homonymous</text>
+                    <line x1="530" y1="308" x2="510" y2="308" stroke="#fca5a5" stroke-width="1" stroke-dasharray="3,3"/>
+
+                    <!-- Legend -->
+                    <rect x="110" y="348" width="400" height="60" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+                    <text x="130" y="366" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#334155">Lesion sites and their field defects:</text>
+                    <text x="130" y="382" font-family="Inter,sans-serif" font-size="9" fill="#475569">A: Optic nerve &rarr; monocular loss &nbsp;&nbsp; B: Chiasm &rarr; bitemporal hemianopia &nbsp;&nbsp; C: Tract &rarr; incongruent homonymous</text>
+                    <text x="130" y="398" font-family="Inter,sans-serif" font-size="9" fill="#475569">D: Meyer's loop &rarr; contralateral superior quadrantanopia &nbsp;&nbsp; E: Cortex &rarr; congruent homonymous with macular sparing</text>
+                  </svg>
+                  <div class="diagram-caption">Fig 1.1 &mdash; Visual pathway from retina to primary cortex showing key lesion sites and corresponding visual field defects</div>
+                </div>
+
+                <h4>Lateral Geniculate Nucleus</h4>
+                <p>The LGN has six layers. Layers 1 and 2 are magnocellular &mdash; large cells processing motion and low spatial frequency. Layers 3 through 6 are parvocellular &mdash; smaller cells handling fine detail and colour. Layers 1, 4, and 6 receive input from the ipsilateral eye; layers 2, 3, and 5 from the contralateral eye. Knowing this level of detail is PG territory but it comes up in AIIMS questions about LGN anatomy.</p>
+
+                <h4>Pupillary Light Reflex Pathway</h4>
+                <p>Light enters the eye, activates photoreceptors, and the signal reaches the pretectal nucleus of the midbrain via the optic tract. From the pretectal nucleus, fibres project bilaterally to both Edinger-Westphal nuclei (the parasympathetic component of CN III). From there the pathway goes via the ciliary ganglion in the orbit to the sphincter pupillae through the short ciliary nerves. The bilateral pretectal connections explain the consensual reflex &mdash; light in one eye constricts both pupils.</p>
+
+                <h4>Near Reflex Triad</h4>
+                <p>When you shift fixation from a distant to a near object, three things happen simultaneously: accommodation (ciliary muscle contracts, lens rounds up), convergence (both medial recti contract), and miosis (sphincter pupillae constricts). This is the near reflex triad. In Argyll Robertson pupils, the near reflex is intact but the light reflex is lost &mdash; a classic syphilitic finding that is the reverse of a normal situation.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Aqueous Humor Dynamics -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-teal"></div>
+              <h3>Aqueous Humor Dynamics</h3>
+              <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span><span class="tag tag-hyield">High-Yield</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+
+                <h4>Production</h4>
+                <p>Aqueous is produced by the epithelium of the ciliary processes at a rate of about 2 microlitres per minute. The non-pigmented inner ciliary epithelium does the actual secreting. The mechanism is predominantly active transport using sodium-potassium ATPase, accounting for around seventy percent of production. Ultrafiltration contributes about twenty percent and simple diffusion the remainder. Aqueous fills the posterior chamber, passes through the pupil into the anterior chamber, and then drains. The composition is similar to plasma but with much lower protein content.</p>
+
+                <h4>Trabecular Drainage</h4>
+                <p>About eighty-five percent of aqueous drains through the trabecular meshwork, which sits in the angle between the cornea and iris. The meshwork is a fenestrated tissue; aqueous filters through it by bulk flow into the canal of Schlemm, which runs circumferentially around the anterior chamber angle. From Schlemm's canal it exits through collector channels into aqueous veins and ultimately into the episcleral venous plexus. The episcleral venous pressure (roughly 8 mmHg) sets the baseline below which IOP cannot fall, no matter how good drainage becomes.</p>
+
+                <h4>Uveoscleral Drainage</h4>
+                <p>The remaining fifteen percent takes a different route entirely, flowing between the ciliary muscle fibres into the suprachoroidal space and then out through the scleral pores. This pathway is pressure-independent, which is why prostaglandin analogues (which increase uveoscleral outflow by relaxing the ciliary muscle) are so effective at lowering IOP even in patients with normal or low-normal IOP.</p>
+
+                <h4>IOP and Its Determinants</h4>
+                <p>IOP is determined by the balance between aqueous production and drainage, modified by episcleral venous pressure. The formula is essentially: IOP = (production / outflow facility) + episcleral venous pressure. Diurnal variation is significant &mdash; IOP peaks in the early morning hours (often between 6 and 8 AM) when cortisol-related factors increase aqueous production and drainage is slower. This is why single IOP readings can be misleading and phasing (multiple readings over a day) is sometimes necessary in glaucoma workup.</p>
+
+                <div class="info-box">
+                  <strong>Goldmann's equation:</strong> IOP = F/C + Pe, where F = aqueous flow rate, C = outflow coefficient (facility), Pe = episcleral venous pressure (normal ~8 mmHg). Any drug that lowers IOP must work by reducing F or increasing C &mdash; there is no pharmacological way to lower Pe reliably.
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 7: Pupillary Pathways -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-bar sb-teal"></div>
+              <h3>Pupillary Pathways and Reflexes</h3>
+              <div class="section-tags"><span class="tag tag-pg">PG</span><span class="tag tag-hyield">High-Yield</span></div>
+              <span class="section-chevron">&#9660;</span>
+            </div>
+            <div class="section-body">
+              <div class="section-body-inner">
+
+                <h4>Sympathetic Pathway (Dilator Pupillae and Muller's Muscle)</h4>
+                <p>The sympathetic supply to the eye runs as a three-neuron arc. The first-order neuron descends from the hypothalamus through the brainstem and cervical spinal cord to the ciliospinal centre of Budge at C8-T1. The second-order neuron exits through the T1 root, travels over the apex of the lung and subclavian artery, loops around the carotid to the superior cervical ganglion at the carotid bifurcation. The third-order neuron then follows the internal carotid artery through the cavernous sinus, joins the nasociliary branch of V1, and enters the orbit to supply the dilator pupillae, Muller's muscle of the upper lid, and the lower lid retractors. Interruption anywhere along this arc produces Horner's syndrome: miosis, partial ptosis, and anhidrosis (depending on which part is affected).</p>
+
+                <h4>Parasympathetic Pathway (Sphincter Pupillae)</h4>
+                <p>Parasympathetic fibres travel with CN III from the Edinger-Westphal nucleus to the ciliary ganglion just posterior to the globe. Post-ganglionic fibres then travel through the short ciliary nerves to reach the sphincter pupillae and the ciliary muscle. These fibres run on the outside of the CN III nerve trunk, which is why a posterior communicating artery aneurysm compressing CN III from outside will produce an early, dilated pupil &mdash; the parasympathetic fibres are hit first. By contrast, ischaemic CN III palsy (from diabetes) affects the central microvascular supply, sparing the outer parasympathetics &mdash; hence pupil-sparing CN III palsy in diabetics.</p>
+
+                <h4>Relative Afferent Pupillary Defect (RAPD)</h4>
+                <p>The swinging flashlight test detects asymmetry in the afferent pathway. You swing a bright light from one eye to the other in a darkened room. Normally both pupils constrict when the light is in either eye. If there is a defect in the afferent pathway of one eye (optic nerve disease, severe retinal disease), shining the light in that eye produces less constriction than shining it in the normal eye. When you swing to the abnormal eye, both pupils dilate slightly. This paradoxical dilation is the RAPD. It is the single most objective sign of optic nerve asymmetry you can find without equipment.</p>
+
+                <div class="warn-box">
+                  <strong>RAPD is not caused by cataract or media opacities alone.</strong> Dense vitreous haemorrhage can occasionally produce a mild RAPD, but any significant RAPD should prompt evaluation of the optic nerve and retina.
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end Deep Dive tab -->
+
+        <!-- ===================== CLINICAL SKILLS ===================== -->
+        <div class="tab-panel">
+          <div class="skills-intro">
+            <p>Four fundamental examination skills that every ophthalmology student must master before entering the wards. These are not just exam techniques &mdash; they are the clinical anchors that let you localise disease and monitor progression.</p>
+          </div>
+
+          <!-- Skill 1: Visual Acuity -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              <span>Testing Visual Acuity</span>
+              <span class="skill-tag">Basic Examination</span>
+            </div>
+            <div class="skill-steps">
+
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Preparation</h5>
+                  <p>Set up the Snellen chart at 6 metres (or use a mirror system at 3 metres with a reversed chart). Ensure adequate room illumination. Test each eye separately &mdash; always cover the other eye with an occluder, not the patient's own fingers, which can part to peek.</p>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Recording the Result</h5>
+                  <p>Acuity is recorded as a fraction: distance tested over the distance at which a normal eye should read that line. So 6/6 means the patient reads at 6 metres what a normal eye reads at 6 metres. 6/60 means they can only read what a normal eye reads at 60 metres. In the USA this is in feet (20/20). Always record the best corrected acuity with the patient's own glasses if they wear them.</p>
+                  <div class="step-tip">If the patient cannot read the top letter (6/60), move closer: 3/60 or 1/60. Below that, test counting fingers (CF), hand movements (HM), perception of light (PL), or no perception of light (NPL).</div>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Pinhole Test</h5>
+                  <p>Hold a pinhole over the eye and repeat the chart reading. A pinhole eliminates most refractive error by limiting the light cone to the paraxial rays. If acuity improves significantly with the pinhole, the cause of blur is likely refractive &mdash; glasses will help. If there is no improvement, the cause is structural &mdash; media opacity, retinal disease, or optic nerve pathology. This is one of the most useful quick tests you have.</p>
+                  <div class="step-normal">A pinhole does not improve vision if the cornea or media is severely irregular, because even paraxial rays are distorted.</div>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h5>Near Vision with Jaeger Chart</h5>
+                  <p>Hold the Jaeger chart at 33 cm in good lighting. N6 or J1 is the standard for normal near vision. Near vision testing matters separately because a patient can have normal distance acuity and significantly impaired near vision (early presbyopia, or accommodation palsy). Always record near acuity with the patient's reading glasses if they use them.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Skill 2: Confrontation Visual Fields -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              <span>Confrontation Visual Field Testing</span>
+              <span class="skill-tag">Neurological Localisation</span>
+            </div>
+            <div class="skill-steps">
+
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Setup</h5>
+                  <p>Sit directly opposite the patient at arm's length. Cover one of your own eyes and ask the patient to cover the corresponding eye on their side (your right, their left). Both of you now fixate on each other's uncovered eye. Your own visual field serves as the reference.</p>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Finger Counting in Each Quadrant</h5>
+                  <p>Bring your hand into each of the four quadrants midway between you and the patient. Present one, two, or five fingers and ask the patient to count them. Compare each quadrant between eyes. A patient who cannot count fingers in a quadrant where you can has a field defect in that quadrant.</p>
+                  <div class="step-tip">For subtle defects, use the red-desaturation test &mdash; show a bright red target in each quadrant and ask if it appears the same brightness. The affected side will appear dimmer or pinkish rather than red.</div>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Interpreting the Pattern</h5>
+                  <p>Superior field loss in one eye with an altitudinal pattern suggests ischaemic optic neuropathy. Bitemporal loss affecting both eyes points to the chiasm &mdash; ask about headaches and check for pituitary signs. A homonymous defect (same half-field in both eyes) means the lesion is post-chiasmal. A superior quadrantanopia in the contralateral field of a patient with a stroke history should make you think of the temporal lobe and Meyer's loop.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Skill 3: Pupillary Reflex Examination -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              <span>Pupillary Reflex Examination</span>
+              <span class="skill-tag">Afferent and Efferent Pathway</span>
+            </div>
+            <div class="skill-steps">
+
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Direct and Consensual Light Reflex</h5>
+                  <p>Dim the room. Shine a bright torch into one eye from slightly below and lateral so the patient is not trying to accommodate to a near target. A normal direct reflex is prompt constriction of the illuminated pupil. The consensual reflex is simultaneous constriction of the opposite pupil. Record whether each reflex is present, sluggish, or absent, and note any anisocoria (unequal pupils).</p>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Swinging Flashlight Test for RAPD</h5>
+                  <p>This is the key test for optic nerve asymmetry. In a dim room, swing a bright light from one eye to the other, spending about 3 seconds on each side. Watch the pupil you are illuminating. Normally it stays constricted as you move from eye to eye. If one eye has an afferent defect, when you swing the light to that eye both pupils dilate instead of remaining constricted &mdash; because the signal from that eye is weaker. The dilation is graded 1 to 4+. Even a subtle RAPD suggests a significant afferent defect.</p>
+                  <div class="step-tip">Make sure you are not testing the near reflex accidentally. Keep the target far and the light positioned from below.</div>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h5>Near Reflex</h5>
+                  <p>Ask the patient to look at a distant object and then quickly at your finger held about 30 cm away. Both pupils should constrict as part of the near triad. Preserved near reflex with absent light reflex is the hallmark of Argyll Robertson pupils. The reverse (light reflex intact, near reflex absent or poor) is not a well-characterised clinical syndrome.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Skill 4: Colour Vision Testing -->
+          <div class="skill-section">
+            <div class="skill-section-title">
+              <span>Colour Vision Testing with Ishihara Plates</span>
+              <span class="skill-tag">Optic Nerve and Cone Function</span>
+            </div>
+            <div class="skill-steps">
+
+              <div class="skill-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h5>Technique</h5>
+                  <p>Test each eye separately in good daylight or matched artificial lighting. Hold the plate at 75 cm. Give the patient a maximum of three seconds per plate. The full Ishihara set has 38 plates; the screening set has 24. A normal person reads all or nearly all plates correctly. Reading fewer than 13 of 17 test plates correctly suggests a deficiency.</p>
+                </div>
+              </div>
+
+              <div class="skill-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h5>Interpreting Errors</h5>
+                  <p>Protan defects (protanopia or protanomaly) indicate reduced sensitivity to red. Deutan defects (deuteranopia or deuteranomaly) indicate reduced sensitivity to green. Protan and deutan defects together account for about 8% of males and 0.5% of females. The Ishihara plates do not reliably distinguish protan from deutan &mdash; for that you need the Farnsworth D-15 or Nagel anomaloscope. Acquired colour vision defects (from optic nerve disease) tend to involve red-green discrimination predominantly, and they are monocular or asymmetric, unlike congenital defects which are always bilateral and symmetric.</p>
+                  <div class="step-normal">A patient with a subtle optic neuritis may have normal Snellen acuity but clearly impaired colour vision. The red-desaturation test ("does this red target look as bright and saturated as the same target in the other eye?") is a quick bedside screen for optic nerve disease.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- end Clinical Skills tab -->
+
+        <!-- ===================== Q-BANK ===================== -->
+        <div class="tab-panel">
+
+          <div class="qbank-nav">
+            <button class="qbank-btn ug-btn active" data-target="ug-mcqs">UG MCQs <span class="q-count">12</span></button>
+            <button class="qbank-btn pg-btn" data-target="pg-mcqs">NEET PG MCQs <span class="q-count">12</span></button>
+            <button class="qbank-btn la-btn" data-target="long-ans">Long Answers <span class="q-count">4</span></button>
+            <button class="qbank-btn pyq-btn" data-target="pyqs">PYQs <span class="q-count">6</span></button>
+          </div>
+
+          <!-- UG MCQs -->
+          <div class="qbank-panel active" id="ug-mcqs">
+            <div class="qbank-info">Twelve undergraduate-level MCQs covering the factual anatomy and physiology that appear in MBBS theory and practical exams.</div>
+
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q1</span><p class="mcq-q">Which of the following accurately describes the three coats of the eyeball from outside inward?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Uveal, fibrous, retinal</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Fibrous, vascular (uveal), nervous (retinal)</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Scleral, choroidal, photoreceptor</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Corneal, ciliary, optic</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>The three coats are fibrous (sclera + cornea), vascular/uveal (choroid + ciliary body + iris), and nervous (retina). This classification is the starting point for all ocular anatomy.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q2</span><p class="mcq-q">Nasal fibres of the retina cross at which structure in the visual pathway?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Lateral geniculate nucleus</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Optic tract</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Optic chiasm</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Primary visual cortex</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>Nasal fibres from each retina cross at the optic chiasm to join the contralateral optic tract. Temporal fibres stay ipsilateral. This crossing is why chiasmal lesions produce bitemporal hemianopia.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">Q3</span><p class="mcq-q">Aqueous humor drains primarily (85%) through which route?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Trabecular meshwork to canal of Schlemm</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Uveoscleral pathway</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Ciliary body directly to bloodstream</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Through the lens capsule</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: A</div>
+                <p>The trabecular route accounts for 85% of aqueous drainage. Aqueous passes through the trabecular meshwork into the canal of Schlemm and exits through collector channels to episcleral veins. The uveoscleral pathway handles the remaining 15%.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q4</span><p class="mcq-q">The normal cup-to-disc (C:D) ratio of the optic disc is considered within normal limits if it is less than:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> 0.3</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> 0.5</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> 0.7</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> 0.9</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>A C:D ratio of less than 0.5 is generally considered normal. Ratios of 0.6 or greater warrant careful evaluation for glaucoma, and asymmetry of more than 0.2 between the two eyes is suspicious regardless of the absolute value.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q5</span><p class="mcq-q">A lesion in Meyer's loop (inferior fibres of the optic radiation in the temporal lobe) causes which visual field defect?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span><span class="mcq-tag hyield">High-Yield</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Bitemporal hemianopia</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Contralateral inferior quadrantanopia</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Contralateral superior quadrantanopia</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Ipsilateral monocular blindness</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>Meyer's loop carries inferior retinal fibres, which represent the superior visual field. A temporal lobe lesion here produces a contralateral superior quadrantanopia &mdash; classically called "pie in the sky." Parietal lobe (Baum's loop) lesions produce the opposite: inferior quadrantanopia or "pie on the floor."</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">Q6</span><p class="mcq-q">The binocular visual field extends approximately how many degrees in horizontal diameter?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> 60 degrees</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> 90 degrees</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> 150 degrees</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> 180 degrees</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: D</div>
+                <p>The total monocular visual field extends about 150&ndash;160 degrees horizontally. The binocular overlap zone is about 120 degrees. Including the monocular temporal crescents (about 30 degrees each side), the combined binocular field spans close to 180 degrees horizontally.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">Q7</span><p class="mcq-q">Which corneal layer, once damaged, cannot regenerate and instead forms a permanent scar?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Bowman's layer</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Epithelium</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Stroma</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Descemet's membrane</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: A</div>
+                <p>Bowman's layer is acellular and cannot regenerate. Injury results in permanent scar formation. The epithelium regenerates readily from limbal stem cells. The stroma partially regenerates. Descemet's membrane is regenerated by endothelial cells.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q8</span><p class="mcq-q">Which of the following extraocular muscles is supplied by the trochlear nerve (CN IV)?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Inferior oblique</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Superior rectus</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Superior oblique</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Lateral rectus</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>CN IV (trochlear nerve) exclusively supplies the superior oblique. The mnemonic LR6 SO4 makes this unforgettable: Lateral Rectus = CN VI, Superior Oblique = CN IV, everything else = CN III.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q9</span><p class="mcq-q">The sympathetic nerve supply to the dilator pupillae travels via which pathway?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Short ciliary nerves from ciliary ganglion</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Three-neuron arc from hypothalamus through ciliospinal centre to superior cervical ganglion</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Directly from CN III (oculomotor) nucleus</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Via the pterygopalatine ganglion</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>The sympathetic supply runs as a three-neuron arc: first neuron from hypothalamus to ciliospinal centre (C8-T1), second neuron up through the chest and neck to the superior cervical ganglion, third neuron along the ICA into the orbit. Interruption anywhere causes Horner's syndrome.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">Q10</span><p class="mcq-q">Rods are most densely concentrated in which area of the retina?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Peripheral retina, with maximum density at about 20 degrees eccentricity</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Central fovea</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Optic disc</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Nasal retina only</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: A</div>
+                <p>Rods are absent from the central fovea (which has cones only) and peak in density at about 20 degrees from the fovea in a ring-like distribution. There are no photoreceptors at the optic disc. This peripheral rod distribution explains why night vision is best when you look slightly to the side of an object rather than directly at it.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q11</span><p class="mcq-q">In the lateral geniculate nucleus, which layers receive input from the contralateral eye?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Layers 1, 4, and 6</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Layers 2, 3, and 5</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Layers 1, 2, and 3</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Layers 4, 5, and 6</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>LGN layers 2, 3, and 5 receive input from the contralateral eye. Layers 1, 4, and 6 receive ipsilateral eye input. The magnocellular layers are 1 and 2 (motion, low spatial frequency); parvocellular layers are 3 through 6 (colour and fine detail).</p>
+              </div>
+            </div>
+
+            <div class="mcq-card" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q12</span><p class="mcq-q">The near reflex triad consists of which three responses?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag ug">UG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Accommodation, divergence, and mydriasis</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Convergence, accommodation, and pupillary dilation</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Accommodation, convergence, and miosis</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Miosis, divergence, and relaxation of ciliary muscle</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>The near reflex triad is accommodation (ciliary muscle contracts, zonules relax, lens rounds up), convergence (both medial recti contract), and miosis (sphincter pupillae constricts). In Argyll Robertson pupil, the light reflex is absent but the near reflex &mdash; including miosis &mdash; is intact.</p>
+              </div>
+            </div>
+
+          </div><!-- end UG MCQs -->
+
+          <!-- NEET PG MCQs -->
+          <div class="qbank-panel" id="pg-mcqs">
+            <div class="qbank-info">Twelve clinical scenario-based MCQs at NEET PG / DNB level. These test anatomical correlates in clinical situations, not just recall.</div>
+
+            <div class="mcq-card pg" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q1</span><p class="mcq-q">A 45-year-old woman presents with loss of peripheral vision in both temporal fields. MRI shows a lesion compressing the optic chiasm from above. What is the most likely diagnosis?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Meningioma of the sphenoid wing</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Craniopharyngioma (typically affects chiasm from above in children)</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Pituitary adenoma</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Optic glioma</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>Pituitary adenomas compress the chiasm from below, but a large macroadenoma superiorly extending can compress it from below-central. The classic bitemporal hemianopia from a pituitary adenoma compresses the crossing nasal fibres centrally. Craniopharyngiomas typically arise above the chiasm in children. The clinical and imaging context here points to pituitary disease in a middle-aged woman &mdash; check for prolactin, GH, and cortisol axis.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">Q2</span><p class="mcq-q">A patient develops sudden loss of vision in one eye with a pale, oedematous retina and a cherry-red spot at the fovea. The fovea appears red because:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span><span class="mcq-tag hyield">High-Yield</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> The thin foveola allows choroidal circulation to show through against the surrounding pale ischaemic retina</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Haemorrhage accumulates selectively at the fovea</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> The CRA sends a branch specifically to the fovea</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Cone pigments absorb more light at the fovea</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: A</div>
+                <p>In CRAO, the inner retinal layers become oedematous and white because they are ischaemic. At the foveola, the retina is extremely thin with no overlying inner layers, so the underlying choroidal circulation remains visible as red-orange. The contrast between the surrounding pale retina and the visible choroid at the foveola creates the classic cherry-red spot.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">Q3</span><p class="mcq-q">During vitreoretinal surgery, the pars plana entry point in a phakic patient is placed how far from the limbus?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> 1&ndash;2 mm</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> 2&ndash;3 mm</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> 5&ndash;6 mm</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> 3.5&ndash;4 mm</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: D</div>
+                <p>The pars plana (safe zone between the ciliary processes and ora serrata) is entered at 3.5&ndash;4 mm from the limbus in phakic patients. In pseudophakic or aphakic eyes, 3&ndash;3.5 mm is used. Too anterior risks hitting the lens; too posterior risks retinal damage.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q4</span><p class="mcq-q">A 60-year-old man with well-controlled diabetes presents with a painless, complete CN III palsy with pupil sparing. The most likely cause is:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span><span class="mcq-tag hyield">High-Yield</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Posterior communicating artery aneurysm</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Ischaemic microvascular CN III palsy</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Cavernous sinus thrombosis</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Uncal herniation</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>Ischaemic microvascular CN III palsy (from diabetes or hypertension) characteristically spares the pupil because the parasympathetic fibres on the outer surface of the nerve are preserved when the central microvasculature is affected. A posterior communicating aneurysm compresses from outside and hits the outer pupillomotor fibres first, producing a painful CN III palsy with early pupil involvement. Pupil-sparing + painless + vascular risk factors = ischaemic in origin until proven otherwise.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q5</span><p class="mcq-q">The swinging flashlight test reveals a Marcus Gunn pupil (RAPD) in the right eye. This indicates a defect in the:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Efferent pathway of the right eye</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Sympathetic supply to the right iris</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Afferent pathway of the right eye (retina or optic nerve)</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Ciliary ganglion on the right side</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>RAPD indicates an afferent pathway defect. The afferent limb carries visual information from the retina and optic nerve to the pretectal nucleus. When this is compromised on one side, swinging the light to that eye produces less constriction (because less signal reaches the pretectum), and both pupils dilate. The efferent pathway (CN III) controls the motor response; if that were damaged, you would see a fixed dilated pupil, not an RAPD.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">Q6</span><p class="mcq-q">A patient has vision preserved in a central strip despite complete central retinal artery occlusion. The most likely anatomical explanation is:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Presence of a cilioretinal artery supplying the papillomacular bundle</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Dual blood supply to the inner retina at the fovea</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Collateral supply from the choroidal vasculature to inner retina</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Recanalization of the CRA within minutes</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: A</div>
+                <p>A cilioretinal artery, present in about 20% of people, arises from the posterior ciliary circulation rather than the CRA. It enters the disc nasally and supplies the papillomacular bundle. If CRAO occurs and a cilioretinal artery is present, central vision is preserved even as the peripheral vision is lost. This is an important anatomical variant to know.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">Q7</span><p class="mcq-q">Prostaglandin analogues (e.g., latanoprost) lower IOP primarily by:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag hyield">High-Yield</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Reducing aqueous production from the ciliary epithelium</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Increasing trabecular outflow facility</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Reducing episcleral venous pressure</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Increasing uveoscleral outflow by relaxing the ciliary muscle</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: D</div>
+                <p>Prostaglandin analogues increase uveoscleral outflow. They act on prostaglandin FP receptors in the ciliary muscle, causing remodelling of the extracellular matrix and relaxation of the muscle, which widens the spaces between ciliary muscle fibres and allows more aqueous to exit through the suprachoroidal route. Beta-blockers reduce aqueous production; carbonic anhydrase inhibitors also reduce production; pilocarpine increases trabecular outflow.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q8</span><p class="mcq-q">The IOP measurement by Goldmann applanation tonometry is unreliable when:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> The patient is lying supine</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Central corneal thickness (CCT) is abnormally thin or thick</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> There is significant cataract</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> The patient is above 60 years of age</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>Goldmann applanation is calibrated for a CCT of 520 microns. A thicker cornea gives a falsely high reading; a thinner cornea gives a falsely low reading. Post-LASIK eyes have thin corneas and may have their true IOP underestimated. This is why pachymetry is an essential part of glaucoma evaluation.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="0">
+              <div class="mcq-header"><span class="mcq-num">Q9</span><p class="mcq-q">The Spiral of Tillaux refers to:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> The spiral pattern formed by the varying distances of rectus muscle insertions from the limbus (MR 5.5 mm, IR 6.5 mm, LR 6.9 mm, SR 7.7 mm)</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> The spiral course of the optic nerve in the orbit</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> The helical structure of collagen in the corneal stroma</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> The pattern of retinal nerve fibre layer defects in glaucoma</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: A</div>
+                <p>The Spiral of Tillaux describes the distances of rectus muscle insertions from the limbus: MR 5.5 mm, IR 6.5 mm, LR 6.9 mm, SR 7.7 mm. These distances increase progressively, forming a spiral. Surgically, the lateral rectus insertion is the most posterior and the medial rectus the most anterior.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="2">
+              <div class="mcq-header"><span class="mcq-num">Q10</span><p class="mcq-q">Which structure forms the inner surface of the choroid and acts as a barrier between the choroidal vasculature and the RPE?</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Internal limiting membrane</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Choriocapillaris</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Bruch's membrane</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> External limiting membrane</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: C</div>
+                <p>Bruch's membrane is a five-layered structure (RPE basement membrane, inner collagenous zone, elastic layer, outer collagenous zone, choriocapillaris basement membrane) that separates the RPE from the choroidal circulation. Breaks in Bruch's membrane allow choroidal new vessel growth into the subretinal space &mdash; this is the basis of choroidal neovascularisation in wet AMD.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="1">
+              <div class="mcq-header"><span class="mcq-num">Q11</span><p class="mcq-q">A 30-year-old man has ptosis, miosis, and anhidrosis of the right face after a right-sided pancoast tumour. The second-order neuron of the sympathetic supply is affected. This neuron travels via:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span><span class="mcq-tag clinical">Clinical</span><span class="mcq-tag hyield">High-Yield</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> Hypothalamus to ciliospinal centre</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> Ciliospinal centre (C8-T1) over the apex of the lung to the superior cervical ganglion</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> Superior cervical ganglion along the ICA into the orbit</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> Through the ciliary ganglion to the iris</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: B</div>
+                <p>The second-order sympathetic neuron exits C8-T1, hooks over the apex of the lung and the subclavian artery, and ascends to the superior cervical ganglion at the bifurcation of the carotid. A Pancoast tumour at the lung apex compresses this neuron, producing Horner's syndrome with anhidrosis of the face (because the sweating fibres are also disrupted at this level). Third-order neuron lesions typically produce Horner's without anhidrosis.</p>
+              </div>
+            </div>
+
+            <div class="mcq-card pg" data-correct="3">
+              <div class="mcq-header"><span class="mcq-num">Q12</span><p class="mcq-q">The episcleral venous pressure is approximately 8 mmHg. This value represents:</p></div>
+              <div class="mcq-meta"><span class="mcq-tag pg">PG</span></div>
+              <div class="mcq-options">
+                <div class="mcq-option"><span class="opt-letter">A</span> The driving pressure for aqueous production</div>
+                <div class="mcq-option"><span class="opt-letter">B</span> The maximum IOP achievable in a normal eye</div>
+                <div class="mcq-option"><span class="opt-letter">C</span> The pressure at which the trabecular meshwork collapses</div>
+                <div class="mcq-option"><span class="opt-letter">D</span> The minimum IOP achievable regardless of how much drainage is increased</div>
+              </div>
+              <div class="mcq-explanation">
+                <div class="expl-label">Correct: D</div>
+                <p>Episcleral venous pressure sets the baseline below which IOP cannot fall. Even with perfect drainage, aqueous cannot flow "uphill" against venous pressure. This is why trabeculectomy or drainage tubes cannot reduce IOP below the episcleral venous pressure of approximately 8 mmHg. Elevated episcleral venous pressure (from carotid-cavernous fistula or Sturge-Weber) raises IOP independent of aqueous dynamics.</p>
+              </div>
+            </div>
+
+          </div><!-- end PG MCQs -->
+
+          <!-- Long Answers -->
+          <div class="qbank-panel" id="long-ans">
+            <div class="qbank-info">Four long-answer questions at university and PG examination level. Expand each to see a structured answer outline.</div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">LA 1</span>
+                <p class="la-q">Describe the layers of the retina with their functions and blood supply.</p>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show answer outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Introduction</h5>
+                  <p>Briefly state that the retina is the innermost coat of the eye, approximately 0.5 mm thick peripherally and 0.1 mm at the fovea, and that it consists of ten histological layers arranged between the vitreous and the choroid.</p>
+                  <h5>Ten Layers (inside outward)</h5>
+                  <p>Name and describe each: Inner Limiting Membrane (basal lamina of Muller cells), Nerve Fibre Layer (ganglion cell axons forming the optic nerve), Ganglion Cell Layer (2nd-order neurons; 8&ndash;10 layers thick at macula), Inner Plexiform Layer (synapse between bipolar and ganglion cells), Inner Nuclear Layer (bipolar, amacrine, horizontal, and Muller cells), Outer Plexiform Layer (Henle's fibre layer at macula; synapses between photoreceptors and bipolars), Outer Nuclear Layer (nuclei of photoreceptors), External Limiting Membrane (junctional complexes of Muller cells), Photoreceptor Layer (inner and outer segments of rods and cones), Retinal Pigment Epithelium (single layer of hexagonal cells, metabolically active, phagocytoses shed outer segments, part of blood-retinal barrier).</p>
+                  <h5>Rods and Cones</h5>
+                  <p>120 million rods (peripheral, scotopic, rhodopsin) vs 6 million cones (central, photopic, 3 types). Macula: 5 mm; fovea: 1.5 mm; foveola: 0.35 mm &mdash; cones only, avascular.</p>
+                  <h5>Blood Supply</h5>
+                  <p>Inner retina (inner 6 layers): central retinal artery, branch of ophthalmic artery, true end artery. Outer retina (outer 4 layers including photoreceptors and RPE): choriocapillaris from short posterior ciliary arteries. The two systems meet at a watershed zone. Clinical correlation: CRA occlusion = inner retinal ischaemia; choroidal ischaemia = outer retinal failure.</p>
+                  <h5>Clinical Correlations</h5>
+                  <p>Detachment separates neurosensory retina from RPE at the potential space between layers 9 and 10. Macular oedema = fluid in outer plexiform layer (Henle's). Glaucoma damages the nerve fibre layer first.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">LA 2</span>
+                <p class="la-q">Draw and describe the visual pathway. Add the effects of lesions at each level.</p>
+                <span class="la-marks">15 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show answer outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Pathway Description</h5>
+                  <p>Photoreceptors (rods and cones) transduce light to electrical signal. Bipolar cells (1st order) synapse with ganglion cells (2nd order) whose axons form the nerve fibre layer and exit as the optic nerve at the optic disc. The two optic nerves join at the optic chiasm where nasal fibres from each retina cross. The optic tracts carry fibres from the contralateral visual hemifield to the LGN (thalamus). From LGN, optic radiation fibres pass to the primary visual cortex (Area 17, calcarine fissure). Inferior fibres loop through the temporal lobe (Meyer's loop). Superior fibres pass through the parietal lobe (Baum's loop).</p>
+                  <h5>Diagram</h5>
+                  <p>Draw the schematic with both eyes, chiasm, tracts, LGN, radiation loops, and cortex. Label all structures.</p>
+                  <h5>Lesion Effects</h5>
+                  <p>Optic nerve: monocular blindness on that side. Chiasm (central): bitemporal hemianopia. Optic tract: incongruent contralateral homonymous hemianopia. LGN: similar to tract but rare. Meyer's loop (temporal): contralateral superior quadrantanopia "pie in sky." Baum's loop (parietal): contralateral inferior quadrantanopia "pie on floor." Occipital cortex: congruent homonymous hemianopia with macular sparing (because the macular cortex has dual blood supply from MCA and PCA).</p>
+                  <h5>LGN Detail (PG)</h5>
+                  <p>6 layers: 1,2 magnocellular; 3-6 parvocellular. Ipsilateral input: 1,4,6. Contralateral: 2,3,5.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">LA 3</span>
+                <p class="la-q">Describe aqueous humor &mdash; its formation, composition, circulation and drainage pathways.</p>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show answer outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>Formation</h5>
+                  <p>Secreted by non-pigmented ciliary epithelium of the pars plicata. Rate: ~2 &mu;L/min. Mechanism: active secretion (Na-K ATPase, 70%), ultrafiltration (20%), diffusion (10%). Diurnal variation: maximum in early morning.</p>
+                  <h5>Composition</h5>
+                  <p>Ultrafiltrate of plasma but protein-free (maintains optical clarity and reduced immune privilege). Contains ascorbic acid (antioxidant), glucose (nutrition for avascular structures), amino acids, low molecular weight proteins, and ions. pH approximately 7.2.</p>
+                  <h5>Circulation</h5>
+                  <p>Produced in posterior chamber, flows through pupil into anterior chamber (convection currents: warm aqueous rises anteriorly, cools at cornea, falls temporally). This convective flow explains why cells in uveitis settle as keratic precipitates in the inferior cornea.</p>
+                  <h5>Drainage</h5>
+                  <p>Trabecular (85%): trabecular meshwork &rarr; Schlemm's canal &rarr; collector channels &rarr; aqueous veins &rarr; episcleral veins. Pressure-dependent. Uveoscleral (15%): between ciliary muscle fibres &rarr; suprachoroidal space &rarr; scleral pores. Pressure-independent; enhanced by prostaglandins. IOP = F/C + Pe.</p>
+                  <h5>Clinical Relevance</h5>
+                  <p>Glaucoma = imbalance (usually reduced outflow). Aqueous flare = protein leak in uveitis. Hyphaema = blood in anterior chamber. Drugs that lower IOP work by reducing production (beta-blockers, CAIs) or increasing outflow (prostaglandins, pilocarpine).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="la-card">
+              <div class="la-header">
+                <span class="la-num">LA 4</span>
+                <p class="la-q">Enumerate the extraocular muscles. Describe their nerve supply, actions, and clinical significance.</p>
+                <span class="la-marks">10 Marks</span>
+              </div>
+              <button class="la-toggle-hint">Show answer outline</button>
+              <div class="la-body">
+                <div class="la-body-inner">
+                  <h5>The Six Muscles</h5>
+                  <p>Four recti (superior, inferior, medial, lateral) and two obliques (superior, inferior). All originate from the annulus of Zinn at the orbital apex except the inferior oblique, which arises from the anteromedial orbital floor.</p>
+                  <h5>Actions</h5>
+                  <p>Medial rectus: adduction (CN III). Lateral rectus: abduction (CN VI). Superior rectus: elevation, intorsion, adduction (CN III). Inferior rectus: depression, extorsion, adduction (CN III). Superior oblique: intorsion, depression in adduction, abduction (CN IV). Inferior oblique: extorsion, elevation in adduction, abduction (CN III).</p>
+                  <h5>Spiral of Tillaux</h5>
+                  <p>Insertion distances from limbus: MR 5.5 mm, IR 6.5 mm, LR 6.9 mm, SR 7.7 mm &mdash; the spiral matters for strabismus surgery.</p>
+                  <h5>Hering's Law and Yoke Muscles</h5>
+                  <p>Equal innervation to yoke pairs: right LR and left MR (right gaze); right SR and left IO (right elevation); right IR and left SO (right depression). Overaction of IO with underaction of SO in CN IV palsy illustrates this.</p>
+                  <h5>Clinical Significance</h5>
+                  <p>CN III palsy: ptosis, eye down and out, dilated pupil (surgical) or pupil-sparing (ischaemic). CN IV palsy: superior oblique palsy, vertical diplopia, head tilt to opposite side (Parks three-step test). CN VI palsy: convergent squint, failure to abduct, diplopia on lateral gaze. Thyroid eye disease affects IO most commonly. Blowout fracture traps IR. Duane's syndrome involves co-innervation of MR and LR.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- end Long Answers -->
+
+          <!-- PYQs -->
+          <div class="qbank-panel" id="pyqs">
+            <div class="qbank-info">Six questions drawn from AIIMS, NEET PG, and DNB papers. Expand each for the answer and approach.</div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">AIIMS 2019</span>
+                <p class="pyq-q">Bowman's membrane is absent in which of the following structures?</p>
+                <span class="pyq-exam">AIIMS PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer / Approach</button>
+              <div class="pyq-answer">
+                <p><strong>Answer: Conjunctiva.</strong> Bowman's layer is unique to the cornea. It is absent in the conjunctiva, sclera, lens, and retina. The question is a reminder to associate Bowman's specifically with the corneal structure and not generalise it to the entire anterior segment.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">NEET PG 2022</span>
+                <p class="pyq-q">A patient presents with bitemporal hemianopia. The most common cause at the optic chiasm is:</p>
+                <span class="pyq-exam">NEET PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer / Approach</button>
+              <div class="pyq-answer">
+                <p><strong>Answer: Pituitary adenoma.</strong> The pituitary gland sits below the optic chiasm in the sella turcica. A growing adenoma compresses the crossing nasal fibres from below, cutting off temporal field information from both eyes and producing classic bitemporal hemianopia. Craniopharyngiomas can do the same, typically from above in children. Always check prolactin, GH, and cortisol when you find this field defect.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">DNB 2021</span>
+                <p class="pyq-q">The fovea centralis is characterised by all of the following EXCEPT:</p>
+                <span class="pyq-exam">DNB CET</span>
+              </div>
+              <button class="pyq-toggle">Show Answer / Approach</button>
+              <div class="pyq-answer">
+                <p><strong>Answer: Presence of rods.</strong> The fovea centralis is characterised by cones only (no rods), avascularity, high visual acuity, and lateral displacement of inner retinal layers. The foveola (central 0.35 mm) is the thinnest part of the retina. Rods are most dense at about 20 degrees of eccentricity from the fovea, not within it.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">AIIMS 2018</span>
+                <p class="pyq-q">Meyer's loop lesion in the temporal lobe causes which field defect?</p>
+                <span class="pyq-exam">AIIMS PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer / Approach</button>
+              <div class="pyq-answer">
+                <p><strong>Answer: Contralateral superior quadrantanopia ("pie in the sky").</strong> Meyer's loop carries inferior retinal fibres representing the superior visual field. Temporal lobe pathology (tumour, infarct, epilepsy surgery) affecting this loop produces a defect in the contralateral superior quadrant of both eyes. The key is to remember that inferior retina = superior field, and the loop goes into the temporal lobe.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">NEET PG 2020</span>
+                <p class="pyq-q">Which of the following best describes the aqueous humor drainage via the uveoscleral route?</p>
+                <span class="pyq-exam">NEET PG</span>
+              </div>
+              <button class="pyq-toggle">Show Answer / Approach</button>
+              <div class="pyq-answer">
+                <p><strong>Answer: Pressure-independent drainage through ciliary muscle spaces to suprachoroidal space.</strong> About 15% of aqueous drains this way. Because it is independent of IOP, this route remains functional even when IOP is low. Prostaglandin analogues target this route by remodelling the ciliary muscle extracellular matrix. This is distinct from the trabecular route, which is pressure-dependent and accounts for 85% of drainage.</p>
+              </div>
+            </div>
+
+            <div class="pyq-card">
+              <div class="pyq-header">
+                <span class="pyq-year">University Final MBBS</span>
+                <p class="pyq-q">Enumerate the layers of the cornea. Write a note on the clinical significance of the corneal endothelium. (5 marks)</p>
+                <span class="pyq-exam">University Exam</span>
+              </div>
+              <button class="pyq-toggle">Show Answer / Approach</button>
+              <div class="pyq-answer">
+                <p><strong>Layers:</strong> Epithelium (5&ndash;6 layers, regenerates from limbal stem cells), Bowman's layer (acellular, no regeneration, scars permanently), Stroma (90% of thickness, Type I collagen lamellae, regular spacing for transparency), Descemet's membrane (basement membrane of endothelium, thickens with age), Endothelium (single hexagonal cell layer, Na-K ATPase pump, no regeneration in humans).</p>
+                <p><strong>Clinical significance of endothelium:</strong> Normal density ~2500 cells/mm2. Below ~500 cells/mm2, the pump fails, stroma swells, cornea clouds &mdash; bullous keratopathy. Causes include surgical trauma (phacoemulsification), Fuchs endothelial dystrophy, and trauma. Treatment is endothelial keratoplasty (DSAEK or DMEK). Pre-operative endothelial cell count (specular microscopy) is mandatory before any intraocular surgery.</p>
+              </div>
+            </div>
+
+          </div><!-- end PYQs -->
+
+        </div><!-- end Q-Bank tab -->
+
+      </div><!-- end tab-container -->
+
+      <!-- Chapter Navigation -->
+      <div style="display:flex;justify-content:flex-end;padding:20px 0;border-top:1px solid var(--border)">
+        <a href="ch02-optics.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+          Ch 2 &mdash; Optics &amp; Refraction &rarr;
+        </a>
+      </div>
+
+    </div><!-- end content-area -->
+  </div><!-- end main-content -->
+</div><!-- end app-layout -->
 
 <script>
- // Patch base path for sidebar
- window._chapterBase = '../';
+  window._chapterBase = '../';
 </script>
 <script src="../assets/js/sidebar.js"></script>
 <script src="../assets/js/main.js"></script>
