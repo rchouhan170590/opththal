@@ -83,9 +83,12 @@ let totalQ = 0, correctQ = 0;
 
 function initMCQs() {
   document.querySelectorAll('.mcq-card').forEach(card => {
-    const options     = card.querySelectorAll('.mcq-option');
+    const options    = card.querySelectorAll('.mcq-option');
     const explanation = card.querySelector('.mcq-explanation');
-    const correctIdx  = parseInt(card.dataset.correct, 10);
+    const correctVal = (card.dataset.correct || '').trim();
+    // Support letter mode (A/B/C/D with data-opt) and index mode (0/1/2/3)
+    const isLetterMode = /^[A-D]$/i.test(correctVal);
+    const correctIdx   = isLetterMode ? -1 : parseInt(correctVal, 10);
     let answered = false;
 
     options.forEach((opt, i) => {
@@ -94,12 +97,28 @@ function initMCQs() {
         answered = true;
         totalQ++;
 
-        options.forEach((o, j) => {
-          if (j === correctIdx) o.classList.add(i === j ? 'correct' : 'missed');
-          else if (j === i)     o.classList.add('wrong');
-        });
+        let userCorrect = false;
+        if (isLetterMode) {
+          const clickedOpt = (opt.dataset.opt || '').toUpperCase();
+          const correctOpt = correctVal.toUpperCase();
+          userCorrect = clickedOpt === correctOpt;
+          options.forEach(o => {
+            const oOpt = (o.dataset.opt || '').toUpperCase();
+            if (o === opt) {
+              o.classList.add(oOpt === correctOpt ? 'correct' : 'wrong');
+            } else if (oOpt === correctOpt) {
+              o.classList.add('missed');
+            }
+          });
+        } else {
+          userCorrect = i === correctIdx;
+          options.forEach((o, j) => {
+            if (j === correctIdx) o.classList.add(i === j ? 'correct' : 'missed');
+            else if (j === i)     o.classList.add('wrong');
+          });
+        }
 
-        if (i === correctIdx) correctQ++;
+        if (userCorrect) correctQ++;
         if (explanation) explanation.classList.add('show');
         updateScoreBadge();
       });

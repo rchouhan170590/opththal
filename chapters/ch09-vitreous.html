@@ -6,131 +6,6 @@
  <title>Ch 9: Vitreous — OphthalStudy</title>
  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="../assets/css/style.css" />
- <style>
-  /* ── SNAPSHOT ─────────────────────────────────────────── */
-  .snapshot-intro{font-size:15px;color:var(--text-secondary);margin-bottom:24px;line-height:1.7}
-  .snapshot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px}
-  .snap-card{background:var(--card-bg,#fff);border-radius:14px;border:1px solid var(--border,#e5e7eb);overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06)}
-  .snap-card.wide{grid-column:1/-1}
-  .snap-card.mnemonic-card{background:linear-gradient(135deg,#f5f3ff,#ede9fe)}
-  .snap-card-header{display:flex;align-items:center;gap:10px;padding:14px 16px 10px;border-bottom:1px solid var(--border,#e5e7eb)}
-  .snap-dot-blue{width:10px;height:10px;border-radius:50%;background:#3b82f6;flex-shrink:0}
-  .snap-dot-violet{width:10px;height:10px;border-radius:50%;background:#8b5cf6;flex-shrink:0}
-  .snap-dot-green{width:10px;height:10px;border-radius:50%;background:#10b981;flex-shrink:0}
-  .snap-dot-amber{width:10px;height:10px;border-radius:50%;background:#f59e0b;flex-shrink:0}
-  .snap-dot-red{width:10px;height:10px;border-radius:50%;background:#ef4444;flex-shrink:0}
-  .snap-dot-teal{width:10px;height:10px;border-radius:50%;background:#14b8a6;flex-shrink:0}
-  .snap-card-header h4{margin:0;font-size:13px;font-weight:700;color:var(--text-primary,#111)}
-  .snap-card-body{padding:14px 16px;font-size:13px;color:var(--text-secondary,#4b5563);line-height:1.65}
-  .snap-list{margin:0;padding-left:18px}
-  .snap-list li{margin-bottom:5px}
-  .algo-wrap{display:flex;flex-direction:column;gap:8px;margin-top:8px}
-  .algo-step{display:flex;align-items:flex-start;gap:10px}
-  .algo-num{width:22px;height:22px;border-radius:50%;background:#7c3aed;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-  .algo-text{font-size:13px;color:var(--text-secondary,#374151);line-height:1.55}
-  .hy-badge{display:inline-block;background:#fef3c7;color:#92400e;font-size:10px;font-weight:700;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
-
-  /* ── DEEP DIVE ─────────────────────────────────────────── */
-  .pg-badge{display:inline-block;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;font-size:11px;font-weight:700;border-radius:20px;padding:3px 12px;margin-bottom:18px}
-  .section-card{border-radius:14px;border:1px solid var(--border,#e5e7eb);margin-bottom:14px;overflow:hidden;background:var(--card-bg,#fff);box-shadow:0 1px 4px rgba(0,0,0,.05)}
-  .section-header{display:flex;align-items:center;gap:10px;padding:16px 18px;cursor:pointer;user-select:none}
-  .section-bar{width:4px;height:36px;border-radius:4px;flex-shrink:0}
-  .sb-blue{background:#3b82f6}.sb-violet{background:#8b5cf6}.sb-green{background:#10b981}.sb-amber{background:#f59e0b}.sb-red{background:#ef4444}.sb-teal{background:#14b8a6}
-  .section-header h3{flex:1;margin:0;font-size:15px;font-weight:700;color:var(--text-primary,#111)}
-  .section-tags{display:flex;gap:6px;flex-wrap:wrap}
-  .section-chevron{font-size:12px;color:var(--text-muted,#9ca3af);transition:transform .25s}
-  .section-card.open .section-chevron{transform:rotate(180deg)}
-  .section-body{display:none;border-top:1px solid var(--border,#e5e7eb)}
-  .section-card.open .section-body{display:block}
-  .section-body-inner{padding:18px 20px}
-  .section-body-inner h4{font-size:14px;font-weight:700;color:var(--text-primary,#111);margin:18px 0 8px}
-  .section-body-inner h4:first-child{margin-top:0}
-  .section-body-inner p{font-size:14px;line-height:1.75;color:var(--text-secondary,#374151);margin:0 0 10px}
-  .section-body-inner ul{padding-left:20px;margin:0 0 10px}
-  .section-body-inner li{font-size:14px;line-height:1.7;color:var(--text-secondary,#374151);margin-bottom:4px}
-  .section-body-inner strong{color:var(--text-primary,#111)}
-  .info-box{background:#eff6ff;border-left:4px solid #3b82f6;border-radius:8px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:#1e40af;line-height:1.65}
-  .warn-box{background:#fffbeb;border-left:4px solid #f59e0b;border-radius:8px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:#92400e;line-height:1.65}
-  .clinical-box{background:#f0fdf4;border-left:4px solid #22c55e;border-radius:8px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:#14532d;line-height:1.65}
-  .danger-box{background:#fff1f2;border-left:4px solid #ef4444;border-radius:8px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:#991b1b;line-height:1.65}
-  .mnemonic-box{background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1px solid #c4b5fd;border-radius:10px;padding:14px 16px;margin:12px 0}
-  .mnemonic-title{font-size:12px;font-weight:700;color:#6d28d9;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
-  .mnemonic-expand{font-size:13.5px;color:#374151;line-height:1.7}
-  .compare-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0}
-  .compare-table th{background:#f3f4f6;font-weight:700;color:#111;padding:9px 12px;text-align:left;border:1px solid #e5e7eb}
-  .compare-table td{padding:9px 12px;border:1px solid #e5e7eb;vertical-align:top;color:#374151;line-height:1.6}
-  .compare-table tr:nth-child(even) td{background:#fafafa}
-  .diagram-wrap{margin:16px 0;text-align:center}
-  .diagram-caption{font-size:12px;color:var(--text-muted,#9ca3af);margin-top:8px;font-style:italic}
-
-  /* ── CLINICAL SKILLS ───────────────────────────────────── */
-  .skills-intro{font-size:14px;color:var(--text-secondary);line-height:1.75;margin-bottom:24px}
-  .skill-section{background:var(--card-bg,#fff);border:1px solid var(--border,#e5e7eb);border-radius:14px;padding:20px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
-  .skill-section-title{font-size:15px;font-weight:700;color:var(--text-primary,#111);margin:0 0 8px}
-  .skill-tag{display:inline-block;background:#e0e7ff;color:#3730a3;font-size:11px;font-weight:600;border-radius:20px;padding:2px 10px;margin-bottom:14px}
-  .skill-steps{display:flex;flex-direction:column;gap:10px}
-  .skill-step{display:flex;gap:12px;align-items:flex-start}
-  .step-num{width:26px;height:26px;border-radius:50%;background:#4f46e5;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-  .step-content h5{margin:0 0 4px;font-size:13.5px;font-weight:700;color:var(--text-primary,#111)}
-  .step-content p{margin:0;font-size:13.5px;color:var(--text-secondary,#374151);line-height:1.65}
-  .step-tip{border-left:3px solid #f59e0b;padding-left:10px;margin-top:6px;font-size:13px;color:#92400e;line-height:1.6}
-  .step-normal{border-left:3px solid #d1d5db;padding-left:10px;margin-top:6px;font-size:13px;color:#4b5563;line-height:1.6}
-
-  /* ── Q-BANK ────────────────────────────────────────────── */
-  .qbank-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
-  .qbank-btn{padding:8px 16px;border-radius:24px;border:2px solid #e5e7eb;background:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;color:#374151}
-  .qbank-btn.active,.qbank-btn:hover{border-color:#4f46e5;color:#4f46e5;background:#eff6ff}
-  .pg-btn{border-color:#8b5cf6;color:#7c3aed}
-  .pg-btn.active,.pg-btn:hover{background:#f5f3ff;border-color:#7c3aed;color:#7c3aed}
-  .la-btn{border-color:#10b981;color:#059669}
-  .la-btn.active,.la-btn:hover{background:#f0fdf4;border-color:#059669;color:#059669}
-  .pyq-btn{border-color:#f59e0b;color:#d97706}
-  .pyq-btn.active,.pyq-btn:hover{background:#fffbeb;border-color:#d97706;color:#d97706}
-  .q-count{display:inline-block;background:#f3f4f6;border-radius:10px;font-size:11px;font-weight:700;padding:1px 7px;margin-left:6px;color:#6b7280}
-  .qbank-panel{display:none}.qbank-panel.active{display:block}
-  .qbank-info{font-size:13.5px;color:var(--text-secondary);margin-bottom:16px;line-height:1.65}
-  .mcq-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05)}
-  .mcq-card.pg{border-left:3px solid #8b5cf6}
-  .mcq-header{padding:14px 16px 10px;border-bottom:1px solid #f3f4f6}
-  .mcq-num{font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
-  .mcq-q{font-size:14px;font-weight:600;color:#111;line-height:1.6}
-  .mcq-meta{display:flex;gap:6px;padding:8px 16px;flex-wrap:wrap}
-  .mcq-tag{font-size:11px;font-weight:600;border-radius:20px;padding:2px 9px}
-  .mcq-tag.ug{background:#dbeafe;color:#1e40af}
-  .mcq-tag.pg{background:#ede9fe;color:#6d28d9}
-  .mcq-tag.hyield{background:#fef9c3;color:#854d0e}
-  .mcq-tag.clinical{background:#dcfce7;color:#166534}
-  .mcq-options{padding:0 16px 10px;display:flex;flex-direction:column;gap:6px}
-  .mcq-option{display:flex;align-items:flex-start;gap:10px;padding:8px 12px;border-radius:8px;border:1px solid #e5e7eb;cursor:pointer;transition:all .2s;font-size:13.5px;color:#374151}
-  .mcq-option:hover{background:#f9fafb;border-color:#c7d2fe}
-  .mcq-option.correct{background:#f0fdf4;border-color:#22c55e;color:#166534}
-  .mcq-option.wrong{background:#fff1f2;border-color:#ef4444;color:#991b1b}
-  .opt-letter{font-weight:700;min-width:20px;color:#4f46e5}
-  .mcq-explanation{display:none;padding:12px 16px;background:#f8fafc;border-top:1px solid #e5e7eb;font-size:13.5px;color:#374151;line-height:1.7}
-  .mcq-explanation.show{display:block}
-  .expl-label{font-weight:700;color:#059669;font-size:12px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
-  .la-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);border-left:3px solid #10b981}
-  .la-header{padding:14px 16px 10px;border-bottom:1px solid #f3f4f6;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
-  .la-num{font-size:11px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
-  .la-q{font-size:14px;font-weight:600;color:#111;line-height:1.6;flex:1}
-  .la-marks{background:#f0fdf4;color:#166534;font-size:12px;font-weight:700;border-radius:8px;padding:4px 10px;white-space:nowrap;align-self:flex-start}
-  .la-toggle-hint{background:#fff;border:1px solid #d1fae5;color:#059669;font-size:13px;font-weight:600;border-radius:8px;padding:7px 16px;cursor:pointer;margin:10px 16px;display:inline-block;transition:all .2s}
-  .la-toggle-hint:hover{background:#ecfdf5}
-  .la-body{display:none;padding:0 16px 14px}
-  .la-body.show{display:block}
-  .la-body-inner{background:#f8fafc;border-radius:10px;padding:16px;font-size:13.5px;color:#374151;line-height:1.75}
-  .la-body-inner h5{font-size:13.5px;font-weight:700;color:#111;margin:14px 0 6px}
-  .la-body-inner h5:first-child{margin-top:0}
-  .pyq-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);border-left:3px solid #f59e0b}
-  .pyq-header{padding:14px 16px 10px;border-bottom:1px solid #f3f4f6;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
-  .pyq-year{font-size:11px;font-weight:700;color:#d97706;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-  .pyq-q{font-size:14px;font-weight:600;color:#111;line-height:1.6;flex:1}
-  .pyq-exam{background:#fffbeb;color:#92400e;font-size:11px;font-weight:700;border-radius:8px;padding:3px 10px;white-space:nowrap;align-self:flex-start}
-  .pyq-toggle{background:#fff;border:1px solid #fde68a;color:#d97706;font-size:13px;font-weight:600;border-radius:8px;padding:7px 16px;cursor:pointer;margin:10px 16px;display:inline-block;transition:all .2s}
-  .pyq-toggle:hover{background:#fffbeb}
-  .pyq-answer{display:none;padding:0 16px 14px}
-  .pyq-answer.show{display:block}
- </style>
 </head>
 <body>
 <div class="app-layout">
@@ -140,7 +15,7 @@
   <div class="top-bar">
    <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
    <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 9 — Vitreous</span></div>
-   <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
+   <div class="tag-group"><div id="score-badge"></div><span class="tag tag-pg">PG Focus</span></div>
   </div>
 
   <div class="content-area">
@@ -158,10 +33,10 @@
    <!-- TABS -->
    <div class="tab-container">
     <div class="tabs">
-     <button class="tab-btn active" data-tab="0">Snapshot</button>
-     <button class="tab-btn" data-tab="1">Deep Dive</button>
-     <button class="tab-btn" data-tab="2">Clinical Skills</button>
-     <button class="tab-btn" data-tab="3">Q-Bank</button>
+     <button class="tab-btn active">Snapshot</button>
+     <button class="tab-btn">Deep Dive</button>
+     <button class="tab-btn">Clinical Skills</button>
+     <button class="tab-btn">Q-Bank</button>
     </div>
 
     <!-- ══════════════════════════════════════════════════════
@@ -1111,72 +986,7 @@
  </div><!-- /main-content -->
 </div><!-- /app-layout -->
 
-<script src="../assets/js/app.js"></script>
-<script>
-// Tabs
-document.querySelectorAll('.tab-btn').forEach((btn,i)=>{
- btn.addEventListener('click',function(){
-  const panels=document.querySelectorAll('.tab-panel');
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  panels.forEach(p=>p.classList.remove('active'));
-  this.classList.add('active');
-  panels[i].classList.add('active');
- });
-});
-
-// Section accordion
-document.querySelectorAll('.section-header').forEach(header=>{
- header.addEventListener('click',function(){
-  const card=this.closest('.section-card');
-  card.classList.toggle('open');
- });
-});
-
-// MCQ interaction
-document.querySelectorAll('.mcq-card').forEach(card=>{
- const correct=card.dataset.correct;
- card.querySelectorAll('.mcq-option').forEach(opt=>{
-  opt.addEventListener('click',function(){
-   if(card.dataset.answered) return;
-   card.dataset.answered='1';
-   card.querySelectorAll('.mcq-option').forEach(o=>{
-    if(o.dataset.opt===correct) o.classList.add('correct');
-    else o.classList.add('wrong');
-   });
-   const expl=card.querySelector('.mcq-explanation');
-   if(expl) expl.classList.add('show');
-  });
- });
-});
-
-// Q-Bank nav
-document.querySelectorAll('.qbank-btn').forEach(btn=>{
- btn.addEventListener('click',function(){
-  document.querySelectorAll('.qbank-btn').forEach(b=>b.classList.remove('active'));
-  document.querySelectorAll('.qbank-panel').forEach(p=>p.classList.remove('active'));
-  this.classList.add('active');
-  const target=document.getElementById(this.dataset.target);
-  if(target) target.classList.add('active');
- });
-});
-
-// LA toggles
-document.querySelectorAll('.la-toggle-hint').forEach(btn=>{
- btn.addEventListener('click',function(){
-  const body=this.nextElementSibling;
-  body.classList.toggle('show');
-  this.textContent=body.classList.contains('show')?'Hide answer outline':'Show answer outline';
- });
-});
-
-// PYQ toggles
-document.querySelectorAll('.pyq-toggle').forEach(btn=>{
- btn.addEventListener('click',function(){
-  const body=this.nextElementSibling;
-  body.classList.toggle('show');
-  this.textContent=body.classList.contains('show')?'Hide Answer':'Show Answer / Approach';
- });
-});
-</script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
