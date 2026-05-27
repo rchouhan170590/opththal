@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="base" content="../" />
+ <title>Ch 18: Community Ophthalmology — OphthalStudy</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<div class="app-layout">
+ <div id="sidebar-mount"></div>
+
+ <div class="main-content">
+ <div class="top-bar">
+ <button class="mobile-menu-btn" id="mobile-menu-btn"><span></span></button>
+ <div class="breadcrumb"><a href="../index.html" style="color:inherit;text-decoration:none">Home</a> › <span>Ch 18 — Community Ophthalmology</span></div>
+ <div class="tag-group" id="score-badge" style="display:none;background:var(--accent-green);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700"></div>
+ </div>
+
+ <div class="content-area">
+ <!-- Header -->
+ <div class="chapter-header">
+ <div class="chapter-num">Chapter 18</div>
+ <h1>Community Ophthalmology</h1>
+ <p>Global burden of blindness, preventable blindness, national eye health programmes in India, VISION 2020, xerophthalmia, childhood blindness, school screening, blindness certification.</p>
+ <div class="chapter-meta">
+ <span class="tag tag-ug">UG Level</span>
+ <span class="tag tag-pg">PG Level</span>
+ <span class="tag tag-highyield">High-Yield</span>
+ </div>
+ </div>
+
+ <!-- Tabs -->
+ <div class="tab-container">
+ <div class="tabs">
+ <button class="tab-btn active">Theory</button>
+ <button class="tab-btn">MCQ Bank</button>
+ <button class="tab-btn">PYQs</button>
+ <button class="tab-btn">Quick Revision</button>
+ </div>
+
+ <!-- TAB 1: THEORY -->
+ <div class="tab-panel active">
+
+ <!-- SECTION 1: Global Burden of Blindness -->
+ <div class="section-card open">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Global Burden of Blindness</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="warn-box">
+ <strong>WHO 2023 Data:</strong> 2.2 billion people visually impaired globally; 1 billion cases are preventable.
+ </div>
+ <table class="compare-table">
+ <tr><th>Cause</th><th>Percentage</th><th>Notes</th></tr>
+ <tr><td><strong>Cataract</strong></td><td>35%</td><td>Leading preventable cause; treatable with surgery</td></tr>
+ <tr><td><strong>Uncorrected Refractive Error</strong></td><td>21%</td><td>Myopia, hyperopia, astigmatism; simple correction prevents blindness</td></tr>
+ <tr><td><strong>Age-Related Macular Degeneration (ARMD)</strong></td><td>8%</td><td>Prevalent in developed nations; no cure yet</td></tr>
+ <tr><td><strong>Glaucoma</strong></td><td>8%</td><td>Progressive; early detection prevents blindness</td></tr>
+ <tr><td><strong>Diabetic Retinopathy (DR)</strong></td><td>5%</td><td>Rising in developing countries due to diabetes epidemic</td></tr>
+ <tr><td><strong>Corneal Opacity</strong></td><td>4%</td><td>From trauma, infection, vitamin A deficiency, chemical burn</td></tr>
+ <tr><td><strong>Others</strong></td><td>19%</td><td>Retinal detachment, stroke, optic neuritis, etc.</td></tr>
+ </table>
+ <h4>Definitions</h4>
+ <ul>
+ <li><strong>Blindness (WHO):</strong> VA &lt; 3/60 in better eye with correction</li>
+ <li><strong>Blindness (India, under Prevention of Blindness Act):</strong> VA &lt; 6/60 in better eye with correction</li>
+ <li><strong>Low vision:</strong> VA &lt; 6/18 but ≥ 3/60 with correction; functional limitation but not totally blind</li>
+ <li><strong>Visual field defect:</strong> VF &lt; 10° around fixation also qualifies as blindness (even if VA normal)</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 2: Blindness in India -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-red"></div>
+ <h3>Blindness Patterns in India (Current)</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="diagram-wrapper">
+ <svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg" width="460">
+ <text x="250" y="25" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#7f1d1d" text-anchor="middle">LEADING CAUSES OF BLINDNESS IN INDIA</text>
+ <!-- Pie chart (simplified) -->
+ <circle cx="150" cy="140" r="80" fill="none" stroke="#999" stroke-width="1" opacity="0.2"/>
+ <!-- Segment 1: Cataract (35% = 126°) -->
+ <path d="M 150 60 A 80 80 0 0 1 238 102" fill="none" stroke="#f87171" stroke-width="28" stroke-linecap="round"/>
+ <!-- Segment 2: Uncorrected Refraction (21% = 75.6°) -->
+ <path d="M 238 102 A 80 80 0 0 1 232 188" fill="none" stroke="#fbbf24" stroke-width="28" stroke-linecap="round"/>
+ <!-- Segment 3: Posterior Segment (glaucoma + ARMD + DR + RD) (~20%) -->
+ <path d="M 232 188 A 80 80 0 0 1 135 220" fill="none" stroke="#60a5fa" stroke-width="28" stroke-linecap="round"/>
+ <!-- Segment 4: Corneal + others -->
+ <path d="M 135 220 A 80 80 0 0 1 62 180" fill="none" stroke="#86efac" stroke-width="28" stroke-linecap="round"/>
+ <path d="M 62 180 A 80 80 0 0 1 150 60" fill="none" stroke="#c084fc" stroke-width="28" stroke-linecap="round"/>
+ <!-- Legend -->
+ <rect x="270" y="60" width="200" height="180" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+ <text x="280" y="80" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#374151">Top Causes:</text>
+ <line x1="280" y1="88" x2="295" y2="88" stroke="#f87171" stroke-width="4"/>
+ <text x="305" y="92" font-family="Inter,sans-serif" font-size="10" fill="#374151">Cataract (35%)</text>
+ <line x1="280" y1="108" x2="295" y2="108" stroke="#fbbf24" stroke-width="4"/>
+ <text x="305" y="112" font-family="Inter,sans-serif" font-size="10" fill="#374151">Uncorrected RE (21%)</text>
+ <line x1="280" y1="128" x2="295" y2="128" stroke="#60a5fa" stroke-width="4"/>
+ <text x="305" y="132" font-family="Inter,sans-serif" font-size="10" fill="#374151">Posterior Segment (20%)</text>
+ <line x1="280" y1="148" x2="295" y2="148" stroke="#86efac" stroke-width="4"/>
+ <text x="305" y="152" font-family="Inter,sans-serif" font-size="10" fill="#374151">Glaucoma, ARMD, DR</text>
+ <line x1="280" y1="168" x2="295" y2="168" stroke="#c084fc" stroke-width="4"/>
+ <text x="305" y="172" font-family="Inter,sans-serif" font-size="10" fill="#374151">Corneal opacity (4%)</text>
+ <text x="280" y="195" font-family="Inter,sans-serif" font-size="9" fill="#6b7280" font-style="italic">NPCB data; preventable:</text>
+ <text x="280" y="208" font-family="Inter,sans-serif" font-size="9" fill="#6b7280" font-style="italic">Cataract, refractive error,</text>
+ <text x="280" y="221" font-family="Inter,sans-serif" font-size="9" fill="#6b7280" font-style="italic">corneal opacity = 60%</text>
+ </svg>
+ <div class="diagram-caption">Fig 18.1 — Leading causes of blindness in India</div>
+ </div>
+ <h4>Priority Order (India)</h4>
+ <ol>
+ <li><strong>Cataract:</strong> 35% (most preventable; cataract surgery efficacy high)</li>
+ <li><strong>Uncorrected refractive error:</strong> 21% (glasses/contact lens simple fix)</li>
+ <li><strong>Posterior segment disorders:</strong> Glaucoma (8%), ARMD (8%), DR (5%)</li>
+ <li><strong>Corneal blindness:</strong> 4% (from trauma, infection, vitamin A deficiency)</li>
+ </ol>
+ </div>
+ </div>
+
+ <!-- SECTION 3: VISION 2020 & NPCB -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-purple"></div>
+ <h3>VISION 2020 & National Programmes</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="info-box">
+ <strong>VISION 2020:</strong> WHO + IAPB global initiative (1999). Slogan: "Right to Sight". Goal: eliminate avoidable blindness by 2020 (extended beyond 2020).
+ </div>
+ <h4>National Programme for Control of Blindness (NPCB) — 1976</h4>
+ <ul>
+ <li><strong>Launched:</strong> 1976; India's first organized eye health programme</li>
+ <li><strong>Objectives:</strong>
+ <ul style="margin-left: 20px; margin-top: 8px">
+ <li>Cataract: strengthening surgical services, mobile eye camps</li>
+ <li>Corneal transplant: tissue banks, keratoplasty promotion</li>
+ <li>School eye health: screening, refraction services</li>
+ <li>Low vision: rehabilitation services for partially sighted</li>
+ </ul>
+ </li>
+ <li><strong>Target:</strong> Reduce blindness prevalence to 0.3% (currently ~1% in India)</li>
+ <li><strong>Current Status:</strong> Expansion to include screening for glaucoma, DR, ARMD</li>
+ </ul>
+ <h4>Rashtriya Bal Swasthya Karyakram (RBSK) — 2013</h4>
+ <ul>
+ <li><strong>For ages 0–18 years</strong>; comprehensive health screening</li>
+ <li><strong>4D approach:</strong> Defects, Diseases, Deficiencies, Developmental delays</li>
+ <li>Eye health component: screening for refractive error, strabismus, cataract, corneal opacity</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 4: Xerophthalmia & Vitamin A Deficiency -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-red"></div>
+ <h3>Xerophthalmia — Vitamin A Deficiency</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <table class="compare-table">
+ <tr><th>Stage</th><th>Clinical Finding</th><th>Pathology</th><th>Reversibility</th></tr>
+ <tr><td><strong>XN</strong></td><td>Night blindness</td><td>Impaired scotopic vision</td><td>Reversible (early)</td></tr>
+ <tr><td><strong>X1A</strong></td><td>Conjunctival xerosis</td><td>Loss of goblet cells; drying</td><td>Reversible</td></tr>
+ <tr><td><strong>X1B</strong></td><td>Bitot's spots</td><td>Foamy white spots at temporal conjunctiva</td><td>Reversible</td></tr>
+ <tr><td><strong>X2</strong></td><td>Corneal xerosis</td><td>Corneal drying; haze</td><td>Reversible (early)</td></tr>
+ <tr><td><strong>X3A</strong></td><td>Corneal ulceration &lt; 1/3 cornea</td><td>Corneal melting</td><td>Reversible (risk of scarring)</td></tr>
+ <tr><td><strong>X3B</strong></td><td>Corneal ulceration ≥ 1/3 cornea</td><td>Severe melting</td><td>Often permanent scarring → blindness</td></tr>
+ <tr><td><strong>XF</strong></td><td>Xerophthalmic fundus</td><td>Retinal crystals, cotton-wool spots, optic atrophy</td><td>Irreversible</td></tr>
+ <tr><td><strong>XS</strong></td><td>Corneal scar (end-stage)</td><td>Dense scarring; leukoma</td><td>Irreversible blindness</td></tr>
+ </table>
+ <h4>Vitamin A Supplementation (WHO/India Schedule)</h4>
+ <ul>
+ <li><strong>High-dose supplementation:</strong> 1 lakh IU (100,000 IU) at 9 months of age</li>
+ <li><strong>Every 6 months until 5 years:</strong> 2 lakh IU (200,000 IU) doses</li>
+ <li><strong>Pregnant/lactating women:</strong> 10,000 IU daily or 2 lakh IU at 6 weeks postpartum (if deficient)</li>
+ <li><strong>Measles vaccination:</strong> Vitamin A supplementation at time of vaccination (synergistic protection)</li>
+ </ul>
+ <h4>Causes of Childhood Blindness (India)</h4>
+ <ul>
+ <li><strong>Vitamin A deficiency:</strong> Leading preventable cause in developing countries</li>
+ <li><strong>Congenital cataract:</strong> From intrauterine infection (TORCH: rubella, toxoplasmosis)</li>
+ <li><strong>Measles keratitis:</strong> From corneal ulceration (vitamin A deficiency + measles co-infection)</li>
+ <li><strong>Ophthalmia neonatorum:</strong> From untreated maternal STI (N. gonorrhoeae, C. trachomatis); prevented with topical antibiotics (Credé's prophylaxis)</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 5: Trachoma Control -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-blue"></div>
+ <h3>Trachoma Control — SAFE Strategy</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <div class="mnemonic-box">
+ <div class="mnemonic-title">SAFE Strategy (WHO)</div>
+ <div class="mnemonic-text">S—A—F—E</div>
+ <div class="mnemonic-expand"><strong>S</strong>urgery (trichiasis correction) · <strong>A</strong>ntibiotics (azithromycin) · <strong>F</strong>acial cleanliness · <strong>E</strong>nvironmental improvement</div>
+ </div>
+ <h4>Components</h4>
+ <ul>
+ <li><strong>Surgery:</strong> Trichiasis (inturned lashes) → entropion repair; prevents keratitis and scarring</li>
+ <li><strong>Antibiotics:</strong> Azithromycin (single dose or 3-day course) for active infection (TF — trachomatous inflammation-follicular); treats Chlamydia trachomatis</li>
+ <li><strong>Facial cleanliness:</strong> Education on hygiene, water access, handwashing (reduces transmission)</li>
+ <li><strong>Environmental improvement:</strong> Sanitation, access to clean water, health education</li>
+ </ul>
+ <h4>Epidemiology</h4>
+ <ul>
+ <li>Leading infectious cause of blindness globally (though decreasing)</li>
+ <li>More common in low-income, water-scarce regions (sub-Saharan Africa, parts of Asia)</li>
+ <li>Preventable and treatable if caught early</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 6: School Eye Health & Screening -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-purple"></div>
+ <h3>School Eye Health Programme</h3>
+ <div class="section-tags"><span class="tag tag-ug">UG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <h4>Screening Protocol</h4>
+ <ul>
+ <li><strong>Tool:</strong> Snellen chart (distance vision) at 6 metres</li>
+ <li><strong>Referral criteria:</strong> VA &lt; 6/9 in either eye on screening chart</li>
+ <li><strong>Refractive error correction:</strong> Pinhole test to confirm refractive error vs other pathology</li>
+ <li><strong>Action:</strong> Refer for detailed ophthalmology assessment; prescribe glasses if needed</li>
+ </ul>
+ <h4>Goals</h4>
+ <ul>
+ <li>Early detection of refractive error (myopia, hyperopia, astigmatism)</li>
+ <li>Identification of ocular disease (cataract, strabismus, colour blindness)</li>
+ <li>Prevention of amblyopia (lazy eye) through early correction</li>
+ <li>Reducing dropout from school due to uncorrected refractive error</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- SECTION 7: Blindness Certification in India -->
+ <div class="section-card">
+ <div class="section-header">
+ <div class="section-icon si-red"></div>
+ <h3>Blindness Certification & Disability Grading (India)</h3>
+ <div class="section-tags"><span class="tag tag-pg">PG</span></div>
+ <span class="section-chevron">▼</span>
+ </div>
+ <div class="section-body">
+ <h4>Blindness Criteria (Prevention of Blindness Act)</h4>
+ <ul>
+ <li><strong>VA &lt; 3/60 or VF &lt; 10° around fixation:</strong> 75% disability (severe blindness)</li>
+ <li><strong>VA &lt; 6/60 or VF &lt; 20°:</strong> 40% disability (moderate visual impairment)</li>
+ <li>Certification required for government benefits, vocational rehabilitation, disability allowance</li>
+ </ul>
+ <h4>Criteria for Certification</h4>
+ <ul>
+ <li>Visual acuity tested with best correction (glasses/contact lens)</li>
+ <li>Both eyes assessed; disability graded on better eye</li>
+ <li>Visual fields (if applicable) measured formally</li>
+ <li>Ophthalmologist certifies permanence (unlikely to improve)</li>
+ </ul>
+ <h4>Government Support (India)</h4>
+ <ul>
+ <li>Blind person monthly assistance (varies by state)</li>
+ <li>Income tax benefits</li>
+ <li>Vocational training and rehabilitation services</li>
+ <li>Low vision rehabilitation</li>
+ </ul>
+ </div>
+ </div>
+
+ </div><!-- end theory tab -->
+
+ <!-- TAB 2: MCQ BANK -->
+ <div class="tab-panel">
+ <div class="mcq-bank-header">
+ <h2> MCQ Bank — Community Ophthalmology</h2>
+ <div class="mcq-stats">10 questions · ~25 min</div>
+ </div>
+
+ <!-- Q1 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q1</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">According to WHO 2023, what percentage of the 2.2 billion visually impaired people have preventable blindness?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>~1 billion (45%)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>~2 billion (90%)</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>~500 million (22%)</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>~100 million (5%)</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — ~1 billion (45%)</div>
+ <div class="exp-body">
+ WHO 2023 data: 2.2 billion visually impaired; 1 billion have preventable blindness (from cataract, refractive error, corneal opacity). This highlights global disparity in access to eye care.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q2 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q2</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">The leading preventable cause of blindness in India is:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Uncorrected refractive error (21%)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Cataract (35%)</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Glaucoma (8%)</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Corneal opacity (4%)</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Cataract (35%)</div>
+ <div class="exp-body">
+ Cataract is the single largest cause (35%), followed by uncorrected refractive error (21%). Both are highly preventable: cataract by surgery, refractive error by correction (glasses/contact lens).
+ </div>
+ </div>
+ </div>
+
+ <!-- Q3 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q3</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">According to the Prevention of Blindness Act (India), blindness is defined as VA &lt; ___ in the better eye with correction:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>6/60</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>6/36</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>3/60</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>2/60</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — 3/60 (or VF &lt; 10° around fixation)</div>
+ <div class="exp-body">
+ India uses VA &lt; 3/60 (stricter than WHO's &lt; 3/60) or visual field &lt; 10° around fixation for blindness. This allows for 75% disability grading. VA &lt; 6/60 = 40% disability.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q4 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q4</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">The "XN" stage of xerophthalmia represents:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Night blindness (scotopic vision impairment)</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Bitot's spots</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Corneal scarring</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Conjunctival xerosis</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — Night blindness</div>
+ <div class="exp-body">
+ XN (Xerophthalmia Night blindness) is the earliest stage of vitamin A deficiency; reversible with supplementation. Rod photoreceptors require vitamin A (retinol → retinal → rhodopsin). Early sign; good prognostic value for intervention.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q5 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q5</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">X3B stage of xerophthalmia (corneal ulceration ≥ 1/3 cornea) carries which prognosis?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Fully reversible with vitamin A</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Often permanent corneal scarring and blindness</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Resolves with topical antibiotics</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Requires glasses for correction</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Often permanent corneal scarring and blindness</div>
+ <div class="exp-body">
+ X3B (extensive corneal ulceration ≥ 1/3) represents severe melting; even with high-dose vitamin A, scarring (leukoma) and blindness often result. X3A (&lt; 1/3) has better prognosis. Prevention (early supplementation) is key.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q6 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q6</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">Vitamin A supplementation schedule (WHO/India) for infants 9 months – 5 years:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>10,000 IU once yearly</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>50,000 IU monthly</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>1 lakh IU at 9 mo; then 2 lakh IU every 6 mo until 5 yr</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>5,000 IU daily</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — 1 lakh IU at 9 mo; then 2 lakh IU every 6 mo until 5 yr</div>
+ <div class="exp-body">
+ High-dose supplementation: 100,000 IU (1 lakh) once at 9 months, then 200,000 IU (2 lakh) every 6 months through age 5. This is WHO standard; also given at measles vaccination. Cost-effective prevention of xerophthalmia.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q7 -->
+ <div class="mcq-card" data-correct="1">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q7</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">The "SAFE strategy" for trachoma control stands for:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Surgery, Azathioprine, Fluids, Eyedrops</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Surgery, Antibiotics (azithromycin), Facial cleanliness, Environmental improvement</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Screening, Antituberculous drugs, Filtration, Education</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Scleral buckling, Aspiration, Fluorescence, Examination</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: B — Surgery, Antibiotics, Facial cleanliness, Environmental improvement</div>
+ <div class="exp-body">
+ SAFE is WHO's comprehensive trachoma control strategy: Surgery for trichiasis, Azithromycin for active infection, Facial cleanliness (handwashing, water access), Environmental improvements (sanitation).
+ </div>
+ </div>
+ </div>
+
+ <!-- Q8 -->
+ <div class="mcq-card" data-correct="0">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q8</span>
+ <span class="mcq-difficulty diff-ug">UG</span>
+ </div>
+ <div class="mcq-stem">School eye health screening uses ___ chart; refers VA &lt; ___:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Snellen; 6/9</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Landolt C; 6/12</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>ETDRS; 6/6</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Jaeger; 6/18</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: A — Snellen chart; 6/9</div>
+ <div class="exp-body">
+ School screening: Snellen chart at 6 metres distance. Refer if VA &lt; 6/9 (fails to read line). Pinhole test helps distinguish refractive error from pathology. Early detection prevents amblyopia and school dropout.
+ </div>
+ </div>
+ </div>
+
+ <!-- Q9 -->
+ <div class="mcq-card" data-correct="2">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q9</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">NPCB (National Programme for Control of Blindness) was launched in which year?</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>1960</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>1970</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>1976</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>1990</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: C — 1976</div>
+ <div class="exp-body">
+ NPCB was launched in 1976; focuses on cataract surgery, corneal transplant, school eye health, and low vision services. Target: reduce blindness prevalence to 0.3% (currently ~1%).
+ </div>
+ </div>
+ </div>
+
+ <!-- Q10 -->
+ <div class="mcq-card" data-correct="3">
+ <div class="mcq-meta">
+ <span class="mcq-num">Q10</span>
+ <span class="mcq-difficulty diff-pg">PG</span>
+ </div>
+ <div class="mcq-stem">Bitot's spots (X1B stage xerophthalmia) are:</div>
+ <div class="mcq-options">
+ <div class="mcq-option"><span class="opt-letter">A</span>Retinal crystal deposits</div>
+ <div class="mcq-option"><span class="opt-letter">B</span>Corneal ulcers</div>
+ <div class="mcq-option"><span class="opt-letter">C</span>Iris heterochromia</div>
+ <div class="mcq-option"><span class="opt-letter">D</span>Foamy white spots on temporal conjunctiva; reversible</div>
+ </div>
+ <div class="mcq-actions">
+ <button class="btn-reveal">Reveal Answer</button>
+ <button class="btn-reset">Reset</button>
+ </div>
+ <div class="mcq-explanation">
+ <div class="exp-correct">Correct Answer: D — Foamy white spots on temporal conjunctiva; reversible</div>
+ <div class="exp-body">
+ Bitot's spots are pathognomonic foamy white spots (desquamated epithelium) on the temporal bulbar conjunctiva. Reversible with vitamin A. Important clinical sign of vitamin A deficiency; used for epidemiological surveys.
+ </div>
+ </div>
+ </div>
+
+ </div><!-- end MCQ tab -->
+
+ <!-- TAB 3: PYQs -->
+ <div class="tab-panel">
+ <div class="pyq-section">
+ <h2> Previous Year Questions</h2>
+ <p class="pyq-intro">Actual and exam-pattern questions from AIIMS PG, NEET PG, DNB, and university exams.</p>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> AIIMS PG / PGI</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS PG 2023</div>
+ <div class="pyq-q">What is the leading preventable cause of blindness globally (WHO 2023)? A) Refractive error B) Cataract C) Glaucoma D) ARMD</div>
+ <div class="pyq-ans">Answer: B — Cataract (35% of global blindness)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">PGI Chandigarh 2022</div>
+ <div class="pyq-q">The stages of xerophthalmia from earliest to latest are: A) XN → X1A → X1B → X2 → X3A → X3B → XF/XS B) XN → X1B → X1A → X2 → X3B → X3A C) X1A → XN → X1B → X2 → X3A → X3B D) X2 → X1A → X1B → XN → X3A → XS</div>
+ <div class="pyq-ans">Answer: A — XN → X1A → X1B → X2 → X3A → X3B → XF/XS (correct WHO sequence)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">AIIMS PG 2021</div>
+ <div class="pyq-q">X3B stage of xerophthalmia (corneal ulceration ≥1/3) is characterised by: A) Excellent prognosis with vitamin A alone B) Often results in corneal scarring and blindness C) Reversible if treated within 24 hours D) No visual loss if ulcer &lt;2 weeks</div>
+ <div class="pyq-ans">Answer: B — Often irreversible corneal scarring and blindness (prevention key)</div>
+ </div>
+ </div>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> NEET PG / DNB</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2023</div>
+ <div class="pyq-q">VISION 2020 ("Right to Sight") is a global initiative by: A) WHO alone B) IAPB alone C) WHO + IAPB D) World Bank + NGOs</div>
+ <div class="pyq-ans">Answer: C — WHO + IAPB (started 1999; goal: eliminate avoidable blindness)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">DNB 2022</div>
+ <div class="pyq-q">Vitamin A supplementation schedule (India) for 9 mo – 5 yr: A) 50,000 IU every 6 mo B) 1 lakh IU at 9 mo; 2 lakh IU every 6 mo until 5 yr C) 10,000 IU monthly D) 100,000 IU yearly</div>
+ <div class="pyq-ans">Answer: B — High-dose schedule: 1 lakh at 9 mo; 2 lakh every 6 mo (WHO standard)</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">NEET PG 2022</div>
+ <div class="pyq-q">Under the Prevention of Blindness Act (India), blindness is defined as VA &lt; ___ or VF &lt; ___ degrees around fixation: A) 6/60; 20° B) 3/60; 10° C) 6/18; 15° D) 3/36; 5°</div>
+ <div class="pyq-ans">Answer: B — VA &lt; 3/60 or VF &lt; 10° (India's stricter definition; 75% disability)</div>
+ </div>
+ </div>
+
+ <div class="pyq-year-group">
+ <div class="pyq-year-label"> University / MBBS Exams</div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">University Final MBBS</div>
+ <div class="pyq-q">Describe the SAFE strategy for trachoma control. List the components and explain the role of each. (6 marks)</div>
+ <div class="pyq-ans"> S = Surgery (trichiasis correction); A = Antibiotics (azithromycin for active infection); F = Facial cleanliness (hygiene, water); E = Environmental improvement (sanitation). Comprehensive approach reduces transmission and prevents blindness.</div>
+ </div>
+
+ <div class="pyq-item">
+ <div class="pyq-source">University Final MBBS</div>
+ <div class="pyq-q">Enumerate the stages of xerophthalmia and discuss the reversibility and prognosis at each stage. (8 marks)</div>
+ <div class="pyq-ans"> XN (night blindness) → X1A (conjunctival xerosis) → X1B (Bitot's spots) → X2 (corneal xerosis) → X3A (ulceration &lt;1/3) → X3B (ulceration ≥1/3) → XF (xerophthalmic fundus) → XS (scar). Early stages (XN–X2) reversible; X3B onwards often irreversible scarring/blindness. Prevention (vitamin A supplementation) key.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- TAB 4: QUICK REVISION -->
+ <div class="tab-panel">
+ <div class="revision-grid">
+ <div class="revision-card">
+ <h3>Global Burden (WHO 2023)</h3>
+ <ul>
+ <li>2.2 billion visually impaired globally</li>
+ <li>~1 billion cases preventable</li>
+ <li>Top causes: Cataract (35%), Uncorrected RE (21%), Glaucoma (8%), ARMD (8%), DR (5%)</li>
+ <li>In India: Cataract 35%, Uncorrected RE 21%, Posterior segment 20%</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Blindness Definitions</h3>
+ <ul>
+ <li><strong>WHO:</strong> VA &lt; 3/60 in better eye</li>
+ <li><strong>India (PBF):</strong> VA &lt; 6/60 or VF &lt; 10° = 75% disability; VA &lt; 6/60 = 40% disability</li>
+ <li><strong>Low vision:</strong> VA &lt; 6/18 but ≥ 3/60</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Xerophthalmia Stages</h3>
+ <ul>
+ <li><strong>XN:</strong> Night blindness (earliest, reversible)</li>
+ <li><strong>X1A/X1B:</strong> Conjunctival xerosis, Bitot's spots (reversible)</li>
+ <li><strong>X2:</strong> Corneal xerosis (reversible early)</li>
+ <li><strong>X3A/X3B:</strong> Corneal ulceration (&lt;1/3 or ≥1/3; scarring risk)</li>
+ <li><strong>XF/XS:</strong> Xerophthalmic fundus/scar (irreversible)</li>
+ </ul>
+ </div>
+ <div class="revision-card">
+ <h3>Key Programmes</h3>
+ <ul>
+ <li><strong>VISION 2020:</strong> WHO + IAPB; eliminate avoidable blindness</li>
+ <li><strong>NPCB:</strong> India 1976; cataract, corneal transplant, school screening, low vision</li>
+ <li><strong>RBSK:</strong> 0–18 yr; 4D: defects, diseases, deficiencies, delays</li>
+ <li><strong>Vit A:</strong> 1 lakh IU at 9 mo; 2 lakh IU every 6 mo until 5 yr</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ </div><!-- end tab-container -->
+
+ <!-- Navigation -->
+ <div style="display:flex;justify-content:space-between;padding:20px 0;border-top:1px solid var(--border)">
+ <a href="ch17-operations.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--secondary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+ ← Prev: Ch 17 — Operations
+ </a>
+ <a href="../index.html" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:white;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;font-size:14px">
+ Back to Home
+ </a>
+ </div>
+
+ </div><!-- end content-area -->
+ </div><!-- end main-content -->
+</div>
+
+<script>
+ // Patch base path for sidebar
+ window._chapterBase = '../';
+</script>
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
